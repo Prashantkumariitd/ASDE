@@ -1,0 +1,43 @@
+{
+  "phase": 4,
+  "run_id": "run_64ca8ea8354347659fe78f63b8569a67",
+  "work_item_id": "p4_04_competing_models",
+  "team": "theoretical_physics",
+  "title": "Competing model classes and explicit toy constructions",
+  "objective": "\nCompare standard quantum mechanics, measurement-independent local\nhidden-variable models, measurement-dependent local models and\nother relevant alternatives. Give explicit toy constructions only\nwhere all conditional probabilities are specified and normalised.\nSeparate a mathematical existence example from a physically plausible\ndynamical model. Identify which models are empirically distinguishable\nand which are observationally equivalent under stated conditions.\n",
+  "provider": "openrouter",
+  "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+  "completed_at": "2026-11-01T03:46:41.376705+00:00",
+  "phase3_context_ids": [
+    "p3_qft_thermalisation_07",
+    "p3_quantum_foundations_01",
+    "p3_quantum_foundations_02"
+  ],
+  "deterministic_computations": {
+    "symbolic": {
+      "CHSH_expression": "A0*B0 + A0*B1 + A1*B0 - A1*B1",
+      "factorised_expression": "A0*B0 + A0*B1 + A1*B0 - A1*B1",
+      "deterministic_assignments_checked": 16,
+      "maximum_absolute_local_deterministic_CHSH": 2,
+      "local_bound_check": true
+    },
+    "quantum_singlet_baseline": {
+      "correlations": {
+        "E00": -0.7071067811865475,
+        "E01": -0.7071067811865475,
+        "E10": -0.7071067811865475,
+        "E11": 0.7071067811865475
+      },
+      "CHSH_value": -2.82842712474619,
+      "Tsirelson_value": 2.8284271247461903,
+      "numerical_check_passed": true
+    },
+    "probability_constraints": {
+      "normalisation": "Eq(p00 + p01 + p10 + p11, 1)",
+      "nonnegative_probabilities": true
+    },
+    "interpretation": "The local deterministic CHSH bound is exhaustively checked for the 16 deterministic assignments. The quantum singlet value is a numerical baseline. These checks do not establish a superdeterministic model or a new physical result."
+  },
+  "research_output": "# ASDE PHASE 4 — FORMAL MATHEMATICAL AND PHYSICAL MODEL DEVELOPMENT  \n**Work Package:** Competing model classes and explicit toy constructions  \n**Domain:** quantum_foundations  \n**Specialist:** theoretical_physics  \n\n---\n\n## 1. Executive Result\n\nThis work package provides a rigorous, self-contained comparison of four model classes for the bipartite CHSH scenario:\n\n| Model Class | Measurement Independence | Locality (Factorisation) | Determinism | Max CHSH | Empirical Status |\n|-------------|--------------------------|--------------------------|-------------|----------|------------------|\n| **Standard Quantum Mechanics (QM)** | Yes (by construction) | No (violates Bell factorisability) | No (intrinsic indeterminism) | $2\\sqrt{2}\\approx 2.828$ (Tsirelson bound) | **Established** — matches all experiments to date. |\n| **Measurement‑Independent Local Hidden Variable (MI‑LHV)** | Yes ($P(\\lambda|a,b)=P(\\lambda)$) | Yes ($P(x,y|\\lambda,a,b)=P(x|\\lambda,a)P(y|\\lambda,b)$) | Either (deterministic or stochastic) | $2$ (Bell–CHSH bound) | **Falsified** — cannot reproduce $S>2$. |\n| **Measurement‑Dependent Local Hidden Variable (MD‑LHV)** | No ($P(\\lambda|a,b)\\neq P(\\lambda)$) | Yes (same factorisation) | Either | Up to $4$ (algebraic max) if $\\epsilon$ large enough | **Mathematically existent** — explicit normalised constructions given below. **Physically plausible dynamical model: unresolved.** |\n| **Superdeterministic / Retrocausal / Global‑Deterministic** | No (settings correlated with $\\lambda$ via past/future boundary conditions) | Varies (often retain locality in a block‑universe sense) | Yes (global determinism) | Up to $4$ | **Speculative** — no complete dynamical model with testable predictions beyond reproducing QM. |\n\n**Key quantitative results reproduced/derived here:**\n- Local deterministic bound: $|S|\\le 2$ (exhaustive check of 16 assignments).\n- Tsirelson bound for singlet state: $S = -2\\sqrt{2}$ (numerically checked).\n- Hall (2010) measurement‑dependence bound: for a target CHSH value $S$, the total‑variation distance $\\epsilon$ between the actual setting distribution and the ideal product distribution must satisfy $\\epsilon \\ge 1 - \\frac{S}{2\\sqrt{2}}$. At the Tsirelson limit $S=2\\sqrt{2}$, $\\epsilon_{\\text{Tsirelson}} = 1-1/\\sqrt{2}\\approx 0.293$.\n- An explicit, fully normalised MD‑LHV toy model (Hall‑type) that reproduces the singlet correlations *exactly* is constructed in §4.3 and §7.2. It is a **mathematical existence proof**, not a dynamical physical model.\n\n**Empirical distinguishability:**  \n- MI‑LHV vs QM: distinguished by any $S>2$ (already done).  \n- MD‑LHV vs QM: **observationally equivalent** for the CHSH statistics *if* the measurement‑dependence pattern is exactly the one that reproduces the quantum correlations. They can be distinguished only by **independent tests of setting independence** (e.g., cosmic‑Bell tests, randomness‑expansion protocols) or by checking higher‑order statistics / different measurement settings.  \n- Superdeterministic vs QM: **observationally equivalent** by construction (they reproduce QM predictions exactly); distinguishability requires a *dynamical* mechanism that makes falsifiable predictions beyond the Born rule.\n\n---\n\n## 2. Definitions and Notation\n\n| Symbol | Meaning | Domain |\n|--------|---------|--------|\n| $\\Lambda$ | Hidden‑variable space | Standard Borel space (e.g., $\\mathbb{R}^d$ or finite set) |\n| $\\mathcal{A},\\mathcal{B}$ | Measurement‑setting spaces for Alice and Bob | Finite sets $\\{0,1\\}$ for CHSH |\n| $\\mathcal{X},\\mathcal{Y}$ | Outcome spaces | $\\{-1,+1\\}$ |\n| $\\lambda$ | Hidden variable | $\\lambda\\in\\Lambda$ |\n| $a,b$ | Measurement settings | $a\\in\\mathcal{A},\\; b\\in\\mathcal{B}$ |\n| $x,y$ | Outcomes | $x\\in\\mathcal{X},\\; y\\in\\mathcal{Y}$ |\n| $P(\\lambda,a,b,x,y)$ | Joint probability distribution | $\\Lambda\\times\\mathcal{A}\\times\\mathcal{B}\\times\\mathcal{X}\\times\\mathcal{Y}$ |\n| $P(\\lambda)$ | Marginal distribution of $\\lambda$ | $\\Lambda$ |\n| $P(a,b)$ | Distribution of settings (assumed product $P(a)P(b)$ in “free‑choice” ideal) | $\\mathcal{A}\\times\\mathcal{B}$ |\n| $P(x,y|\\lambda,a,b)$ | Conditional outcome distribution | $\\mathcal{X}\\times\\mathcal{Y}$ given $\\lambda,a,b$ |\n| $E(a,b)$ | Correlation function | $E(a,b)=\\sum_{x,y}xy\\,P(x,y|a,b)$ |\n| $S$ | CHSH expression | $S = E(0,0)+",
+  "epistemic_warning": "LLM-generated mathematical research analysis. Not a proof or independent replication unless explicitly established by a separate reproducible trail."
+}
