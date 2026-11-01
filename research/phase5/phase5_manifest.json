@@ -34,5 +34,16 @@
       "angle_sweep": "https://github.com/Prashantkumariitd/ASDE/blob/main/research/phase5/computations/p5_3_angle_sensitivity.json"
     },
     "scientific_warning": "Physical mechanism, experimental validation and cosmological predictions remain unestablished."
+  },
+  "phase5_3": {
+    "run_id": "run_64ca8ea8354347659fe78f63b8569a67",
+    "experiment_id": "p5_3_comprehensive_robustness_v1",
+    "status": "completed_with_explicit_limitations",
+    "updated_at": "2026-11-01T04:17:32.903952+00:00",
+    "report": "https://github.com/Prashantkumariitd/ASDE/blob/main/research/phase5/reports/p5_3_comprehensive_robustness.json",
+    "computations": "https://github.com/Prashantkumariitd/ASDE/blob/main/research/phase5/computations/p5_3_robustness_computations.json",
+    "validation_passed": 26,
+    "validation_total": 26,
+    "llm_api_calls": 0
   }
 }
