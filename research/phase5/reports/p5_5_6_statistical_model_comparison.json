@@ -1,0 +1,51 @@
+{
+  "best_fit_mi_local_model": {
+    "log_likelihood": -45711.70392598488,
+    "normalisation_error": 0.0,
+    "optimizer_message": "Positive directional derivative for linesearch",
+    "optimizer_success": false,
+    "strategy_weights": [
+      2.0119262252678715e-06,
+      4.343687266158393e-06,
+      0.12513180999067797,
+      0.1246718587598459,
+      1.5230187957982502e-06,
+      0.12834845740284603,
+      2.113474025295968e-06,
+      0.12351066022696254,
+      0.1256307596261082,
+      3.191539593140108e-06,
+      0.12542595188148392,
+      3.376545175991816e-06,
+      0.12076944516967751,
+      0.1264913486078223,
+      7.673561304103057e-07,
+      2.380787363509815e-06
+    ]
+  },
+  "classification": "SYNTHETIC_BENCHMARK_NOT_EXPERIMENTAL_MODEL_SELECTION",
+  "empirical_synthetic_chsh": -2.8204000000000002,
+  "information_cost_benchmarks_bits": {
+    "causal": 0.08016956065982606,
+    "one_sided": 0.12757066014353202,
+    "retrocausal": 0.046273846853406964,
+    "superdeterministic_construction": 2.0,
+    "zigzag_causal": 0.08016956065982606
+  },
+  "likelihood_ratio_statistic": 2517.953564319032,
+  "max_local_deterministic_chsh": 2.0,
+  "p_value": null,
+  "p_value_reason": "No naive chi-square p-value assigned: constrained local-polytope likelihood model has boundary/non-regular parameters. A calibrated parametric bootstrap is required for inferential significance.",
+  "phase": "5.5.6",
+  "quantum_chsh_exact": -2.82842712474619,
+  "run_id": "run_64ca8ea8354347659fe78f63b8569a67",
+  "saturated_reference": {
+    "log_likelihood": -44452.72714382537
+  },
+  "scenario": "two-party two-setting binary-outcome singlet CHSH",
+  "scientific_interpretation": "This is a reproducible synthetic-data pipeline test. It is not evidence from a physical Bell experiment and does not select a real-world causal mechanism.",
+  "seed": 20261101,
+  "timestamp_utc": "2026-11-01T05:01:44.512696+00:00",
+  "total_synthetic_trials": 40000,
+  "trials_per_setting_pair": 10000
+}
