@@ -477,3 +477,15 @@ Keep the filename stable: **`ASDE_CONTEXT.md`**. A new conversation should be ab
 ---
 
 **End of handoff document.**
+
+## Phase 4 execution checkpoint
+
+- Phase 4 initiated: 2026-11-01T03:49:01.873875+00:00.
+- Run ID: `run_64ca8ea8354347659fe78f63b8569a67`.
+- Phase 3 integrity audit accepted by user.
+- Phase 4 work packages: 7.
+- Formal CHSH deterministic baseline exhaustively checked over 16 assignments.
+- Quantum singlet CHSH baseline numerically checked against 2√2.
+- Phase 4 model classes registered as proposed, not established physical theories.
+- Provider policy: Groq primary; automatic OpenRouter fallback on any Groq error; pause if both fail.
+- Phase 4 execution is checkpointed in Neon and GitHub.
