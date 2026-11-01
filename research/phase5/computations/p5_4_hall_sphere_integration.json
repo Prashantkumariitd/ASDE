@@ -1,0 +1,375 @@
+{
+  "equations_reproduced": [
+    5,
+    6,
+    7,
+    8
+  ],
+  "hidden_variable_space": "Unit sphere S^2",
+  "hidden_variable_measure": "Solid-angle measure dOmega",
+  "response_functions": {
+    "A": "sign(x dot lambda)",
+    "B": "-sign(y dot lambda)"
+  },
+  "density_definition": "Hall PRL 105, 250404 (2010), Eq. (8)",
+  "quadrature_points": 131072,
+  "angle_tests": [
+    {
+      "normalisation": 0.9999999999999997,
+      "normalisation_error": 3.3306690738754696e-16,
+      "minimum_density": 0.07957747154594767,
+      "nonnegative_density": true,
+      "joint_probabilities": {
+        "-1,-1": 0.0,
+        "-1,1": 0.9999999999999997,
+        "1,-1": 0.9999999999999997,
+        "1,1": 0.0
+      },
+      "quantum_target": {
+        "-1,-1": 0.0,
+        "-1,1": 0.5,
+        "1,-1": 0.5,
+        "1,1": 0.0
+      },
+      "maximum_joint_probability_error": 0.49999999999999967,
+      "marginal_A": {
+        "-1": 0.9999999999999997,
+        "1": 0.9999999999999997
+      },
+      "marginal_B": {
+        "-1": 0.9999999999999997,
+        "1": 0.9999999999999997
+      },
+      "no_signalling_marginals_unbiased": false,
+      "angle_degrees": 0.0
+    },
+    {
+      "normalisation": 1.0000013452183405,
+      "normalisation_error": 1.3452183404982776e-06,
+      "minimum_density": 0.0010908030922726468,
+      "nonnegative_density": true,
+      "joint_probabilities": {
+        "-1,-1": 0.013707435924787108,
+        "-1,1": 1.0055100143244418,
+        "1,-1": 1.0055100143244418,
+        "1,1": 0.013707435924787108
+      },
+      "quantum_target": {
+        "-1,-1": 3.8076210902182606e-05,
+        "-1,1": 0.4999619237890978,
+        "1,-1": 0.4999619237890978,
+        "1,1": 3.8076210902182606e-05
+      },
+      "maximum_joint_probability_error": 0.505548090535344,
+      "marginal_A": {
+        "-1": 1.0192174502492288,
+        "1": 1.0192174502492288
+      },
+      "marginal_B": {
+        "-1": 1.0192174502492288,
+        "1": 1.0192174502492288
+      },
+      "no_signalling_marginals_unbiased": false,
+      "angle_degrees": 1.0
+    },
+    {
+      "normalisation": 1.0000064976601954,
+      "normalisation_error": 6.497660195448063e-06,
+      "minimum_density": 0.005450693477901476,
+      "nonnegative_density": true,
+      "joint_probabilities": {
+        "-1,-1": 0.0684954343485803,
+        "-1,1": 1.0266144161614692,
+        "1,-1": 1.0266144161614692,
+        "1,1": 0.0684954343485803
+      },
+      "quantum_target": {
+        "-1,-1": 0.0009513254770636137,
+        "-1,1": 0.4990486745229364,
+        "1,-1": 0.4990486745229364,
+        "1,1": 0.0009513254770636137
+      },
+      "maximum_joint_probability_error": 0.5275657416385329,
+      "marginal_A": {
+        "-1": 1.0951098505100494,
+        "1": 1.0951098505100494
+      },
+      "marginal_B": {
+        "-1": 1.0951098505100494,
+        "1": 1.0951098505100494
+      },
+      "no_signalling_marginals_unbiased": false,
+      "angle_degrees": 5.0
+    },
+    {
+      "normalisation": 1.0000044142564684,
+      "normalisation_error": 4.414256468354694e-06,
+      "minimum_density": 0.016269219533600072,
+      "nonnegative_density": true,
+      "joint_probabilities": {
+        "-1,-1": 0.20444504226559024,
+        "-1,1": 1.0723231779758557,
+        "1,-1": 1.0723231779758557,
+        "1,1": 0.20444504226559024
+      },
+      "quantum_target": {
+        "-1,-1": 0.008518543427732922,
+        "-1,1": 0.49148145657226705,
+        "1,-1": 0.49148145657226705,
+        "1,1": 0.008518543427732922
+      },
+      "maximum_joint_probability_error": 0.5808417214035887,
+      "marginal_A": {
+        "-1": 1.276768220241446,
+        "1": 1.276768220241446
+      },
+      "marginal_B": {
+        "-1": 1.276768220241446,
+        "1": 1.276768220241446
+      },
+      "no_signalling_marginals_unbiased": false,
+      "angle_degrees": 15.0
+    },
+    {
+      "normalisation": 1.0000073007350017,
+      "normalisation_error": 7.300735001658509e-06,
+      "minimum_density": 0.03198407885467098,
+      "nonnegative_density": true,
+      "joint_probabilities": {
+        "-1,-1": 0.401923788646684,
+        "-1,1": 1.119615242270663,
+        "1,-1": 1.119615242270663,
+        "1,1": 0.401923788646684
+      },
+      "quantum_target": {
+        "-1,-1": 0.03349364905389032,
+        "-1,1": 0.4665063509461097,
+        "1,-1": 0.4665063509461097,
+        "1,1": 0.03349364905389032
+      },
+      "maximum_joint_probability_error": 0.6531088913245532,
+      "marginal_A": {
+        "-1": 1.5215390309173469,
+        "1": 1.5215390309173469
+      },
+      "marginal_B": {
+        "-1": 1.5215390309173469,
+        "1": 1.5215390309173469
+      },
+      "no_signalling_marginals_unbiased": false,
+      "angle_degrees": 30.0
+    },
+    {
+      "normalisation": 1.0000042135982496,
+      "normalisation_error": 4.213598249647177e-06,
+      "minimum_density": 0.04661540357225707,
+      "nonnegative_density": true,
+      "joint_probabilities": {
+        "-1,-1": 0.5857864376269046,
+        "-1,1": 1.138071187457698,
+        "1,-1": 1.1380711874576979,
+        "1,1": 0.5857864376269046
+      },
+      "quantum_target": {
+        "-1,-1": 0.0732233047033631,
+        "-1,1": 0.42677669529663687,
+        "1,-1": 0.42677669529663687,
+        "1,1": 0.0732233047033631
+      },
+      "maximum_joint_probability_error": 0.7112944921610612,
+      "marginal_A": {
+        "-1": 1.7238576250846027,
+        "1": 1.7238576250846025
+      },
+      "marginal_B": {
+        "-1": 1.7238576250846025,
+        "1": 1.7238576250846027
+      },
+      "no_signalling_marginals_unbiased": false,
+      "angle_degrees": 45.0
+    },
+    {
+      "normalisation": 1.0000019073486324,
+      "normalisation_error": 1.9073486323684108e-06,
+      "minimum_density": 0.059683103659460744,
+      "nonnegative_density": true,
+      "joint_probabilities": {
+        "-1,-1": 0.7499999999999997,
+        "-1,1": 1.1249999999999993,
+        "1,-1": 1.1249999999999993,
+        "1,1": 0.7499999999999997
+      },
+      "quantum_target": {
+        "-1,-1": 0.12499999999999997,
+        "-1,1": 0.375,
+        "1,-1": 0.375,
+        "1,1": 0.12499999999999997
+      },
+      "maximum_joint_probability_error": 0.7499999999999993,
+      "marginal_A": {
+        "-1": 1.8749999999999991,
+        "1": 1.8749999999999991
+      },
+      "marginal_B": {
+        "-1": 1.8749999999999991,
+        "1": 1.8749999999999991
+      },
+      "no_signalling_marginals_unbiased": false,
+      "angle_degrees": 60.0
+    },
+    {
+      "normalisation": 0.9999999999999997,
+      "normalisation_error": 3.3306690738754696e-16,
+      "minimum_density": 0.07957747154594766,
+      "nonnegative_density": true,
+      "joint_probabilities": {
+        "-1,-1": 0.9999999999999997,
+        "-1,1": 0.9999999999999999,
+        "1,-1": 0.9999999999999999,
+        "1,1": 0.9999999999999999
+      },
+      "quantum_target": {
+        "-1,-1": 0.24999999999999997,
+        "-1,1": 0.25,
+        "1,-1": 0.25,
+        "1,1": 0.24999999999999997
+      },
+      "maximum_joint_probability_error": 0.7499999999999999,
+      "marginal_A": {
+        "-1": 1.9999999999999996,
+        "1": 1.9999999999999998
+      },
+      "marginal_B": {
+        "-1": 1.9999999999999996,
+        "1": 1.9999999999999998
+      },
+      "no_signalling_marginals_unbiased": false,
+      "angle_degrees": 90.0
+    },
+    {
+      "normalisation": 0.999993324279785,
+      "normalisation_error": 6.675720214954772e-06,
+      "minimum_density": 0.05968310365946077,
+      "nonnegative_density": true,
+      "joint_probabilities": {
+        "-1,-1": 1.1249999999999996,
+        "-1,1": 0.75,
+        "1,-1": 0.7500000000000001,
+        "1,1": 1.1249999999999996
+      },
+      "quantum_target": {
+        "-1,-1": 0.37499999999999994,
+        "-1,1": 0.12500000000000006,
+        "1,-1": 0.12500000000000006,
+        "1,1": 0.37499999999999994
+      },
+      "maximum_joint_probability_error": 0.7499999999999996,
+      "marginal_A": {
+        "-1": 1.8749999999999996,
+        "1": 1.8749999999999996
+      },
+      "marginal_B": {
+        "-1": 1.8749999999999996,
+        "1": 1.8749999999999996
+      },
+      "no_signalling_marginals_unbiased": false,
+      "angle_degrees": 120.0
+    },
+    {
+      "normalisation": 0.9999908740812475,
+      "normalisation_error": 9.125918752461715e-06,
+      "minimum_density": 0.03198407885467098,
+      "nonnegative_density": true,
+      "joint_probabilities": {
+        "-1,-1": 1.119615242270663,
+        "-1,1": 0.4019237886466839,
+        "1,-1": 0.401923788646684,
+        "1,1": 1.119615242270663
+      },
+      "quantum_target": {
+        "-1,-1": 0.4665063509461097,
+        "-1,1": 0.03349364905389032,
+        "1,-1": 0.03349364905389032,
+        "1,1": 0.4665063509461097
+      },
+      "maximum_joint_probability_error": 0.6531088913245532,
+      "marginal_A": {
+        "-1": 1.5215390309173467,
+        "1": 1.5215390309173469
+      },
+      "marginal_B": {
+        "-1": 1.5215390309173469,
+        "1": 1.5215390309173467
+      },
+      "no_signalling_marginals_unbiased": false,
+      "angle_degrees": 150.0
+    },
+    {
+      "normalisation": 0.9999786446588368,
+      "normalisation_error": 2.1355341163209474e-05,
+      "minimum_density": 0.0010908030922726613,
+      "nonnegative_density": true,
+      "joint_probabilities": {
+        "-1,-1": 1.005510014324442,
+        "-1,1": 0.013707435924787287,
+        "1,-1": 0.013707435924787287,
+        "1,1": 1.0055100143244418
+      },
+      "quantum_target": {
+        "-1,-1": 0.4999619237890978,
+        "-1,1": 3.8076210902182606e-05,
+        "1,-1": 3.8076210902182606e-05,
+        "1,1": 0.4999619237890978
+      },
+      "maximum_joint_probability_error": 0.5055480905353442,
+      "marginal_A": {
+        "-1": 1.0192174502492293,
+        "1": 1.019217450249229
+      },
+      "marginal_B": {
+        "-1": 1.0192174502492293,
+        "1": 1.019217450249229
+      },
+      "no_signalling_marginals_unbiased": false,
+      "angle_degrees": 179.0
+    },
+    {
+      "normalisation": 0.9999847412109372,
+      "normalisation_error": 1.5258789062833067e-05,
+      "minimum_density": 0.0,
+      "nonnegative_density": true,
+      "joint_probabilities": {
+        "-1,-1": 0.9999999999999997,
+        "-1,1": 0.0,
+        "1,-1": 0.0,
+        "1,1": 0.9999999999999999
+      },
+      "quantum_target": {
+        "-1,-1": 0.5,
+        "-1,1": 0.0,
+        "1,-1": 0.0,
+        "1,1": 0.5
+      },
+      "maximum_joint_probability_error": 0.4999999999999999,
+      "marginal_A": {
+        "-1": 0.9999999999999997,
+        "1": 0.9999999999999999
+      },
+      "marginal_B": {
+        "-1": 0.9999999999999997,
+        "1": 0.9999999999999999
+      },
+      "no_signalling_marginals_unbiased": false,
+      "angle_degrees": 180.0
+    }
+  ],
+  "CHSH_correlations": [
+    -1.1045694996615867,
+    -1.1045694996615865,
+    -1.1045694996615854,
+    1.1045694996615854
+  ],
+  "CHSH_value": -4.418277998646344,
+  "quantum_CHSH_target": -2.8284271247461903,
+  "CHSH_no_signalling": true
+}
