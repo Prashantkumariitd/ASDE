@@ -510,3 +510,41 @@ Keep the filename stable: **`ASDE_CONTEXT.md`**. A new conversation should be ab
 - Maximum no-signalling reconstruction error: 0.000e+00.
 - Provider calls: 0; this phase used numerical optimisation only.
 - Interpretation: the LP result is representation- and metric-specific. It does not establish a physical superdeterministic mechanism or the truth of any underlying framework.
+
+<!-- ASDE_PHASE5_STATUS_START -->
+## Phase 5 — Numerical experiments and observational predictions
+
+### Phase 5.1 — CHSH MI vs MD
+- User-reported completed experiment: `p5_1_chsh_mi_vs_md_v1`.
+- Quantum CHSH: -2.828427124746.
+- Local deterministic maximum absolute CHSH: 2.
+- MI LP infeasible; MD LP feasible.
+- Minimum maximum pairwise TV: 0.138071187458.
+- Report: `research/phase5/reports/p5_1_chsh_mi_vs_md.json`.
+- User-reported validation: 12/12 checks passed.
+
+### Phase 5.2 — Mathematical audit
+- Experiment: `p5_2_mathematical_audit_v1`.
+- Status: `completed`.
+- Numerical CHSH: `-2.828427124746`.
+- Minimum maximum pairwise TV: `0.138071187458`.
+- Mutual information I(Lambda:XY): `0.046273846924` bits.
+- LP primal-dual gap: `2.7755575615628914e-17`.
+- MI optimiser success: `True`.
+- Validation: 24/24.
+- Report: `research/phase5/reports/p5_2_mathematical_audit.json`.
+- Angle sweep: `research/phase5/computations/p5_2_angle_sensitivity.json`.
+
+Scientific boundary:
+- LP duality is checked numerically, not by a formal exact-arithmetic certificate.
+- Mutual information is obtained by numerical constrained optimisation.
+- Hidden-variable label permutation is not a general representation-independence proof.
+- No physical mechanism for measurement dependence has been established.
+- No CMB prediction has been derived; the CMB gate remains blocked.
+
+Next:
+1. Review the dual certificate and independently verify its signs and residuals.
+2. Improve mutual-information optimisation with an independent convex solver or certified bounds.
+3. Test alternative hidden-variable representations and setting priors.
+4. Develop a physical dynamical mechanism before attempting CMB predictions.
+<!-- ASDE_PHASE5_STATUS_END -->
