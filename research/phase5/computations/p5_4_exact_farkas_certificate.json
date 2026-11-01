@@ -1,0 +1,29 @@
+{
+  "exists": true,
+  "type": "Farkas infeasibility certificate",
+  "target": "Exact algebraic singlet probabilities at optimal CHSH geometry",
+  "matrix_entries": "Integers",
+  "certificate_coefficients": [
+    "1/1",
+    "-1/3",
+    "-1/3",
+    "1/1",
+    "1/1",
+    "-1/3",
+    "-1/3",
+    "1/1",
+    "1/1",
+    "-1/3",
+    "-1/3",
+    "1/1",
+    "-1/3",
+    "1/1",
+    "1/1",
+    "-1/3"
+  ],
+  "all_A_transpose_y_nonnegative": true,
+  "b_transpose_y": "4/3 - 4*sqrt(2)/3",
+  "b_transpose_y_negative": true,
+  "verification_arithmetic": "Exact SymPy rational/algebraic arithmetic",
+  "scope": "Proves infeasibility of a single setting-independent distribution over the specified 16 deterministic local strategies for this exact target. It is not an exact certificate for the minimum measurement-dependent TV objective."
+}
