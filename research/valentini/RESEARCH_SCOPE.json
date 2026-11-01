@@ -1,0 +1,21 @@
+{
+  "project": "ASDE independent Valentini pilot-wave cosmology workstream",
+  "status": "SEPARATE_THEORETICAL_REPLICATION",
+  "run_id": "run_64ca8ea8354347659fe78f63b8569a67",
+  "research_questions": [
+    "Reproduce published pilot-wave nonequilibrium derivations.",
+    "Identify assumptions about initial quantum nonequilibrium.",
+    "Derive the map from field modes to primordial perturbations.",
+    "Reproduce the predicted primordial power spectrum.",
+    "Derive any predicted CMB observables and transfer functions.",
+    "Compare with standard inflationary Lambda-CDM.",
+    "Check observational constraints and independent falsifiability."
+  ],
+  "non_equivalence_warning": "Pilot-wave nonequilibrium is not the Hall local measurement-dependent model and is not evidence for Hall-type superdeterminism.",
+  "prohibited_shortcuts": [
+    "Do not import Hall model results as Valentini results.",
+    "Do not claim a cosmological prediction without deriving it.",
+    "Do not claim observational confirmation from theoretical possibility.",
+    "Do not fit arbitrary features to CMB data."
+  ]
+}
