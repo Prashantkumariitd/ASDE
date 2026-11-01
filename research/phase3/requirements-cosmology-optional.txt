@@ -1,4 +1,4 @@
-# Install only when the relevant workstream requires them
+# Install only when needed
 camb
 healpy
 pymc
