@@ -11,5 +11,28 @@
   "phase": "5",
   "run_id": "run_64ca8ea8354347659fe78f63b8569a67",
   "status": "completed",
-  "updated_at_utc": "2026-11-01T04:04:17.309304+00:00"
+  "updated_at_utc": "2026-11-01T04:04:17.309304+00:00",
+  "phase5_3_to_5_7": {
+    "run_id": "run_64ca8ea8354347659fe78f63b8569a67",
+    "updated_at": "2026-11-01T04:08:26.800695+00:00",
+    "execution": "single_colab_cell",
+    "llm_api_calls": 0,
+    "phases": {
+      "5.3": "completed",
+      "5.4": "BLOCKED_NO_SPECIFIED_PHYSICAL_MECHANISM",
+      "5.5": "EVIDENCE_INVENTORY_ONLY",
+      "5.6": "BLOCKED_NO_DERIVED_COSMOLOGICAL_PREDICTION",
+      "5.7": "AUDIT_FAILURE_REQUIRES_INVESTIGATION"
+    },
+    "reports": {
+      "5.3": "https://github.com/Prashantkumariitd/ASDE/blob/main/research/phase5/reports/p5_3_robustness_representation.json",
+      "5.4": "https://github.com/Prashantkumariitd/ASDE/blob/main/research/phase5/reports/p5_4_physical_mechanism_gate.json",
+      "5.5": "https://github.com/Prashantkumariitd/ASDE/blob/main/research/phase5/reports/p5_5_experimental_evidence_gate.json",
+      "5.6": "https://github.com/Prashantkumariitd/ASDE/blob/main/research/phase5/reports/p5_6_cosmology_gate.json",
+      "5.7": "https://github.com/Prashantkumariitd/ASDE/blob/main/research/phase5/reports/p5_7_independent_verification.json",
+      "combined": "https://github.com/Prashantkumariitd/ASDE/blob/main/research/phase5/reports/phase5_3_to_5_7_combined.json",
+      "angle_sweep": "https://github.com/Prashantkumariitd/ASDE/blob/main/research/phase5/computations/p5_3_angle_sensitivity.json"
+    },
+    "scientific_warning": "Physical mechanism, experimental validation and cosmological predictions remain unestablished."
+  }
 }
