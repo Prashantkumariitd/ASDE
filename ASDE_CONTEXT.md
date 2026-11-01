@@ -659,3 +659,30 @@ Report:
 research/phase5/reports/p5_4_exact_bell_and_mechanism_audit.json
 <!-- ASDE_PHASE5_4_END -->
 
+
+<!-- ASDE_HALL_REPLICATION_START -->
+## Hall continuous singlet model replication
+
+Updated: 2026-11-01T04:28:46.225071+00:00
+Run: run_64ca8ea8354347659fe78f63b8569a67
+Experiment: p5_4_hall_continuous_replication_v1
+
+- Hall 2010 Eqs. (5)-(8) implemented.
+- Continuous hidden variable lambda on S^2.
+- Deterministic local response functions implemented.
+- Eq. (8) density integrated using deterministic Sobol sphere quadrature.
+- Multiple measurement angles tested.
+- CHSH and no-signalling numerically checked.
+- Hall M and F conventions kept distinct from TV.
+- Finite 16-strategy LP compared against continuous model.
+- Hall-Branciard 2020 causal and retrocausal MI benchmarks distinguished.
+- Erratum DOI recorded; full erratum text not inspected.
+- Numerical global supremum not claimed.
+- Exact finite MD-TV optimality certificate not produced.
+- No new physical dynamical mechanism derived.
+- No LLM/API calls.
+
+Report:
+research/phase5/reports/p5_4_hall_continuous_replication.json
+<!-- ASDE_HALL_REPLICATION_END -->
+
