@@ -1,0 +1,364 @@
+{
+  "CMB_mechanism_gate": {
+    "CMB_spectrum_prediction_available": false,
+    "coupling_to_primordial_perturbations_derived": false,
+    "decision": "Do not run CAMB/CLASS or claim a CMB signature from the current Bell probability representation. First specify a physical model with dynamics, a coupling to primordial degrees of freedom, and a derivation of an observable prediction.",
+    "dynamical_equations_available": false,
+    "mechanism_specified": false,
+    "status": "BLOCKED_NO_DERIVED_PHYSICAL_MECHANISM",
+    "transfer_function_derived": false
+  },
+  "MD_LP_audit": {
+    "bound_violation": 0.0,
+    "certificate_interpretation": "Numerical solver certificate only; not exact-arithmetic proof.",
+    "dual_certificate_available": true,
+    "dual_objective": 0.13807118745769836,
+    "independently_recomputed_TV": 0.13807118745769842,
+    "inequality_violation": 5.551115123125783e-17,
+    "objective": 0.13807118745769834,
+    "pairwise_TV_values": [
+      0.13807118745769836,
+      0.13807118745769842,
+      0.1380711874576984,
+      0.13807118745769836,
+      0.1380711874576984,
+      0.13807118745769834
+    ],
+    "primal_dual_gap": 2.7755575615628914e-17,
+    "primal_equality_residual": 1.1102230246251565e-16,
+    "solver_status": "Optimization terminated successfully. (HiGHS Status 7: Optimal)"
+  },
+  "angle_sweep": [
+    {
+      "CHSH_S": -2.0,
+      "LP_dual_gap": 0.0,
+      "LP_primal_residual": 0.0,
+      "absolute_CHSH": 2.0,
+      "local_bound_violated": false,
+      "minimum_max_pairwise_TV": 0.0,
+      "theta_degrees": 0.0
+    },
+    {
+      "CHSH_S": -2.1667008816788074,
+      "LP_dual_gap": 5.204170427930421e-17,
+      "LP_primal_residual": 1.1102230246251565e-16,
+      "absolute_CHSH": 2.1667008816788074,
+      "local_bound_violated": true,
+      "minimum_max_pairwise_TV": 0.027783480279801227,
+      "theta_degrees": 5.0
+    },
+    {
+      "CHSH_S": -2.3169118613582764,
+      "LP_dual_gap": 2.0816681711721685e-17,
+      "LP_primal_residual": 5.551115123125783e-17,
+      "absolute_CHSH": 2.3169118613582764,
+      "local_bound_violated": true,
+      "minimum_max_pairwise_TV": 0.052818643559712795,
+      "theta_degrees": 10.0
+    },
+    {
+      "CHSH_S": -2.449489742783178,
+      "LP_dual_gap": 1.3877787807814457e-17,
+      "LP_primal_residual": 0.0,
+      "absolute_CHSH": 2.449489742783178,
+      "local_bound_violated": true,
+      "minimum_max_pairwise_TV": 0.07491495713052969,
+      "theta_degrees": 15.0
+    },
+    {
+      "CHSH_S": -2.5634255282231546,
+      "LP_dual_gap": 6.938893903907228e-17,
+      "LP_primal_residual": 0.0,
+      "absolute_CHSH": 2.5634255282231546,
+      "local_bound_violated": true,
+      "minimum_max_pairwise_TV": 0.09390425470385905,
+      "theta_degrees": 20.0
+    },
+    {
+      "CHSH_S": -2.6578520975546986,
+      "LP_dual_gap": 1.3877787807814457e-17,
+      "LP_primal_residual": 0.0,
+      "absolute_CHSH": 2.6578520975546986,
+      "local_bound_violated": true,
+      "minimum_max_pairwise_TV": 0.10964201625911647,
+      "theta_degrees": 25.0
+    },
+    {
+      "CHSH_S": -2.7320508075688776,
+      "LP_dual_gap": 2.7755575615628914e-17,
+      "LP_primal_residual": 0.0,
+      "absolute_CHSH": 2.7320508075688776,
+      "local_bound_violated": true,
+      "minimum_max_pairwise_TV": 0.12200846792814625,
+      "theta_degrees": 30.0
+    },
+    {
+      "CHSH_S": -2.785456961280076,
+      "LP_dual_gap": 2.7755575615628914e-17,
+      "LP_primal_residual": 0.0,
+      "absolute_CHSH": 2.785456961280076,
+      "local_bound_violated": true,
+      "minimum_max_pairwise_TV": 0.13090949354667933,
+      "theta_degrees": 35.0
+    },
+    {
+      "CHSH_S": -2.8176641056110348,
+      "LP_dual_gap": 2.7755575615628914e-17,
+      "LP_primal_residual": 2.220446049250313e-16,
+      "absolute_CHSH": 2.8176641056110348,
+      "local_bound_violated": true,
+      "minimum_max_pairwise_TV": 0.13627735093517243,
+      "theta_degrees": 40.0
+    },
+    {
+      "CHSH_S": -2.8284271247461903,
+      "LP_dual_gap": 2.7755575615628914e-17,
+      "LP_primal_residual": 1.1102230246251565e-16,
+      "absolute_CHSH": 2.8284271247461903,
+      "local_bound_violated": true,
+      "minimum_max_pairwise_TV": 0.13807118745769834,
+      "theta_degrees": 45.0
+    },
+    {
+      "CHSH_S": -2.8176641056110348,
+      "LP_dual_gap": 5.551115123125783e-17,
+      "LP_primal_residual": 2.220446049250313e-16,
+      "absolute_CHSH": 2.8176641056110348,
+      "local_bound_violated": true,
+      "minimum_max_pairwise_TV": 0.13627735093517243,
+      "theta_degrees": 50.0
+    },
+    {
+      "CHSH_S": -2.785456961280076,
+      "LP_dual_gap": 2.7755575615628914e-17,
+      "LP_primal_residual": 1.1102230246251565e-16,
+      "absolute_CHSH": 2.785456961280076,
+      "local_bound_violated": true,
+      "minimum_max_pairwise_TV": 0.13090949354667933,
+      "theta_degrees": 55.0
+    },
+    {
+      "CHSH_S": -2.7320508075688776,
+      "LP_dual_gap": 0.0,
+      "LP_primal_residual": 1.1102230246251565e-16,
+      "absolute_CHSH": 2.7320508075688776,
+      "local_bound_violated": true,
+      "minimum_max_pairwise_TV": 0.12200846792814629,
+      "theta_degrees": 60.0
+    },
+    {
+      "CHSH_S": -2.6578520975546986,
+      "LP_dual_gap": 1.3877787807814457e-17,
+      "LP_primal_residual": 0.0,
+      "absolute_CHSH": 2.6578520975546986,
+      "local_bound_violated": true,
+      "minimum_max_pairwise_TV": 0.10964201625911653,
+      "theta_degrees": 65.0
+    },
+    {
+      "CHSH_S": -2.5634255282231546,
+      "LP_dual_gap": 2.7755575615628914e-17,
+      "LP_primal_residual": 5.551115123125783e-17,
+      "absolute_CHSH": 2.5634255282231546,
+      "local_bound_violated": true,
+      "minimum_max_pairwise_TV": 0.09390425470385909,
+      "theta_degrees": 70.0
+    },
+    {
+      "CHSH_S": -2.449489742783178,
+      "LP_dual_gap": 0.0,
+      "LP_primal_residual": 0.0,
+      "absolute_CHSH": 2.449489742783178,
+      "local_bound_violated": true,
+      "minimum_max_pairwise_TV": 0.07491495713052965,
+      "theta_degrees": 75.0
+    },
+    {
+      "CHSH_S": -2.316911861358277,
+      "LP_dual_gap": 4.163336342344337e-17,
+      "LP_primal_residual": 2.7755575615628914e-16,
+      "absolute_CHSH": 2.316911861358277,
+      "local_bound_violated": true,
+      "minimum_max_pairwise_TV": 0.05281864355971288,
+      "theta_degrees": 80.0
+    },
+    {
+      "CHSH_S": -2.1667008816788074,
+      "LP_dual_gap": 1.734723475976807e-17,
+      "LP_primal_residual": 5.551115123125783e-17,
+      "absolute_CHSH": 2.1667008816788074,
+      "local_bound_violated": true,
+      "minimum_max_pairwise_TV": 0.027783480279801202,
+      "theta_degrees": 85.0
+    },
+    {
+      "CHSH_S": -2.0,
+      "LP_dual_gap": 0.0,
+      "LP_primal_residual": 5.551115123125783e-17,
+      "absolute_CHSH": 2.0,
+      "local_bound_violated": false,
+      "minimum_max_pairwise_TV": 0.0,
+      "theta_degrees": 90.0
+    }
+  ],
+  "exact_symbolic_check": {
+    "CHSH_expression": "-2*sqrt(2)",
+    "absolute_value": "2*sqrt(2)",
+    "equals_2sqrt2": true,
+    "scope_warning": "Exact symbolic CHSH geometry check; not an exact LP proof."
+  },
+  "experiment_id": "p5_2_mathematical_audit_v1",
+  "limiting_case": {
+    "CHSH_S": -2.0,
+    "MD_minimum_max_pairwise_TV": 0.0,
+    "MI_feasible": true,
+    "theta_degrees": 0.0
+  },
+  "mutual_information": {
+    "conditional_weights": [
+      [
+        6.561012364236502e-13,
+        2.5046929387614452e-11,
+        0.14225893594418546,
+        0.14225887802797127,
+        3.928467958724341e-11,
+        0.0732233046383754,
+        3.52951556559859e-11,
+        0.14225888128918499,
+        0.1422584531516811,
+        1.5010531956683237e-12,
+        0.0732233046997891,
+        1.824424592427763e-12,
+        0.14225862694728345,
+        0.14225961519617128,
+        1.0769695849955027e-12,
+        6.727942927033013e-13
+      ],
+      [
+        1.9935529290509484e-13,
+        4.57153375042264e-11,
+        0.0732233046331279,
+        0.14225888881383064,
+        3.975270946959209e-11,
+        0.14225907396123802,
+        3.02831313189713e-11,
+        0.14225873247585283,
+        0.14225901002929617,
+        5.198982888404411e-13,
+        0.1422593099426996,
+        2.6926950579716337e-12,
+        0.1422583753233693,
+        0.07322330469819156,
+        1.271760577998509e-12,
+        1.959041588809822e-12
+      ],
+      [
+        9.079310941030002e-13,
+        2.0037154599692882e-11,
+        0.1422585677558249,
+        0.14225966420609698,
+        4.690058497811551e-11,
+        0.14225860615028937,
+        3.021397575481778e-11,
+        0.0732233046716747,
+        0.0732233046792108,
+        3.2072133760586526e-12,
+        0.14225846333057274,
+        4.142245259502576e-12,
+        0.14225891070909763,
+        0.14225917839034927,
+        9.723691261012592e-13,
+        5.021789204033576e-13
+      ],
+      [
+        1.5214708474391355e-12,
+        1.2548883378718105e-11,
+        0.14225793681080423,
+        0.0732233046597571,
+        3.355257265849219e-11,
+        0.1422587921437497,
+        3.069274534382903e-11,
+        0.1422588539726221,
+        0.14225967773050072,
+        3.1970830156207376e-12,
+        0.1422590807538105,
+        2.7860075330170692e-11,
+        0.07322330463720758,
+        0.14225904917763654,
+        1.9102310380894573e-12,
+        2.6285367913566737e-12
+      ]
+    ],
+    "definition": "I(Lambda:XY), settings uniformly distributed",
+    "equality_residual": 1.1102230246251565e-16,
+    "iterations": 214,
+    "joint_probability_reconstruction_error": 1.942890293094024e-16,
+    "message": "Optimization terminated successfully",
+    "minimum_probability": 1.9935529290509484e-13,
+    "mutual_information_bits": 0.04627384692360028,
+    "normalisation_error": 0.0,
+    "optimiser": "SLSQP",
+    "success": true,
+    "units": "bits"
+  },
+  "phase": "5.2",
+  "phase51_reconstruction": {
+    "CHSH_S": -2.8284271247461903,
+    "MD_minimum_max_pairwise_TV": 0.13807118745769834,
+    "MI_feasible": false,
+    "absolute_CHSH": 2.8284271247461903,
+    "local_deterministic_maximum": 2
+  },
+  "purpose": "Mathematical audit and dependence metric comparison",
+  "representation_sensitivity": {
+    "MI_invariance_error": 0.0,
+    "TV_invariance_error": 8.326672684688674e-17,
+    "interpretation": "Label permutation invariance is necessary but does not establish invariance under changing the physical hidden-variable model.",
+    "test": "Permutation of all 16 hidden-variable labels"
+  },
+  "run_id": "run_64ca8ea8354347659fe78f63b8569a67",
+  "scientific_limitations": [
+    "The model uses 16 deterministic local response strategies.",
+    "The setting distribution is uniform for the mutual-information calculation.",
+    "The TV and mutual-information optimisations are distinct quantities.",
+    "The numerical MI optimiser is not an exact global certificate.",
+    "The dual certificate is floating-point solver output.",
+    "Permutation invariance does not prove representation independence.",
+    "The angle sweep covers one symmetric CHSH geometry only.",
+    "No empirical Bell dataset or experimental uncertainty model is used.",
+    "No physical mechanism for measurement dependence has been specified.",
+    "No CMB prediction is currently derived."
+  ],
+  "timestamp_utc": "2026-11-01T04:04:16.662810+00:00",
+  "validation": {
+    "all_passed": true,
+    "checks": {
+      "16_deterministic_strategies": true,
+      "CMB_gate_prevents_unsupported_prediction": true,
+      "MD_CHSH_matches_quantum": true,
+      "MD_LP_solver_success": true,
+      "MD_TV_recomputed_matches_objective": true,
+      "MD_bounds_satisfied": true,
+      "MD_dual_certificate_available": true,
+      "MD_inequalities_satisfied": true,
+      "MD_no_signalling": true,
+      "MD_primal_dual_gap_small": true,
+      "MD_primal_equalities_small": true,
+      "MD_probabilities_reproduce_target": true,
+      "MI_model_infeasible_at_maximal_CHSH": true,
+      "exact_singlet_CHSH_is_2sqrt2": true,
+      "hidden_variable_permutation_MI_invariant": true,
+      "hidden_variable_permutation_TV_invariant": true,
+      "local_deterministic_CHSH_bound_is_2": true,
+      "mutual_information_constraints_satisfied": true,
+      "mutual_information_optimiser_success": true,
+      "quantum_CHSH_exceeds_local_bound": true,
+      "quantum_probabilities_nonnegative": true,
+      "quantum_probabilities_normalised": true,
+      "symbolic_CHSH_factorisation_identity": true,
+      "zero_violation_MI_limit_feasible": true
+    },
+    "passed": 24,
+    "total": 24
+  }
+}
