@@ -45,5 +45,22 @@
     "validation_passed": 26,
     "validation_total": 26,
     "llm_api_calls": 0
+  },
+  "phase5_4": {
+    "run_id": "run_64ca8ea8354347659fe78f63b8569a67",
+    "experiment_id": "p5_4_mechanism_and_exact_bell_audit_v1",
+    "updated_at": "2026-11-01T04:22:00.585753+00:00",
+    "status": "LITERATURE_AND_MATHEMATICAL_AUDIT_COMPLETED_MECHANISM_OPEN",
+    "exact_MI_Farkas_certificate": true,
+    "exact_MD_TV_certificate": false,
+    "general_finite_Bell_engine": true,
+    "physical_mechanism_established": false,
+    "reports": {
+      "main": "https://github.com/Prashantkumariitd/ASDE/blob/main/research/phase5/reports/p5_4_exact_bell_and_mechanism_audit.json",
+      "farkas": "https://github.com/Prashantkumariitd/ASDE/blob/main/research/phase5/computations/p5_4_exact_farkas_certificate.json",
+      "scenarios": "https://github.com/Prashantkumariitd/ASDE/blob/main/research/phase5/computations/p5_4_general_bell_scenario_tests.json",
+      "mechanisms": "https://github.com/Prashantkumariitd/ASDE/blob/main/research/phase5/research/p5_4_mechanism_candidate_register.json"
+    },
+    "llm_api_calls": 0
   }
 }
