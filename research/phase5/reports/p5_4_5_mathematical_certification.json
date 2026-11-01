@@ -1,0 +1,261 @@
+{
+  "run_id": "run_64ca8ea8354347659fe78f63b8569a67",
+  "phase_id": "p5_4_5_p5_5_integrated_v1",
+  "created_at": "2026-11-01T04:39:40.664342+00:00",
+  "Hall_inequality": {
+    "source": "Hall, PRL 105, 250404 (2010)",
+    "doi": "10.1103/PhysRevLett.105.250404",
+    "inequality": "S <= min(2 + 3*M_Hall, 4)",
+    "metric_conversion": "M_Hall = 2*TV",
+    "derived_lower_bound": "TV >= (S-2)/6",
+    "S_quantum": 2.8284271247461903,
+    "TV_lower_bound": 0.1380711874576984,
+    "M_lower_bound": 0.2761423749153968,
+    "TV_Hall_analytic": 0.1380711874576984,
+    "M_Hall_analytic": 0.2761423749153968,
+    "assumptions": [
+      "Two-party CHSH scenario",
+      "Binary outcomes",
+      "Deterministic local response functions",
+      "Measurement dependence quantified by Hall's L1 convention",
+      "Same CHSH target and setting convention"
+    ],
+    "scope_warning": "This is an analytical lower bound for the stated model class. It does not establish a microscopic physical mechanism."
+  },
+  "finite_LP": {
+    "success": true,
+    "tv_optimum": 0.1380711874576983,
+    "hall_M": 0.2761423749153966,
+    "primal_distribution": "[[ 0.         0.         0.1422589  0.1422589  0.         0.0732233\n  -0.         0.1422589  0.1422589 -0.         0.0732233  0.\n   0.1422589  0.1422589  0.         0.       ]\n [ 0.        -0.         0.0732233  0.1422589  0.         0.1422589\n   0.         0.1422589  0.1422589  0.         0.1422589  0.\n   0.1422589  0.0732233 -0.         0.       ]\n [ 0.         0.         0.1422589  0.1422589 -0.         0.1422589\n   0.         0.0732233  0.0732233  0.         0.1422589 -0.\n   0.1422589  0.1422589  0.         0.       ]\n [-0.         0.         0.1422589  0.0732233  0.         0.1422589\n   0.         0.1422589  0.1422589  0.         0.1422589  0.\n   0.0732233  0.1422589  0.        -0.       ]]",
+    "pairwise_TV": [
+      0.13807118745769775,
+      0.13807118745769859,
+      0.13807118745769853,
+      0.13807118745769847,
+      0.13807118745769847,
+      0.1380711874576984
+    ],
+    "reconstruction_error": 7.771561172376096e-16,
+    "distribution_normalisation_error": 4.440892098500626e-16,
+    "minimum_probability": -0.0,
+    "solver_message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+    "solver_iterations": 78,
+    "solver_objective": 0.1380711874576983
+  },
+  "finite_LP_certificate": {
+    "analytical_lower_bound": 0.1380711874576984,
+    "primal_feasible_objective": 0.1380711874576983,
+    "absolute_gap": 8.326672684688674e-17,
+    "primal_reconstruction_error": 7.771561172376096e-16,
+    "primal_normalisation_error": 4.440892098500626e-16,
+    "primal_minimum_probability": -0.0,
+    "all_pairwise_TV": [
+      0.13807118745769775,
+      0.13807118745769859,
+      0.13807118745769853,
+      0.13807118745769847,
+      0.13807118745769847,
+      0.1380711874576984
+    ],
+    "analytical_bound_satisfied": "True",
+    "primal_feasible": true,
+    "optimality_gap_small": "True",
+    "certificate_type": "Analytical Hall lower bound + numerical feasible primal witness; not a rational exact LP dual certificate.",
+    "optimality_certified": true
+  },
+  "finite_continuous_comparison": {
+    "finite_LP_TV": 0.1380711874576983,
+    "Hall_continuous_analytic_TV": 0.1380711874576984,
+    "analytical_lower_bound_TV": 0.1380711874576984,
+    "absolute_finite_continuous_difference": 8.326672684688674e-17,
+    "finite_LP_certificate": {
+      "analytical_lower_bound": 0.1380711874576984,
+      "primal_feasible_objective": 0.1380711874576983,
+      "absolute_gap": 8.326672684688674e-17,
+      "primal_reconstruction_error": 7.771561172376096e-16,
+      "primal_normalisation_error": 4.440892098500626e-16,
+      "primal_minimum_probability": -0.0,
+      "all_pairwise_TV": [
+        0.13807118745769775,
+        0.13807118745769859,
+        0.13807118745769853,
+        0.13807118745769847,
+        0.13807118745769847,
+        0.1380711874576984
+      ],
+      "analytical_bound_satisfied": "True",
+      "primal_feasible": true,
+      "optimality_gap_small": "True",
+      "certificate_type": "Analytical Hall lower bound + numerical feasible primal witness; not a rational exact LP dual certificate.",
+      "optimality_certified": true
+    },
+    "interpretation": "The finite LP attains the Hall inequality lower bound for this CHSH target. This establishes equality of the optimum value under the stated finite model assumptions. It does not establish that the finite hidden-variable representation and Hall's continuous S^2 density are the same model or are related by a measure-preserving construction."
+  },
+  "Hall_erratum": {
+    "doi": "10.1103/PhysRevLett.116.219902",
+    "metadata_verified": true,
+    "full_text_retrieved": false,
+    "correction_text": null,
+    "source_url": "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.116.219902",
+    "status": "METADATA_ONLY_OR_FULL_TEXT_INACCESSIBLE",
+    "metadata": {
+      "title": [
+        "Erratum: Local Deterministic Model of Singlet State Correlations Based on Relaxing Measurement Independence [Phys. Rev. Lett.<b>105</b>, 250404 (2010)]"
+      ],
+      "author": [
+        {
+          "given": "Michael J.\u2009W.",
+          "family": "Hall",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2016,
+            5,
+            26
+          ]
+        ]
+      },
+      "publisher": "American Physical Society (APS)",
+      "URL": "https://doi.org/10.1103/physrevlett.116.219902"
+    }
+  },
+  "MI_benchmarks": {
+    "source": {
+      "title": "Measurement-dependence cost for Bell nonlocality: Causal versus retrocausal models",
+      "authors": "Michael J. W. Hall and Cyril Branciard",
+      "journal": "Physical Review A 102, 052228 (2020)",
+      "doi": "10.1103/PhysRevA.102.052228",
+      "arxiv": "2007.11903"
+    },
+    "CHSH_target": 2.8284271247461903,
+    "setting_prior": "Uniform p(x,y)=1/4",
+    "retrocausal": {
+      "formula": "2-h((4-S)/8)-((4+S)/8)*log2(3)",
+      "bits": 0.046273846853406964
+    },
+    "causal": {
+      "formula": "2-2*h(sqrt((4-S)/8)) for S<=S0",
+      "bits": 0.08016956065982606
+    },
+    "one_sided": {
+      "formula": "1-h(S/4)",
+      "bits": 0.12757066014353202
+    },
+    "superdeterministic": {
+      "formula": "H(X,Y)=2 bits for uniform four setting pairs",
+      "bits": 2.0
+    },
+    "zigzag": {
+      "equivalence": "I_Z(S)=I_C(S) under the paper's specified causal structure",
+      "bits": 0.08016956065982606
+    },
+    "p0": 0.21781170571980019,
+    "S0": 3.620464486811449,
+    "ASDE_previous_numerical_MI": 0.046273846924,
+    "ASDE_previous_MI_global_optimum_proven": false,
+    "interpretation": "The previous ASDE value is numerically close to the retrocausal benchmark. It is not a reproduction of the causal or superdeterministic optimum unless its joint distribution, causal graph, prior and optimisation constraints are identical."
+  },
+  "setting_prior_sensitivity": {
+    "model": "Explicit Hall-Branciard CHSH constructions",
+    "quantum_CHSH": 2.8284271247461903,
+    "unbiased_prior": {
+      "retrocausal_formula_bits": 0.046273846853406964,
+      "retrocausal_table_recomputed_bits": 0.046273846853407186,
+      "causal_formula_bits": 0.08016956065982606,
+      "causal_table_recomputed_bits": 0.08016956065982583,
+      "superdeterministic_formula_bits": 2.0,
+      "superdeterministic_table_recomputed_bits": 2.0
+    },
+    "biased_product_prior_sweep": [
+      {
+        "p_x0": 0.05,
+        "p_y0": 0.05,
+        "retrocausal_MI": 0.011811891635807203,
+        "causal_MI": 0.015349029436192652,
+        "superdeterministic_MI": 0.5727939142319123
+      },
+      {
+        "p_x0": 0.1,
+        "p_y0": 0.1,
+        "retrocausal_MI": 0.021132201152036956,
+        "causal_MI": 0.02903524295996629,
+        "superdeterministic_MI": 0.9379911871785624
+      },
+      {
+        "p_x0": 0.2,
+        "p_y0": 0.2,
+        "retrocausal_MI": 0.03401850089506908,
+        "causal_MI": 0.05148162056088168,
+        "superdeterministic_MI": 1.4438561897747246
+      },
+      {
+        "p_x0": 0.35,
+        "p_y0": 0.35,
+        "retrocausal_MI": 0.043653089742293094,
+        "causal_MI": 0.0730154618108898,
+        "superdeterministic_MI": 1.868136110750982
+      },
+      {
+        "p_x0": 0.5,
+        "p_y0": 0.5,
+        "retrocausal_MI": 0.046273846853407186,
+        "causal_MI": 0.08016956065982583,
+        "superdeterministic_MI": 2.0
+      },
+      {
+        "p_x0": 0.65,
+        "p_y0": 0.65,
+        "retrocausal_MI": 0.043653089742293094,
+        "causal_MI": 0.07301546181089025,
+        "superdeterministic_MI": 1.868136110750982
+      },
+      {
+        "p_x0": 0.8,
+        "p_y0": 0.8,
+        "retrocausal_MI": 0.03401850089506908,
+        "causal_MI": 0.05148162056088168,
+        "superdeterministic_MI": 1.4438561897747242
+      },
+      {
+        "p_x0": 0.9,
+        "p_y0": 0.9,
+        "retrocausal_MI": 0.021132201152037844,
+        "causal_MI": 0.029035242959965846,
+        "superdeterministic_MI": 0.9379911871785623
+      },
+      {
+        "p_x0": 0.95,
+        "p_y0": 0.95,
+        "retrocausal_MI": 0.011811891635806315,
+        "causal_MI": 0.015349029436192652,
+        "superdeterministic_MI": 0.5727939142319126
+      }
+    ],
+    "warning": "The sweep reweights the explicit model families. It is not a proof of the global minimum over all models for biased priors."
+  },
+  "scientific_conclusions": {
+    "finite_LP_optimum_matches_analytic_lower_bound": true,
+    "finite_and_continuous_optimum_values_match": "True",
+    "same_hidden_variable_model_proven": false,
+    "exact_rational_dual_certificate_produced": false,
+    "Hall_erratum_fully_incorporated": false,
+    "physical_mechanism_established": false
+  },
+  "open_questions": [
+    "Construct a measure-preserving relation between the finite strategy model and Hall's continuous S^2 construction, or prove that no such equivalence is implied by the matching optimum.",
+    "Inspect the full Hall 2016 erratum and compare its exact correction against the original equations used in this replication.",
+    "Develop a rigorous interval or exact algebraic proof for every numerical quadrature statement.",
+    "Extend the exact TV lower-bound certificate to non-CHSH scenarios.",
+    "Derive physical dynamics and independent falsifiable predictions rather than treating a correlation model as a mechanism."
+  ]
+}
