@@ -686,3 +686,48 @@ Report:
 research/phase5/reports/p5_4_hall_continuous_replication.json
 <!-- ASDE_HALL_REPLICATION_END -->
 
+
+<!-- ASDE_PHASE545_55_START -->
+## Phase 5.4.5 — Mathematical certification
+
+Updated: 2026-11-01T04:39:05.076953+00:00
+Run: run_64ca8ea8354347659fe78f63b8569a67
+
+- Hall CHSH measurement-dependence lower bound implemented.
+- Finite 16-strategy MD-TV LP rebuilt.
+- Analytical lower bound compared against feasible primal LP solution.
+- Finite LP TV: 0.1380711874576983
+- Hall continuous analytic TV: 0.1380711874576984
+- Analytical gap: 8.326672684688674e-17
+- Optimality certificate: True
+- Certificate type: analytical lower bound plus numerical primal witness.
+- Exact rational dual certificate: not produced.
+- Finite and continuous hidden-variable representations are not proven equivalent.
+- Hall erratum retrieval status: METADATA_ONLY_OR_FULL_TEXT_INACCESSIBLE
+- Retrocausal MI: 0.046273846853406964
+- Causal MI: 0.08016956065982606
+- One-sided MI: 0.12757066014353202
+- Superdeterministic MI for unbiased four-setting CHSH: 2 bits.
+
+## Phase 5.5 — Experimental data
+
+- NIST repository discovery performed.
+- Hensen/TU Delft DOI metadata discovery attempted.
+- Bounded file downloads and SHA-256 provenance recorded.
+- Downloaded files: 3
+- Event-level analyses: 0
+- Experimental status: SOURCE_DISCOVERY_AND_METADATA_ONLY
+- Hidden lambda is not directly observed.
+- Measurement dependence is not claimed to be empirically estimated.
+- Independent published statistic reproduction is not claimed.
+
+Reports:
+- https://github.com/Prashantkumariitd/ASDE/blob/main/research/phase5/reports/p5_4_5_mathematical_certification.json
+- https://github.com/Prashantkumariitd/ASDE/blob/main/research/phase5/reports/p5_5_dataset_discovery.json
+- https://github.com/Prashantkumariitd/ASDE/blob/main/research/phase5/reports/p5_5_experimental_review.json
+- https://github.com/Prashantkumariitd/ASDE/blob/main/research/phase5/reports/p5_4_5_5_decision_gate.json
+- https://github.com/Prashantkumariitd/ASDE/blob/main/research/phase5/data/dataset_source_manifest.json
+
+Physical mechanism established: NO.
+<!-- ASDE_PHASE545_55_END -->
+
