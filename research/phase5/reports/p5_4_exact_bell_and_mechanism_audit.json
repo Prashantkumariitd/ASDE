@@ -1,0 +1,305 @@
+{
+  "project": "ASDE",
+  "run_id": "run_64ca8ea8354347659fe78f63b8569a67",
+  "experiment_id": "p5_4_mechanism_and_exact_bell_audit_v1",
+  "created_at": "2026-11-01T04:22:00.585753+00:00",
+  "part_A_exact_Farkas_certificate": {
+    "exists": true,
+    "type": "Farkas infeasibility certificate",
+    "target": "Exact algebraic singlet probabilities at optimal CHSH geometry",
+    "matrix_entries": "Integers",
+    "certificate_coefficients": [
+      "1/1",
+      "-1/3",
+      "-1/3",
+      "1/1",
+      "1/1",
+      "-1/3",
+      "-1/3",
+      "1/1",
+      "1/1",
+      "-1/3",
+      "-1/3",
+      "1/1",
+      "-1/3",
+      "1/1",
+      "1/1",
+      "-1/3"
+    ],
+    "all_A_transpose_y_nonnegative": true,
+    "b_transpose_y": "4/3 - 4*sqrt(2)/3",
+    "b_transpose_y_negative": true,
+    "verification_arithmetic": "Exact SymPy rational/algebraic arithmetic",
+    "scope": "Proves infeasibility of a single setting-independent distribution over the specified 16 deterministic local strategies for this exact target. It is not an exact certificate for the minimum measurement-dependent TV objective."
+  },
+  "part_B_general_Bell_scenarios": [
+    {
+      "name": "CHSH_2x2_binary",
+      "settings_per_party": [
+        2,
+        2
+      ],
+      "outcomes_per_party": [
+        2,
+        2
+      ],
+      "deterministic_strategy_count": 16,
+      "constraint_rows": 16,
+      "known_local_vertex_membership": {
+        "local": true,
+        "solver_status": 0,
+        "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+        "equality_residual": 0.0
+      },
+      "exact_rational_vertex_normalisation": true,
+      "status": "COMPLETED"
+    },
+    {
+      "name": "Three_settings_A_two_B_binary",
+      "settings_per_party": [
+        3,
+        2
+      ],
+      "outcomes_per_party": [
+        2,
+        2
+      ],
+      "deterministic_strategy_count": 32,
+      "constraint_rows": 24,
+      "known_local_vertex_membership": {
+        "local": true,
+        "solver_status": 0,
+        "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+        "equality_residual": 0.0
+      },
+      "exact_rational_vertex_normalisation": true,
+      "status": "COMPLETED"
+    },
+    {
+      "name": "Two_settings_three_outcomes_A",
+      "settings_per_party": [
+        2,
+        2
+      ],
+      "outcomes_per_party": [
+        3,
+        2
+      ],
+      "deterministic_strategy_count": 36,
+      "constraint_rows": 24,
+      "known_local_vertex_membership": {
+        "local": true,
+        "solver_status": 0,
+        "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+        "equality_residual": 0.0
+      },
+      "exact_rational_vertex_normalisation": true,
+      "status": "COMPLETED"
+    },
+    {
+      "name": "Three_party_binary_settings_binary_outcomes",
+      "settings_per_party": [
+        2,
+        2,
+        2
+      ],
+      "outcomes_per_party": [
+        2,
+        2,
+        2
+      ],
+      "deterministic_strategy_count": 64,
+      "constraint_rows": 64,
+      "known_local_vertex_membership": {
+        "local": true,
+        "solver_status": 0,
+        "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+        "equality_residual": 0.0
+      },
+      "exact_rational_vertex_normalisation": true,
+      "status": "COMPLETED"
+    }
+  ],
+  "part_C_physical_mechanism_audit": {
+    "candidate_models": [
+      {
+        "id": "hall_2010",
+        "name": "Hall local deterministic measurement-dependent model",
+        "category": "Explicit correlation model",
+        "reference": {
+          "title": "Local Deterministic Model of Singlet State Correlations Based on Relaxing Measurement Independence",
+          "author": "Michael J. W. Hall",
+          "journal": "Physical Review Letters",
+          "year": 2010,
+          "volume": "105",
+          "article": "250404",
+          "doi": "10.1103/PhysRevLett.105.250404",
+          "url": "https://doi.org/10.1103/PhysRevLett.105.250404"
+        },
+        "reported_contribution": "An explicit local deterministic model reproducing singlet correlations by relaxing measurement independence.",
+        "what_it_is_not": "A complete spacetime dynamical theory of the origin of the setting-hidden-variable dependence.",
+        "required_next_work": [
+          "Reconstruct the published model equations from the primary paper.",
+          "Verify its conditional distributions and response functions.",
+          "Check normalisation and no-signalling.",
+          "Identify its causal interpretation and physical implementation.",
+          "Derive predictions beyond the correlations used to construct it."
+        ],
+        "status": "LITERATURE_MODEL_REQUIRES_EQUATION_LEVEL_REPLICATION"
+      },
+      {
+        "id": "palmer_invariant_set",
+        "name": "Invariant Set Theory",
+        "category": "Deterministic invariant-set proposal",
+        "reference": {
+          "title": "Invariant Set Theory: Violating Measurement Independence without Fine Tuning, Conspiracy, Constraints on Free Will or Retrocausality",
+          "author": "Tim N. Palmer",
+          "year": 2015,
+          "url": "https://arxiv.org/abs/1507.02117"
+        },
+        "reported_contribution": "Proposes deterministic dynamics restricted to a cosmological invariant set with non-standard state-space geometry.",
+        "what_it_is_not": "An established experimentally validated replacement for quantum theory.",
+        "required_next_work": [
+          "Specify the state space and invariant set constructively.",
+          "Specify the dynamics and invariant measure.",
+          "Derive allowed measurement settings and outcome probabilities.",
+          "Demonstrate Born-rule recovery.",
+          "Derive quantitative departures from standard quantum theory.",
+          "Assess computability, stability and empirical falsifiability."
+        ],
+        "status": "PHYSICAL_AND_MATHEMATICAL_COMPLETENESS_REQUIRES_AUDIT"
+      },
+      {
+        "id": "t_hooft_cai",
+        "name": "Cellular Automaton Interpretation",
+        "category": "Deterministic substrate proposal",
+        "reference": {
+          "title": "The Cellular Automaton Interpretation of Quantum Mechanics",
+          "author": "Gerard 't Hooft",
+          "year": 2016,
+          "doi": "10.1007/978-3-319-41285-6",
+          "url": "https://doi.org/10.1007/978-3-319-41285-6"
+        },
+        "reported_contribution": "Explores deterministic cellular-automaton-like underlying descriptions and the emergence of quantum formalism.",
+        "what_it_is_not": "A demonstrated complete local Bell-experiment mechanism with a verified setting-conditioned probability law.",
+        "required_next_work": [
+          "Specify microscopic degrees of freedom and update rules.",
+          "Define the relevant Bell source and detector subsystems.",
+          "Derive the effective quantum state and Born probabilities.",
+          "Derive measurement-setting dependence if invoked.",
+          "Check locality and relativistic compatibility.",
+          "Derive independently testable deviations or constraints."
+        ],
+        "status": "BELL_MECHANISM_REQUIRES_EXPLICIT_CONSTRUCTION"
+      },
+      {
+        "id": "hall_branciard_retrocausal",
+        "name": "Retrocausal measurement-dependence models",
+        "category": "Competing explanation \u2014 not superdeterminism",
+        "reference": {
+          "title": "Measurement-dependence cost for Bell nonlocality: causal vs retrocausal models",
+          "authors": "Michael J. W. Hall and Cyril Branciard",
+          "year": 2020,
+          "url": "https://arxiv.org/abs/2007.11903"
+        },
+        "reported_contribution": "Compares causal and retrocausal measurement-dependence simulations using information-theoretic costs.",
+        "what_it_is_not": "A past-common-cause superdeterministic mechanism.",
+        "required_next_work": [
+          "Keep temporal causal direction explicit.",
+          "Compare measurement-dependence costs under matched assumptions.",
+          "Identify operational predictions distinguishing causal classes."
+        ],
+        "status": "COMPETING_CAUSAL_CLASS"
+      },
+      {
+        "id": "hance_hossenfelder_palmer_supermeasured",
+        "name": "Supermeasured / invariant-set interpretation",
+        "category": "Alternative interpretation of statistical dependence",
+        "reference": {
+          "title": "Supermeasured: Violating Bell-Statistical Independence Without Violating Physical Statistical Independence",
+          "authors": "Jonte R. Hance, Sabine Hossenfelder and Tim N. Palmer",
+          "year": 2022,
+          "doi": "10.1007/s10701-022-00602-9",
+          "url": "https://doi.org/10.1007/s10701-022-00602-9"
+        },
+        "reported_contribution": "Argues that Bell statistical-independence violation need not be interpreted as ordinary physical setting-hidden-variable correlation in the proposed invariant-set framework.",
+        "what_it_is_not": "A settled interpretation or independent empirical confirmation.",
+        "required_next_work": [
+          "Formalise the distinction between Bell statistical independence and physical statistical independence.",
+          "Test the sampling assumptions.",
+          "Derive operationally distinguishable consequences.",
+          "Compare with conventional ontological-model definitions."
+        ],
+        "status": "INTERPRETATIONAL_CLAIM_REQUIRES_FORMAL_AND_EMPIRICAL_TEST"
+      }
+    ],
+    "acceptance_requirements": {
+      "microscopic_state_space_defined": false,
+      "dynamical_law_explicit": false,
+      "initial_or_boundary_conditions_defined": false,
+      "measurement_setting_generation_model": false,
+      "outcome_response_law_derived": false,
+      "joint_probability_distribution_derived": false,
+      "normalisation_and_positivity_proved": false,
+      "no_signalling_or_signalling_predictions_derived": false,
+      "causal_structure_explicit": false,
+      "relativistic_compatibility_assessed": false,
+      "quantum_predictions_recovered": false,
+      "new_testable_prediction_derived": false,
+      "independent_reproduction": false,
+      "empirical_comparison": false
+    },
+    "missing_requirements": [
+      "microscopic_state_space_defined",
+      "dynamical_law_explicit",
+      "initial_or_boundary_conditions_defined",
+      "measurement_setting_generation_model",
+      "outcome_response_law_derived",
+      "joint_probability_distribution_derived",
+      "normalisation_and_positivity_proved",
+      "no_signalling_or_signalling_predictions_derived",
+      "causal_structure_explicit",
+      "relativistic_compatibility_assessed",
+      "quantum_predictions_recovered",
+      "new_testable_prediction_derived",
+      "independent_reproduction",
+      "empirical_comparison"
+    ],
+    "status": "NO_PHYSICAL_MECHANISM_ESTABLISHED",
+    "reason": "The literature contains explicit measurement-dependent correlation models and broader deterministic proposals. However, the current ASDE project has not derived a complete microscopic dynamical model that generates the required measurement dependence and independently predicts observations.",
+    "research_decision": "Do not select a preferred physical mechanism based on conceptual appeal or LLM consensus. Replicate published equations first, then test whether they constitute a complete physical model."
+  },
+  "validation_checks": {
+    "exact_CHSH_target_constructed": true,
+    "exact_Farkas_certificate_verified": true,
+    "Farkas_dual_inequalities_nonnegative": true,
+    "Farkas_inner_product_strictly_negative": true,
+    "general_Bell_engine_CHSH": true,
+    "general_Bell_engine_3x2": true,
+    "general_Bell_engine_3outcome": true,
+    "general_Bell_engine_3party": true,
+    "all_candidate_sources_have_DOI_or_URL": true,
+    "retrocausal_class_separated": true,
+    "no_physical_mechanism_overclaimed": true
+  },
+  "validation_passed": 11,
+  "validation_total": 11,
+  "scientific_status": {
+    "exact_MI_infeasibility_certificate": "VERIFIED",
+    "exact_MD_minimum_TV_certificate": "NOT_PRODUCED",
+    "arbitrary_finite_Bell_scenario_engine": "IMPLEMENTED_WITH_RESOURCE_LIMITS",
+    "physical_measurement_dependence_mechanism": "NOT_ESTABLISHED",
+    "phase54_decision": "LITERATURE_AND_FORMAL_REQUIREMENTS_AUDITED; PHYSICAL_MECHANISM_REMAINS_OPEN"
+  },
+  "limitations": [
+    "The exact Farkas certificate concerns measurement-independent local-polytope infeasibility for the specified CHSH target.",
+    "It is not an exact certificate for the minimum measurement-dependent maximum-pairwise-TV optimisation.",
+    "The arbitrary Bell engine enumerates deterministic local strategies and is exponential in the number of parties, settings and outcomes.",
+    "The general engine currently tests known local vertices; it does not automatically derive all facets of arbitrary Bell polytopes.",
+    "The physical mechanism assessment is literature-grounded but is not a new physical derivation.",
+    "No primary paper full-text equation replication was performed by this cell.",
+    "No raw Bell experiment dataset was analysed.",
+    "No CMB or early-universe model was derived.",
+    "No claim of proving superdeterminism is made."
+  ]
+}
