@@ -1,0 +1,190 @@
+{
+  "assumptions": [
+    "Two parties, two measurement settings per party, binary outcomes.",
+    "Deterministic local response functions A_x(lambda), B_y(lambda).",
+    "The MI model uses one common setting-independent distribution.",
+    "The MD model permits a separate distribution for each setting pair.",
+    "The MD objective minimises maximum pairwise total variation distance across the four conditional distributions.",
+    "The TV metric is representation-specific and is not asserted to be a universal measure of physical measurement dependence."
+  ],
+  "environment": {
+    "execution_mode": "numerical_only_no_llm_calls",
+    "experiment_id": "p5_1_chsh_mi_vs_md_v1",
+    "numpy": "2.1.3",
+    "phase": "phase5.1",
+    "platform": "Linux-6.6.159+-x86_64-with-glibc2.39",
+    "provider_calls": 0,
+    "python": "3.13.18",
+    "run_id": "run_64ca8ea8354347659fe78f63b8569a67",
+    "scipy": "1.16.3",
+    "solver": "scipy.optimize.linprog(method='highs')",
+    "timestamp_utc": "2026-11-01T04:01:21.980938+00:00"
+  },
+  "experiment_id": "p5_1_chsh_mi_vs_md_v1",
+  "interpretation_limits": [
+    "MI infeasibility is a result for this specified CHSH target and deterministic local strategy representation.",
+    "MD feasibility demonstrates mathematical representability with setting-conditioned hidden-variable distributions.",
+    "The optimised TV value depends on the chosen hidden-variable representation and metric.",
+    "This experiment does not establish a physical mechanism for measurement dependence or superdeterminism.",
+    "This experiment does not establish that the model describes nature."
+  ],
+  "local_deterministic_baseline": {
+    "all_chsh_values": [
+      2,
+      2,
+      -2,
+      -2,
+      2,
+      -2,
+      2,
+      -2,
+      -2,
+      2,
+      -2,
+      2,
+      -2,
+      -2,
+      2,
+      2
+    ],
+    "maximum_absolute_chsh": 2,
+    "number_of_strategies": 16
+  },
+  "measurement_dependent_lp": {
+    "conditional_distributions": {
+      "00": [
+        0.0,
+        0.0,
+        0.14225889843221223,
+        0.1422588984322123,
+        0.0,
+        0.0732233047033631,
+        -0.0,
+        0.14225889843221234,
+        0.14225889843221226,
+        -0.0,
+        0.0732233047033631,
+        0.0,
+        0.14225889843221232,
+        0.1422588984322123,
+        0.0,
+        0.0
+      ],
+      "01": [
+        0.0,
+        -0.0,
+        0.0732233047033631,
+        0.1422588984322123,
+        0.0,
+        0.14225889843221223,
+        0.0,
+        0.14225889843221234,
+        0.14225889843221226,
+        0.0,
+        0.1422588984322123,
+        0.0,
+        0.14225889843221232,
+        0.0732233047033631,
+        -0.0,
+        0.0
+      ],
+      "10": [
+        0.0,
+        0.0,
+        0.1422588984322123,
+        0.1422588984322123,
+        -0.0,
+        0.14225889843221223,
+        0.0,
+        0.07322330470336313,
+        0.07322330470336313,
+        0.0,
+        0.1422588984322123,
+        -0.0,
+        0.14225889843221232,
+        0.14225889843221234,
+        0.0,
+        0.0
+      ],
+      "11": [
+        -0.0,
+        0.0,
+        0.1422588984322123,
+        0.07322330470336313,
+        0.0,
+        0.14225889843221223,
+        0.0,
+        0.14225889843221234,
+        0.14225889843221226,
+        0.0,
+        0.14225889843221232,
+        0.0,
+        0.07322330470336313,
+        0.1422588984322123,
+        0.0,
+        -0.0
+      ]
+    },
+    "feasible": true,
+    "minimum_maximum_pairwise_tv": 0.1380711874576983,
+    "number_of_equalities": 20,
+    "number_of_inequalities": 198,
+    "number_of_variables": 161,
+    "reconstructed_chsh": -2.82842712474619,
+    "reconstructed_correlations": {
+      "00": -0.7071067811865475,
+      "01": -0.7071067811865475,
+      "10": -0.7071067811865475,
+      "11": 0.7071067811865475
+    },
+    "solver_message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+    "solver_status": 0
+  },
+  "measurement_independent_lp": {
+    "feasible": false,
+    "number_of_equalities": 17,
+    "number_of_variables": 16,
+    "solver_message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+    "solver_status": 2,
+    "solver_success": false
+  },
+  "phase": "phase5.1",
+  "quantum_baseline": {
+    "absolute_chsh": 2.8284271247461903,
+    "chsh": -2.8284271247461903,
+    "correlations": {
+      "00": -0.7071067811865476,
+      "01": -0.7071067811865476,
+      "10": -0.7071067811865475,
+      "11": 0.7071067811865475
+    },
+    "tsirelson_value": 2.8284271247461903
+  },
+  "run_id": "run_64ca8ea8354347659fe78f63b8569a67",
+  "scientific_question": "Can a local deterministic hidden-variable model reproduce the chosen singlet CHSH distributions under measurement independence, and what is the minimum maximum pairwise TV distance in the specified measurement-dependent representation?",
+  "settings_degrees": {
+    "a0": 0,
+    "a1": 90,
+    "b0": 45,
+    "b1": -45
+  },
+  "validation": {
+    "all_checks_pass": true,
+    "checks": {
+      "deterministic_local_chsh_bound": true,
+      "md_chsh_matches_quantum": true,
+      "md_distributions_nonnegative": true,
+      "md_distributions_normalised": true,
+      "md_lp_feasible": true,
+      "md_reconstruction_no_signalling": true,
+      "md_reproduces_quantum_joint_distributions": true,
+      "md_tv_in_unit_interval": true,
+      "mi_cannot_reproduce_quantum_target": true,
+      "quantum_chsh_tsirelson_value": true,
+      "quantum_probabilities_nonnegative": true,
+      "quantum_probabilities_normalised": true
+    },
+    "max_joint_probability_error": 5.551115123125783e-17,
+    "max_no_signalling_error": 0.0
+  }
+}
