@@ -1,106 +1,13 @@
 {
-  "checks_passed": 24,
-  "checks_total": 24,
-  "experiment_id": "p5_2_mathematical_audit_v1",
-  "experiments": {
-    "phase5_1": "p5_1_chsh_mi_vs_md_v1",
-    "phase5_2": "p5_2_mathematical_audit_v1"
-  },
-  "latest_subphase": "5.2",
-  "next_gate": "Physical mechanism specification before CMB calculations",
-  "phase": "5",
+  "phase": "5.5",
   "run_id": "run_64ca8ea8354347659fe78f63b8569a67",
-  "status": "completed",
-  "updated_at_utc": "2026-11-01T04:04:17.309304+00:00",
-  "phase5_3_to_5_7": {
-    "run_id": "run_64ca8ea8354347659fe78f63b8569a67",
-    "updated_at": "2026-11-01T04:08:26.800695+00:00",
-    "execution": "single_colab_cell",
-    "llm_api_calls": 0,
-    "phases": {
-      "5.3": "completed",
-      "5.4": "BLOCKED_NO_SPECIFIED_PHYSICAL_MECHANISM",
-      "5.5": "EVIDENCE_INVENTORY_ONLY",
-      "5.6": "BLOCKED_NO_DERIVED_COSMOLOGICAL_PREDICTION",
-      "5.7": "AUDIT_FAILURE_REQUIRES_INVESTIGATION"
-    },
-    "reports": {
-      "5.3": "https://github.com/Prashantkumariitd/ASDE/blob/main/research/phase5/reports/p5_3_robustness_representation.json",
-      "5.4": "https://github.com/Prashantkumariitd/ASDE/blob/main/research/phase5/reports/p5_4_physical_mechanism_gate.json",
-      "5.5": "https://github.com/Prashantkumariitd/ASDE/blob/main/research/phase5/reports/p5_5_experimental_evidence_gate.json",
-      "5.6": "https://github.com/Prashantkumariitd/ASDE/blob/main/research/phase5/reports/p5_6_cosmology_gate.json",
-      "5.7": "https://github.com/Prashantkumariitd/ASDE/blob/main/research/phase5/reports/p5_7_independent_verification.json",
-      "combined": "https://github.com/Prashantkumariitd/ASDE/blob/main/research/phase5/reports/phase5_3_to_5_7_combined.json",
-      "angle_sweep": "https://github.com/Prashantkumariitd/ASDE/blob/main/research/phase5/computations/p5_3_angle_sensitivity.json"
-    },
-    "scientific_warning": "Physical mechanism, experimental validation and cosmological predictions remain unestablished."
-  },
-  "phase5_3": {
-    "run_id": "run_64ca8ea8354347659fe78f63b8569a67",
-    "experiment_id": "p5_3_comprehensive_robustness_v1",
-    "status": "completed_with_explicit_limitations",
-    "updated_at": "2026-11-01T04:17:32.903952+00:00",
-    "report": "https://github.com/Prashantkumariitd/ASDE/blob/main/research/phase5/reports/p5_3_comprehensive_robustness.json",
-    "computations": "https://github.com/Prashantkumariitd/ASDE/blob/main/research/phase5/computations/p5_3_robustness_computations.json",
-    "validation_passed": 26,
-    "validation_total": 26,
-    "llm_api_calls": 0
-  },
-  "phase5_4": {
-    "run_id": "run_64ca8ea8354347659fe78f63b8569a67",
-    "experiment_id": "p5_4_mechanism_and_exact_bell_audit_v1",
-    "updated_at": "2026-11-01T04:22:00.585753+00:00",
-    "status": "LITERATURE_AND_MATHEMATICAL_AUDIT_COMPLETED_MECHANISM_OPEN",
-    "exact_MI_Farkas_certificate": true,
-    "exact_MD_TV_certificate": false,
-    "general_finite_Bell_engine": true,
-    "physical_mechanism_established": false,
-    "reports": {
-      "main": "https://github.com/Prashantkumariitd/ASDE/blob/main/research/phase5/reports/p5_4_exact_bell_and_mechanism_audit.json",
-      "farkas": "https://github.com/Prashantkumariitd/ASDE/blob/main/research/phase5/computations/p5_4_exact_farkas_certificate.json",
-      "scenarios": "https://github.com/Prashantkumariitd/ASDE/blob/main/research/phase5/computations/p5_4_general_bell_scenario_tests.json",
-      "mechanisms": "https://github.com/Prashantkumariitd/ASDE/blob/main/research/phase5/research/p5_4_mechanism_candidate_register.json"
-    },
-    "llm_api_calls": 0
-  },
-  "phase5_4_hall_replication": {
-    "run_id": "run_64ca8ea8354347659fe78f63b8569a67",
-    "experiment_id": "p5_4_hall_continuous_replication_v1",
-    "updated_at": "2026-11-01T04:31:15.668537+00:00",
-    "status": "CORRECTED_NUMERICAL_REPLICATION",
-    "report": "https://github.com/Prashantkumariitd/ASDE/blob/main/research/phase5/reports/p5_4_hall_continuous_replication.json",
-    "corrected_sphere_integration": "https://github.com/Prashantkumariitd/ASDE/blob/main/research/phase5/computations/p5_4_hall_sphere_integration.json",
-    "integration_bug_corrected": true,
-    "erratum_full_text_inspected": false,
-    "global_M_supremum_proven": false,
-    "physical_mechanism_established": false,
-    "llm_api_calls": 0
-  },
-  "phase5_4_5": {
-    "run_id": "run_64ca8ea8354347659fe78f63b8569a67",
-    "status": "CERTIFIED_ANALYTICAL_BOUND_AND_FEASIBLE_PRIMAL",
-    "report": "https://github.com/Prashantkumariitd/ASDE/blob/main/research/phase5/reports/p5_4_5_mathematical_certification.json",
-    "finite_LP_optimality_certified": true,
-    "finite_and_continuous_optimum_values_match": "True",
-    "exact_rational_dual_certificate": false,
-    "erratum_full_text_retrieved": false
-  },
-  "phase5_5": {
-    "run_id": "run_64ca8ea8354347659fe78f63b8569a67",
-    "status": "SOURCE_DISCOVERY_AND_METADATA_ONLY",
-    "dataset_report": "https://github.com/Prashantkumariitd/ASDE/blob/main/research/phase5/reports/p5_5_dataset_discovery.json",
-    "experimental_review": "https://github.com/Prashantkumariitd/ASDE/blob/main/research/phase5/reports/p5_5_experimental_review.json",
-    "dataset_manifest": "https://github.com/Prashantkumariitd/ASDE/blob/main/research/phase5/data/dataset_source_manifest.json",
-    "downloaded_files": 3,
-    "event_level_analyses": 0,
-    "independent_published_statistic_reproduced": false,
-    "measurement_dependence_empirically_estimated": false
-  },
-  "phase5_4_5_5_decision_gate": {
-    "status": "EXECUTED_WITH_EXPLICIT_OPEN_ITEMS",
-    "report": "https://github.com/Prashantkumariitd/ASDE/blob/main/research/phase5/reports/p5_4_5_5_decision_gate.json",
-    "validation_passed": 13,
-    "validation_total": 13,
-    "physical_mechanism_established": false
-  }
+  "last_updated_utc": "2026-11-01T05:03:21.683255+00:00",
+  "phase_5_5_6": "completed_synthetic_model_comparison",
+  "phase_5_5_7": "completed_experiment_design_audit",
+  "cosmology_gate": "hall_model_blocked",
+  "reports": [
+    "research/phase5/reports/p5_5_6_statistical_model_comparison.json",
+    "research/phase5/reports/p5_5_7_discriminating_experiments.json",
+    "research/phase5/reports/p5_5_final_audit.json"
+  ]
 }
