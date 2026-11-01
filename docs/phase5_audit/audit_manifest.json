@@ -1,0 +1,29 @@
+{
+  "project": "ASDE",
+  "workstream": "Phase 5 \u2014 CHSH / Measurement Dependence",
+  "audit_status": "FROZEN \u2014 v1.0 (Qualified)",
+  "mathematical_result": {
+    "tv_exact": "(sqrt(2)-1)/3",
+    "tv_decimal": 0.1380711874576983,
+    "hall_metric_convention": "M=2*TV",
+    "m_min_decimal": 0.2761423749153966,
+    "hall_singlet_model_value_reported": 0.276434
+  },
+  "exact_verification": {
+    "classification": "PASS",
+    "arithmetic": "Q(sqrt(2))",
+    "checks_passed": 6,
+    "checks_total": 6,
+    "artifact": "artifacts/phase5/asde_exact_minimum_tv_primal_v1.json",
+    "sha256": "5bad3e5ba8f21c1e05079ab833a5a2945002b332772036539842c82b635f97dc"
+  },
+  "historical_recovery": {
+    "status": "NOT RECOVERABLE FROM AVAILABLE REPOSITORY ARTIFACTS"
+  },
+  "limitations": [
+    "Exact algebraic verification is independent reconstruction, not historical source recovery.",
+    "Hall inequality applicability and metric convention are model-dependent.",
+    "The mathematical result does not establish a physical measurement-dependence mechanism."
+  ],
+  "archived_at_utc": "2026-11-01T19:08:24.404689+00:00"
+}

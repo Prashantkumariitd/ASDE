@@ -1,0 +1,56 @@
+{
+  "audit": "EXACT_MINIMUM_TV_ALGEBRAIC_PRIMAL_VERIFICATION",
+  "classification": "PASS",
+  "number_field": "Q(sqrt(2))",
+  "exact_probability_values": {
+    "zero": "0",
+    "small": "(2-sqrt(2))/8",
+    "large": "(2+sqrt(2))/24"
+  },
+  "exact_row_sums": [
+    "1",
+    "1",
+    "1",
+    "1"
+  ],
+  "reconstruction_error_count": 16,
+  "reconstruction_errors": [
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0"
+  ],
+  "six_pairwise_TV": [
+    "-1/3 + sqrt(2)/3",
+    "-1/3 + sqrt(2)/3",
+    "-1/3 + sqrt(2)/3",
+    "-1/3 + sqrt(2)/3",
+    "-1/3 + sqrt(2)/3",
+    "-1/3 + sqrt(2)/3"
+  ],
+  "exact_primal_TV": "-1/3 + sqrt(2)/3",
+  "exact_Hall_lower_bound": "-1/3 + sqrt(2)/3",
+  "checks": {
+    "exact_nonnegative_probabilities": true,
+    "exact_four_normalisations": true,
+    "exact_16_target_probabilities": true,
+    "exact_six_pairwise_TV_values": true,
+    "exact_Hall_lower_bound": true,
+    "primal_attains_analytical_lower_bound": true
+  },
+  "passed": 6,
+  "total": 6,
+  "scope": "Exact algebraic primal feasibility and attainment of the stated Hall lower bound for the declared deterministic CHSH model. Historical LP implementation and exact historical row ordering remain unrecovered."
+}
