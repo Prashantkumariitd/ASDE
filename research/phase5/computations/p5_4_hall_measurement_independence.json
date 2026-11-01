@@ -1,0 +1,17 @@
+{
+  "analytic_M": "-2/3 + 2*sqrt(2)/3",
+  "analytic_M_decimal": 0.2761423749153967,
+  "analytic_TV": "-1/3 + sqrt(2)/3",
+  "analytic_TV_decimal": 0.13807118745769836,
+  "analytic_F": "4/3 - sqrt(2)/3",
+  "analytic_F_decimal": 0.8619288125423017,
+  "numerical_M_at_paper_configuration": 0.27613816131714664,
+  "nested_sector_grid_max": 0.27614237491539656,
+  "nested_sector_grid_argmax": [
+    2.356194490192345,
+    2.356194490192345
+  ],
+  "grid_size": 25,
+  "grid_sobol_points": 16384,
+  "global_supremum_numerically_proven": false
+}
