@@ -1,0 +1,43 @@
+{
+  "phase": 4,
+  "run_id": "run_64ca8ea8354347659fe78f63b8569a67",
+  "work_item_id": "p4_02_chsh_baseline",
+  "team": "mathematics",
+  "title": "CHSH baseline derivation and assumption audit",
+  "objective": "\nDerive the CHSH bound for local deterministic hidden-variable models\nwith measurement independence. Also explain the standard stochastic\nfactorisable derivation. Identify exactly where locality/factorisation,\nmeasurement independence and outcome bounds enter. Compare with the\nquantum Tsirelson bound. Do not conflate Bell locality with every\npossible use of the word locality.\n",
+  "provider": "openrouter",
+  "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+  "completed_at": "2026-11-01T03:43:34.953537+00:00",
+  "phase3_context_ids": [
+    "p3_mathematical_physics_06",
+    "p3_quantum_foundations_01",
+    "p3_quantum_foundations_02"
+  ],
+  "deterministic_computations": {
+    "symbolic": {
+      "CHSH_expression": "A0*B0 + A0*B1 + A1*B0 - A1*B1",
+      "factorised_expression": "A0*B0 + A0*B1 + A1*B0 - A1*B1",
+      "deterministic_assignments_checked": 16,
+      "maximum_absolute_local_deterministic_CHSH": 2,
+      "local_bound_check": true
+    },
+    "quantum_singlet_baseline": {
+      "correlations": {
+        "E00": -0.7071067811865475,
+        "E01": -0.7071067811865475,
+        "E10": -0.7071067811865475,
+        "E11": 0.7071067811865475
+      },
+      "CHSH_value": -2.82842712474619,
+      "Tsirelson_value": 2.8284271247461903,
+      "numerical_check_passed": true
+    },
+    "probability_constraints": {
+      "normalisation": "Eq(p00 + p01 + p10 + p11, 1)",
+      "nonnegative_probabilities": true
+    },
+    "interpretation": "The local deterministic CHSH bound is exhaustively checked for the 16 deterministic assignments. The quantum singlet value is a numerical baseline. These checks do not establish a superdeterministic model or a new physical result."
+  },
+  "research_output": "# ASDE PHASE 4 — FORMAL MATHEMATICAL AND PHYSICAL MODEL DEVELOPMENT\n## WORK PACKAGE: CHSH baseline derivation and assumption audit\n\n---\n\n### 1. Executive Result\n\n**Deterministic local hidden-variable models with measurement independence** satisfy the CHSH inequality  \n\\[\n|S| \\le 2, \\qquad S := \\langle A_0 B_0 \\rangle + \\langle A_0 B_1 \\rangle + \\langle A_1 B_0 \\rangle - \\langle A_1 B_1 \\rangle .\n\\]\n\n**Stochastic factorisable (Bell-local) models with measurement independence** satisfy the same bound \\(|S| \\le 2\\).\n\nThe **quantum Tsirelson bound** for the singlet state with optimal settings is  \n\\[\n|S| \\le 2\\sqrt{2} \\approx 2.828 .\n\\]\n\n**Assumption audit** — the bound \\(|S| \\le 2\\) requires three logically independent ingredients:\n1. **Outcome boundedness**: \\(A_x, B_y \\in \\{-1,+1\\}\\) (or \\(|E_A|,|E_B| \\le 1\\) in the stochastic case).\n2. **Bell locality (factorisation)**: \\(P(a,b|x,y,\\lambda) = P(a|x,\\lambda)P(b|y,\\lambda)\\) — no outcome dependence on the distant setting given \\(\\lambda\\).\n3. **Measurement independence**: \\(\\rho(\\lambda|x,y) = \\rho(\\lambda)\\) — the hidden-variable distribution is independent of the settings.\n\nViolating any one of these three assumptions can allow \\(|S| > 2\\) up to the algebraic maximum 4. Quantum mechanics violates the conjunction of (2) and (3) while respecting no-signalling at the observable level.\n\n---\n\n### 2. Definitions and Notation\n\n| Symbol | Meaning | Domain |\n|--------|---------|--------|\n| \\(x, y\\) | Measurement settings for Alice and Bob | \\(x, y \\in \\{0,1\\}\\) |\n| \\(a, b\\) | Measurement outcomes | \\(a, b \\in \\{-1,+1\\}\\) |\n| \\(\\lambda\\) | Hidden variable (complete specification of the physical state) | \\(\\lambda \\in \\Lambda\\) (measurable space) |\n| \\(\\rho(\\lambda)\\) | Probability density/mass of \\(\\lambda\\) | \\(\\rho(\\lambda) \\ge 0,\\ \\int_\\Lambda \\rho(\\lambda)\\,d\\lambda = 1\\) |\n| \\(A_x(\\lambda), B_y(\\lambda)\\) | Deterministic outcome functions | \\(\\{-1,+1\\}\\) |\n| \\(P(a|x,\\lambda), P(b|y,\\lambda)\\) | Stochastic response functions | \\([0,1]\\), \\(\\sum_a P(a|x,\\lambda)=1\\) |\n| \\(E_A(x,\\lambda) := \\sum_a a\\,P(a|x,\\lambda)\\) | Local expectation for Alice | \\([-1,1]\\) |\n| \\(E_B(y,\\lambda) := \\sum_b b\\,P(b|y,\\lambda)\\) | Local expectation for Bob | \\([-1,1]\\) |\n| \\(E(x,y) := \\langle A_x B_y \\rangle\\) | Observable correlation | \\([-1,1]\\) |\n| \\(S\\) | CHSH parameter | \\([-4,4]\\) algebraically |\n\n**Observable correlations** are obtained by averaging over \\(\\lambda\\):\n\\[\nE(x,y) = \\int_\\Lambda \\rho(\\lambda|x,y)\\, E_A(x,\\lambda)\\, E_B(y,\\lambda)\\, d\\lambda .\n\\]\n\n---\n\n### 3. Explicit Assumptions Ledger\n\n| # | Assumption | Formal Statement | Role in Derivation |\n|---|------------|------------------|-------------------|\n| **A1** | **Outcome boundedness** (deterministic) | \\(A_x(\\lambda), B_y(\\lambda) \\in \\{-1,+1\\}\\) | Limits the algebraic value of the CHSH combination for each \\(\\lambda\\) to \\(\\pm 2\\). |\n| **A1'** | **Outcome boundedness** (stochastic) | \\(|E_A(x,\\lambda)| \\le 1,\\ |E_B(y,\\lambda)| \\le 1\\) | Same limiting role via convexity. |\n| **A2** | **Bell locality (factorisation)** | \\(P(a,b|x,y,\\lambda) = P(a|x,\\lambda)P(b|y,\\lambda)\\) | Allows the correlation to factorise as \\(E(x,y) = \\int \\rho(\\lambda|x,y) E_A(x,\\lambda)E_B(y,\\lambda)\\). Without this, the CHSH expression does not decompose into a product of local expectations. |\n| **A3** | **Measurement independence** | \\(\\rho(\\lambda|x,y) = \\rho(\\lambda)\\) | Permits pulling \\(\\rho(\\lambda)\\) out of the setting-dependent sum, so the same \\(\\lambda\\)-distribution weights all four correlators. Without this, the four terms in \\(S\\) are averaged with *different* distributions \\(\\rho(\\lambda|x,y)\\), and the algebraic \\(\\pm ",
+  "epistemic_warning": "LLM-generated mathematical research analysis. Not a proof or independent replication unless explicitly established by a separate reproducible trail."
+}
