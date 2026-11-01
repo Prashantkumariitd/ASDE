@@ -1,0 +1,44 @@
+{
+  "phase": 4,
+  "run_id": "run_64ca8ea8354347659fe78f63b8569a67",
+  "work_item_id": "p4_06_adversarial_review",
+  "team": "falsification",
+  "title": "Independent mathematical challenge and counterexample search",
+  "objective": "\nIndependently challenge the Phase 4 definitions and derivations.\nLook for hidden assumptions, invalid implications, counterexamples,\nnormalisation errors, positivity violations, notation changes,\nincorrect claims about locality, and confusion between correlation\nand causation. Reconstruct the key CHSH result from definitions\nrather than trusting another agent's prose. State what remains\nunproven. Do not mark work independently reproduced merely because\nyou agree with it.\n",
+  "provider": "openrouter",
+  "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+  "completed_at": "2026-11-01T03:48:07.040271+00:00",
+  "phase3_context_ids": [
+    "p3_mathematical_physics_06",
+    "p3_quantum_foundations_01",
+    "p3_quantum_foundations_02",
+    "p3_scientific_computing_08"
+  ],
+  "deterministic_computations": {
+    "symbolic": {
+      "CHSH_expression": "A0*B0 + A0*B1 + A1*B0 - A1*B1",
+      "factorised_expression": "A0*B0 + A0*B1 + A1*B0 - A1*B1",
+      "deterministic_assignments_checked": 16,
+      "maximum_absolute_local_deterministic_CHSH": 2,
+      "local_bound_check": true
+    },
+    "quantum_singlet_baseline": {
+      "correlations": {
+        "E00": -0.7071067811865475,
+        "E01": -0.7071067811865475,
+        "E10": -0.7071067811865475,
+        "E11": 0.7071067811865475
+      },
+      "CHSH_value": -2.82842712474619,
+      "Tsirelson_value": 2.8284271247461903,
+      "numerical_check_passed": true
+    },
+    "probability_constraints": {
+      "normalisation": "Eq(p00 + p01 + p10 + p11, 1)",
+      "nonnegative_probabilities": true
+    },
+    "interpretation": "The local deterministic CHSH bound is exhaustively checked for the 16 deterministic assignments. The quantum singlet value is a numerical baseline. These checks do not establish a superdeterministic model or a new physical result."
+  },
+  "research_output": "We are the falsification specialist team. We need to independently challenge the Phase 4 definitions and derivations. However, the user has provided a \"COMPUTATIONALLY GENERATED BASELINE\" and \"PREVIOUS PHASE RESEARCH CONTEXT\". The task is to produce a report following the REQUIRED OUTPUT STRUCTURE.\n\nWe must not assume superdeterminism is true. We must distinguish definitions, assumptions, derivations, conjectures. We must not cite Phase 3 LLM reports as independent scientific evidence. We must not call an expression a proof unless every logical step is shown. We must state whether a result is standard, independently derived here, reproduced from a source, or merely proposed. We must not conflate measurement dependence with causal influence, etc. We must explicitly compare with standard quantum mechanics. If a bound cannot be derived confidently, say so and identify the exact missing derivation or primary source. Never upgrade a result to independently reproduced based on agreement between LLM agents.\n\nWe have a baseline that includes:\n- symbolic: CHSH expression, factorised expression, deterministic assignments checked (16), maximum absolute local deterministic CHSH = 2, local bound check true.\n- quantum_singlet_baseline: correlations for singlet state with specific angles? The values given: E00 = -0.707..., E01 = -0.707..., E10 = -0.707..., E11 = 0.707..., CHSH_value = -2.828..., Tsirelson_value = 2.828..., numerical_check_passed true.\n- probability_constraints: normalisation equation, nonnegative probabilities true.\n- interpretation: local deterministic CHSH bound exhaustively checked for 16 deterministic assignments. Quantum singlet value is a numerical baseline. These checks do not establish a superdeterministic model or a new physical result.\n\nWe also have previous phase research context: three work items (p3_mathematical_physics_06, p3_quantum_foundations_01, p3_quantum_foundations_02, p3_scientific_computing_08). They discuss measurement dependence, information-theoretic bounds, etc. But note: the first one says \"The supplied literature corpus contains no peer-reviewed or pre-print material that discusses measurement-dependence or information-theoretic bounds in the context of mathematical physics.\" So the derivations there are conditional.\n\nOur job: Independently challenge the Phase 4 definitions and derivations. But what are the Phase 4 definitions and derivations? The user hasn't provided a specific Phase 4 document. They provided a baseline and previous phase context. Perhaps the Phase 4 is the baseline itself? Or maybe the baseline is the output of Phase 4? The instruction says: \"You are working as the falsification specialist team. WORK PACKAGE: Independent mathematical challenge and counterexample search OBJECTIVE: Independently challenge the Phase 4 definitions and derivations.\"\n\nWe need to produce a report that challenges the Phase 4 definitions and derivations. Since we don't have a specific Phase 4 document, we must assume that the \"COMPUTATIONALLY GENERATED BASELINE\" is the Phase 4 output? Or perhaps the Phase 4 is the previous phase research context? The user says \"PREVIOUS PHASE RESEARCH CONTEXT:\" and then lists work items. That might be Phase 3. Phase 4 might be the baseline? The baseline is labeled \"COMPUTATIONALLY GENERATED BASELINE\". It might be the result of Phase 4 computations.\n\nWe need to challenge that baseline. But the baseline seems to be just a computational check of CHSH local bound and quantum singlet value. It says: \"The local deterministic CHSH bound is exhaustively checked for the 16 deterministic assignments. The quantum singlet value is a numerical baseline. These checks do not establish a superdeterministic model or a new physical result.\"\n\nWe need to look for hidden assumptions, invalid implications, counterexamples, normalisation errors, positivity violations, notation changes, incorrect claims about locality, confusion between correlation and causation. Reconstruct the key CHSH result from definitions rather than trusting another agent's prose. State what remains unproven.\n\nWe must produce the report with the required structure.\n\nLet's start by reconstructing the CHSH result from definitions.\n\nWe'll define the CHSH scenario: two parties, Alice and Bob, each choose from two measurement settings (0 or 1), each measurement yields outcome ±1. The CHSH expression is S = E(A0B0) + E(A0B1) + E(A1B0) - E(A1B1). For local deterministic models, each outcome is a function of the hidden variable λ and the setting. There are 2^2 = 4 possible deterministic assignments for Alice (A0, A1) each ±1, similarly for Bob. Total 16 combinations. For each, compute S. The maximum absolute value is 2. That's the local bound.\n\nThe baseline says they checked 16 deterministic assignments and got maximum absolute local deterministic CHSH = 2. That is correct.\n\nThe quantum singlet baseline: they give correlations for specific measurement angles? The values: E00 = -0.707..., E01 = -0.707..., E10 = -0.707..., E11 = 0.707... That corresponds to the singlet state with measurements at angles: Alice settings 0 and 1, Bob settings 0 and 1. Typically, for CHSH, the optimal angles are: Alice: 0°, 45°; Bob: 22.5°, 67.5° (or similar). The correlations for singlet are -cos(θ_a - θ_b). If we set Alice 0: 0°, Alice 1: 45°; Bob 0: 22.5°, Bob 1: 67.5°, then differences: 0-22.5 = -22.5°, cos = 0.9239? Wait, -cos(22.5°) = -0.9239. Not -0.707. The given values are all ±0.7071 which is cos(45°). So maybe they used angles: Alice 0: 0°, Alice 1: 90°; Bob 0: 45°, Bob 1: 135°? Let's check: E00 = -cos(0-45) = -cos(-45) = -0.7071. E01 = -cos(0-135) = -cos(-135) = -(-0.7071) = 0.7071? But they have E01 = -0.7071. So not that.\n\nMaybe they used: Alice 0: 0°, Alice 1: 45°; Bob 0: 45°, Bob 1: 0°? Then E00 = -cos(-45) = -0.7071; E01 = -cos(0) = -1; not matching.\n\nAlternatively, they might have used the standard CHSH angles: Alice: 0, π/2; Bob: π/4, 3π/4. Then E00 = -cos(π/4) = -0.7071; E01 = -cos(3π/4) = 0.7071; E10 = -cos(π/4) = -0.7071; E11 = -cos(π/4) = -0.7071? Wait, Alice 1 is π/2, Bob 1 is 3π/4, difference = π/4, cos = 0.7071, so E11 = -0.7071. But they have E11 = 0.7071. So not that.\n\nMaybe they used a different convention: CHSH = E00 + E01 + E10 - E11. For singlet, if we choose angles: Alice 0: 0°, Alice 1: 90°; Bob 0: 45°, Bob 1: 135°. Then E00 = -cos(",
+  "epistemic_warning": "LLM-generated mathematical research analysis. Not a proof or independent replication unless explicitly established by a separate reproducible trail."
+}
