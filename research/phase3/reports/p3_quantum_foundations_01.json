@@ -1,0 +1,82 @@
+{
+  "phase": 3,
+  "run_id": "run_64ca8ea8354347659fe78f63b8569a67",
+  "work_item_id": "p3_quantum_foundations_01",
+  "domain": "quantum_foundations",
+  "title": "Formalise measurement independence",
+  "objective": "Define explicit probability spaces and distinguish measurement dependence from locality and determinism.",
+  "provider": "groq",
+  "model": "openai/gpt-oss-120b",
+  "source_ids": [
+    "src_fc7b5f855dc7b3840b74e697",
+    "src_8208191a890f2d27bb66ff8f",
+    "src_a4d6656f6ac13f965a5d9758",
+    "src_b9e693d51b501d254a413ef9",
+    "src_b0108dff3eadf11940a72de0"
+  ],
+  "literature_records": [
+    {
+      "source_id": "src_fc7b5f855dc7b3840b74e697",
+      "title": "Quantum Mechanics and Global Determinism",
+      "authors": "Emily Adlam",
+      "doi": "https://doi.org/10.12743/quanta.v7i1.76",
+      "url": "https://doi.org/10.12743/quanta.v7i1.76",
+      "year": 2018,
+      "source_type": "article",
+      "verification_status": "doi_crossref_verified",
+      "abstract": "It is proposed that certain features of quantum mechanics may be perspectival effects, which arise because experiments performed on locally accessible variables can only uncover a certain subset of the correlations exhibited by an underlying deterministic theory. This hypothesis is used to derive the no-signaling principle, thus resolving an open question regarding the apparently fine-tuned nature of quantum correlations. Some potential objections to this approach are then discussed and answered. Quanta 2018; 7: 40–53.",
+      "openalex_id": "https://openalex.org/W2883881102"
+    },
+    {
+      "source_id": "src_8208191a890f2d27bb66ff8f",
+      "title": "Unifying hidden-variable problems from quantum mechanics by logics of dependence and independence",
+      "authors": "Rafael Albert, Erich Grädel",
+      "doi": "https://doi.org/10.1016/j.apal.2022.103088",
+      "url": "https://doi.org/10.1016/j.apal.2022.103088",
+      "year": 2022,
+      "source_type": "article",
+      "verification_status": "doi_crossref_verified",
+      "abstract": "",
+      "openalex_id": "https://openalex.org/W3131502779"
+    },
+    {
+      "source_id": "src_a4d6656f6ac13f965a5d9758",
+      "title": "The pursuit of locality in quantum mechanics",
+      "authors": "Malcolm Hodkin",
+      "doi": null,
+      "url": "http://hdl.handle.net/10023/8786",
+      "year": 1990,
+      "source_type": "dissertation",
+      "verification_status": "no_doi",
+      "abstract": "The rampant success of quantum theory is the result of applications of the 'new' quantum \\nmechanics of Schrödinger and Heisenberg (1926-7), the Feynman-Schwinger-Tomonaga Quantum \\nElectrodynamics (1946-51), the electro-weak theory of Salaam, Weinberg, and Glashow (1967-9), \\nand Quantum Chromodynamics (1973-); in fact, this success of `the' quantum theory has depended \\non a continuous stream of brilliant and quite disparate mathematical formulations. In this carefully \\nconcealed ferment there lie plenty of unresolved difficulties, simply because in churning out fabulously \\naccurate calculational tools there has been no sensible explanation of all that is going on. It is even \\nargued that such an understanding is nothing to do with physics. A long-standing and famous \\nillustration of this is the paradoxical thought-experiment of Einstein, Podolsky and Rosen (1935). \\nFundamental to all quantum theories, and also their paradoxes, is the location of sub-microscopic \\nobjects; or, rather, that the specification of such a location is fraught with mathematical inconsistency. \\nThis project encompasses a detailed, critical survey of the tangled history of Position \\nwithin quantum theories. The first step is to show that, contrary to appearances, canonical quantum \\nmechanics has only a vague notion of locality. After analysing a number of previous attempts at a \\n`relativistic quantum mechanics', two lines of thought are considered in detail. The first is the work \\nof Wan and students, which is shown to be no real improvement on the usual `nonrelativistic' theory. \\nThe second is based on an idea of Dirac's - using backwards-in-time light-cones as the hypersurface \\nin space-time. There remain considerable difficulties in the way of producing a consistent scheme here. \\nTo keep things nicely stirred up, the author then proposes his own approach - an adaptation \\nof Feynman's QED propagators. \\nThis new approach is distinguished from Feynman's since the propagator or Green's function \\nis not obtained by Feynman's rule. The type of equation solved is also different: instead of an \\ninitial-value problem, a solution that obeys a time-symmetric causality criterion is found for an \\ninhomogeneous partial differential equation with homogeneous boundary conditions. \\nTo make the consideration of locality more precise, some results of Fourier transform theory are \\npresented in a form that is directly applicable. \\nSomewhat away from the main thrust of the thesis, there is also an attempt to explain the \\nmanner in which quantum effects disappear as the number of particles increases in such things as \\nexperimental realisations of the EPR and de Broglie thought experiments.",
+      "openalex_id": "https://openalex.org/W2365501596"
+    },
+    {
+      "source_id": "src_b9e693d51b501d254a413ef9",
+      "title": "The two Bellʼs theorems of John Bell",
+      "authors": "Howard M. Wiseman",
+      "doi": "https://doi.org/10.1088/1751-8113/47/42/424001",
+      "url": "https://doi.org/10.1088/1751-8113/47/42/424001",
+      "year": 2014,
+      "source_type": "article",
+      "verification_status": "doi_crossref_verified",
+      "abstract": "Many of the heated arguments about the meaning of 'Bellʼs theorem' arise because this phrase can refer to two different theorems that John Bell proved, the first in 1964 and the second in 1976.His 1964 theorem is the incompatibility of quantum phenomena with the dual assumptions of locality and determinism.His 1976 theorem is the incompatibility of quantum phenomena with the unitary property of local causality.This is contrary to Bellʼs own later assertions, that his 1964 theorem began with that single, and indivisible, assumption of local causality (even if not by that name).While there are other forms of Bellʼs theorems-which I present to explain the relation between Jarrett-completeness, 'fragile locality', and EPR-completeness-I maintain that Bellʼs two versions are the essential ones.Although the two Bellʼs theorems are logically equivalent, their assumptions are not, and the different versions of the theorem suggest quite different conclusions, which are embraced by different communities.For realists, the notion of local causality, ruled out by Bellʼs 1976 theorem, is motivated implicitly by Reichenbachʼs principle of common cause and explicitly by the principle of relativistic causality, and it is the latter which must be forgone.Operationalists pay no heed to Reichenbachʼs principle, but wish to keep the principle of relativistic causality, which, bolstered by an implicit 'principle of agent-causation', implies their notion of locality.Thus for operationalists, Bellʼs theorem is the 1964 one, and implies that it is determinism that must be forgone.I discuss why the two 'camps' are drawn to these different conclusions, and what can be done to increase mutual understanding.",
+      "openalex_id": "https://openalex.org/W2164442125"
+    },
+    {
+      "source_id": "src_b0108dff3eadf11940a72de0",
+      "title": "21 Arguments Against Propensity Analyses of Probability",
+      "authors": "Antony Eagle",
+      "doi": null,
+      "url": "https://philsci-archive.pitt.edu/1319/1/21propensity.pdf",
+      "year": 2003,
+      "source_type": "preprint",
+      "verification_status": "no_doi",
+      "abstract": "Several arguments against various propensity analyses of probability are proposed. Though not all of the arguments are of equal worth, their diversity and number make the prospect of a successful propensity analysis of probability seem unlikely.",
+      "openalex_id": "https://openalex.org/W1871180954"
+    }
+  ],
+  "completed_at": "2026-11-01T03:13:41.654173+00:00",
+  "research_report": "**A. Executive Finding**  \nA rigorous, source‑supported formalisation of *measurement‑independence* (MI) can be built on standard probability‑theoretic foundations.  MI is the statement  \n\n\\[\nP_{\\Lambda|A,B}(\\lambda|a,b)=P_{\\Lambda}(\\lambda)\\qquad\\forall a\\in\\mathcal A,\\;b\\in\\mathcal B,\n\\]\n\ni.e. the hidden‑variable distribution is statistically independent of the freely chosen measurement settings.  Within this framework MI is **distinct** from (i) *locality* (the factorisation of joint outcome probabilities given λ) and (ii) *determinism* (outcome functions being fixed by λ).  Violations of MI (often called “measurement‑dependence” or “setting‑dependence”) do **not** automatically imply signalling or a breakdown of relativistic causality, but they do relax the constraints that lead to Bell‑type inequalities.  The formalism clarifies the logical space explored in the literature (e.g. Wiseman 2014 [src_b9e693d51b]), and connects to recent logical treatments of dependence (Albert & Grädel 2022 [src_8208191a890f2d27bb66ff8f]).\n\n---\n\n**B. Established Background**  \n\n| Concept | Standard definition | Source‑supported claim |\n|---------|--------------------|------------------------|\n| **Hidden‑variable space** \\(\\Lambda\\) | Measurable space \\((\\Lambda,\\mathcal F_\\Lambda)\\) equipped with a probability measure \\(P_\\Lambda\\). | General practice in Bell‑type analyses (Wiseman 2014 [src_b9e693d51b]). |\n| **Measurement‑setting spaces** \\(\\mathcal A,\\mathcal B\\) | Finite or continuous sets of possible settings for Alice and Bob, each equipped with a σ‑algebra and a distribution \\(P_{A},P_{B}\\). | Implicit in all Bell‑type discussions (Wiseman 2014 [src_b9e693d51b]). |\n| **Outcome spaces** \\(\\mathcal X,\\mathcal Y\\) | Sets of possible outcomes (e.g. \\(\\{+1,-1\\}\\)). | Same as above. |\n| **Joint distribution** | \\(P_{\\Lambda,A,B,X,Y}(\\lambda,a,b,x,y)\\) defined on the product space \\(\\Lambda\\times\\mathcal A\\times\\mathcal B\\times\\mathcal X\\times\\mathcal Y\\). | Standard in hidden‑variable models (Wiseman 2014 [src_b9e693d51b]). |\n| **Measurement Independence (MI)** | \\(P_{\\Lambda|A,B}(\\lambda|a,b)=P_\\Lambda(\\lambda)\\). | Explicitly identified as a “free‑choice” or “no‑conspiracy” assumption in Bell‑type theorems (Wiseman 2014 [src_b9e693d51b]). |\n| **Locality (Factorisation)** | \\(P_{X,Y|\\Lambda,A,B}(x,y|\\lambda,a,b)=P_{X|\\Lambda,A}(x|\\lambda,a)\\,P_{Y|\\Lambda,B}(y|\\lambda,b)\\). | Wiseman’s “local causality” (1976 theorem) (src_b9e693d51b). |\n| **Determinism** | Existence of functions \\(f_A,f_B\\) such that \\(X=f_A(\\lambda,a)\\), \\(Y=f_B(\\lambda,b)\\) almost surely. | Bell 1964 theorem (Wiseman 2014 [src_b9e693d51b]). |\n| **Jarrett decomposition** (parameter vs outcome dependence) | Parameter independence = locality; outcome independence = deterministic‑or‑stochastic correlation given λ. | Discussed by Wiseman (2014) (src_b9e693d51b). |\n| **Logics of dependence/independence** | Formal language where statements like “\\(A\\) is independent of \\(B\\) given \\(C\\)” are primitive. | Albert & Grädel (2022) develop such a logic (src_8208191a890f2d27bb66ff8f). |\n| **Global determinism & perspectival effects** | Proposes that apparent MI violations could be artefacts of limited access to underlying deterministic variables. | Adlam 2018 argues that a deterministic underlying theory can reproduce no‑signalling while appearing to require MI (src_fc7b5f855dc7b3840b74e697). |\n\n---\n\n**C. Literature and source_ids**  \n\n| source_id | Main relevance to MI formalisation |\n|-----------|------------------------------------|\n| src_fc7b5f855dc7b3840b74e697 | Discusses deterministic “perspectival” models that respect no‑signalling; useful for contrasting MI with global determinism. |\n| src_8208191a890f2d27bb66ff8f | Provides a logical framework for dependence/independence; can be mapped onto probabilistic MI. |\n| src_a4d6656f6ac13f965a5d9758 | Historical discussion of locality; clarifies that “locality” is not synonymous with MI. |\n| src_b9e693d51b501d254a413ef9 | Explicitly separates the two Bell theorems, highlighting MI as a separate assumption in the 1964 version. |\n| src_b0108dff3eadf11940a72de0 | Critiques propensity interpretations of probability, reminding us that MI must be expressed in a frequentist or operationalist framework rather than a “propensity” one. |\n\n---\n\n**D. Mathematical Framework and Assumptions**  \n\n1. **Probability spaces**  \n\n   - Hidden‑variable space: \\((\\Lambda,\\mathcal F_\\Lambda,P_\\Lambda)\\).  \n   - Setting spaces: \\((\\mathcal A,\\mathcal F_A,P_A)\\), \\((\\mathcal B,\\mathcal F_B,P_B)\\).  \n   - Outcome spaces: \\((\\mathcal X,\\mathcal F_X)\\), \\((\\mathcal Y,\\mathcal F_Y)\\).  \n\n   All spaces are assumed **standard Borel** (i.e. measurable subsets of \\(\\mathbb R^n\\)) to guarantee the existence of regular conditional probabilities.\n\n2. **Joint distribution**  \n\n   \\[\n   P(\\lambda,a,b,x,y)=P_\\Lambda(\\lambda)\\,P_{A,B}(a,b)\\,P_{X,Y|\\Lambda,A,B}(x,y|\\lambda,a,b).\n   \\]\n\n   *Assumption D‑1*: The experimenter’s choice of settings is modelled by a distribution \\(P_{A,B}\\) that may be correlated with λ **only if** MI is violated.\n\n3. **Measurement Independence (MI)**  \n\n   \\[\n   \\",
+  "integrity_note": "Recovered from Neon checkpoint. LLM research synthesis; not independent scientific verification."
+}
