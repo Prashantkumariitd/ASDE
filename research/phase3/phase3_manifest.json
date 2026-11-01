@@ -1,17 +1,7 @@
 {
-  "project": "ASDE",
   "phase": 3,
-  "phase_name": "Domain Knowledge and Scientific Execution",
   "run_id": "run_64ca8ea8354347659fe78f63b8569a67",
-  "created_at": "2026-11-01T03:03:01.627693+00:00",
-  "provider_policy": {
-    "primary": "groq",
-    "primary_model": "openai/gpt-oss-120b",
-    "fallback": "openrouter",
-    "fallback_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
-    "fallback_condition": "HTTP 400 only",
-    "no_silent_downgrade": true
-  },
+  "created_at": "2026-11-01T03:12:50.415104+00:00",
   "domains": [
     "quantum_foundations",
     "cmb_cosmology",
@@ -29,14 +19,10 @@
     "astropy": "7.2.3",
     "qutip": "5.3.1"
   },
-  "work_items": 10,
-  "scientific_principles": [
-    "No fabricated citations",
-    "Every literature claim requires source provenance",
-    "LLM agreement is not scientific evidence",
-    "All equations must state assumptions and conventions",
-    "Numerical experiments must be reproducible",
-    "Uncertainty and counterevidence must be reported",
-    "No claim of proof without a valid derivation"
-  ]
+  "provider_policy": {
+    "primary": "openai/gpt-oss-120b",
+    "fallback": "nvidia/nemotron-3-ultra-550b-a55b:free",
+    "fallback_only_on_http_400": true
+  },
+  "work_items": 10
 }
