@@ -1,0 +1,31 @@
+{
+  "phase": "5.6",
+  "experiment_id": "p5_6_cosmology_derivation_gate_v1",
+  "created_at": "2026-11-01T04:08:26.800695+00:00",
+  "run_id": "run_64ca8ea8354347659fe78f63b8569a67",
+  "status": "BLOCKED_NO_DERIVED_COSMOLOGICAL_PREDICTION",
+  "requirements": {
+    "specified_physical_mechanism": false,
+    "coupling_to_primordial_perturbations": false,
+    "background_cosmological_dynamics": false,
+    "perturbation_evolution_equations": false,
+    "initial_conditions": false,
+    "primordial_power_spectrum_derivation": false,
+    "transfer_function_connection": false,
+    "distinctive_CMB_observable": false,
+    "comparison_with_LCDM": false
+  },
+  "missing_requirements": [
+    "specified_physical_mechanism",
+    "coupling_to_primordial_perturbations",
+    "background_cosmological_dynamics",
+    "perturbation_evolution_equations",
+    "initial_conditions",
+    "primordial_power_spectrum_derivation",
+    "transfer_function_connection",
+    "distinctive_CMB_observable",
+    "comparison_with_LCDM"
+  ],
+  "simulation_run": false,
+  "decision": "No CAMB, CLASS, CMB map, or early-universe simulation is run. Without a derived physical coupling and primordial prediction, such a simulation would not test the proposed framework."
+}
