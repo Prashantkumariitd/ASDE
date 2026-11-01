@@ -548,3 +548,33 @@ Next:
 3. Test alternative hidden-variable representations and setting priors.
 4. Develop a physical dynamical mechanism before attempting CMB predictions.
 <!-- ASDE_PHASE5_STATUS_END -->
+
+
+<!-- ASDE_PHASE5_3_5_7_START -->
+## Phase 5.3–5.7 checkpoint
+
+Updated: 2026-11-01T04:08:26.800695+00:00
+Run: run_64ca8ea8354347659fe78f63b8569a67
+
+- Phase 5.3: Robustness and representation audit executed.
+- Phase 5.4: Physical mechanism gate blocked; no specified mechanism.
+- Phase 5.5: Experimental evidence inventory only; no raw Bell dataset reanalysis.
+- Phase 5.6: CMB/early-universe gate blocked; no derived cosmological prediction.
+- Phase 5.7: Independent numerical formulation and adversarial checks executed.
+- LLM/API inference calls: 0.
+- Primary LP and independently ordered LP compared.
+- MI results are numerical SLSQP results, not global optimality proofs.
+- No claim of proving superdeterminism.
+
+Scientific status:
+The tested finite local measurement-dependent representation reproduces the selected singlet CHSH target. This does not establish a physical mechanism or empirical evidence for superdeterminism.
+
+Reports:
+- research/phase5/reports/p5_3_robustness_representation.json
+- research/phase5/reports/p5_4_physical_mechanism_gate.json
+- research/phase5/reports/p5_5_experimental_evidence_gate.json
+- research/phase5/reports/p5_6_cosmology_gate.json
+- research/phase5/reports/p5_7_independent_verification.json
+- research/phase5/reports/phase5_3_to_5_7_combined.json
+<!-- ASDE_PHASE5_3_5_7_END -->
+
