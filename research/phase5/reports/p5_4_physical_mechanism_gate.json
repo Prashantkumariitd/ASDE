@@ -1,0 +1,36 @@
+{
+  "phase": "5.4",
+  "experiment_id": "p5_4_physical_mechanism_gate_v1",
+  "created_at": "2026-11-01T04:08:26.800695+00:00",
+  "run_id": "run_64ca8ea8354347659fe78f63b8569a67",
+  "status": "BLOCKED_NO_SPECIFIED_PHYSICAL_MECHANISM",
+  "requirements": {
+    "explicit_dynamical_law": false,
+    "defined_hidden_variable_state_space": false,
+    "measurement_setting_generation_model": false,
+    "causal_or_spacetime_structure": false,
+    "normalised_joint_probability_model": false,
+    "recovery_of_quantum_marginals": false,
+    "no_signalling_under_dynamics": false,
+    "independent_physical_parameters": false,
+    "distinctive_testable_prediction": false,
+    "independent_empirical_support": false
+  },
+  "missing_requirements": [
+    "explicit_dynamical_law",
+    "defined_hidden_variable_state_space",
+    "measurement_setting_generation_model",
+    "causal_or_spacetime_structure",
+    "normalised_joint_probability_model",
+    "recovery_of_quantum_marginals",
+    "no_signalling_under_dynamics",
+    "independent_physical_parameters",
+    "distinctive_testable_prediction",
+    "independent_empirical_support"
+  ],
+  "mathematical_result_reused": {
+    "measurement_dependent_representation_tv": 0.0,
+    "quantum_chsh": -2.82842712474619
+  },
+  "decision": "Do not interpret setting-conditioned distributions as a physical mechanism. No dynamical law, causal structure, or physical parameter set has been specified. No mechanism simulation is scientifically justified at this stage."
+}
