@@ -578,3 +578,45 @@ Reports:
 - research/phase5/reports/phase5_3_to_5_7_combined.json
 <!-- ASDE_PHASE5_3_5_7_END -->
 
+
+<!-- ASDE_PHASE5_3_START -->
+## Phase 5.3 — Comprehensive mathematical robustness audit
+
+Updated: 2026-11-01T04:17:32.903952+00:00
+Run: run_64ca8ea8354347659fe78f63b8569a67
+Experiment: p5_3_comprehensive_robustness_v1
+
+Status: COMPLETED_WITH_EXPLICIT_LIMITATIONS
+
+Work performed:
+- Finite 2x2 binary deterministic local response model.
+- Stochastic local response decomposition into deterministic tables.
+- Measurement-independent feasibility test.
+- Maximum pairwise total variation LP.
+- Prior-weighted average pairwise TV LP.
+- Mutual-information optimisation under five setting priors.
+- KL and Jensen-Shannon diagnostics.
+- Hidden-variable permutation and duplicate-label invariance.
+- Symmetric CHSH angle sweep.
+- Twenty exploratory random analyser geometries.
+- Local angle perturbations and solver tolerance tests.
+- Independently ordered LP formulation.
+- Symbolic CHSH factorisation and exhaustive local deterministic bound.
+
+Limitations:
+- SLSQP MI optimisation is not a global certificate.
+- The independent LP uses the same SciPy/HiGHS backend.
+- No exact rational/algebraic LP certificate.
+- No arbitrary Bell scenario classification.
+- No physical measurement-dependence mechanism.
+- No experimental Bell dataset reanalysis.
+- No derived CMB or early-universe prediction.
+- No claim of proving superdeterminism.
+
+Report:
+research/phase5/reports/p5_3_comprehensive_robustness.json
+
+Computations:
+research/phase5/computations/p5_3_robustness_computations.json
+<!-- ASDE_PHASE5_3_END -->
+
