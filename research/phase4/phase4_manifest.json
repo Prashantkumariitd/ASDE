@@ -1,0 +1,57 @@
+{
+  "phase": 4,
+  "name": "Formal Mathematical and Physical Model Development",
+  "run_id": "run_64ca8ea8354347659fe78f63b8569a67",
+  "updated_at": "2026-11-01T03:48:57.422308+00:00",
+  "status": "in_progress",
+  "work_packages": [
+    "p4_01_formal_foundations",
+    "p4_02_chsh_baseline",
+    "p4_03_measurement_dependence",
+    "p4_04_competing_models",
+    "p4_05_parameter_identification",
+    "p4_06_adversarial_review",
+    "p4_07_phase_synthesis"
+  ],
+  "scientific_libraries": {
+    "sympy": "1.14.0",
+    "numpy": "2.1.3"
+  },
+  "provider_policy": {
+    "primary": "openai/gpt-oss-120b",
+    "fallback": "nvidia/nemotron-3-ultra-550b-a55b:free",
+    "fallback_condition": "any Groq exception",
+    "if_both_fail": "checkpoint and pause"
+  },
+  "baseline_checks": {
+    "symbolic": {
+      "CHSH_expression": "A0*B0 + A0*B1 + A1*B0 - A1*B1",
+      "factorised_expression": "A0*B0 + A0*B1 + A1*B0 - A1*B1",
+      "deterministic_assignments_checked": 16,
+      "maximum_absolute_local_deterministic_CHSH": 2,
+      "local_bound_check": true
+    },
+    "quantum_singlet_baseline": {
+      "correlations": {
+        "E00": -0.7071067811865475,
+        "E01": -0.7071067811865475,
+        "E10": -0.7071067811865475,
+        "E11": 0.7071067811865475
+      },
+      "CHSH_value": -2.82842712474619,
+      "Tsirelson_value": 2.8284271247461903,
+      "numerical_check_passed": true
+    },
+    "probability_constraints": {
+      "normalisation": "Eq(p00 + p01 + p10 + p11, 1)",
+      "nonnegative_probabilities": true
+    },
+    "interpretation": "The local deterministic CHSH bound is exhaustively checked for the 16 deterministic assignments. The quantum singlet value is a numerical baseline. These checks do not establish a superdeterministic model or a new physical result."
+  },
+  "limitations": [
+    "CHSH finite deterministic assignment check is not a new theorem.",
+    "Quantum singlet value is a numerical baseline.",
+    "Measurement-dependent model classes remain to be specified and tested.",
+    "LLM research outputs are not independent mathematical proofs."
+  ]
+}
