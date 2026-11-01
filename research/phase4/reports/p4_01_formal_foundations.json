@@ -1,0 +1,43 @@
+{
+  "phase": 4,
+  "run_id": "run_64ca8ea8354347659fe78f63b8569a67",
+  "work_item_id": "p4_01_formal_foundations",
+  "team": "mathematics",
+  "title": "Formal foundations and assumptions ledger",
+  "objective": "\nDefine a precise probability-space framework for Bell experiments.\nSpecify hidden variable lambda, measurement settings x and y,\noutcomes A and B, joint and conditional distributions, measurement\nindependence, parameter independence, outcome independence,\nfactorisability and determinism. Explain which notions are logically\ndistinct. Define a common notation and an assumptions ledger.\nIdentify which assumptions are mathematical, operational or physical.\n",
+  "provider": "groq",
+  "model": "openai/gpt-oss-120b",
+  "completed_at": "2026-11-01T03:42:57.529109+00:00",
+  "phase3_context_ids": [
+    "p3_mathematical_physics_06",
+    "p3_quantum_foundations_01",
+    "p3_quantum_foundations_02"
+  ],
+  "deterministic_computations": {
+    "symbolic": {
+      "CHSH_expression": "A0*B0 + A0*B1 + A1*B0 - A1*B1",
+      "factorised_expression": "A0*B0 + A0*B1 + A1*B0 - A1*B1",
+      "deterministic_assignments_checked": 16,
+      "maximum_absolute_local_deterministic_CHSH": 2,
+      "local_bound_check": true
+    },
+    "quantum_singlet_baseline": {
+      "correlations": {
+        "E00": -0.7071067811865475,
+        "E01": -0.7071067811865475,
+        "E10": -0.7071067811865475,
+        "E11": 0.7071067811865475
+      },
+      "CHSH_value": -2.82842712474619,
+      "Tsirelson_value": 2.8284271247461903,
+      "numerical_check_passed": true
+    },
+    "probability_constraints": {
+      "normalisation": "Eq(p00 + p01 + p10 + p11, 1)",
+      "nonnegative_probabilities": true
+    },
+    "interpretation": "The local deterministic CHSH bound is exhaustively checked for the 16 deterministic assignments. The quantum singlet value is a numerical baseline. These checks do not establish a superdeterministic model or a new physical result."
+  },
+  "research_output": "**ASDE Phase 4 – Formal Foundations & Assumptions Ledger**  \n*Mathematics‑Specialist Team – Work Package : Formal foundations and assumptions ledger*  \n\n---\n\n## 1. Executive Result  \n\nA **complete, self‑contained probability‑space formalism** for the standard bipartite Bell (CHSH) scenario is presented.  All relevant notions – hidden variable λ, settings x,y, outcomes A,B, joint/conditional distributions, **measurement‑independence (MI)**, **parameter‑independence (PI)**, **outcome‑independence (OI)**, **factorisability**, and **determinism** – are defined with precise symbols, domains and logical relations.  \n\nThe ledger distinguishes three *levels* of assumptions  \n\n| Level | Content | Category (Mathematical / Operational / Physical) |\n|-------|---------|---------------------------------------------------|\n| **M‑1** | Existence of standard Borel probability spaces for λ, settings and outcomes; existence of regular conditional probabilities. | Mathematical |\n| **O‑1** | Experimenter’s ability to choose settings according to prescribed distributions *independently* of any hidden variable (the *free‑choice* or *measurement‑independence* premise). | Operational |\n| **P‑1** | No‑signalling at the observable level (marginals of A do not depend on y and vice‑versa). | Physical |\n| **P‑2** | Locality / *factorisability* of the response functions given λ (PI + OI). | Physical |\n| **P‑3** | Determinism (outcomes are functions of λ and the local setting). | Physical (optional – can be relaxed). |\n\nAll Bell‑type results that follow from the CHSH inequality are **derived** from the conjunction **M‑1 ∧ O‑1 ∧ P‑1 ∧ P‑2**.  Removing **O‑1** yields the *measurement‑dependence* (MD) family; removing **P‑2** yields the *no‑signalling* (NS) family; removing **P‑3** yields the stochastic‑local model.  \n\nThe table below (Section 3) records each assumption, its formal statement, and its classification.\n\n---\n\n## 2. Definitions & Notation  \n\n| Symbol | Meaning | Domain / σ‑algebra | Remarks |\n|--------|---------|--------------------|---------|\n| \\( \\Lambda \\) | Hidden‑variable space | Measurable space \\((\\Lambda,\\mathcal F_\\Lambda)\\) (standard Borel) | May be discrete or continuous. |\n| \\( \\lambda \\in \\Lambda \\) | Specific hidden‑variable value | – | Random variable with distribution \\(P_\\Lambda\\). |\n| \\( X \\) | Alice’s measurement setting | Finite set \\(\\mathcal X =\\{0,1\\}\\) (or any finite alphabet) with σ‑algebra \\(\\mathcal F_X =2^{\\mathcal X}\\). | Often denoted \\(x\\). |\n| \\( Y \\) | Bob’s measurement setting | Finite set \\(\\mathcal Y =\\{0,1\\}\\) with σ‑algebra \\(\\mathcal F_Y\\). | Denoted \\(y\\). |\n| \\( A \\) | Alice’s outcome | Finite set \\(\\mathcal A =\\{-1,+1\\}\\) with σ‑algebra \\(\\mathcal F_A\\). | Denoted \\(a\\). |\n| \\( B \\) | Bob’s outcome | Finite set \\(\\mathcal B =\\{-1,+1\\}\\) with σ‑algebra \\(\\mathcal F_B\\). | Denoted \\(b\\). |\n| \\(P_{X,Y}\\) | Distribution of the *chosen* settings | Probability mass function on \\(\\mathcal X\\times\\mathcal Y\\). | In the *free‑choice* case \\(P_{X,Y}=P_X P_Y\\). |\n| \\(P_\\Lambda\\) | Prior distribution of the hidden variable | Probability measure on \\((\\Lambda,\\mathcal F_\\Lambda)\\). |\n| \\(P_{A,B|X,Y,\\Lambda}\\) | **Response function** (conditional outcome law) | For each \\((x,y,\\lambda)\\) a probability distribution on \\(\\mathcal A\\times\\mathcal B\\). |\n| \\(P_{A|X,\\Lambda}\\), \\(P_{B|Y,\\Lambda}\\) | Local response marginals (used when factorisability holds). |\n| \\(P_{A,B|X,Y}\\) | Observable joint outcome distribution (obtained by marginalising over λ). |\n| \\(E_{xy}\\) | Correlator \\(\\displaystyle E_{xy}= \\sum_{a,b} a b \\, P_{A,B|X,Y}(a,b|x,y)\\). |\n| \\(S\\) | CHSH expression \\(\\displaystyle S = E_{00}+E_{01}+E_{10}-E_{11}\\). |\n| \\(I(XY:\\Lambda)\\) | Mutual information between settings and hidden variable (quantifies measurement‑dependence). |\n| \\(\\epsilon\\) | Total‑variation distance \\(\\displaystyle \\epsilon = \\frac12\\!\\sum_{x,y,\\lambda}\\!|P_{\\Lambda|X,Y}(\\lambda|x,y)-P_\\Lambda(\\lambda)|\\). |\n\nAll probabilities are **non‑negative** and **normalised** (see Section 5).\n\n---\n\n## 3. Explicit Assumptions Ledger  \n\n| # | Formal statement | Symbolic form | Category | Logical role |\n|---|------------------|---------------|----------|--------------|\n| **M‑1** | Existence of the product probability space \\((\\Lambda\\times\\mathcal X\\times\\mathcal Y\\times\\mathcal A\\times\\mathcal B,\\mathcal F, P)\\). | – | Mathematical | Basis for all subsequent definitions. |\n| **O‑1 (Measurement Independence, MI)** | Settings are statistically independent of λ. | \\(\\displaystyle P_{\\Lambda|X,Y}(\\lambda|x,y)=P_\\Lambda(\\lambda)\\quad\\forall x,y,\\lambda\\). | Operational | Needed for the standard Bell‑CHSH inequality. |\n| **P‑1 (No‑signalling, NS)** | Observable marginals do not depend on the distant setting. | \\(\\displaystyle \\sum_b P_{A,B|X,Y}(a,b|x,y)=P_{A|X}(a|x)\\;\\forall y\\) and \\(\\displaystyle \\sum_a P_{A,B|X,Y}(a,b|x,y)=P_{B|Y}(b|y)\\;\\forall x\\). | Physical | Guarantees compatibility with relativity. |\n| **P‑2 (Factorisability / Locality)** | Conditional on λ the joint response factorises. | \\(\\displaystyle P_{A,B|X,Y,\\Lambda}(a,b|x,y,\\lambda)=P_{A|X,\\Lambda}(a|x,\\lambda)\\,P_{B|Y,\\Lambda}(b|y",
+  "epistemic_warning": "LLM-generated mathematical research analysis. Not a proof or independent replication unless explicitly established by a separate reproducible trail."
+}
