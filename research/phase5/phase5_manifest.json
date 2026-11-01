@@ -75,5 +75,32 @@
     "global_M_supremum_proven": false,
     "physical_mechanism_established": false,
     "llm_api_calls": 0
+  },
+  "phase5_4_5": {
+    "run_id": "run_64ca8ea8354347659fe78f63b8569a67",
+    "status": "CERTIFIED_ANALYTICAL_BOUND_AND_FEASIBLE_PRIMAL",
+    "report": "https://github.com/Prashantkumariitd/ASDE/blob/main/research/phase5/reports/p5_4_5_mathematical_certification.json",
+    "finite_LP_optimality_certified": true,
+    "finite_and_continuous_optimum_values_match": "True",
+    "exact_rational_dual_certificate": false,
+    "erratum_full_text_retrieved": false
+  },
+  "phase5_5": {
+    "run_id": "run_64ca8ea8354347659fe78f63b8569a67",
+    "status": "SOURCE_DISCOVERY_AND_METADATA_ONLY",
+    "dataset_report": "https://github.com/Prashantkumariitd/ASDE/blob/main/research/phase5/reports/p5_5_dataset_discovery.json",
+    "experimental_review": "https://github.com/Prashantkumariitd/ASDE/blob/main/research/phase5/reports/p5_5_experimental_review.json",
+    "dataset_manifest": "https://github.com/Prashantkumariitd/ASDE/blob/main/research/phase5/data/dataset_source_manifest.json",
+    "downloaded_files": 3,
+    "event_level_analyses": 0,
+    "independent_published_statistic_reproduced": false,
+    "measurement_dependence_empirically_estimated": false
+  },
+  "phase5_4_5_5_decision_gate": {
+    "status": "EXECUTED_WITH_EXPLICIT_OPEN_ITEMS",
+    "report": "https://github.com/Prashantkumariitd/ASDE/blob/main/research/phase5/reports/p5_4_5_5_decision_gate.json",
+    "validation_passed": 13,
+    "validation_total": 13,
+    "physical_mechanism_established": false
   }
 }
