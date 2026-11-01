@@ -1,0 +1,475 @@
+{
+  "run_id": "run_64ca8ea8354347659fe78f63b8569a67",
+  "experiment_id": "p5_3_comprehensive_robustness_v1",
+  "angle_sweep": [
+    {
+      "theta_degrees": 0,
+      "chsh": -2.0,
+      "absolute_chsh": 2.0,
+      "md_feasible": true,
+      "minimum_max_pairwise_tv": 1.3877787807814457e-17
+    },
+    {
+      "theta_degrees": 5,
+      "chsh": -2.1667008816788074,
+      "absolute_chsh": 2.1667008816788074,
+      "md_feasible": true,
+      "minimum_max_pairwise_tv": 0.027783480279801355
+    },
+    {
+      "theta_degrees": 10,
+      "chsh": -2.3169118613582773,
+      "absolute_chsh": 2.3169118613582773,
+      "md_feasible": true,
+      "minimum_max_pairwise_tv": 0.052818643559713455
+    },
+    {
+      "theta_degrees": 15,
+      "chsh": -2.449489742783178,
+      "absolute_chsh": 2.449489742783178,
+      "md_feasible": true,
+      "minimum_max_pairwise_tv": 0.07491495713052979
+    },
+    {
+      "theta_degrees": 20,
+      "chsh": -2.5634255282231546,
+      "absolute_chsh": 2.5634255282231546,
+      "md_feasible": true,
+      "minimum_max_pairwise_tv": 0.09390425470385957
+    },
+    {
+      "theta_degrees": 25,
+      "chsh": -2.657852097554699,
+      "absolute_chsh": 2.657852097554699,
+      "md_feasible": true,
+      "minimum_max_pairwise_tv": 0.1096420162591175
+    },
+    {
+      "theta_degrees": 30,
+      "chsh": -2.7320508075688776,
+      "absolute_chsh": 2.7320508075688776,
+      "md_feasible": true,
+      "minimum_max_pairwise_tv": 0.12200846792814679
+    },
+    {
+      "theta_degrees": 35,
+      "chsh": -2.785456961280076,
+      "absolute_chsh": 2.785456961280076,
+      "md_feasible": true,
+      "minimum_max_pairwise_tv": 0.13090949354667963
+    },
+    {
+      "theta_degrees": 40,
+      "chsh": -2.8176641056110343,
+      "absolute_chsh": 2.8176641056110343,
+      "md_feasible": true,
+      "minimum_max_pairwise_tv": 0.13627735093517274
+    },
+    {
+      "theta_degrees": 45,
+      "chsh": -2.82842712474619,
+      "absolute_chsh": 2.82842712474619,
+      "md_feasible": true,
+      "minimum_max_pairwise_tv": 0.13807118745769859
+    },
+    {
+      "theta_degrees": 50,
+      "chsh": -2.8176641056110343,
+      "absolute_chsh": 2.8176641056110343,
+      "md_feasible": true,
+      "minimum_max_pairwise_tv": 0.13627735093517301
+    },
+    {
+      "theta_degrees": 55,
+      "chsh": -2.7854569612800755,
+      "absolute_chsh": 2.7854569612800755,
+      "md_feasible": true,
+      "minimum_max_pairwise_tv": 0.1309094935466797
+    },
+    {
+      "theta_degrees": 60,
+      "chsh": -2.7320508075688767,
+      "absolute_chsh": 2.7320508075688767,
+      "md_feasible": true,
+      "minimum_max_pairwise_tv": 0.12200846792814682
+    },
+    {
+      "theta_degrees": 65,
+      "chsh": -2.657852097554699,
+      "absolute_chsh": 2.657852097554699,
+      "md_feasible": true,
+      "minimum_max_pairwise_tv": 0.10964201625911651
+    },
+    {
+      "theta_degrees": 70,
+      "chsh": -2.5634255282231546,
+      "absolute_chsh": 2.5634255282231546,
+      "md_feasible": true,
+      "minimum_max_pairwise_tv": 0.09390425470385955
+    },
+    {
+      "theta_degrees": 75,
+      "chsh": -2.449489742783178,
+      "absolute_chsh": 2.449489742783178,
+      "md_feasible": true,
+      "minimum_max_pairwise_tv": 0.0749149571305304
+    },
+    {
+      "theta_degrees": 80,
+      "chsh": -2.3169118613582773,
+      "absolute_chsh": 2.3169118613582773,
+      "md_feasible": true,
+      "minimum_max_pairwise_tv": 0.052818643559712906
+    },
+    {
+      "theta_degrees": 85,
+      "chsh": -2.1667008816788074,
+      "absolute_chsh": 2.1667008816788074,
+      "md_feasible": true,
+      "minimum_max_pairwise_tv": 0.027783480279801258
+    },
+    {
+      "theta_degrees": 90,
+      "chsh": -2.0,
+      "absolute_chsh": 2.0,
+      "md_feasible": true,
+      "minimum_max_pairwise_tv": 1.3877787807814457e-17
+    }
+  ],
+  "random_geometry_sweep": [
+    {
+      "geometry_id": 0,
+      "a0_degrees": 106.48272900822876,
+      "a1_degrees": 64.44295796542056,
+      "b0_degrees": 87.10708311805375,
+      "b1_degrees": 177.58215189925383,
+      "chsh": -2.5830364868923397,
+      "absolute_chsh": 2.5830364868923397,
+      "mi_feasible": false,
+      "md_feasible": true,
+      "minimum_max_pairwise_tv": 0.09717274781539056
+    },
+    {
+      "geometry_id": 1,
+      "a0_degrees": 24.469405480200045,
+      "a1_degrees": 0.18787164181545135,
+      "b0_degrees": 93.29459138230341,
+      "b1_degrees": 47.79637100386296,
+      "chsh": -0.5510860694312965,
+      "absolute_chsh": 0.5510860694312965,
+      "mi_feasible": false,
+      "md_feasible": true,
+      "minimum_max_pairwise_tv": 0.0013105978783699446
+    },
+    {
+      "geometry_id": 2,
+      "a0_degrees": 77.86860270791625,
+      "a1_degrees": 78.09589174887913,
+      "b0_degrees": 44.97930010952391,
+      "b1_degrees": 54.16204715186152,
+      "chsh": -1.678883924527716,
+      "absolute_chsh": 1.678883924527716,
+      "mi_feasible": true,
+      "md_feasible": true,
+      "minimum_max_pairwise_tv": 5.551115123125783e-17
+    },
+    {
+      "geometry_id": 3,
+      "a0_degrees": 56.91908263682259,
+      "a1_degrees": 113.65393369454851,
+      "b0_degrees": 161.64337340997653,
+      "b1_degrees": 109.30178250478816,
+      "chsh": -0.02836745585769118,
+      "absolute_chsh": 0.02836745585769118,
+      "mi_feasible": false,
+      "md_feasible": true,
+      "minimum_max_pairwise_tv": 0.08848940025819316
+    },
+    {
+      "geometry_id": 4,
+      "a0_degrees": 145.814677792696,
+      "a1_degrees": 19.713119361848392,
+      "b0_degrees": 119.84062960664058,
+      "b1_degrees": 143.29774128861527,
+      "chsh": -2.275356361490972,
+      "absolute_chsh": 2.275356361490972,
+      "mi_feasible": false,
+      "md_feasible": true,
+      "minimum_max_pairwise_tv": 0.04589272691516233
+    },
+    {
+      "geometry_id": 5,
+      "a0_degrees": 110.73614265146469,
+      "a1_degrees": 129.65749356021698,
+      "b0_degrees": 91.04534008745878,
+      "b1_degrees": 33.298061576373236,
+      "chsh": -2.051172595027571,
+      "absolute_chsh": 2.051172595027571,
+      "mi_feasible": false,
+      "md_feasible": true,
+      "minimum_max_pairwise_tv": 0.00852876583792856
+    },
+    {
+      "geometry_id": 6,
+      "a0_degrees": 131.80277235979045,
+      "a1_degrees": 82.35864666990187,
+      "b0_degrees": 148.6467249050375,
+      "b1_degrees": 69.70827951021448,
+      "chsh": -0.8515259250586003,
+      "absolute_chsh": 0.8515259250586003,
+      "mi_feasible": true,
+      "md_feasible": true,
+      "minimum_max_pairwise_tv": 1.249000902703301e-16
+    },
+    {
+      "geometry_id": 7,
+      "a0_degrees": 153.86776982038333,
+      "a1_degrees": 55.59734547292526,
+      "b0_degrees": 99.08893411263975,
+      "b1_degrees": 74.59992377245631,
+      "chsh": -0.5429236336802816,
+      "absolute_chsh": 0.5429236336802816,
+      "mi_feasible": false,
+      "md_feasible": true,
+      "minimum_max_pairwise_tv": 0.0102492400297155
+    },
+    {
+      "geometry_id": 8,
+      "a0_degrees": 13.806388664226,
+      "a1_degrees": 100.31686727728578,
+      "b0_degrees": 9.30188184281631,
+      "b1_degrees": 81.86282092027726,
+      "chsh": -0.4043126079278676,
+      "absolute_chsh": 0.4043126079278676,
+      "mi_feasible": false,
+      "md_feasible": true,
+      "minimum_max_pairwise_tv": 0.0561493523605705
+    },
+    {
+      "geometry_id": 9,
+      "a0_degrees": 65.40728824437822,
+      "a1_degrees": 172.6409687881908,
+      "b0_degrees": 36.303563352585556,
+      "b1_degrees": 169.04565566556954,
+      "chsh": 1.0835022129093819,
+      "absolute_chsh": 1.0835022129093819,
+      "mi_feasible": false,
+      "md_feasible": true,
+      "minimum_max_pairwise_tv": 0.05989959600191459
+    },
+    {
+      "geometry_id": 10,
+      "a0_degrees": 118.33369235014135,
+      "a1_degrees": 76.61963149970344,
+      "b0_degrees": 88.8664526412569,
+      "b1_degrees": 149.34043821486088,
+      "chsh": -2.4079585042389478,
+      "absolute_chsh": 2.4079585042389478,
+      "mi_feasible": false,
+      "md_feasible": true,
+      "minimum_max_pairwise_tv": 0.06799308403982476
+    },
+    {
+      "geometry_id": 11,
+      "a0_degrees": 137.10530952348242,
+      "a1_degrees": 96.14429949593791,
+      "b0_degrees": 103.58527528678104,
+      "b1_degrees": 49.800189478229754,
+      "chsh": -1.1819631467679548,
+      "absolute_chsh": 1.1819631467679548,
+      "mi_feasible": false,
+      "md_feasible": true,
+      "minimum_max_pairwise_tv": 0.07809666818883966
+    },
+    {
+      "geometry_id": 12,
+      "a0_degrees": 173.80196874511103,
+      "a1_degrees": 19.743016491021674,
+      "b0_degrees": 141.06782032876885,
+      "b1_degrees": 99.1933902634497,
+      "chsh": -0.40362435525044216,
+      "absolute_chsh": 0.40362435525044216,
+      "mi_feasible": true,
+      "md_feasible": true,
+      "minimum_max_pairwise_tv": 0.0
+    },
+    {
+      "geometry_id": 13,
+      "a0_degrees": 11.159390282692447,
+      "a1_degrees": 177.60104981004025,
+      "b0_degrees": 66.81324711240055,
+      "b1_degrees": 114.14969645418041,
+      "chsh": 0.4624604703537661,
+      "absolute_chsh": 0.4624604703537661,
+      "mi_feasible": true,
+      "md_feasible": true,
+      "minimum_max_pairwise_tv": 6.938893903907228e-17
+    },
+    {
+      "geometry_id": 14,
+      "a0_degrees": 106.37446701955233,
+      "a1_degrees": 84.33590156586006,
+      "b0_degrees": 83.8977964220189,
+      "b1_degrees": 172.39107935081384,
+      "chsh": -2.296540761029268,
+      "absolute_chsh": 2.296540761029268,
+      "mi_feasible": false,
+      "md_feasible": true,
+      "minimum_max_pairwise_tv": 0.049423460171545176
+    },
+    {
+      "geometry_id": 15,
+      "a0_degrees": 176.77828016563205,
+      "a1_degrees": 133.7267426152519,
+      "b0_degrees": 123.5096029475062,
+      "b1_degrees": 64.81478107755115,
+      "chsh": -0.8483880931582588,
+      "absolute_chsh": 0.8483880931582588,
+      "mi_feasible": false,
+      "md_feasible": true,
+      "minimum_max_pairwise_tv": 0.05267064016321219
+    },
+    {
+      "geometry_id": 16,
+      "a0_degrees": 63.93298332138186,
+      "a1_degrees": 125.77744098346918,
+      "b0_degrees": 160.30294635662017,
+      "b1_degrees": 165.77984604516143,
+      "chsh": 0.2583880386847428,
+      "absolute_chsh": 0.2583880386847428,
+      "mi_feasible": true,
+      "md_feasible": true,
+      "minimum_max_pairwise_tv": 9.71445146547012e-17
+    },
+    {
+      "geometry_id": 17,
+      "a0_degrees": 163.53324081503462,
+      "a1_degrees": 125.5081002352468,
+      "b0_degrees": 96.97214766319219,
+      "b1_degrees": 165.0549099199188,
+      "chsh": -1.5048312223159965,
+      "absolute_chsh": 1.5048312223159965,
+      "mi_feasible": false,
+      "md_feasible": true,
+      "minimum_max_pairwise_tv": 0.04191642307723344
+    },
+    {
+      "geometry_id": 18,
+      "a0_degrees": 28.50973431083016,
+      "a1_degrees": 0.6647874820590749,
+      "b0_degrees": 164.41281451851194,
+      "b1_degrees": 40.894354762278795,
+      "chsh": 1.46493688444648,
+      "absolute_chsh": 1.46493688444648,
+      "mi_feasible": true,
+      "md_feasible": true,
+      "minimum_max_pairwise_tv": 5.551115123125783e-17
+    },
+    {
+      "geometry_id": 19,
+      "a0_degrees": 122.19293640799192,
+      "a1_degrees": 158.62236053872994,
+      "b0_degrees": 168.58251656591105,
+      "b1_degrees": 126.33833373685304,
+      "chsh": -1.8266525522571264,
+      "absolute_chsh": 1.8266525522571264,
+      "mi_feasible": false,
+      "md_feasible": true,
+      "minimum_max_pairwise_tv": 0.022995271747265365
+    }
+  ],
+  "local_angle_perturbations": [
+    {
+      "angle_delta_degrees": -0.1,
+      "tv": 0.13807046946773693,
+      "success": true,
+      "reconstruction_error": 2.0816681711721685e-16
+    },
+    {
+      "angle_delta_degrees": -0.01,
+      "tv": 0.1380711802777972,
+      "success": true,
+      "reconstruction_error": 5.551115123125783e-17
+    },
+    {
+      "angle_delta_degrees": 0.01,
+      "tv": 0.13807118027779836,
+      "success": true,
+      "reconstruction_error": 1.3461454173580023e-15
+    },
+    {
+      "angle_delta_degrees": 0.1,
+      "tv": 0.1380704694677371,
+      "success": true,
+      "reconstruction_error": 3.191891195797325e-16
+    }
+  ],
+  "solver_tolerance_tests": [
+    {
+      "requested_tolerance": 1e-07,
+      "success": true,
+      "objective": 0.1380711874576983,
+      "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)"
+    },
+    {
+      "requested_tolerance": 1e-09,
+      "success": true,
+      "objective": 0.1380711874576984,
+      "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)"
+    },
+    {
+      "requested_tolerance": 1e-10,
+      "success": true,
+      "objective": 0.1380711874576984,
+      "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)"
+    }
+  ],
+  "setting_prior_MI_optimisation": {
+    "uniform": {
+      "success": true,
+      "mi_bits": 0.04627384685340712,
+      "equality_residual": 1.6653345369377348e-16,
+      "minimum_probability": 0.0,
+      "iterations": 4,
+      "message": "Optimization terminated successfully",
+      "global_optimum_certified": false
+    },
+    "mild_bias": {
+      "success": true,
+      "mi_bits": 0.033409918498944764,
+      "equality_residual": 2.220446049250313e-16,
+      "minimum_probability": 0.0,
+      "iterations": 15,
+      "message": "Optimization terminated successfully",
+      "global_optimum_certified": false
+    },
+    "strong_bias": {
+      "success": true,
+      "mi_bits": 0.02248359791162279,
+      "equality_residual": 5.551115123125783e-17,
+      "minimum_probability": 0.0,
+      "iterations": 6,
+      "message": "Optimization terminated successfully",
+      "global_optimum_certified": false
+    },
+    "reverse_bias": {
+      "success": true,
+      "mi_bits": 0.033409918498944424,
+      "equality_residual": 2.7755575615628914e-16,
+      "minimum_probability": 0.0,
+      "iterations": 15,
+      "message": "Optimization terminated successfully",
+      "global_optimum_certified": false
+    },
+    "near_uniform": {
+      "success": true,
+      "mi_bits": 0.04597230302345908,
+      "equality_residual": 3.469446951953614e-16,
+      "minimum_probability": 0.0,
+      "iterations": 11,
+      "message": "Optimization terminated successfully",
+      "global_optimum_certified": false
+    }
+  },
+  "created_at": "2026-11-01T04:17:32.903952+00:00"
+}
