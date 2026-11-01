@@ -1,0 +1,221 @@
+{
+  "phase": "5.3",
+  "experiment_id": "p5_3_robustness_representation_v1",
+  "created_at": "2026-11-01T04:08:26.800695+00:00",
+  "run_id": "run_64ca8ea8354347659fe78f63b8569a67",
+  "primary_tv": 0.0,
+  "independent_lp": {
+    "success": true,
+    "tv": 0.0,
+    "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)"
+  },
+  "independent_lp_absolute_difference": 0.0,
+  "primary_lp_reconstruction_error": 0.2071067811865475,
+  "primary_lp_normalisation_error": 0.20710678118654746,
+  "angle_sweep": [
+    {
+      "theta_degrees": 0,
+      "chsh": -2.0,
+      "absolute_chsh": 2.0,
+      "minimum_max_pairwise_tv": 0.0,
+      "solver_success": true
+    },
+    {
+      "theta_degrees": 5,
+      "chsh": -2.1667008816788074,
+      "absolute_chsh": 2.1667008816788074,
+      "minimum_max_pairwise_tv": 0.0,
+      "solver_success": true
+    },
+    {
+      "theta_degrees": 10,
+      "chsh": -2.3169118613582773,
+      "absolute_chsh": 2.3169118613582773,
+      "minimum_max_pairwise_tv": 0.0,
+      "solver_success": true
+    },
+    {
+      "theta_degrees": 15,
+      "chsh": -2.449489742783178,
+      "absolute_chsh": 2.449489742783178,
+      "minimum_max_pairwise_tv": 0.0,
+      "solver_success": true
+    },
+    {
+      "theta_degrees": 20,
+      "chsh": -2.5634255282231546,
+      "absolute_chsh": 2.5634255282231546,
+      "minimum_max_pairwise_tv": 0.0,
+      "solver_success": true
+    },
+    {
+      "theta_degrees": 25,
+      "chsh": -2.657852097554699,
+      "absolute_chsh": 2.657852097554699,
+      "minimum_max_pairwise_tv": 0.0,
+      "solver_success": true
+    },
+    {
+      "theta_degrees": 30,
+      "chsh": -2.7320508075688776,
+      "absolute_chsh": 2.7320508075688776,
+      "minimum_max_pairwise_tv": 0.0,
+      "solver_success": true
+    },
+    {
+      "theta_degrees": 35,
+      "chsh": -2.785456961280076,
+      "absolute_chsh": 2.785456961280076,
+      "minimum_max_pairwise_tv": 0.0,
+      "solver_success": true
+    },
+    {
+      "theta_degrees": 40,
+      "chsh": -2.8176641056110343,
+      "absolute_chsh": 2.8176641056110343,
+      "minimum_max_pairwise_tv": 0.0,
+      "solver_success": true
+    },
+    {
+      "theta_degrees": 45,
+      "chsh": -2.82842712474619,
+      "absolute_chsh": 2.82842712474619,
+      "minimum_max_pairwise_tv": 0.0,
+      "solver_success": true
+    },
+    {
+      "theta_degrees": 50,
+      "chsh": -2.8176641056110343,
+      "absolute_chsh": 2.8176641056110343,
+      "minimum_max_pairwise_tv": 0.0,
+      "solver_success": true
+    },
+    {
+      "theta_degrees": 55,
+      "chsh": -2.7854569612800755,
+      "absolute_chsh": 2.7854569612800755,
+      "minimum_max_pairwise_tv": 0.0,
+      "solver_success": true
+    },
+    {
+      "theta_degrees": 60,
+      "chsh": -2.7320508075688767,
+      "absolute_chsh": 2.7320508075688767,
+      "minimum_max_pairwise_tv": 0.0,
+      "solver_success": true
+    },
+    {
+      "theta_degrees": 65,
+      "chsh": -2.657852097554699,
+      "absolute_chsh": 2.657852097554699,
+      "minimum_max_pairwise_tv": 0.0,
+      "solver_success": true
+    },
+    {
+      "theta_degrees": 70,
+      "chsh": -2.5634255282231546,
+      "absolute_chsh": 2.5634255282231546,
+      "minimum_max_pairwise_tv": 0.0,
+      "solver_success": true
+    },
+    {
+      "theta_degrees": 75,
+      "chsh": -2.449489742783178,
+      "absolute_chsh": 2.449489742783178,
+      "minimum_max_pairwise_tv": 0.0,
+      "solver_success": true
+    },
+    {
+      "theta_degrees": 80,
+      "chsh": -2.3169118613582773,
+      "absolute_chsh": 2.3169118613582773,
+      "minimum_max_pairwise_tv": 0.0,
+      "solver_success": true
+    },
+    {
+      "theta_degrees": 85,
+      "chsh": -2.1667008816788074,
+      "absolute_chsh": 2.1667008816788074,
+      "minimum_max_pairwise_tv": 0.0,
+      "solver_success": true
+    },
+    {
+      "theta_degrees": 90,
+      "chsh": -2.0,
+      "absolute_chsh": 2.0,
+      "minimum_max_pairwise_tv": 0.0,
+      "solver_success": true
+    }
+  ],
+  "setting_prior_mutual_information": {
+    "uniform": {
+      "success": true,
+      "mutual_information_bits": 0.046273945524612045,
+      "equality_residual": 4.440892098500626e-16,
+      "minimum_probability": 0.0,
+      "iterations": 32,
+      "message": "Optimization terminated successfully",
+      "global_optimum_proven": false
+    },
+    "mild_bias": {
+      "success": true,
+      "mutual_information_bits": 0.033410551726870685,
+      "equality_residual": 2.220446049250313e-16,
+      "minimum_probability": 0.0,
+      "iterations": 23,
+      "message": "Optimization terminated successfully",
+      "global_optimum_proven": false
+    },
+    "strong_bias": {
+      "success": true,
+      "mutual_information_bits": 0.022483744830772836,
+      "equality_residual": 1.1102230246251565e-16,
+      "minimum_probability": 0.0,
+      "iterations": 32,
+      "message": "Optimization terminated successfully",
+      "global_optimum_proven": false
+    },
+    "reverse_bias": {
+      "success": true,
+      "mutual_information_bits": 0.033414244391187134,
+      "equality_residual": 2.220446049250313e-16,
+      "minimum_probability": 0.0,
+      "iterations": 23,
+      "message": "Optimization terminated successfully",
+      "global_optimum_proven": false
+    }
+  },
+  "hidden_variable_duplication_tv": 0.0,
+  "duplication_tv_error": 0.0,
+  "permutation_tv_error": 0.0,
+  "local_angle_perturbations": [
+    {
+      "angle_perturbation_degrees": -0.1,
+      "tv": 0.0,
+      "success": true
+    },
+    {
+      "angle_perturbation_degrees": -0.01,
+      "tv": 0.0,
+      "success": true
+    },
+    {
+      "angle_perturbation_degrees": 0.01,
+      "tv": 0.0,
+      "success": true
+    },
+    {
+      "angle_perturbation_degrees": 0.1,
+      "tv": 0.0,
+      "success": true
+    }
+  ],
+  "zero_violation_tv": 0.0,
+  "interpretation": {
+    "tv_metric": "Maximum pairwise total variation across four setting pairs",
+    "mi_metric": "Mutual information under explicitly specified setting prior",
+    "mi_global_optimum": "Not proven by SLSQP",
+    "representation_scope": "Permutation and duplicate-label invariance tested; arbitrary coarse-graining invariance not established",
+    "physical_interpretation": "Mathematical representation only; not evidence of a physical measurement-dependence mechanism"
+  }
+}
