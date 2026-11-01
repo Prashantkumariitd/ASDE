@@ -1,0 +1,107 @@
+{
+  "experiments": [
+    {
+      "controls": [
+        "detector efficiency",
+        "timing",
+        "setting bias",
+        "event selection"
+      ],
+      "design": "Repeat matched Bell trials using independent QRNG technologies and independently audited setting pipelines.",
+      "discriminator": "A candidate model must predict a quantitative difference between generator classes before data collection.",
+      "id": "exp_556_01",
+      "limitation": "A null difference does not rule out unrestricted common-cause models.",
+      "name": "Independent setting-generator comparison",
+      "observables": [
+        "joint outcome frequencies",
+        "setting frequencies",
+        "conditional correlations"
+      ],
+      "question": "Do Bell statistics change when the physical setting generator changes?"
+    },
+    {
+      "controls": [
+        "fair-sampling assumptions",
+        "classification errors",
+        "detector efficiency",
+        "timing uncertainty"
+      ],
+      "design": "Use astronomical photon properties to determine measurement settings while maintaining spacelike separation.",
+      "discriminator": "Constrains specified past-common-cause models and their allowed causal regions.",
+      "id": "exp_556_02",
+      "limitation": "Does not eliminate all superdeterministic explanations.",
+      "name": "Cosmic setting-source Bell test",
+      "observables": [
+        "Bell statistic",
+        "source photon classification",
+        "timing and detection records"
+      ],
+      "question": "How far into the past can plausible common-cause explanations be constrained?"
+    },
+    {
+      "controls": [
+        "setting-source calibration",
+        "finite statistics",
+        "detector loopholes"
+      ],
+      "design": "Use a measurement-dependent local inequality with independently characterised setting-generation statistics.",
+      "discriminator": "Rejects local models above a preregistered measurement-dependence bound.",
+      "id": "exp_556_03",
+      "limitation": "The result constrains model classes; it does not directly observe hidden variables.",
+      "name": "Measurement-dependent inequality test",
+      "observables": [
+        "Bell inequality value",
+        "setting dependence parameter",
+        "conditional outcome distributions"
+      ],
+      "question": "How much measurement independence is compatible with observed Bell correlations?"
+    },
+    {
+      "controls": [
+        "identical source preparation",
+        "detector calibration",
+        "timing synchronisation"
+      ],
+      "design": "Repeat a matched Bell protocol while changing source, setting-generation and detection spacetime arrangement.",
+      "discriminator": "Only useful if competing models provide distinct quantitative predictions for each geometry.",
+      "id": "exp_556_04",
+      "limitation": "Changing geometry alone does not distinguish models with unrestricted hidden correlations.",
+      "name": "Spacetime configuration comparison",
+      "observables": [
+        "conditional Bell statistics",
+        "event timing",
+        "setting/outcome dependence"
+      ],
+      "question": "Do alternative causal geometries yield different model predictions?"
+    },
+    {
+      "controls": [
+        "human input timing",
+        "selection effects",
+        "setting bias",
+        "communication isolation"
+      ],
+      "design": "Use a preregistered human-generated setting protocol and a measurement-dependent Bell inequality.",
+      "discriminator": "Compare with preregistered bounds for explicitly parameterised local models.",
+      "id": "exp_556_05",
+      "limitation": "Human choices do not logically prove measurement independence.",
+      "name": "Human-generated setting comparison",
+      "observables": [
+        "setting entropy",
+        "Bell statistic",
+        "conditional outcome frequencies"
+      ],
+      "question": "Does a model accommodate a distinct setting-generation process?"
+    }
+  ],
+  "general_limitations": [
+    "Hidden variable lambda is not directly observed.",
+    "A Bell violation alone does not identify a unique causal mechanism.",
+    "Unrestricted measurement-dependent models can be unfalsifiable.",
+    "Each candidate must preregister quantitative predictions."
+  ],
+  "phase": "5.5.7",
+  "run_id": "run_64ca8ea8354347659fe78f63b8569a67",
+  "status": "DESIGN_AUDIT_COMPLETE",
+  "timestamp_utc": "2026-11-01T05:01:44.512696+00:00"
+}
