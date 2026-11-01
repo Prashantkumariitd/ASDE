@@ -1,0 +1,43 @@
+{
+  "phase": 4,
+  "run_id": "run_64ca8ea8354347659fe78f63b8569a67",
+  "work_item_id": "p4_05_parameter_identification",
+  "team": "computation",
+  "title": "Parameter constraints, identifiability and sensitivity",
+  "objective": "\nIdentify model parameters, allowed domains, degeneracies and\nidentifiability questions. Specify what Bell-type observations could\nconstrain and what they cannot identify without extra assumptions.\nDevelop a reproducible numerical plan, including null models,\nsensitivity analysis and uncertainty treatment. Do not report\ninvented fitted parameters or simulated empirical evidence.\n",
+  "provider": "groq",
+  "model": "openai/gpt-oss-120b",
+  "completed_at": "2026-11-01T03:46:52.733053+00:00",
+  "phase3_context_ids": [
+    "p3_experimental_evidence_09",
+    "p3_experimental_evidence_10",
+    "p3_scientific_computing_08"
+  ],
+  "deterministic_computations": {
+    "symbolic": {
+      "CHSH_expression": "A0*B0 + A0*B1 + A1*B0 - A1*B1",
+      "factorised_expression": "A0*B0 + A0*B1 + A1*B0 - A1*B1",
+      "deterministic_assignments_checked": 16,
+      "maximum_absolute_local_deterministic_CHSH": 2,
+      "local_bound_check": true
+    },
+    "quantum_singlet_baseline": {
+      "correlations": {
+        "E00": -0.7071067811865475,
+        "E01": -0.7071067811865475,
+        "E10": -0.7071067811865475,
+        "E11": 0.7071067811865475
+      },
+      "CHSH_value": -2.82842712474619,
+      "Tsirelson_value": 2.8284271247461903,
+      "numerical_check_passed": true
+    },
+    "probability_constraints": {
+      "normalisation": "Eq(p00 + p01 + p10 + p11, 1)",
+      "nonnegative_probabilities": true
+    },
+    "interpretation": "The local deterministic CHSH bound is exhaustively checked for the 16 deterministic assignments. The quantum singlet value is a numerical baseline. These checks do not establish a superdeterministic model or a new physical result."
+  },
+  "research_output": "**ASDE Phase 4 – WORK‑PACKAGE : Parameter constraints, identifiability and sensitivity**  \n*Computation‑Specialist Team – Deliverable*  \n\n---\n\n## 1. Executive result  \n\n| Item | Statement | Epistemic tag |\n|------|-----------|---------------|\n| **(E1)** | The *observable* CHSH combination  \\(\\mathcal{S}=E_{00}+E_{01}+E_{10}-E_{11}\\)  is a linear functional of the four bipartite correlators \\(E_{xy}\\). Its value can be bounded **locally** by \\(|\\mathcal{S}|\\le 2\\) under the standard factorisation (Bell‑locality) assumptions. | **DERIVED** (standard Bell‑inequality proof) |\n| **(E2)** | Within quantum mechanics the singlet state attains \\(|\\mathcal{S}|=2\\sqrt2\\) (Tsirelson bound). This value is reproduced by the baseline numerical check (Section “quantum_singlet_baseline”). | **SOURCE_SUPPORTED** (baseline) |\n| **(E3)** | The *parameter set* \\(\\{p(\\lambda),A_x(\\lambda),B_y(\\lambda)\\}\\) that defines a Bell‑local hidden‑variable (LHV) model is **highly non‑identifiable** from the four correlators alone: many distinct parameterisations generate exactly the same \\(\\{E_{xy}\\}\\). Only the *convex hull* of deterministic response assignments is observable. | **UNRESOLVED** (identifiability analysis) |\n| **(E4)** | A *measurement‑dependent* (MD) model that relaxes the independence of \\(\\lambda\\) from the settings \\((x,y)\\) can reproduce any set of correlators, including the Tsirelson value, **provided** one supplies an explicit joint distribution \\(p(\\lambda, x, y)\\). Without an independent specification of this distribution the model is **unidentifiable** from Bell‑type data alone. | **CONDITIONAL** |\n| **(E5)** | Sensitivity of the CHSH value to variations in the hidden‑variable distribution is linear: \\(\\delta\\mathcal{S}= \\sum_{\\lambda} \\delta p(\\lambda)\\, \\mathcal{S}(\\lambda)\\) where \\(\\mathcal{S}(\\lambda)=A_0(\\lambda)B_0(\\lambda)+A_0(\\lambda)B_1(\\lambda)+A_1(\\lambda)B_0(\\lambda)-A_1(\\lambda)B_1(\\lambda)\\). The maximal magnitude of \\(\\mathcal{S}(\\lambda)\\) over deterministic assignments is 2 (see baseline). Hence any admissible perturbation of \\(p(\\lambda)\\) can change \\(\\mathcal{S}\\) by at most \\(2\\) in absolute value. | **COMPUTATIONALLY_CHECKED** (deterministic enumeration) |\n| **(E6)** | A reproducible numerical plan is outlined (Section 8) that (i) enumerates the 16 deterministic response tables, (ii) samples arbitrary hidden‑variable distributions, (iii) evaluates \\(\\mathcal{S}\\) and (iv) performs a finite‑difference sensitivity analysis. | **CONDITIONAL** (requires implementation) |\n\n---\n\n## 2. Definitions and notation  \n\n| Symbol | Meaning | Domain / range |\n|--------|---------|----------------|\n| \\(x\\in\\{0,1\\}\\) | Alice’s measurement setting (binary) | \\(\\{0,1\\}\\) |\n| \\(y\\in\\{0,1\\}\\) | Bob’s measurement setting (binary) | \\(\\{0,1\\}\\) |\n| \\(a\\in\\{-1,+1\\}\\) | Alice’s outcome | \\(\\{-1,+1\\}\\) |\n| \\(b\\in\\{-1,+1\\}\\) | Bob’s outcome | \\(\\{-1,+1\\}\\) |\n| \\(\\lambda\\) | Hidden variable (possibly vector‑valued) | Arbitrary measurable space \\(\\Lambda\\) |\n| \\(p(\\lambda)\\) | Prior distribution of \\(\\lambda\\) (local model) | \\(p(\\lambda)\\ge0,\\;\\int_{\\Lambda}p(\\lambda)d\\lambda=1\\) |\n| \\(p(\\lambda|x,y)\\) | Joint distribution when measurement‑dependence is allowed | Normalised for each \\((x,y)\\) |\n| \\(A_x(\\lambda)\\) | Deterministic response function for Alice: \\(A_x:\\Lambda\\to\\{-1,+1\\}\\) | \\(\\{-1,+1\\}\\) |\n| \\(B_y(\\lambda)\\) | Deterministic response function for Bob: \\(B_y:\\Lambda\\to\\{-1,+1\\}\\) | \\(\\{-1,+1\\}\\) |\n| \\(E_{xy}\\) | Correlator \\(\\langle a b\\rangle\\) for setting pair \\((x,y)\\) | \\([-1,1]\\) |\n| \\(\\mathcal{S}\\) | CHSH expression \\(\\mathcal{S}=E_{00}+E_{01}+E_{10}-E_{11}\\) | \\([-4,4]\\) |\n| \\(\\mathcal{S}(\\lambda)\\) | Deterministic contribution of a single \\(\\lambda\\) (see Eq. (5)) | \\(\\{-2,0,2\\}\\) for deterministic tables |\n| \\(\\mathcal{G}\\) | Set of all 16 deterministic response tables (see Table 1) | Finite set |\n\n**Table 1 – Deterministic response tables** (each row is a possible assignment of \\((A_0,A_1,B_0,B_1)\\) with values \\(\\pm1\\)). The baseline already enumerated the 16 possibilities and verified that \\(|\\mathcal{S}(\\lambda)|\\le2\\).\n\n---\n\n## 3. Explicit assumptions ledger  \n\n| # | Assumption | Formal statement | Role in derivations |\n|---|------------|------------------|---------------------|\n| **A1** (Locality / Factorisation) | Conditional independence of outcomes given \\(\\lambda\\) and local settings | \\(p(a,b|x,y,\\lambda)=p(a|x,\\lambda)\\,p(b|y,\\lambda)\\) | Needed for Bell‑local bound (E1). |\n| **A2** (Outcome determinism) | For a *deterministic* hidden‑variable model the response functions take values \\(\\pm1\\) with probability 1. | \\(p(a|x,\\lambda)=\\delta_{a,A_x(\\lambda)}\\) and similarly for Bob. | Allows reduction to deterministic tables (Table 1). |\n| **A3** (Measurement independence) | Settings are statistically independent of \\(\\lambda\\). | \\(p(\\lambda|x,y)=p(\\lambda)\\) for all \\((x,y)\\). | Guarantees that the convex hull of deterministic tables is",
+  "epistemic_warning": "LLM-generated mathematical research analysis. Not a proof or independent replication unless explicitly established by a separate reproducible trail."
+}
