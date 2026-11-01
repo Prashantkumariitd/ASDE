@@ -1,0 +1,19 @@
+teams:
+  - id: theoretical_physics
+    domain: theoretical_physics
+    mandate: Develop physical models, derive consequences, state assumptions.
+  - id: mathematics
+    domain: mathematics
+    mandate: Derivations, symbolic checks, numerical analysis, formalisation.
+  - id: computation
+    domain: scientific_computing
+    mandate: Reproducible simulations, numerical experiments, sensitivity analysis.
+  - id: evidence
+    domain: literature_and_observation
+    mandate: Literature review, datasets, observational and experimental constraints.
+  - id: discovery
+    domain: hypothesis_generation
+    mandate: Generate competing mechanisms and discriminating predictions.
+  - id: falsification
+    domain: adversarial_verification
+    mandate: Independent critique, counterexamples, replication and failure analysis.
