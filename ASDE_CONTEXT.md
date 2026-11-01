@@ -620,3 +620,42 @@ Computations:
 research/phase5/computations/p5_3_robustness_computations.json
 <!-- ASDE_PHASE5_3_END -->
 
+
+<!-- ASDE_PHASE5_4_START -->
+## Phase 5.4 — Exact Bell certification and physical mechanism audit
+
+Updated: 2026-11-01T04:22:00.585753+00:00
+Run: run_64ca8ea8354347659fe78f63b8569a67
+Experiment: p5_4_mechanism_and_exact_bell_audit_v1
+
+Mathematical infrastructure:
+- Exact Farkas infeasibility certificate attempted and verified using
+  rational certificate coefficients and exact algebraic target probabilities.
+- Certificate scope: measurement-independent local deterministic
+  CHSH feasibility only.
+- Exact minimum measurement-dependent TV certificate: not produced.
+- General finite N-party Bell scenario local-strategy enumeration implemented
+  with explicit resource limits.
+- Demonstration scenarios include bipartite binary and multipartite cases.
+
+Physical mechanism review:
+- Hall local deterministic measurement-dependent model.
+- Palmer Invariant Set Theory.
+- 't Hooft Cellular Automaton Interpretation.
+- Hall-Branciard retrocausal model as a distinct competing causal class.
+- Hance-Hossenfelder-Palmer supermeasured proposal.
+
+Scientific decision:
+No complete physical measurement-dependence mechanism has been established
+by this phase. Literature models and conceptual proposals must not be
+mistaken for a derived and empirically validated theory.
+
+No LLM/API calls.
+No experimental Bell dataset reanalysis.
+No CMB prediction.
+No claim of proving superdeterminism.
+
+Report:
+research/phase5/reports/p5_4_exact_bell_and_mechanism_audit.json
+<!-- ASDE_PHASE5_4_END -->
+
