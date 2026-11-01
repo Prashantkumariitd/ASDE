@@ -62,5 +62,19 @@
       "mechanisms": "https://github.com/Prashantkumariitd/ASDE/blob/main/research/phase5/research/p5_4_mechanism_candidate_register.json"
     },
     "llm_api_calls": 0
+  },
+  "phase5_4_hall_replication": {
+    "run_id": "run_64ca8ea8354347659fe78f63b8569a67",
+    "experiment_id": "p5_4_hall_continuous_replication_v1",
+    "updated_at": "2026-11-01T04:28:46.225071+00:00",
+    "status": "NUMERICAL_REPLICATION_WITH_OPEN_ITEMS",
+    "report": "https://github.com/Prashantkumariitd/ASDE/blob/main/research/phase5/reports/p5_4_hall_continuous_replication.json",
+    "hall_integration": "https://github.com/Prashantkumariitd/ASDE/blob/main/research/phase5/computations/p5_4_hall_sphere_integration.json",
+    "measurement_independence": "https://github.com/Prashantkumariitd/ASDE/blob/main/research/phase5/computations/p5_4_hall_measurement_independence.json",
+    "MI_comparison": "https://github.com/Prashantkumariitd/ASDE/blob/main/research/phase5/computations/p5_4_MI_causal_class_comparison.json",
+    "erratum_full_text_inspected": false,
+    "global_M_supremum_proven": false,
+    "physical_mechanism_established": false,
+    "llm_api_calls": 0
   }
 }
