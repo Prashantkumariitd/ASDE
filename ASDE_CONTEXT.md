@@ -489,3 +489,24 @@ Keep the filename stable: **`ASDE_CONTEXT.md`**. A new conversation should be ab
 - Phase 4 model classes registered as proposed, not established physical theories.
 - Provider policy: Groq primary; automatic OpenRouter fallback on any Groq error; pause if both fail.
 - Phase 4 execution is checkpointed in Neon and GitHub.
+
+
+## Phase 5.1 checkpoint — CHSH numerical experiment
+
+- Date: 2026-11-01
+- Run: `run_64ca8ea8354347659fe78f63b8569a67`
+- Experiment: `p5_1_chsh_mi_vs_md_v1`
+- Status: `completed`
+- Report: `research/phase5/reports/p5_1_chsh_mi_vs_md.json`
+- Manifest: `research/phase5/phase5_manifest.json`
+- Neon tables: `asde_phase5_experiments`, `asde_phase5_checks`
+- Checks: 12/12 passed.
+- Quantum singlet CHSH target: -2.828427124746.
+- Deterministic local CHSH maximum: 2.
+- MI LP feasible: `False`.
+- MD LP feasible: `True`.
+- Minimum maximum pairwise TV in the specified representation: 0.138071187458.
+- Maximum MD joint-probability reconstruction error: 5.551e-17.
+- Maximum no-signalling reconstruction error: 0.000e+00.
+- Provider calls: 0; this phase used numerical optimisation only.
+- Interpretation: the LP result is representation- and metric-specific. It does not establish a physical superdeterministic mechanism or the truth of any underlying framework.
