@@ -1,0 +1,66 @@
+{
+  "phase": "5.7",
+  "experiment_id": "p5_7_independent_verification_synthesis_v1",
+  "created_at": "2026-11-01T04:08:26.800695+00:00",
+  "run_id": "run_64ca8ea8354347659fe78f63b8569a67",
+  "checks": {
+    "16_deterministic_strategies": true,
+    "local_deterministic_CHSH_bound_2": true,
+    "symbolic_CHSH_factorisation": true,
+    "primary_TV_LP_success": true,
+    "independent_TV_LP_success": true,
+    "independent_TV_agreement": true,
+    "quantum_reconstruction_error_small": false,
+    "probability_normalisation": false,
+    "probabilities_nonnegative": true,
+    "no_signalling_reconstruction": "True",
+    "strategy_permutation_invariance": "True",
+    "duplicate_label_invariance": "True",
+    "zero_violation_limit": true,
+    "all_angle_sweep_solvers_success": true
+  },
+  "checks_passed": 12,
+  "checks_total": 14,
+  "local_chsh_maximum": 2,
+  "symbolic_CHSH_identity": true,
+  "exact_singlet_CHSH_magnitude": "2*sqrt(2)",
+  "reconstruction_error": 0.2071067811865475,
+  "normalisation_error": 0.20710678118654746,
+  "minimum_probability": 0.07322330470336313,
+  "no_signalling_error": 0.0,
+  "adversarial_findings": [
+    {
+      "challenge": "Does measurement dependence prove superdeterminism?",
+      "finding": "No. Conditional distributions are a mathematical representation, not a physical causal model."
+    },
+    {
+      "challenge": "Is the TV value universal?",
+      "finding": "No. It is tied to the strategy space, target correlations, settings and chosen metric."
+    },
+    {
+      "challenge": "Is the MI value a proven global minimum?",
+      "finding": "No. SLSQP convergence is numerical evidence, not a global certificate."
+    },
+    {
+      "challenge": "Does no-signalling prove locality of a physical theory?",
+      "finding": "No. No-signalling of reconstructed probabilities is not a complete physical locality proof."
+    },
+    {
+      "challenge": "Does the angle sweep establish a cosmological prediction?",
+      "finding": "No. It concerns a finite CHSH construction only."
+    },
+    {
+      "challenge": "Does an LLM-generated explanation constitute evidence?",
+      "finding": "No. Scientific claims require traceable derivations, data and independent verification."
+    }
+  ],
+  "scientific_status": "AUDIT_FAILURE_REQUIRES_INVESTIGATION",
+  "limitations": [
+    "No physical measurement-dependence mechanism established.",
+    "No experimental Bell dataset independently reanalysed.",
+    "No exact rational or interval-arithmetic LP certificate produced.",
+    "MI optimisation is numerical and has no global optimality proof.",
+    "No derived CMB or early-universe prediction.",
+    "No claim of proving superdeterminism."
+  ]
+}
