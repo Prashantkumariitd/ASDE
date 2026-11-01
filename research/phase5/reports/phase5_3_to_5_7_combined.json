@@ -1,0 +1,402 @@
+{
+  "project": "ASDE",
+  "run_id": "run_64ca8ea8354347659fe78f63b8569a67",
+  "created_at": "2026-11-01T04:08:26.800695+00:00",
+  "phases": {
+    "5.3": {
+      "phase": "5.3",
+      "experiment_id": "p5_3_robustness_representation_v1",
+      "created_at": "2026-11-01T04:08:26.800695+00:00",
+      "run_id": "run_64ca8ea8354347659fe78f63b8569a67",
+      "primary_tv": 0.0,
+      "independent_lp": {
+        "success": true,
+        "tv": 0.0,
+        "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)"
+      },
+      "independent_lp_absolute_difference": 0.0,
+      "primary_lp_reconstruction_error": 0.2071067811865475,
+      "primary_lp_normalisation_error": 0.20710678118654746,
+      "angle_sweep": [
+        {
+          "theta_degrees": 0,
+          "chsh": -2.0,
+          "absolute_chsh": 2.0,
+          "minimum_max_pairwise_tv": 0.0,
+          "solver_success": true
+        },
+        {
+          "theta_degrees": 5,
+          "chsh": -2.1667008816788074,
+          "absolute_chsh": 2.1667008816788074,
+          "minimum_max_pairwise_tv": 0.0,
+          "solver_success": true
+        },
+        {
+          "theta_degrees": 10,
+          "chsh": -2.3169118613582773,
+          "absolute_chsh": 2.3169118613582773,
+          "minimum_max_pairwise_tv": 0.0,
+          "solver_success": true
+        },
+        {
+          "theta_degrees": 15,
+          "chsh": -2.449489742783178,
+          "absolute_chsh": 2.449489742783178,
+          "minimum_max_pairwise_tv": 0.0,
+          "solver_success": true
+        },
+        {
+          "theta_degrees": 20,
+          "chsh": -2.5634255282231546,
+          "absolute_chsh": 2.5634255282231546,
+          "minimum_max_pairwise_tv": 0.0,
+          "solver_success": true
+        },
+        {
+          "theta_degrees": 25,
+          "chsh": -2.657852097554699,
+          "absolute_chsh": 2.657852097554699,
+          "minimum_max_pairwise_tv": 0.0,
+          "solver_success": true
+        },
+        {
+          "theta_degrees": 30,
+          "chsh": -2.7320508075688776,
+          "absolute_chsh": 2.7320508075688776,
+          "minimum_max_pairwise_tv": 0.0,
+          "solver_success": true
+        },
+        {
+          "theta_degrees": 35,
+          "chsh": -2.785456961280076,
+          "absolute_chsh": 2.785456961280076,
+          "minimum_max_pairwise_tv": 0.0,
+          "solver_success": true
+        },
+        {
+          "theta_degrees": 40,
+          "chsh": -2.8176641056110343,
+          "absolute_chsh": 2.8176641056110343,
+          "minimum_max_pairwise_tv": 0.0,
+          "solver_success": true
+        },
+        {
+          "theta_degrees": 45,
+          "chsh": -2.82842712474619,
+          "absolute_chsh": 2.82842712474619,
+          "minimum_max_pairwise_tv": 0.0,
+          "solver_success": true
+        },
+        {
+          "theta_degrees": 50,
+          "chsh": -2.8176641056110343,
+          "absolute_chsh": 2.8176641056110343,
+          "minimum_max_pairwise_tv": 0.0,
+          "solver_success": true
+        },
+        {
+          "theta_degrees": 55,
+          "chsh": -2.7854569612800755,
+          "absolute_chsh": 2.7854569612800755,
+          "minimum_max_pairwise_tv": 0.0,
+          "solver_success": true
+        },
+        {
+          "theta_degrees": 60,
+          "chsh": -2.7320508075688767,
+          "absolute_chsh": 2.7320508075688767,
+          "minimum_max_pairwise_tv": 0.0,
+          "solver_success": true
+        },
+        {
+          "theta_degrees": 65,
+          "chsh": -2.657852097554699,
+          "absolute_chsh": 2.657852097554699,
+          "minimum_max_pairwise_tv": 0.0,
+          "solver_success": true
+        },
+        {
+          "theta_degrees": 70,
+          "chsh": -2.5634255282231546,
+          "absolute_chsh": 2.5634255282231546,
+          "minimum_max_pairwise_tv": 0.0,
+          "solver_success": true
+        },
+        {
+          "theta_degrees": 75,
+          "chsh": -2.449489742783178,
+          "absolute_chsh": 2.449489742783178,
+          "minimum_max_pairwise_tv": 0.0,
+          "solver_success": true
+        },
+        {
+          "theta_degrees": 80,
+          "chsh": -2.3169118613582773,
+          "absolute_chsh": 2.3169118613582773,
+          "minimum_max_pairwise_tv": 0.0,
+          "solver_success": true
+        },
+        {
+          "theta_degrees": 85,
+          "chsh": -2.1667008816788074,
+          "absolute_chsh": 2.1667008816788074,
+          "minimum_max_pairwise_tv": 0.0,
+          "solver_success": true
+        },
+        {
+          "theta_degrees": 90,
+          "chsh": -2.0,
+          "absolute_chsh": 2.0,
+          "minimum_max_pairwise_tv": 0.0,
+          "solver_success": true
+        }
+      ],
+      "setting_prior_mutual_information": {
+        "uniform": {
+          "success": true,
+          "mutual_information_bits": 0.046273945524612045,
+          "equality_residual": 4.440892098500626e-16,
+          "minimum_probability": 0.0,
+          "iterations": 32,
+          "message": "Optimization terminated successfully",
+          "global_optimum_proven": false
+        },
+        "mild_bias": {
+          "success": true,
+          "mutual_information_bits": 0.033410551726870685,
+          "equality_residual": 2.220446049250313e-16,
+          "minimum_probability": 0.0,
+          "iterations": 23,
+          "message": "Optimization terminated successfully",
+          "global_optimum_proven": false
+        },
+        "strong_bias": {
+          "success": true,
+          "mutual_information_bits": 0.022483744830772836,
+          "equality_residual": 1.1102230246251565e-16,
+          "minimum_probability": 0.0,
+          "iterations": 32,
+          "message": "Optimization terminated successfully",
+          "global_optimum_proven": false
+        },
+        "reverse_bias": {
+          "success": true,
+          "mutual_information_bits": 0.033414244391187134,
+          "equality_residual": 2.220446049250313e-16,
+          "minimum_probability": 0.0,
+          "iterations": 23,
+          "message": "Optimization terminated successfully",
+          "global_optimum_proven": false
+        }
+      },
+      "hidden_variable_duplication_tv": 0.0,
+      "duplication_tv_error": 0.0,
+      "permutation_tv_error": 0.0,
+      "local_angle_perturbations": [
+        {
+          "angle_perturbation_degrees": -0.1,
+          "tv": 0.0,
+          "success": true
+        },
+        {
+          "angle_perturbation_degrees": -0.01,
+          "tv": 0.0,
+          "success": true
+        },
+        {
+          "angle_perturbation_degrees": 0.01,
+          "tv": 0.0,
+          "success": true
+        },
+        {
+          "angle_perturbation_degrees": 0.1,
+          "tv": 0.0,
+          "success": true
+        }
+      ],
+      "zero_violation_tv": 0.0,
+      "interpretation": {
+        "tv_metric": "Maximum pairwise total variation across four setting pairs",
+        "mi_metric": "Mutual information under explicitly specified setting prior",
+        "mi_global_optimum": "Not proven by SLSQP",
+        "representation_scope": "Permutation and duplicate-label invariance tested; arbitrary coarse-graining invariance not established",
+        "physical_interpretation": "Mathematical representation only; not evidence of a physical measurement-dependence mechanism"
+      }
+    },
+    "5.4": {
+      "phase": "5.4",
+      "experiment_id": "p5_4_physical_mechanism_gate_v1",
+      "created_at": "2026-11-01T04:08:26.800695+00:00",
+      "run_id": "run_64ca8ea8354347659fe78f63b8569a67",
+      "status": "BLOCKED_NO_SPECIFIED_PHYSICAL_MECHANISM",
+      "requirements": {
+        "explicit_dynamical_law": false,
+        "defined_hidden_variable_state_space": false,
+        "measurement_setting_generation_model": false,
+        "causal_or_spacetime_structure": false,
+        "normalised_joint_probability_model": false,
+        "recovery_of_quantum_marginals": false,
+        "no_signalling_under_dynamics": false,
+        "independent_physical_parameters": false,
+        "distinctive_testable_prediction": false,
+        "independent_empirical_support": false
+      },
+      "missing_requirements": [
+        "explicit_dynamical_law",
+        "defined_hidden_variable_state_space",
+        "measurement_setting_generation_model",
+        "causal_or_spacetime_structure",
+        "normalised_joint_probability_model",
+        "recovery_of_quantum_marginals",
+        "no_signalling_under_dynamics",
+        "independent_physical_parameters",
+        "distinctive_testable_prediction",
+        "independent_empirical_support"
+      ],
+      "mathematical_result_reused": {
+        "measurement_dependent_representation_tv": 0.0,
+        "quantum_chsh": -2.82842712474619
+      },
+      "decision": "Do not interpret setting-conditioned distributions as a physical mechanism. No dynamical law, causal structure, or physical parameter set has been specified. No mechanism simulation is scientifically justified at this stage."
+    },
+    "5.5": {
+      "phase": "5.5",
+      "experiment_id": "p5_5_experimental_evidence_gate_v1",
+      "created_at": "2026-11-01T04:08:26.800695+00:00",
+      "run_id": "run_64ca8ea8354347659fe78f63b8569a67",
+      "status": "EVIDENCE_INVENTORY_ONLY",
+      "source_inventory": {
+        "registry_exists": true,
+        "columns": [
+          "source_id",
+          "domain_id",
+          "title",
+          "authors",
+          "doi",
+          "url",
+          "publication_year",
+          "source_type",
+          "verification_status",
+          "retrieved_at",
+          "metadata"
+        ],
+        "record_count": 49,
+        "candidate_bell_records": 1,
+        "limitations": [
+          "Registry metadata is not equivalent to full-text review or verification of experimental results."
+        ]
+      },
+      "experimental_validation_performed": false,
+      "reason": "A metadata inventory does not establish access to raw Bell-test observations, detector-efficiency data, setting-generation logs, systematic uncertainties, or a reproducible likelihood analysis.",
+      "required_for_future_validation": [
+        "Traceable primary experimental dataset",
+        "Published protocol and detector configuration",
+        "Setting-generation and timing information",
+        "Detection and postselection treatment",
+        "Uncertainty and systematic-error model",
+        "Reproducible statistical comparison",
+        "Independent reproduction"
+      ]
+    },
+    "5.6": {
+      "phase": "5.6",
+      "experiment_id": "p5_6_cosmology_derivation_gate_v1",
+      "created_at": "2026-11-01T04:08:26.800695+00:00",
+      "run_id": "run_64ca8ea8354347659fe78f63b8569a67",
+      "status": "BLOCKED_NO_DERIVED_COSMOLOGICAL_PREDICTION",
+      "requirements": {
+        "specified_physical_mechanism": false,
+        "coupling_to_primordial_perturbations": false,
+        "background_cosmological_dynamics": false,
+        "perturbation_evolution_equations": false,
+        "initial_conditions": false,
+        "primordial_power_spectrum_derivation": false,
+        "transfer_function_connection": false,
+        "distinctive_CMB_observable": false,
+        "comparison_with_LCDM": false
+      },
+      "missing_requirements": [
+        "specified_physical_mechanism",
+        "coupling_to_primordial_perturbations",
+        "background_cosmological_dynamics",
+        "perturbation_evolution_equations",
+        "initial_conditions",
+        "primordial_power_spectrum_derivation",
+        "transfer_function_connection",
+        "distinctive_CMB_observable",
+        "comparison_with_LCDM"
+      ],
+      "simulation_run": false,
+      "decision": "No CAMB, CLASS, CMB map, or early-universe simulation is run. Without a derived physical coupling and primordial prediction, such a simulation would not test the proposed framework."
+    },
+    "5.7": {
+      "phase": "5.7",
+      "experiment_id": "p5_7_independent_verification_synthesis_v1",
+      "created_at": "2026-11-01T04:08:26.800695+00:00",
+      "run_id": "run_64ca8ea8354347659fe78f63b8569a67",
+      "checks": {
+        "16_deterministic_strategies": true,
+        "local_deterministic_CHSH_bound_2": true,
+        "symbolic_CHSH_factorisation": true,
+        "primary_TV_LP_success": true,
+        "independent_TV_LP_success": true,
+        "independent_TV_agreement": true,
+        "quantum_reconstruction_error_small": false,
+        "probability_normalisation": false,
+        "probabilities_nonnegative": true,
+        "no_signalling_reconstruction": "True",
+        "strategy_permutation_invariance": "True",
+        "duplicate_label_invariance": "True",
+        "zero_violation_limit": true,
+        "all_angle_sweep_solvers_success": true
+      },
+      "checks_passed": 12,
+      "checks_total": 14,
+      "local_chsh_maximum": 2,
+      "symbolic_CHSH_identity": true,
+      "exact_singlet_CHSH_magnitude": "2*sqrt(2)",
+      "reconstruction_error": 0.2071067811865475,
+      "normalisation_error": 0.20710678118654746,
+      "minimum_probability": 0.07322330470336313,
+      "no_signalling_error": 0.0,
+      "adversarial_findings": [
+        {
+          "challenge": "Does measurement dependence prove superdeterminism?",
+          "finding": "No. Conditional distributions are a mathematical representation, not a physical causal model."
+        },
+        {
+          "challenge": "Is the TV value universal?",
+          "finding": "No. It is tied to the strategy space, target correlations, settings and chosen metric."
+        },
+        {
+          "challenge": "Is the MI value a proven global minimum?",
+          "finding": "No. SLSQP convergence is numerical evidence, not a global certificate."
+        },
+        {
+          "challenge": "Does no-signalling prove locality of a physical theory?",
+          "finding": "No. No-signalling of reconstructed probabilities is not a complete physical locality proof."
+        },
+        {
+          "challenge": "Does the angle sweep establish a cosmological prediction?",
+          "finding": "No. It concerns a finite CHSH construction only."
+        },
+        {
+          "challenge": "Does an LLM-generated explanation constitute evidence?",
+          "finding": "No. Scientific claims require traceable derivations, data and independent verification."
+        }
+      ],
+      "scientific_status": "AUDIT_FAILURE_REQUIRES_INVESTIGATION",
+      "limitations": [
+        "No physical measurement-dependence mechanism established.",
+        "No experimental Bell dataset independently reanalysed.",
+        "No exact rational or interval-arithmetic LP certificate produced.",
+        "MI optimisation is numerical and has no global optimality proof.",
+        "No derived CMB or early-universe prediction.",
+        "No claim of proving superdeterminism."
+      ]
+    }
+  },
+  "overall_decision": "MATHEMATICAL_ROBUSTNESS_AUDIT_COMPLETED; PHYSICAL_AND_COSMOLOGICAL_VALIDATION_REMAINS_OPEN",
+  "scientific_conclusion": "The tested finite local deterministic measurement-dependent representation reproduces the selected singlet CHSH target. The tested measurement-independent local deterministic model cannot reproduce the maximal-violation target. Robustness checks do not turn this mathematical representation into a physical mechanism or establish superdeterminism."
+}
