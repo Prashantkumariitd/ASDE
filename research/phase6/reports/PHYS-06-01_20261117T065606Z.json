@@ -1,0 +1,1772 @@
+{
+  "experiment_id": "NS-MD-PHYS-06-01",
+  "timestamp_utc": "20261117T065606Z",
+  "phase": "PHYS-06",
+  "title": "Setting-generator intervention response",
+  "stage_objective": "Derive experimentally distinguishable predictions",
+  "parent_phase": "PHYS-05",
+  "candidate_model": {
+    "equation_A": "P_eta(A|Omega)=(1-eta_A)P_0(A|Omega)+eta_A/2",
+    "equation_B": "P_eta(B|Omega)=(1-eta_B)P_0(B|Omega)+eta_B/2",
+    "equation_lambda": "P_eta(Lambda|Omega)=P_0(Lambda|Omega)",
+    "interpretation": "Independent fair-randomizer admixture in each setting device, while holding the source-side conditional response fixed."
+  },
+  "scan_design": {
+    "eta_values": [
+      0.0,
+      0.1,
+      0.2,
+      0.30000000000000004,
+      0.4,
+      0.5,
+      0.6000000000000001,
+      0.7000000000000001,
+      0.8,
+      0.9,
+      1.0
+    ],
+    "modes": [
+      "symmetric",
+      "A_device_only",
+      "B_device_only"
+    ],
+    "quantum_state_angles_deg": [
+      16.875,
+      45.0
+    ],
+    "number_of_rows": 66
+  },
+  "results": [
+    {
+      "theta_deg": 16.875,
+      "intervention_mode": "symmetric",
+      "eta": 0.0,
+      "eta_A": 0.0,
+      "eta_B": 0.0,
+      "I_Omega_X": 0.1623975556819473,
+      "I_Lambda_X": 0.02262066252783286,
+      "target_error_at_baseline": 5.166074816195798e-13,
+      "correlators": [
+        0.8741518292272477,
+        0.8741518292274115,
+        0.2698142034047165,
+        -0.2698142034044818
+      ],
+      "CHSH": 2.2879320652638575,
+      "alice_no_signalling_error": 4.962141808562137e-13,
+      "bob_no_signalling_error": 3.270717030545711e-13,
+      "setting_distribution": [
+        0.2500000000000002,
+        0.2500000000000005,
+        0.24999999999999986,
+        0.2499999999999996
+      ],
+      "setting_uniformity_error": 4.996003610813204e-16
+    },
+    {
+      "theta_deg": 16.875,
+      "intervention_mode": "symmetric",
+      "eta": 0.1,
+      "eta_A": 0.1,
+      "eta_B": 0.1,
+      "I_Omega_X": 0.12261002341216079,
+      "I_Lambda_X": 0.01572006898710598,
+      "target_error_at_baseline": null,
+      "correlators": [
+        0.8664697699685343,
+        0.8664708122766744,
+        0.2581873302805708,
+        -0.25818971046474565
+      ],
+      "CHSH": 2.249317622990525,
+      "alice_no_signalling_error": 0.0002691563603663405,
+      "bob_no_signalling_error": 0.0009236232369109754,
+      "setting_distribution": [
+        0.2500000000000003,
+        0.25000000000000044,
+        0.2499999999999999,
+        0.24999999999999967
+      ],
+      "setting_uniformity_error": 4.440892098500626e-16
+    },
+    {
+      "theta_deg": 16.875,
+      "intervention_mode": "symmetric",
+      "eta": 0.2,
+      "eta_A": 0.2,
+      "eta_B": 0.2,
+      "I_Omega_X": 0.09300581526054516,
+      "I_Lambda_X": 0.01106602701767326,
+      "target_error_at_baseline": null,
+      "correlators": [
+        0.8592319180757324,
+        0.8592339290646178,
+        0.2472075708696707,
+        -0.24721225761101026
+      ],
+      "CHSH": 2.212885675621031,
+      "alice_no_signalling_error": 0.00047850019580997216,
+      "bob_no_signalling_error": 0.001641996865881401,
+      "setting_distribution": [
+        0.2500000000000002,
+        0.2500000000000004,
+        0.2499999999999999,
+        0.24999999999999975
+      ],
+      "setting_uniformity_error": 3.885780586188048e-16
+    },
+    {
+      "theta_deg": 16.875,
+      "intervention_mode": "symmetric",
+      "eta": 0.30000000000000004,
+      "eta_A": 0.30000000000000004,
+      "eta_B": 0.30000000000000004,
+      "I_Omega_X": 0.06915343935916465,
+      "I_Lambda_X": 0.0076851035648090905,
+      "target_error_at_baseline": null,
+      "correlators": [
+        0.8524382735488418,
+        0.8524411795912423,
+        0.23687492517201633,
+        -0.2368818448432763
+      ],
+      "CHSH": 2.178636223155377,
+      "alice_no_signalling_error": 0.0006280315068268871,
+      "bob_no_signalling_error": 0.002155120886583539,
+      "setting_distribution": [
+        0.2500000000000002,
+        0.25000000000000033,
+        0.2499999999999999,
+        0.2499999999999998
+      ],
+      "setting_uniformity_error": 3.3306690738754696e-16
+    },
+    {
+      "theta_deg": 16.875,
+      "intervention_mode": "symmetric",
+      "eta": 0.4,
+      "eta_A": 0.4,
+      "eta_B": 0.4,
+      "I_Omega_X": 0.04969261036759963,
+      "I_Lambda_X": 0.005190057657734002,
+      "target_error_at_baseline": null,
+      "correlators": [
+        0.8460888363878623,
+        0.8460925638565472,
+        0.2271893931876079,
+        -0.22719847216154287
+      ],
+      "CHSH": 2.14656926559356,
+      "alice_no_signalling_error": 0.0007177502934170854,
+      "bob_no_signalling_error": 0.002462995299018278,
+      "setting_distribution": [
+        0.25000000000000017,
+        0.2500000000000003,
+        0.24999999999999992,
+        0.24999999999999983
+      ],
+      "setting_uniformity_error": 2.7755575615628914e-16
+    },
+    {
+      "theta_deg": 16.875,
+      "intervention_mode": "symmetric",
+      "eta": 0.5,
+      "eta_A": 0.5,
+      "eta_B": 0.5,
+      "I_Omega_X": 0.03392550177185522,
+      "I_Lambda_X": 0.0033528641432112134,
+      "target_error_at_baseline": null,
+      "correlators": [
+        0.8401836065927941,
+        0.8401880818605327,
+        0.2181509749164452,
+        -0.21816213956581065
+      ],
+      "CHSH": 2.1166848029355827,
+      "alice_no_signalling_error": 0.0007476565555807335,
+      "bob_no_signalling_error": 0.0025656201031849513,
+      "setting_distribution": [
+        0.25000000000000017,
+        0.2500000000000003,
+        0.2499999999999999,
+        0.2499999999999999
+      ],
+      "setting_uniformity_error": 2.7755575615628914e-16
+    },
+    {
+      "theta_deg": 16.875,
+      "intervention_mode": "symmetric",
+      "eta": 0.6000000000000001,
+      "eta_A": 0.6000000000000001,
+      "eta_B": 0.6000000000000001,
+      "I_Omega_X": 0.021431819057057835,
+      "I_Lambda_X": 0.0020200367882216488,
+      "target_error_at_baseline": null,
+      "correlators": [
+        0.8347225841636372,
+        0.8347277336031993,
+        0.20975967035852827,
+        -0.20977284705607951
+      ],
+      "CHSH": 2.088982835181444,
+      "alice_no_signalling_error": 0.0007177502933178315,
+      "bob_no_signalling_error": 0.00246299529908367,
+      "setting_distribution": [
+        0.2500000000000002,
+        0.2500000000000002,
+        0.24999999999999994,
+        0.2499999999999999
+      ],
+      "setting_uniformity_error": 2.220446049250313e-16
+    },
+    {
+      "theta_deg": 16.875,
+      "intervention_mode": "symmetric",
+      "eta": 0.7000000000000001,
+      "eta_A": 0.7000000000000001,
+      "eta_B": 0.7000000000000001,
+      "I_Omega_X": 0.01194009922998013,
+      "I_Lambda_X": 0.0010829590589069773,
+      "target_error_at_baseline": null,
+      "correlators": [
+        0.8297057691003915,
+        0.8297115190845465,
+        0.202015479513857,
+        -0.20203059463234935
+      ],
+      "CHSH": 2.0634633623311442,
+      "alice_no_signalling_error": 0.0006280315066283237,
+      "bob_no_signalling_error": 0.0021551208867145455,
+      "setting_distribution": [
+        0.2500000000000001,
+        0.2500000000000001,
+        0.25,
+        0.24999999999999994
+      ],
+      "setting_uniformity_error": 1.1102230246251565e-16
+    },
+    {
+      "theta_deg": 16.875,
+      "intervention_mode": "symmetric",
+      "eta": 0.8,
+      "eta_A": 0.8,
+      "eta_B": 0.8,
+      "I_Omega_X": 0.0052716827726163274,
+      "I_Lambda_X": 0.0004647547631878709,
+      "target_error_at_baseline": null,
+      "correlators": [
+        0.8251331614030573,
+        0.8251394383045745,
+        0.1949184023824318,
+        -0.19493538229462032
+      ],
+      "CHSH": 2.040126384384684,
+      "alice_no_signalling_error": 0.00047850019551226586,
+      "bob_no_signalling_error": 0.0016419968660777995,
+      "setting_distribution": [
+        0.2500000000000001,
+        0.25000000000000006,
+        0.25,
+        0.24999999999999994
+      ],
+      "setting_uniformity_error": 1.1102230246251565e-16
+    },
+    {
+      "theta_deg": 16.875,
+      "intervention_mode": "symmetric",
+      "eta": 0.9,
+      "eta_A": 0.9,
+      "eta_B": 0.9,
+      "I_Omega_X": 0.0013128122476420486,
+      "I_Lambda_X": 0.0001137381589842945,
+      "target_error_at_baseline": null,
+      "correlators": [
+        0.821004761071634,
+        0.8210114912632831,
+        0.18846843896425192,
+        -0.1884872100428921
+      ],
+      "CHSH": 2.018971901342061,
+      "alice_no_signalling_error": 0.00026915635996938025,
+      "bob_no_signalling_error": 0.000923623237172766,
+      "setting_distribution": [
+        0.25000000000000006,
+        0.2500000000000001,
+        0.25,
+        0.25
+      ],
+      "setting_uniformity_error": 1.1102230246251565e-16
+    },
+    {
+      "theta_deg": 16.875,
+      "intervention_mode": "symmetric",
+      "eta": 1.0,
+      "eta_A": 1.0,
+      "eta_B": 1.0,
+      "I_Omega_X": 0.0,
+      "I_Lambda_X": -4.374447179892625e-16,
+      "target_error_at_baseline": null,
+      "correlators": [
+        0.8173205681061222,
+        0.8173276779606725,
+        0.18266558925931797,
+        -0.18268607787716495
+      ],
+      "CHSH": 1.9999999132032777,
+      "alice_no_signalling_error": 0.0,
+      "bob_no_signalling_error": 0.0,
+      "setting_distribution": [
+        0.25000000000000006,
+        0.25000000000000006,
+        0.25000000000000006,
+        0.25000000000000006
+      ],
+      "setting_uniformity_error": 5.551115123125783e-17
+    },
+    {
+      "theta_deg": 16.875,
+      "intervention_mode": "A_device_only",
+      "eta": 0.0,
+      "eta_A": 0.0,
+      "eta_B": 0.0,
+      "I_Omega_X": 0.1623975556819473,
+      "I_Lambda_X": 0.02262066252783286,
+      "target_error_at_baseline": 5.166074816195798e-13,
+      "correlators": [
+        0.8741518292272477,
+        0.8741518292274115,
+        0.2698142034047165,
+        -0.2698142034044818
+      ],
+      "CHSH": 2.2879320652638575,
+      "alice_no_signalling_error": 4.962141808562137e-13,
+      "bob_no_signalling_error": 3.270717030545711e-13,
+      "setting_distribution": [
+        0.2500000000000002,
+        0.2500000000000005,
+        0.24999999999999986,
+        0.2499999999999996
+      ],
+      "setting_uniformity_error": 4.996003610813204e-16
+    },
+    {
+      "theta_deg": 16.875,
+      "intervention_mode": "A_device_only",
+      "eta": 0.1,
+      "eta_A": 0.1,
+      "eta_B": 0.0,
+      "I_Omega_X": 0.1412737958338873,
+      "I_Lambda_X": 0.018522957495533246,
+      "target_error_at_baseline": null,
+      "correlators": [
+        0.8696862700818639,
+        0.8696869816828136,
+        0.2643334438936116,
+        -0.26433549213958063
+      ],
+      "CHSH": 2.26804218779787,
+      "alice_no_signalling_error": 0.0002990626226294091,
+      "bob_no_signalling_error": 2.94320123828129e-13,
+      "setting_distribution": [
+        0.2500000000000002,
+        0.2500000000000005,
+        0.24999999999999983,
+        0.2499999999999997
+      ],
+      "setting_uniformity_error": 4.996003610813204e-16
+    },
+    {
+      "theta_deg": 16.875,
+      "intervention_mode": "A_device_only",
+      "eta": 0.2,
+      "eta_A": 0.2,
+      "eta_B": 0.0,
+      "I_Omega_X": 0.12553737343587973,
+      "I_Lambda_X": 0.015303859245115136,
+      "target_error_at_baseline": null,
+      "correlators": [
+        0.8652207109364805,
+        0.8652221341382156,
+        0.2588526843825063,
+        -0.2588567808746796
+      ],
+      "CHSH": 2.248152310331882,
+      "alice_no_signalling_error": 0.0005981252447623264,
+      "bob_no_signalling_error": 2.615685446016869e-13,
+      "setting_distribution": [
+        0.2500000000000002,
+        0.25000000000000044,
+        0.24999999999999992,
+        0.24999999999999972
+      ],
+      "setting_uniformity_error": 4.440892098500626e-16
+    },
+    {
+      "theta_deg": 16.875,
+      "intervention_mode": "A_device_only",
+      "eta": 0.30000000000000004,
+      "eta_A": 0.30000000000000004,
+      "eta_B": 0.0,
+      "I_Omega_X": 0.11279288864587841,
+      "I_Lambda_X": 0.01266611542953152,
+      "target_error_at_baseline": null,
+      "correlators": [
+        0.8607551517910966,
+        0.8607572865936176,
+        0.2533719248714012,
+        -0.2533780696097784
+      ],
+      "CHSH": 2.2282624328658938,
+      "alice_no_signalling_error": 0.0008971878668954658,
+      "bob_no_signalling_error": 2.289279876777073e-13,
+      "setting_distribution": [
+        0.2500000000000002,
+        0.2500000000000004,
+        0.2499999999999999,
+        0.24999999999999978
+      ],
+      "setting_uniformity_error": 3.885780586188048e-16
+    },
+    {
+      "theta_deg": 16.875,
+      "intervention_mode": "A_device_only",
+      "eta": 0.4,
+      "eta_A": 0.4,
+      "eta_B": 0.0,
+      "I_Omega_X": 0.10235072237006415,
+      "I_Lambda_X": 0.010491349828269611,
+      "target_error_at_baseline": null,
+      "correlators": [
+        0.8562895926457132,
+        0.8562924390490199,
+        0.24789116536029618,
+        -0.24789935834487734
+      ],
+      "CHSH": 2.2083725553999067,
+      "alice_no_signalling_error": 0.0011962504890286052,
+      "bob_no_signalling_error": 1.9628743075372768e-13,
+      "setting_distribution": [
+        0.2500000000000001,
+        0.25000000000000033,
+        0.24999999999999994,
+        0.24999999999999983
+      ],
+      "setting_uniformity_error": 3.3306690738754696e-16
+    },
+    {
+      "theta_deg": 16.875,
+      "intervention_mode": "A_device_only",
+      "eta": 0.5,
+      "eta_A": 0.5,
+      "eta_B": 0.0,
+      "I_Omega_X": 0.0938626847313711,
+      "I_Lambda_X": 0.008715959718177907,
+      "target_error_at_baseline": null,
+      "correlators": [
+        0.8518240335003295,
+        0.8518275915044218,
+        0.24241040584919107,
+        -0.2424206470799762
+      ],
+      "CHSH": 2.188482677933919,
+      "alice_no_signalling_error": 0.0014953131111616336,
+      "bob_no_signalling_error": 1.6353585152728556e-13,
+      "setting_distribution": [
+        0.2500000000000001,
+        0.2500000000000003,
+        0.24999999999999994,
+        0.24999999999999983
+      ],
+      "setting_uniformity_error": 2.7755575615628914e-16
+    },
+    {
+      "theta_deg": 16.875,
+      "intervention_mode": "A_device_only",
+      "eta": 0.6000000000000001,
+      "eta_A": 0.6000000000000001,
+      "eta_B": 0.0,
+      "I_Omega_X": 0.0871200296549368,
+      "I_Lambda_X": 0.007301111232579835,
+      "target_error_at_baseline": null,
+      "correlators": [
+        0.847358474354946,
+        0.8473627439598239,
+        0.23692964633808603,
+        -0.23694193581507508
+      ],
+      "CHSH": 2.1685928004679313,
+      "alice_no_signalling_error": 0.001794375733294662,
+      "bob_no_signalling_error": 1.3089529460330596e-13,
+      "setting_distribution": [
+        0.2500000000000001,
+        0.2500000000000002,
+        0.24999999999999994,
+        0.2499999999999999
+      ],
+      "setting_uniformity_error": 2.220446049250313e-16
+    },
+    {
+      "theta_deg": 16.875,
+      "intervention_mode": "A_device_only",
+      "eta": 0.7000000000000001,
+      "eta_A": 0.7000000000000001,
+      "eta_B": 0.0,
+      "I_Omega_X": 0.08198797198443936,
+      "I_Lambda_X": 0.006221619262523041,
+      "target_error_at_baseline": null,
+      "correlators": [
+        0.8428929152095621,
+        0.8428978964152258,
+        0.2314488868269809,
+        -0.23146322455017398
+      ],
+      "CHSH": 2.1487029230019425,
+      "alice_no_signalling_error": 0.002093438355427746,
+      "bob_no_signalling_error": 9.803269307440132e-14,
+      "setting_distribution": [
+        0.25000000000000006,
+        0.25000000000000017,
+        0.24999999999999997,
+        0.24999999999999994
+      ],
+      "setting_uniformity_error": 1.6653345369377348e-16
+    },
+    {
+      "theta_deg": 16.875,
+      "intervention_mode": "A_device_only",
+      "eta": 0.8,
+      "eta_A": 0.8,
+      "eta_B": 0.0,
+      "I_Omega_X": 0.07837769437543635,
+      "I_Lambda_X": 0.005460893927589358,
+      "target_error_at_baseline": null,
+      "correlators": [
+        0.8384273560641786,
+        0.838433048870628,
+        0.22596812731587568,
+        -0.2259845132852728
+      ],
+      "CHSH": 2.128813045535955,
+      "alice_no_signalling_error": 0.002392500977560885,
+      "bob_no_signalling_error": 6.539213615042172e-14,
+      "setting_distribution": [
+        0.25,
+        0.2500000000000001,
+        0.25,
+        0.25
+      ],
+      "setting_uniformity_error": 1.1102230246251565e-16
+    },
+    {
+      "theta_deg": 16.875,
+      "intervention_mode": "A_device_only",
+      "eta": 0.9,
+      "eta_A": 0.9,
+      "eta_B": 0.0,
+      "I_Omega_X": 0.07623255679570287,
+      "I_Lambda_X": 0.005008373450645151,
+      "target_error_at_baseline": null,
+      "correlators": [
+        0.8339617969187949,
+        0.8339682013260299,
+        0.22048736780477063,
+        -0.22050580202037168
+      ],
+      "CHSH": 2.108923168069967,
+      "alice_no_signalling_error": 0.0026915635996938025,
+      "bob_no_signalling_error": 3.26405569239796e-14,
+      "setting_distribution": [
+        0.25000000000000006,
+        0.25000000000000006,
+        0.25000000000000006,
+        0.25
+      ],
+      "setting_uniformity_error": 5.551115123125783e-17
+    },
+    {
+      "theta_deg": 16.875,
+      "intervention_mode": "A_device_only",
+      "eta": 1.0,
+      "eta_A": 1.0,
+      "eta_B": 0.0,
+      "I_Omega_X": 0.07552090886764523,
+      "I_Lambda_X": 0.004858165327339367,
+      "target_error_at_baseline": null,
+      "correlators": [
+        0.8294962377734113,
+        0.8295033537814318,
+        0.21500660829366552,
+        -0.21502709075547066
+      ],
+      "CHSH": 2.0890332906039792,
+      "alice_no_signalling_error": 0.002990626221827053,
+      "bob_no_signalling_error": 0.0,
+      "setting_distribution": [
+        0.25000000000000006,
+        0.2500000000000001,
+        0.25000000000000006,
+        0.2500000000000001
+      ],
+      "setting_uniformity_error": 1.1102230246251565e-16
+    },
+    {
+      "theta_deg": 16.875,
+      "intervention_mode": "B_device_only",
+      "eta": 0.0,
+      "eta_A": 0.0,
+      "eta_B": 0.0,
+      "I_Omega_X": 0.1623975556819473,
+      "I_Lambda_X": 0.02262066252783286,
+      "target_error_at_baseline": 5.166074816195798e-13,
+      "correlators": [
+        0.8741518292272477,
+        0.8741518292274115,
+        0.2698142034047165,
+        -0.2698142034044818
+      ],
+      "CHSH": 2.2879320652638575,
+      "alice_no_signalling_error": 4.962141808562137e-13,
+      "bob_no_signalling_error": 3.270717030545711e-13,
+      "setting_distribution": [
+        0.2500000000000002,
+        0.2500000000000005,
+        0.24999999999999986,
+        0.2499999999999996
+      ],
+      "setting_uniformity_error": 4.996003610813204e-16
+    },
+    {
+      "theta_deg": 16.875,
+      "intervention_mode": "B_device_only",
+      "eta": 0.1,
+      "eta_A": 0.0,
+      "eta_B": 0.1,
+      "I_Omega_X": 0.14373378326022057,
+      "I_Lambda_X": 0.018972259043771852,
+      "target_error_at_baseline": null,
+      "correlators": [
+        0.8707132254309624,
+        0.8707135929519318,
+        0.2633445329350531,
+        -0.26334490168664637
+      ],
+      "CHSH": 2.2681162530045937,
+      "alice_no_signalling_error": 4.466427228067005e-13,
+      "bob_no_signalling_error": 0.0010262480410122565,
+      "setting_distribution": [
+        0.2500000000000002,
+        0.2500000000000005,
+        0.2499999999999998,
+        0.2499999999999996
+      ],
+      "setting_uniformity_error": 4.996003610813204e-16
+    },
+    {
+      "theta_deg": 16.875,
+      "intervention_mode": "B_device_only",
+      "eta": 0.2,
+      "eta_A": 0.0,
+      "eta_B": 0.2,
+      "I_Omega_X": 0.1298659975066127,
+      "I_Lambda_X": 0.016074413283540992,
+      "target_error_at_baseline": null,
+      "correlators": [
+        0.8672746216346773,
+        0.8672753566764523,
+        0.2568748624653895,
+        -0.2568755999688106
+      ],
+      "CHSH": 2.2483004407453295,
+      "alice_no_signalling_error": 3.971267759084185e-13,
+      "bob_no_signalling_error": 0.0020524960823516958,
+      "setting_distribution": [
+        0.2500000000000002,
+        0.2500000000000005,
+        0.24999999999999983,
+        0.24999999999999964
+      ],
+      "setting_uniformity_error": 4.996003610813204e-16
+    },
+    {
+      "theta_deg": 16.875,
+      "intervention_mode": "B_device_only",
+      "eta": 0.30000000000000004,
+      "eta_A": 0.0,
+      "eta_B": 0.30000000000000004,
+      "I_Omega_X": 0.11875810639523328,
+      "I_Lambda_X": 0.013690906436174839,
+      "target_error_at_baseline": null,
+      "correlators": [
+        0.8638360178383919,
+        0.8638371204009726,
+        0.25040519199572586,
+        -0.25040629825097505
+      ],
+      "CHSH": 2.2284846284860653,
+      "alice_no_signalling_error": 3.47499806707674e-13,
+      "bob_no_signalling_error": 0.003078744123691135,
+      "setting_distribution": [
+        0.25000000000000033,
+        0.2500000000000005,
+        0.24999999999999983,
+        0.24999999999999967
+      ],
+      "setting_uniformity_error": 4.996003610813204e-16
+    },
+    {
+      "theta_deg": 16.875,
+      "intervention_mode": "B_device_only",
+      "eta": 0.4,
+      "eta_A": 0.0,
+      "eta_B": 0.4,
+      "I_Omega_X": 0.1097394436794828,
+      "I_Lambda_X": 0.01172238746521442,
+      "target_error_at_baseline": null,
+      "correlators": [
+        0.8603974140421067,
+        0.8603988841254931,
+        0.2439355215260622,
+        -0.24393699653313952
+      ],
+      "CHSH": 2.2086688162268016,
+      "alice_no_signalling_error": 2.97761815204467e-13,
+      "bob_no_signalling_error": 0.004104992165030463,
+      "setting_distribution": [
+        0.25000000000000033,
+        0.25000000000000044,
+        0.24999999999999983,
+        0.24999999999999967
+      ],
+      "setting_uniformity_error": 4.440892098500626e-16
+    },
+    {
+      "theta_deg": 16.875,
+      "intervention_mode": "B_device_only",
+      "eta": 0.5,
+      "eta_A": 0.0,
+      "eta_B": 0.5,
+      "I_Omega_X": 0.10246037272243125,
+      "I_Lambda_X": 0.010114024893872298,
+      "target_error_at_baseline": null,
+      "correlators": [
+        0.8569588102458214,
+        0.8569606478500136,
+        0.23746585105639856,
+        -0.23746769481530378
+      ],
+      "CHSH": 2.1888530039675373,
+      "alice_no_signalling_error": 2.4802382370125997e-13,
+      "bob_no_signalling_error": 0.0051312402063697915,
+      "setting_distribution": [
+        0.25000000000000033,
+        0.25000000000000044,
+        0.24999999999999978,
+        0.24999999999999964
+      ],
+      "setting_uniformity_error": 4.440892098500626e-16
+    },
+    {
+      "theta_deg": 16.875,
+      "intervention_mode": "B_device_only",
+      "eta": 0.6000000000000001,
+      "eta_A": 0.0,
+      "eta_B": 0.6000000000000001,
+      "I_Omega_X": 0.09670934508406842,
+      "I_Lambda_X": 0.008831758051528433,
+      "target_error_at_baseline": null,
+      "correlators": [
+        0.8535202064495362,
+        0.8535224115745337,
+        0.2309961805867351,
+        -0.23099839309746822
+      ],
+      "CHSH": 2.169037191708273,
+      "alice_no_signalling_error": 1.98507876802978e-13,
+      "bob_no_signalling_error": 0.006157488247709342,
+      "setting_distribution": [
+        0.25000000000000033,
+        0.25000000000000044,
+        0.24999999999999978,
+        0.24999999999999967
+      ],
+      "setting_uniformity_error": 4.440892098500626e-16
+    },
+    {
+      "theta_deg": 16.875,
+      "intervention_mode": "B_device_only",
+      "eta": 0.7000000000000001,
+      "eta_A": 0.0,
+      "eta_B": 0.7000000000000001,
+      "I_Omega_X": 0.09234968292748785,
+      "I_Lambda_X": 0.0078532331126271,
+      "target_error_at_baseline": null,
+      "correlators": [
+        0.850081602653251,
+        0.8500841752990542,
+        0.22452651011707137,
+        -0.2245290913796325
+      ],
+      "CHSH": 2.149221379449009,
+      "alice_no_signalling_error": 1.4882539645100223e-13,
+      "bob_no_signalling_error": 0.007183736289048448,
+      "setting_distribution": [
+        0.25000000000000033,
+        0.2500000000000004,
+        0.24999999999999972,
+        0.24999999999999972
+      ],
+      "setting_uniformity_error": 3.885780586188048e-16
+    },
+    {
+      "theta_deg": 16.875,
+      "intervention_mode": "B_device_only",
+      "eta": 0.8,
+      "eta_A": 0.0,
+      "eta_B": 0.8,
+      "I_Omega_X": 0.0892915440791269,
+      "I_Lambda_X": 0.007163602540314995,
+      "target_error_at_baseline": null,
+      "correlators": [
+        0.8466429988569656,
+        0.8466459390235745,
+        0.2180568396474079,
+        -0.218059789661797
+      ],
+      "CHSH": 2.129405567189745,
+      "alice_no_signalling_error": 9.930944955272025e-14,
+      "bob_no_signalling_error": 0.00820998433038811,
+      "setting_distribution": [
+        0.25000000000000033,
+        0.2500000000000004,
+        0.24999999999999972,
+        0.24999999999999972
+      ],
+      "setting_uniformity_error": 3.885780586188048e-16
+    },
+    {
+      "theta_deg": 16.875,
+      "intervention_mode": "B_device_only",
+      "eta": 0.9,
+      "eta_A": 0.0,
+      "eta_B": 0.9,
+      "I_Omega_X": 0.08747781113388632,
+      "I_Lambda_X": 0.006753360466995877,
+      "target_error_at_baseline": null,
+      "correlators": [
+        0.8432043950606805,
+        0.8432077027480949,
+        0.21158716917774428,
+        -0.21159048794396146
+      ],
+      "CHSH": 2.109589754930481,
+      "alice_no_signalling_error": 4.957145804951324e-14,
+      "bob_no_signalling_error": 0.009236232371727437,
+      "setting_distribution": [
+        0.25000000000000033,
+        0.2500000000000004,
+        0.24999999999999978,
+        0.2499999999999997
+      ],
+      "setting_uniformity_error": 3.885780586188048e-16
+    },
+    {
+      "theta_deg": 16.875,
+      "intervention_mode": "B_device_only",
+      "eta": 1.0,
+      "eta_A": 0.0,
+      "eta_B": 1.0,
+      "I_Omega_X": 0.08687664681430164,
+      "I_Lambda_X": 0.00661718490872305,
+      "target_error_at_baseline": null,
+      "correlators": [
+        0.8397657912643952,
+        0.8397694664726155,
+        0.20511749870808071,
+        -0.2051211862261258
+      ],
+      "CHSH": 2.089773942671217,
+      "alice_no_signalling_error": 0.0,
+      "bob_no_signalling_error": 0.010262480413066655,
+      "setting_distribution": [
+        0.25000000000000033,
+        0.25000000000000033,
+        0.24999999999999972,
+        0.24999999999999972
+      ],
+      "setting_uniformity_error": 3.3306690738754696e-16
+    },
+    {
+      "theta_deg": 45.0,
+      "intervention_mode": "symmetric",
+      "eta": 0.0,
+      "eta_A": 0.0,
+      "eta_B": 0.0,
+      "I_Omega_X": 0.2798426316876876,
+      "I_Lambda_X": 0.04627385834507533,
+      "target_error_at_baseline": 5.570544026056723e-13,
+      "correlators": [
+        0.7071067811854488,
+        0.7071067811861154,
+        0.707106781184484,
+        -0.7071067811855778
+      ],
+      "CHSH": 2.8284271247416264,
+      "alice_no_signalling_error": 3.697042672001771e-14,
+      "bob_no_signalling_error": 3.186340080674199e-14,
+      "setting_distribution": [
+        0.2499999999998635,
+        0.24999999999988512,
+        0.25000000000045197,
+        0.2499999999998009
+      ],
+      "setting_uniformity_error": 4.5197179332490123e-13
+    },
+    {
+      "theta_deg": 45.0,
+      "intervention_mode": "symmetric",
+      "eta": 0.1,
+      "eta_A": 0.1,
+      "eta_B": 0.1,
+      "I_Omega_X": 0.22385364912702424,
+      "I_Lambda_X": 0.03446139984648326,
+      "target_error_at_baseline": null,
+      "correlators": [
+        0.6801814758007769,
+        0.6801832706048145,
+        0.6801807697564612,
+        -0.6801828568728774
+      ],
+      "CHSH": 2.72072837303493,
+      "alice_no_signalling_error": 7.99036587839641e-07,
+      "bob_no_signalling_error": 6.924815021402964e-07,
+      "setting_distribution": [
+        0.24999999999989236,
+        0.24999999999988154,
+        0.25000000000039174,
+        0.24999999999983602
+      ],
+      "setting_uniformity_error": 3.917421942389865e-13
+    },
+    {
+      "theta_deg": 45.0,
+      "intervention_mode": "symmetric",
+      "eta": 0.2,
+      "eta_A": 0.2,
+      "eta_B": 0.2,
+      "I_Omega_X": 0.17502064395713954,
+      "I_Lambda_X": 0.02514081435751366,
+      "target_error_at_baseline": null,
+      "correlators": [
+        0.6546371801699049,
+        0.6546404739782974,
+        0.6546358255271082,
+        -0.6546397039598812
+      ],
+      "CHSH": 2.618553183635192,
+      "alice_no_signalling_error": 1.4205095188457584e-06,
+      "bob_no_signalling_error": 1.2310782513957896e-06,
+      "setting_distribution": [
+        0.2499999999999178,
+        0.24999999999988126,
+        0.25000000000033473,
+        0.24999999999986772
+      ],
+      "setting_uniformity_error": 3.347322419244847e-13
+    },
+    {
+      "theta_deg": 45.0,
+      "intervention_mode": "symmetric",
+      "eta": 0.30000000000000004,
+      "eta_A": 0.30000000000000004,
+      "eta_B": 0.30000000000000004,
+      "I_Omega_X": 0.13282211192449125,
+      "I_Lambda_X": 0.017863137912891493,
+      "target_error_at_baseline": null,
+      "correlators": [
+        0.6304738942928316,
+        0.6304783913065652,
+        0.6304719484964262,
+        -0.6304773224465883
+      ],
+      "CHSH": 2.521901556542411,
+      "alice_no_signalling_error": 1.864418756714059e-06,
+      "bob_no_signalling_error": 1.6157902165137017e-06,
+      "setting_distribution": [
+        0.24999999999993985,
+        0.2499999999998844,
+        0.25000000000028116,
+        0.24999999999989603
+      ],
+      "setting_uniformity_error": 2.811639809863209e-13
+    },
+    {
+      "theta_deg": 45.0,
+      "intervention_mode": "symmetric",
+      "eta": 0.4,
+      "eta_A": 0.4,
+      "eta_B": 0.4,
+      "I_Omega_X": 0.09686917849432296,
+      "I_Lambda_X": 0.012254520579326151,
+      "target_error_at_baseline": null,
+      "correlators": [
+        0.6076916181695554,
+        0.6076970225896193,
+        0.6076891386644174,
+        -0.6076957123329967
+      ],
+      "CHSH": 2.4307734917565886,
+      "alice_no_signalling_error": 2.1307643005008536e-06,
+      "bob_no_signalling_error": 1.846617396550343e-06,
+      "setting_distribution": [
+        0.2499999999999586,
+        0.24999999999989084,
+        0.250000000000231,
+        0.24999999999992106
+      ],
+      "setting_uniformity_error": 2.309819002732638e-13
+    },
+    {
+      "theta_deg": 45.0,
+      "intervention_mode": "symmetric",
+      "eta": 0.5,
+      "eta_A": 0.5,
+      "eta_B": 0.5,
+      "I_Omega_X": 0.06686673157418485,
+      "I_Lambda_X": 0.008005026438320514,
+      "target_error_at_baseline": null,
+      "correlators": [
+        0.5862903518000753,
+        0.58629636782746,
+        0.5862873960310839,
+        -0.5862948736191052
+      ],
+      "CHSH": 2.3451689892777243,
+      "alice_no_signalling_error": 2.2195461510943204e-06,
+      "bob_no_signalling_error": 1.923559792116336e-06,
+      "setting_distribution": [
+        0.249999999999974,
+        0.24999999999990072,
+        0.25000000000018413,
+        0.24999999999994268
+      ],
+      "setting_uniformity_error": 1.841304886340822e-13
+    },
+    {
+      "theta_deg": 45.0,
+      "intervention_mode": "symmetric",
+      "eta": 0.6000000000000001,
+      "eta_A": 0.6000000000000001,
+      "eta_B": 0.6000000000000001,
+      "I_Omega_X": 0.04258995544901738,
+      "I_Lambda_X": 0.004861101098815454,
+      "target_error_at_baseline": null,
+      "correlators": [
+        0.5662700951843898,
+        0.5662764270200882,
+        0.5662667205964269,
+        -0.5662748063049128
+      ],
+      "CHSH": 2.2650880491058176,
+      "alice_no_signalling_error": 2.130764307939348e-06,
+      "bob_no_signalling_error": 1.8466174029896365e-06,
+      "setting_distribution": [
+        0.24999999999998596,
+        0.2499999999999139,
+        0.25000000000014067,
+        0.24999999999996095
+      ],
+      "setting_uniformity_error": 1.4066525722000733e-13
+    },
+    {
+      "theta_deg": 45.0,
+      "intervention_mode": "symmetric",
+      "eta": 0.7000000000000001,
+      "eta_A": 0.7000000000000001,
+      "eta_B": 0.7000000000000001,
+      "I_Omega_X": 0.023869424600841543,
+      "I_Lambda_X": 0.0026204657661591775,
+      "target_error_at_baseline": null,
+      "correlators": [
+        0.5476308483224981,
+        0.5476372001675043,
+        0.5476271123604479,
+        -0.547635510390418
+      ],
+      "CHSH": 2.190530671240868,
+      "alice_no_signalling_error": 1.8644187714800253e-06,
+      "bob_no_signalling_error": 1.6157902292257553e-06,
+      "setting_distribution": [
+        0.24999999999999462,
+        0.24999999999993047,
+        0.2500000000001006,
+        0.24999999999997585
+      ],
+      "setting_uniformity_error": 1.0058620603103918e-13
+    },
+    {
+      "theta_deg": 45.0,
+      "intervention_mode": "symmetric",
+      "eta": 0.8,
+      "eta_A": 0.8,
+      "eta_B": 0.8,
+      "I_Omega_X": 0.010581368456172194,
+      "I_Lambda_X": 0.0011286664753613126,
+      "target_error_at_baseline": null,
+      "correlators": [
+        0.5303726112143996,
+        0.5303786872697092,
+        0.5303685713231487,
+        -0.5303769858756202
+      ],
+      "CHSH": 2.121496855682878,
+      "alice_no_signalling_error": 1.42050954110573e-06,
+      "bob_no_signalling_error": 1.2310782708802037e-06,
+      "setting_distribution": [
+        0.24999999999999992,
+        0.2499999999999504,
+        0.2500000000000638,
+        0.24999999999998734
+      ],
+      "setting_uniformity_error": 6.378231276471524e-14
+    },
+    {
+      "theta_deg": 45.0,
+      "intervention_mode": "symmetric",
+      "eta": 0.9,
+      "eta_A": 0.9,
+      "eta_B": 0.9,
+      "I_Omega_X": 0.0026412997762952097,
+      "I_Lambda_X": 0.0002767857464508467,
+      "target_error_at_baseline": null,
+      "correlators": [
+        0.5144953838600931,
+        0.5145008883267029,
+        0.5144910974845305,
+        -0.514499232760518
+      ],
+      "CHSH": 2.0579866024318445,
+      "alice_no_signalling_error": 7.990366173160623e-07,
+      "bob_no_signalling_error": 6.924815277864482e-07,
+      "setting_distribution": [
+        0.25000000000000183,
+        0.24999999999997374,
+        0.25000000000003036,
+        0.24999999999999556
+      ],
+      "setting_uniformity_error": 3.036459972349803e-14
+    },
+    {
+      "theta_deg": 45.0,
+      "intervention_mode": "symmetric",
+      "eta": 1.0,
+      "eta_A": 1.0,
+      "eta_B": 1.0,
+      "I_Omega_X": -2.6124957767447984e-16,
+      "I_Lambda_X": -2.242398549126167e-15,
+      "target_error_at_baseline": null,
+      "correlators": [
+        0.4999991662595781,
+        0.5000038033384857,
+        0.49999469084459414,
+        -0.5000022510451113
+      ],
+      "CHSH": 1.9999999114877691,
+      "alice_no_signalling_error": 0.0,
+      "bob_no_signalling_error": 0.0,
+      "setting_distribution": [
+        0.2500000000000004,
+        0.2500000000000004,
+        0.2500000000000004,
+        0.2500000000000004
+      ],
+      "setting_uniformity_error": 3.885780586188048e-16
+    },
+    {
+      "theta_deg": 45.0,
+      "intervention_mode": "A_device_only",
+      "eta": 0.0,
+      "eta_A": 0.0,
+      "eta_B": 0.0,
+      "I_Omega_X": 0.2798426316876876,
+      "I_Lambda_X": 0.04627385834507533,
+      "target_error_at_baseline": 5.570544026056723e-13,
+      "correlators": [
+        0.7071067811854488,
+        0.7071067811861154,
+        0.707106781184484,
+        -0.7071067811855778
+      ],
+      "CHSH": 2.8284271247416264,
+      "alice_no_signalling_error": 3.697042672001771e-14,
+      "bob_no_signalling_error": 3.186340080674199e-14,
+      "setting_distribution": [
+        0.2499999999998635,
+        0.24999999999988512,
+        0.25000000000045197,
+        0.2499999999998009
+      ],
+      "setting_uniformity_error": 4.5197179332490123e-13
+    },
+    {
+      "theta_deg": 45.0,
+      "intervention_mode": "A_device_only",
+      "eta": 0.1,
+      "eta_A": 0.1,
+      "eta_B": 0.0,
+      "I_Omega_X": 0.2518483591949778,
+      "I_Lambda_X": 0.04001222803028773,
+      "target_error_at_baseline": null,
+      "correlators": [
+        0.6932994027037567,
+        0.6933002217669391,
+        0.6932993246769602,
+        -0.6932997253432867
+      ],
+      "CHSH": 2.773198674490943,
+      "alice_no_signalling_error": 8.878184307725689e-07,
+      "bob_no_signalling_error": 2.886579864025407e-14,
+      "setting_distribution": [
+        0.24999999999989292,
+        0.2499999999998809,
+        0.25000000000042255,
+        0.24999999999980513
+      ],
+      "setting_uniformity_error": 4.225508831723346e-13
+    },
+    {
+      "theta_deg": 45.0,
+      "intervention_mode": "A_device_only",
+      "eta": 0.2,
+      "eta_A": 0.2,
+      "eta_B": 0.0,
+      "I_Omega_X": 0.22743221027849883,
+      "I_Lambda_X": 0.0344468173189106,
+      "target_error_at_baseline": null,
+      "correlators": [
+        0.6794920242220678,
+        0.6794936623477619,
+        0.6794918681694331,
+        -0.6794926695009962
+      ],
+      "CHSH": 2.717970224240259,
+      "alice_no_signalling_error": 1.7756368987376092e-06,
+      "bob_no_signalling_error": 2.55351295663786e-14,
+      "setting_distribution": [
+        0.24999999999992234,
+        0.2499999999998767,
+        0.25000000000039313,
+        0.24999999999980926
+      ],
+      "setting_uniformity_error": 3.9312997301976793e-13
+    },
+    {
+      "theta_deg": 45.0,
+      "intervention_mode": "A_device_only",
+      "eta": 0.30000000000000004,
+      "eta_A": 0.30000000000000004,
+      "eta_B": 0.0,
+      "I_Omega_X": 0.20633336583158096,
+      "I_Lambda_X": 0.02956461023670136,
+      "target_error_at_baseline": null,
+      "correlators": [
+        0.665684645740382,
+        0.6656871029285842,
+        0.6656844116619028,
+        -0.6656856136587057
+      ],
+      "CHSH": 2.662741773989575,
+      "alice_no_signalling_error": 2.663455366480605e-06,
+      "bob_no_signalling_error": 2.2315482794965646e-14,
+      "setting_distribution": [
+        0.24999999999995176,
+        0.24999999999987244,
+        0.2500000000003637,
+        0.24999999999981354
+      ],
+      "setting_uniformity_error": 3.637090628672013e-13
+    },
+    {
+      "theta_deg": 45.0,
+      "intervention_mode": "A_device_only",
+      "eta": 0.4,
+      "eta_A": 0.4,
+      "eta_B": 0.0,
+      "I_Omega_X": 0.1883573389899827,
+      "I_Lambda_X": 0.025354520001313594,
+      "target_error_at_baseline": null,
+      "correlators": [
+        0.6518772672586997,
+        0.6518805435094062,
+        0.6518769551543692,
+        -0.6518785578164161
+      ],
+      "CHSH": 2.607513323738891,
+      "alice_no_signalling_error": 3.551273834334623e-06,
+      "bob_no_signalling_error": 1.9206858326015208e-14,
+      "setting_distribution": [
+        0.24999999999998118,
+        0.24999999999986824,
+        0.2500000000003343,
+        0.24999999999981773
+      ],
+      "setting_uniformity_error": 3.3428815271463463e-13
+    },
+    {
+      "theta_deg": 45.0,
+      "intervention_mode": "A_device_only",
+      "eta": 0.5,
+      "eta_A": 0.5,
+      "eta_B": 0.0,
+      "I_Omega_X": 0.17335653697298917,
+      "I_Lambda_X": 0.021807225301612238,
+      "target_error_at_baseline": null,
+      "correlators": [
+        0.6380698887770203,
+        0.6380739840902279,
+        0.6380694986468325,
+        -0.638071501974127
+      ],
+      "CHSH": 2.5522848734882073,
+      "alice_no_signalling_error": 4.439092302022107e-06,
+      "bob_no_signalling_error": 1.5987211554602254e-14,
+      "setting_distribution": [
+        0.25000000000001066,
+        0.24999999999986408,
+        0.25000000000030487,
+        0.24999999999982192
+      ],
+      "setting_uniformity_error": 3.04867242562068e-13
+    },
+    {
+      "theta_deg": 45.0,
+      "intervention_mode": "A_device_only",
+      "eta": 0.6000000000000001,
+      "eta_A": 0.6000000000000001,
+      "eta_B": 0.0,
+      "I_Omega_X": 0.161218524789075,
+      "I_Lambda_X": 0.018915038618023343,
+      "target_error_at_baseline": null,
+      "correlators": [
+        0.6242625102953445,
+        0.6242674246710488,
+        0.6242620421392926,
+        -0.6242644461318383
+      ],
+      "CHSH": 2.497056423237524,
+      "alice_no_signalling_error": 5.326910769876125e-06,
+      "bob_no_signalling_error": 1.2878587085651816e-14,
+      "setting_distribution": [
+        0.25000000000004,
+        0.24999999999985986,
+        0.25000000000027545,
+        0.24999999999982617
+      ],
+      "setting_uniformity_error": 2.7544633240950134e-13
+    },
+    {
+      "theta_deg": 45.0,
+      "intervention_mode": "A_device_only",
+      "eta": 0.7000000000000001,
+      "eta_A": 0.7000000000000001,
+      "eta_B": 0.0,
+      "I_Omega_X": 0.15185856986315008,
+      "I_Lambda_X": 0.01667180164964888,
+      "target_error_at_baseline": null,
+      "correlators": [
+        0.6104551318136717,
+        0.6104608652518694,
+        0.6104545856317491,
+        -0.6104573902895499
+      ],
+      "CHSH": 2.44182797298684,
+      "alice_no_signalling_error": 6.2147292377856544e-06,
+      "bob_no_signalling_error": 9.658940314238862e-15,
+      "setting_distribution": [
+        0.2500000000000695,
+        0.24999999999985564,
+        0.250000000000246,
+        0.24999999999983039
+      ],
+      "setting_uniformity_error": 2.460254222569347e-13
+    },
+    {
+      "theta_deg": 45.0,
+      "intervention_mode": "A_device_only",
+      "eta": 0.8,
+      "eta_A": 0.8,
+      "eta_B": 0.0,
+      "I_Omega_X": 0.1452147728370579,
+      "I_Lambda_X": 0.015072804127783498,
+      "target_error_at_baseline": null,
+      "correlators": [
+        0.5966477533320025,
+        0.5966543058326896,
+        0.5966471291242026,
+        -0.596650334447262
+      ],
+      "CHSH": 2.386599522736157,
+      "alice_no_signalling_error": 7.102547705473139e-06,
+      "bob_no_signalling_error": 6.328271240363392e-15,
+      "setting_distribution": [
+        0.25000000000009887,
+        0.24999999999985142,
+        0.2500000000002166,
+        0.24999999999983463
+      ],
+      "setting_uniformity_error": 2.1660451210436804e-13
+    },
+    {
+      "theta_deg": 45.0,
+      "intervention_mode": "A_device_only",
+      "eta": 0.9,
+      "eta_A": 0.9,
+      "eta_B": 0.0,
+      "I_Omega_X": 0.14124488070431554,
+      "I_Lambda_X": 0.01411472325112685,
+      "target_error_at_baseline": null,
+      "correlators": [
+        0.5828403748503362,
+        0.5828477464135092,
+        0.5828396726166527,
+        -0.5828432786049749
+      ],
+      "CHSH": 2.331371072485473,
+      "alice_no_signalling_error": 7.990366173327157e-06,
+      "bob_no_signalling_error": 3.1086244689504383e-15,
+      "setting_distribution": [
+        0.2500000000001283,
+        0.2499999999998472,
+        0.2500000000001872,
+        0.2499999999998388
+      ],
+      "setting_uniformity_error": 1.871836019518014e-13
+    },
+    {
+      "theta_deg": 45.0,
+      "intervention_mode": "A_device_only",
+      "eta": 1.0,
+      "eta_A": 1.0,
+      "eta_B": 0.0,
+      "I_Omega_X": 0.1399242788030108,
+      "I_Lambda_X": 0.013795581751931033,
+      "target_error_at_baseline": null,
+      "correlators": [
+        0.5690329963686732,
+        0.5690411869943284,
+        0.5690322161090997,
+        -0.569036222762688
+      ],
+      "CHSH": 2.276142622234789,
+      "alice_no_signalling_error": 8.878184641236686e-06,
+      "bob_no_signalling_error": 0.0,
+      "setting_distribution": [
+        0.25000000000015776,
+        0.24999999999984301,
+        0.25000000000015776,
+        0.24999999999984301
+      ],
+      "setting_uniformity_error": 1.5776269179923474e-13
+    },
+    {
+      "theta_deg": 45.0,
+      "intervention_mode": "B_device_only",
+      "eta": 0.0,
+      "eta_A": 0.0,
+      "eta_B": 0.0,
+      "I_Omega_X": 0.2798426316876876,
+      "I_Lambda_X": 0.04627385834507533,
+      "target_error_at_baseline": 5.570544026056723e-13,
+      "correlators": [
+        0.7071067811854488,
+        0.7071067811861154,
+        0.707106781184484,
+        -0.7071067811855778
+      ],
+      "CHSH": 2.8284271247416264,
+      "alice_no_signalling_error": 3.697042672001771e-14,
+      "bob_no_signalling_error": 3.186340080674199e-14,
+      "setting_distribution": [
+        0.2499999999998635,
+        0.24999999999988512,
+        0.25000000000045197,
+        0.2499999999998009
+      ],
+      "setting_uniformity_error": 4.5197179332490123e-13
+    },
+    {
+      "theta_deg": 45.0,
+      "intervention_mode": "B_device_only",
+      "eta": 0.1,
+      "eta_A": 0.0,
+      "eta_B": 0.1,
+      "I_Omega_X": 0.25184792161973407,
+      "I_Lambda_X": 0.040011517467111984,
+      "target_error_at_baseline": null,
+      "correlators": [
+        0.6932983494055702,
+        0.6932994730465992,
+        0.6932976926646477,
+        -0.6932995270153176
+      ],
+      "CHSH": 2.773195042132135,
+      "alice_no_signalling_error": 3.3084646133829665e-14,
+      "bob_no_signalling_error": 7.694238912114848e-07,
+      "setting_distribution": [
+        0.2499999999998646,
+        0.24999999999988406,
+        0.25000000000041944,
+        0.24999999999983347
+      ],
+      "setting_uniformity_error": 4.1944225870338414e-13
+    },
+    {
+      "theta_deg": 45.0,
+      "intervention_mode": "B_device_only",
+      "eta": 0.2,
+      "eta_A": 0.0,
+      "eta_B": 0.2,
+      "I_Omega_X": 0.22743106536632846,
+      "I_Lambda_X": 0.03444547876683788,
+      "target_error_at_baseline": null,
+      "correlators": [
+        0.6794899176256919,
+        0.6794921649070829,
+        0.679488604144808,
+        -0.6794922728450612
+      ],
+      "CHSH": 2.7179629595226436,
+      "alice_no_signalling_error": 2.9531932455029164e-14,
+      "bob_no_signalling_error": 1.5388478144529039e-06,
+      "setting_distribution": [
+        0.2499999999998657,
+        0.24999999999988295,
+        0.25000000000038686,
+        0.249999999999866
+      ],
+      "setting_uniformity_error": 3.868572129306358e-13
+    },
+    {
+      "theta_deg": 45.0,
+      "intervention_mode": "B_device_only",
+      "eta": 0.30000000000000004,
+      "eta_A": 0.0,
+      "eta_B": 0.30000000000000004,
+      "I_Omega_X": 0.20633137778059787,
+      "I_Lambda_X": 0.029562723479370362,
+      "target_error_at_baseline": null,
+      "correlators": [
+        0.6656814858458135,
+        0.665684856767566,
+        0.6656795156249644,
+        -0.6656850186748082
+      ],
+      "CHSH": 2.662730876913152,
+      "alice_no_signalling_error": 2.5979218776228663e-14,
+      "bob_no_signalling_error": 2.3082717376388118e-06,
+      "setting_distribution": [
+        0.24999999999986672,
+        0.2499999999998819,
+        0.25000000000035427,
+        0.24999999999989855
+      ],
+      "setting_uniformity_error": 3.5427216715788745e-13
+    },
+    {
+      "theta_deg": 45.0,
+      "intervention_mode": "B_device_only",
+      "eta": 0.4,
+      "eta_A": 0.0,
+      "eta_B": 0.4,
+      "I_Omega_X": 0.1883544711920278,
+      "I_Lambda_X": 0.0253521624828724,
+      "target_error_at_baseline": null,
+      "correlators": [
+        0.6518730540659354,
+        0.6518775486280494,
+        0.6518704271051172,
+        -0.6518777645045588
+      ],
+      "CHSH": 2.6074987943036607,
+      "alice_no_signalling_error": 2.2315482794965646e-14,
+      "bob_no_signalling_error": 3.077695660935742e-06,
+      "setting_distribution": [
+        0.24999999999986783,
+        0.2499999999998808,
+        0.25000000000032174,
+        0.2499999999999311
+      ],
+      "setting_uniformity_error": 3.2174263253637037e-13
+    },
+    {
+      "theta_deg": 45.0,
+      "intervention_mode": "B_device_only",
+      "eta": 0.5,
+      "eta_A": 0.0,
+      "eta_B": 0.5,
+      "I_Omega_X": 0.1733528262888832,
+      "I_Lambda_X": 0.021804472525974877,
+      "target_error_at_baseline": null,
+      "correlators": [
+        0.6380646222860571,
+        0.6380702404885324,
+        0.6380613385852665,
+        -0.6380705103343132
+      ],
+      "CHSH": 2.552266711694169,
+      "alice_no_signalling_error": 1.8540724511240114e-14,
+      "bob_no_signalling_error": 3.84711958412165e-06,
+      "setting_distribution": [
+        0.24999999999986888,
+        0.24999999999987968,
+        0.2500000000002892,
+        0.24999999999996364
+      ],
+      "setting_uniformity_error": 2.892130979148533e-13
+    },
+    {
+      "theta_deg": 45.0,
+      "intervention_mode": "B_device_only",
+      "eta": 0.6000000000000001,
+      "eta_A": 0.0,
+      "eta_B": 0.6000000000000001,
+      "I_Omega_X": 0.16121406234762992,
+      "I_Lambda_X": 0.018911964507302106,
+      "target_error_at_baseline": null,
+      "correlators": [
+        0.6242561905061792,
+        0.6242629323490155,
+        0.6242522500654122,
+        -0.6242632561640709
+      ],
+      "CHSH": 2.497034629084678,
+      "alice_no_signalling_error": 1.4765966227514582e-14,
+      "bob_no_signalling_error": 4.616543507307558e-06,
+      "setting_distribution": [
+        0.24999999999986997,
+        0.2499999999998786,
+        0.2500000000002567,
+        0.24999999999999623
+      ],
+      "setting_uniformity_error": 2.566835632933362e-13
+    },
+    {
+      "theta_deg": 45.0,
+      "intervention_mode": "B_device_only",
+      "eta": 0.7000000000000001,
+      "eta_A": 0.0,
+      "eta_B": 0.7000000000000001,
+      "I_Omega_X": 0.15185348642537896,
+      "I_Lambda_X": 0.016668478870782606,
+      "target_error_at_baseline": null,
+      "correlators": [
+        0.6104477587263014,
+        0.6104556242094985,
+        0.6104431615455543,
+        -0.6104560019938325
+      ],
+      "CHSH": 2.441802546475187,
+      "alice_no_signalling_error": 1.099120794378905e-14,
+      "bob_no_signalling_error": 5.3859674304379546e-06,
+      "setting_distribution": [
+        0.24999999999987108,
+        0.24999999999987751,
+        0.2500000000002241,
+        0.25000000000002875
+      ],
+      "setting_uniformity_error": 2.2409851752058785e-13
+    },
+    {
+      "theta_deg": 45.0,
+      "intervention_mode": "B_device_only",
+      "eta": 0.8,
+      "eta_A": 0.0,
+      "eta_B": 0.8,
+      "I_Omega_X": 0.14520922730680186,
+      "I_Lambda_X": 0.01506930439485888,
+      "target_error_at_baseline": null,
+      "correlators": [
+        0.5966393269464239,
+        0.5966483160699813,
+        0.5966340730256929,
+        -0.5966487478235977
+      ],
+      "CHSH": 2.386570463865696,
+      "alice_no_signalling_error": 7.327471962526033e-15,
+      "bob_no_signalling_error": 6.155391353734885e-06,
+      "setting_distribution": [
+        0.24999999999987216,
+        0.24999999999987643,
+        0.2500000000001915,
+        0.2500000000000613
+      ],
+      "setting_uniformity_error": 1.915134717478395e-13
+    },
+    {
+      "theta_deg": 45.0,
+      "intervention_mode": "B_device_only",
+      "eta": 0.9,
+      "eta_A": 0.0,
+      "eta_B": 0.9,
+      "I_Omega_X": 0.14123905075966725,
+      "I_Lambda_X": 0.014111117609800022,
+      "target_error_at_baseline": null,
+      "correlators": [
+        0.5828308951665462,
+        0.582841007930464,
+        0.5828249845058278,
+        -0.5828414936533661
+      ],
+      "CHSH": 2.331338381256204,
+      "alice_no_signalling_error": 3.6637359812630166e-15,
+      "bob_no_signalling_error": 6.924815276976304e-06,
+      "setting_distribution": [
+        0.2499999999998732,
+        0.24999999999987538,
+        0.250000000000159,
+        0.25000000000009387
+      ],
+      "setting_uniformity_error": 1.5898393712632242e-13
+    },
+    {
+      "theta_deg": 45.0,
+      "intervention_mode": "B_device_only",
+      "eta": 1.0,
+      "eta_A": 0.0,
+      "eta_B": 1.0,
+      "I_Omega_X": 0.13991835288467638,
+      "I_Lambda_X": 0.013791940851573432,
+      "target_error_at_baseline": null,
+      "correlators": [
+        0.5690224633866686,
+        0.5690336997909465,
+        0.569015895985959,
+        -0.5690342394831384
+      ],
+      "CHSH": 2.2761062986467127,
+      "alice_no_signalling_error": 0.0,
+      "bob_no_signalling_error": 7.694239200328745e-06,
+      "setting_distribution": [
+        0.24999999999987432,
+        0.24999999999987432,
+        0.25000000000012645,
+        0.25000000000012645
+      ],
+      "setting_uniformity_error": 1.2645440250480533e-13
+    }
+  ],
+  "sanity_checks": {
+    "baseline_reproduces_quantum_target": true,
+    "eta_1_decouples_settings_from_Omega": true,
+    "eta_1_decouples_Lambda_from_settings": true,
+    "eta_1_local_CHSH_bound_passes": true
+  },
+  "interpretation_limits": [
+    "The intervention family is an explicit new modelling assumption.",
+    "It is not uniquely implied by the PHYS-05 statistical factorisation.",
+    "No physical implementation of Omega or the intervention has yet been specified.",
+    "Predicted curves are conditional on holding P(Lambda|Omega) fixed during setting-device randomization.",
+    "No experimental data have been fitted in this stage."
+  ],
+  "physical_mechanism_established": false,
+  "experimentally_tested": false
+}
