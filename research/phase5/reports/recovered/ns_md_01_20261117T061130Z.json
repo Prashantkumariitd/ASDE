@@ -1,0 +1,25 @@
+{
+  "logical_id": "NS-MD-01",
+  "archive_id": "PHYS-04G_20261117T061130Z",
+  "created_at_utc": "2026-11-17T06:11:32.159645+00:00",
+  "run_id": "run_64ca8ea8354347659fe78f63b8569a67",
+  "record_type": "reconstructed_research_summary",
+  "provenance": "reconstructed_from_reported_research_log",
+  "payload": {
+    "title": "Existence of no-signalling measurement-dependent local deterministic CHSH models",
+    "model": "16 deterministic local strategies lambda=(A0,A1,B0,B1), each component ±1; setting pair X=(a,b) uniform.",
+    "results": {
+      "restricted_four_state_model": "No-signalling maximum CHSH=2. Earlier apparent violations had signalling marginals.",
+      "general_16_strategy_model": "Linear program with normalization, positivity and no-signalling constraints admits PR-box correlations with CHSH=4.",
+      "positive_mixture": {
+        "epsilon": 0.1,
+        "construction": "(1-epsilon) P_PR + epsilon/16",
+        "CHSH": 3.6,
+        "minimum_probability": 0.00625,
+        "no_signalling": true
+      }
+    },
+    "interpretation": "Mathematical existence construction only. CHSH=4 is the algebraic PR-box limit, not a quantum prediction or physical mechanism.",
+    "provenance": "reconstructed_from_reported_research_log"
+  }
+}
