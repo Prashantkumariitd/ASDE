@@ -1,0 +1,81 @@
+{
+  "logical_id": "NS-MD-PHYS-02",
+  "archive_id": "PHYS-04G_20261117T061130Z",
+  "created_at_utc": "2026-11-17T06:11:32.159645+00:00",
+  "run_id": "run_64ca8ea8354347659fe78f63b8569a67",
+  "record_type": "reconstructed_research_summary",
+  "provenance": "reconstructed_from_reported_research_log",
+  "payload": {
+    "title": "Multi-start KL fitting of finite common-cause model",
+    "method": "K=2,4,8,16; 20 random restarts each; KL fit to target quantum table, then select minimum MI among fits with KL<=1e-8.",
+    "parameter_count": "21K",
+    "results": [
+      {
+        "theta_deg": 16.875,
+        "K": 2,
+        "MI_bits": 0.08903916,
+        "table_error": 1.47e-07,
+        "alice_NS": 4.2e-09,
+        "bob_NS": 2.14e-07
+      },
+      {
+        "theta_deg": 16.875,
+        "K": 4,
+        "MI_bits": 0.05905764,
+        "table_error": 3.53e-07,
+        "alice_NS": 3.33e-07,
+        "bob_NS": 3.69e-07
+      },
+      {
+        "theta_deg": 16.875,
+        "K": 8,
+        "MI_bits": 0.05976524,
+        "table_error": 7.69e-07,
+        "alice_NS": 1.05e-06,
+        "bob_NS": 1.41e-06
+      },
+      {
+        "theta_deg": 16.875,
+        "K": 16,
+        "MI_bits": 0.05897525,
+        "table_error": 6.68e-06,
+        "alice_NS": 4.82e-06,
+        "bob_NS": 1.34e-05
+      },
+      {
+        "theta_deg": 45.0,
+        "K": 2,
+        "MI_bits": 0.22999787,
+        "table_error": 3.33e-07,
+        "alice_NS": 7.17e-08,
+        "bob_NS": 4.94e-07
+      },
+      {
+        "theta_deg": 45.0,
+        "K": 4,
+        "MI_bits": 0.3236135,
+        "table_error": 3.31e-07,
+        "alice_NS": 5.45e-07,
+        "bob_NS": 6.19e-08
+      },
+      {
+        "theta_deg": 45.0,
+        "K": 8,
+        "MI_bits": 0.28902856,
+        "table_error": 2.65e-07,
+        "alice_NS": 2.29e-07,
+        "bob_NS": 3.88e-07
+      },
+      {
+        "theta_deg": 45.0,
+        "K": 16,
+        "MI_bits": 0.25737061,
+        "table_error": 1.14e-07,
+        "alice_NS": 6.53e-08,
+        "bob_NS": 4.08e-08
+      }
+    ],
+    "interpretation": "All optimizer runs reported convergence, but this is not global optimization. Nested-model global minima cannot increase with K; non-monotonic fitted costs indicate local optimization limitations. The method does not directly minimize MI.",
+    "provenance": "reconstructed_from_reported_research_log"
+  }
+}
