@@ -1,0 +1,14 @@
+{
+  "status": "DATA_DISCOVERY_AND_METADATA_AUDIT_ONLY",
+  "NIST_source_discovered": true,
+  "Hensen_metadata_available": true,
+  "Hensen_second_metadata_available": true,
+  "downloaded_files": 3,
+  "event_level_analyses_completed": 0,
+  "partial_event_level_analyses": 0,
+  "workbooks_inspected": 3,
+  "independent_published_statistic_reproduced": false,
+  "reason_if_not_reproduced": "A processed calculation workbook or metadata record alone is not sufficient to claim an independent event-level reproduction. A compatible raw event schema, original protocol and analysis conventions are required.",
+  "measurement_dependence_empirically_estimated": false,
+  "why_not": "The latent variable lambda is not directly observed in these Bell datasets. Measurement dependence costs can be compared theoretically, but not directly measured from observed settings and outcomes without an explicit latent-variable model."
+}

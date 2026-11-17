@@ -1,0 +1,538 @@
+{
+  "project": "ASDE",
+  "phase": "5.4.1-5.4.4",
+  "experiment_id": "p5_4_hall_continuous_replication_v1",
+  "run_id": "run_64ca8ea8354347659fe78f63b8569a67",
+  "created_at": "2026-11-01T04:30:29.488086+00:00",
+  "source_provenance": {
+    "primary_source": {
+      "title": "Local Deterministic Model of Singlet State Correlations Based on Relaxing Measurement Independence",
+      "author": "Michael J. W. Hall",
+      "journal": "Physical Review Letters",
+      "volume": 105,
+      "article": "250404",
+      "year": 2010,
+      "doi": "10.1103/PhysRevLett.105.250404",
+      "primary_pdf": "https://openresearch-repository.anu.edu.au/server/api/core/bitstreams/1322a9d6-c6b7-4785-a607-aef8e79dad13/content",
+      "erratum": {
+        "title": "Erratum: Local Deterministic Model of Singlet State Correlations Based on Relaxing Measurement Independence",
+        "year": 2016,
+        "journal": "Physical Review Letters",
+        "volume": 116,
+        "article": "219902",
+        "doi": "10.1103/PhysRevLett.116.219902",
+        "url": "https://doi.org/10.1103/PhysRevLett.116.219902",
+        "metadata_verified": true,
+        "full_text_inspected": false
+      }
+    },
+    "primary_pdf_download": {
+      "attempted": true,
+      "success": true,
+      "sha256": "e8ba320e1bc7fdb193ce82e672c68bf0b449adbbc8f4cb08c1e53ed7423582a9",
+      "bytes": 80275,
+      "error": null
+    },
+    "erratum_policy": "Erratum existence and DOI are verified from bibliographic metadata. The erratum full text has not been inspected in this execution; no assertion is made that its corrections have been incorporated. Equation-level reproduction is therefore provisional pending erratum text review."
+  },
+  "Hall_model": {
+    "equations_reproduced": [
+      5,
+      6,
+      7,
+      8
+    ],
+    "hidden_variable_space": "Unit sphere S^2",
+    "hidden_variable_measure": "Solid-angle measure dOmega",
+    "response_functions": {
+      "A": "sign(x dot lambda)",
+      "B": "-sign(y dot lambda)"
+    },
+    "density_definition": "Hall PRL 105, 250404 (2010), Eq. (8)",
+    "quadrature_points": 131072,
+    "angle_tests": [
+      {
+        "normalisation": 0.9999999999999997,
+        "normalisation_error": 3.3306690738754696e-16,
+        "minimum_density": 0.07957747154594767,
+        "nonnegative_density": true,
+        "joint_probabilities": {
+          "-1,-1": 0.0,
+          "-1,1": 0.49999999999999983,
+          "1,-1": 0.49999999999999983,
+          "1,1": 0.0
+        },
+        "quantum_target": {
+          "-1,-1": 0.0,
+          "-1,1": 0.5,
+          "1,-1": 0.5,
+          "1,1": 0.0
+        },
+        "maximum_joint_probability_error": 1.6653345369377348e-16,
+        "probability_sum": 0.9999999999999997,
+        "marginal_A": {
+          "-1": 0.49999999999999983,
+          "1": 0.49999999999999983
+        },
+        "marginal_B": {
+          "-1": 0.49999999999999983,
+          "1": 0.49999999999999983
+        },
+        "no_signalling_marginals_unbiased": true,
+        "angle_degrees": 0.0
+      },
+      {
+        "normalisation": 1.0000013452183405,
+        "normalisation_error": 1.3452183404982776e-06,
+        "minimum_density": 0.0010908030922726468,
+        "nonnegative_density": true,
+        "joint_probabilities": {
+          "-1,-1": 3.806691495225912e-05,
+          "-1,1": 0.4999626056942178,
+          "1,-1": 0.4999626056942178,
+          "1,1": 3.806691495225912e-05
+        },
+        "quantum_target": {
+          "-1,-1": 3.8076210902182606e-05,
+          "-1,1": 0.4999619237890978,
+          "1,-1": 0.4999619237890978,
+          "1,1": 3.8076210902182606e-05
+        },
+        "maximum_joint_probability_error": 6.819051199813408e-07,
+        "probability_sum": 1.00000134521834,
+        "marginal_A": {
+          "-1": 0.50000067260917,
+          "1": 0.50000067260917
+        },
+        "marginal_B": {
+          "-1": 0.50000067260917,
+          "1": 0.50000067260917
+        },
+        "no_signalling_marginals_unbiased": true,
+        "angle_degrees": 1.0
+      },
+      {
+        "normalisation": 1.0000064976601954,
+        "normalisation_error": 6.497660195448063e-06,
+        "minimum_density": 0.005450693477901476,
+        "nonnegative_density": true,
+        "joint_probabilities": {
+          "-1,-1": 0.0009510932198670665,
+          "-1,1": 0.49905215561023075,
+          "1,-1": 0.49905215561023075,
+          "1,1": 0.0009510932198670665
+        },
+        "quantum_target": {
+          "-1,-1": 0.0009513254770636137,
+          "-1,1": 0.4990486745229364,
+          "1,-1": 0.4990486745229364,
+          "1,1": 0.0009513254770636137
+        },
+        "maximum_joint_probability_error": 3.4810872943658033e-06,
+        "probability_sum": 1.0000064976601957,
+        "marginal_A": {
+          "-1": 0.5000032488300978,
+          "1": 0.5000032488300978
+        },
+        "marginal_B": {
+          "-1": 0.5000032488300978,
+          "1": 0.5000032488300978
+        },
+        "no_signalling_marginals_unbiased": true,
+        "angle_degrees": 5.0
+      },
+      {
+        "normalisation": 1.0000044142564684,
+        "normalisation_error": 4.414256468354694e-06,
+        "minimum_density": 0.016269219533600072,
+        "nonnegative_density": true,
+        "joint_probabilities": {
+          "-1,-1": 0.008518023497103792,
+          "-1,1": 0.49148418363113044,
+          "1,-1": 0.49148418363113044,
+          "1,1": 0.008518023497103792
+        },
+        "quantum_target": {
+          "-1,-1": 0.008518543427732922,
+          "-1,1": 0.49148145657226705,
+          "1,-1": 0.49148145657226705,
+          "1,1": 0.008518543427732922
+        },
+        "maximum_joint_probability_error": 2.727058863394305e-06,
+        "probability_sum": 1.0000044142564686,
+        "marginal_A": {
+          "-1": 0.5000022071282343,
+          "1": 0.5000022071282343
+        },
+        "marginal_B": {
+          "-1": 0.5000022071282343,
+          "1": 0.5000022071282343
+        },
+        "no_signalling_marginals_unbiased": true,
+        "angle_degrees": 15.0
+      },
+      {
+        "normalisation": 1.0000073007350017,
+        "normalisation_error": 7.300735001658509e-06,
+        "minimum_density": 0.03198407885467098,
+        "nonnegative_density": true,
+        "joint_probabilities": {
+          "-1,-1": 0.033491604763786945,
+          "-1,1": 0.4665120456037139,
+          "1,-1": 0.4665120456037139,
+          "1,1": 0.033491604763786945
+        },
+        "quantum_target": {
+          "-1,-1": 0.03349364905389032,
+          "-1,1": 0.4665063509461097,
+          "1,-1": 0.4665063509461097,
+          "1,1": 0.03349364905389032
+        },
+        "maximum_joint_probability_error": 5.6946576041938535e-06,
+        "probability_sum": 1.0000073007350017,
+        "marginal_A": {
+          "-1": 0.5000036503675008,
+          "1": 0.5000036503675008
+        },
+        "marginal_B": {
+          "-1": 0.5000036503675008,
+          "1": 0.5000036503675008
+        },
+        "no_signalling_marginals_unbiased": true,
+        "angle_degrees": 30.0
+      },
+      {
+        "normalisation": 1.0000042135982496,
+        "normalisation_error": 4.213598249647177e-06,
+        "minimum_density": 0.04661540357225707,
+        "nonnegative_density": true,
+        "joint_probabilities": {
+          "-1,-1": 0.07321883550751937,
+          "-1,1": 0.4267853780907305,
+          "1,-1": 0.4267766952966367,
+          "1,1": 0.07322330470336308
+        },
+        "quantum_target": {
+          "-1,-1": 0.0732233047033631,
+          "-1,1": 0.42677669529663687,
+          "1,-1": 0.42677669529663687,
+          "1,1": 0.0732233047033631
+        },
+        "maximum_joint_probability_error": 8.682794093661794e-06,
+        "probability_sum": 1.0000042135982496,
+        "marginal_A": {
+          "-1": 0.5000042135982499,
+          "1": 0.4999999999999998
+        },
+        "marginal_B": {
+          "-1": 0.49999553080415604,
+          "1": 0.5000086827940936
+        },
+        "no_signalling_marginals_unbiased": true,
+        "angle_degrees": 45.0
+      },
+      {
+        "normalisation": 1.0000019073486324,
+        "normalisation_error": 1.9073486323684108e-06,
+        "minimum_density": 0.059683103659460744,
+        "nonnegative_density": true,
+        "joint_probabilities": {
+          "-1,-1": 0.12499809265136715,
+          "-1,1": 0.37500286102294905,
+          "1,-1": 0.37500286102294905,
+          "1,1": 0.12499809265136715
+        },
+        "quantum_target": {
+          "-1,-1": 0.12499999999999997,
+          "-1,1": 0.375,
+          "1,-1": 0.375,
+          "1,1": 0.12499999999999997
+        },
+        "maximum_joint_probability_error": 2.8610229490522165e-06,
+        "probability_sum": 1.0000019073486324,
+        "marginal_A": {
+          "-1": 0.5000009536743162,
+          "1": 0.5000009536743162
+        },
+        "marginal_B": {
+          "-1": 0.5000009536743162,
+          "1": 0.5000009536743162
+        },
+        "no_signalling_marginals_unbiased": true,
+        "angle_degrees": 60.0
+      },
+      {
+        "normalisation": 0.9999999999999997,
+        "normalisation_error": 3.3306690738754696e-16,
+        "minimum_density": 0.07957747154594766,
+        "nonnegative_density": true,
+        "joint_probabilities": {
+          "-1,-1": 0.24999999999999992,
+          "-1,1": 0.24999999999999997,
+          "1,-1": 0.25000762939453125,
+          "1,1": 0.2499923706054687
+        },
+        "quantum_target": {
+          "-1,-1": 0.24999999999999997,
+          "-1,1": 0.25,
+          "1,-1": 0.25,
+          "1,1": 0.24999999999999997
+        },
+        "maximum_joint_probability_error": 7.629394531277756e-06,
+        "probability_sum": 0.9999999999999998,
+        "marginal_A": {
+          "-1": 0.4999999999999999,
+          "1": 0.49999999999999994
+        },
+        "marginal_B": {
+          "-1": 0.5000076293945311,
+          "1": 0.49999237060546864
+        },
+        "no_signalling_marginals_unbiased": true,
+        "angle_degrees": 90.0
+      },
+      {
+        "normalisation": 0.999993324279785,
+        "normalisation_error": 6.675720214954772e-06,
+        "minimum_density": 0.05968310365946077,
+        "nonnegative_density": true,
+        "joint_probabilities": {
+          "-1,-1": 0.3749942779541014,
+          "-1,1": 0.12500381469726562,
+          "1,-1": 0.12500953674316406,
+          "1,1": 0.37498569488525374
+        },
+        "quantum_target": {
+          "-1,-1": 0.37499999999999994,
+          "-1,1": 0.12500000000000006,
+          "1,-1": 0.12500000000000006,
+          "1,1": 0.37499999999999994
+        },
+        "maximum_joint_probability_error": 1.4305114746204772e-05,
+        "probability_sum": 0.9999933242797848,
+        "marginal_A": {
+          "-1": 0.499998092651367,
+          "1": 0.4999952316284178
+        },
+        "marginal_B": {
+          "-1": 0.5000038146972654,
+          "1": 0.49998950958251936
+        },
+        "no_signalling_marginals_unbiased": true,
+        "angle_degrees": 120.0
+      },
+      {
+        "normalisation": 0.9999908740812475,
+        "normalisation_error": 9.125918752461715e-06,
+        "minimum_density": 0.03198407885467098,
+        "nonnegative_density": true,
+        "joint_probabilities": {
+          "-1,-1": 0.46650350361730736,
+          "-1,1": 0.03349467119894202,
+          "1,-1": 0.0334977376340971,
+          "1,1": 0.4664949616309009
+        },
+        "quantum_target": {
+          "-1,-1": 0.4665063509461097,
+          "-1,1": 0.03349364905389032,
+          "1,-1": 0.03349364905389032,
+          "1,1": 0.4665063509461097
+        },
+        "maximum_joint_probability_error": 1.1389315208831796e-05,
+        "probability_sum": 0.9999908740812473,
+        "marginal_A": {
+          "-1": 0.49999817481624936,
+          "1": 0.49999269926499795
+        },
+        "marginal_B": {
+          "-1": 0.5000012412514044,
+          "1": 0.4999896328298429
+        },
+        "no_signalling_marginals_unbiased": true,
+        "angle_degrees": 150.0
+      },
+      {
+        "normalisation": 0.9999786446588368,
+        "normalisation_error": 2.1355341163209474e-05,
+        "minimum_density": 0.0010908030922726613,
+        "nonnegative_density": true,
+        "joint_probabilities": {
+          "-1,-1": 0.49995493426161347,
+          "-1,1": 3.8171494388941655e-05,
+          "1,-1": 3.827607382562368e-05,
+          "1,1": 0.49994726282900903
+        },
+        "quantum_target": {
+          "-1,-1": 0.4999619237890978,
+          "-1,1": 3.8076210902182606e-05,
+          "1,-1": 3.8076210902182606e-05,
+          "1,1": 0.4999619237890978
+        },
+        "maximum_joint_probability_error": 1.4660960088785924e-05,
+        "probability_sum": 0.999978644658837,
+        "marginal_A": {
+          "-1": 0.4999931057560024,
+          "1": 0.49998553890283465
+        },
+        "marginal_B": {
+          "-1": 0.4999932103354391,
+          "1": 0.499985434323398
+        },
+        "no_signalling_marginals_unbiased": true,
+        "angle_degrees": 179.0
+      },
+      {
+        "normalisation": 0.9999847412109372,
+        "normalisation_error": 1.5258789062833067e-05,
+        "minimum_density": 0.0,
+        "nonnegative_density": true,
+        "joint_probabilities": {
+          "-1,-1": 0.49999999999999983,
+          "-1,1": 0.0,
+          "1,-1": 0.0,
+          "1,1": 0.4999847412109374
+        },
+        "quantum_target": {
+          "-1,-1": 0.5,
+          "-1,1": 0.0,
+          "1,-1": 0.0,
+          "1,1": 0.5
+        },
+        "maximum_joint_probability_error": 1.5258789062611022e-05,
+        "probability_sum": 0.9999847412109373,
+        "marginal_A": {
+          "-1": 0.49999999999999983,
+          "1": 0.4999847412109374
+        },
+        "marginal_B": {
+          "-1": 0.49999999999999983,
+          "1": 0.4999847412109374
+        },
+        "no_signalling_marginals_unbiased": true,
+        "angle_degrees": 180.0
+      }
+    ],
+    "CHSH_correlations": [
+      -0.7071199331764848,
+      -0.7071067811865472,
+      -0.7071067811865471,
+      0.7070936291966097
+    ],
+    "CHSH_value": -2.828427124746189,
+    "quantum_CHSH_target": -2.8284271247461903,
+    "CHSH_no_signalling": true,
+    "corrected_integration": true
+  },
+  "Hall_measurement_independence": {
+    "analytic_M": "-2/3 + 2*sqrt(2)/3",
+    "analytic_M_decimal": 0.2761423749153967,
+    "analytic_TV": "-1/3 + sqrt(2)/3",
+    "analytic_TV_decimal": 0.13807118745769836,
+    "analytic_F": "4/3 - sqrt(2)/3",
+    "analytic_F_decimal": 0.8619288125423017,
+    "numerical_M_at_paper_configuration": 0.27613816131714664,
+    "nested_sector_grid_max": 0.27614237491539656,
+    "nested_sector_grid_argmax": [
+      2.356194490192345,
+      2.356194490192345
+    ],
+    "grid_size": 25,
+    "grid_sobol_points": 16384,
+    "global_supremum_numerically_proven": false
+  },
+  "finite_LP_comparison": {
+    "success": true,
+    "minimum_max_pairwise_TV": 0.1380711874576983,
+    "Hall_convention_M_from_finite_LP": 0.2761423749153966,
+    "pairwise_TVs": [
+      0.13807118745769775,
+      0.13807118745769859,
+      0.13807118745769853,
+      0.13807118745769847,
+      0.13807118745769847,
+      0.1380711874576984
+    ],
+    "reconstruction_error": 7.771561172376096e-16
+  },
+  "MI_benchmark_comparison": {
+    "ASDE_reported_MI_bits": 0.046273846924,
+    "published_retrocausal_approx_bits": 0.046,
+    "published_causal_approx_bits": 0.08,
+    "absolute_difference_from_retrocausal_approx": 0.0002738469240000027,
+    "absolute_difference_from_causal_approx": 0.033726153076,
+    "conclusion": "Numerical proximity to the published retrocausal benchmark is not sufficient to establish equivalence. The ASDE optimisation must be reformulated under the exact causal constraints and setting prior used in the reference before claiming replication."
+  },
+  "exact_symbolic_identities": {
+    "Hall_M": "-2/3 + 2*sqrt(2)/3",
+    "Hall_TV_convention": "-1/3 + sqrt(2)/3",
+    "Hall_F": "4/3 - sqrt(2)/3",
+    "decimal_M": 0.2761423749153967,
+    "decimal_TV": 0.13807118745769836,
+    "decimal_F": 0.8619288125423017,
+    "identity_M_equals_2TV": true,
+    "identity_F_equals_1_minus_M_over_2": true
+  },
+  "validation_checks": {
+    "Hall_density_nonnegative_for_all_test_angles": true,
+    "Hall_density_normalisation_numerically_small_error": true,
+    "Hall_joint_probabilities_match_singlet_numerically": false,
+    "Hall_maximal_CHSH_numerically_reproduced": "False",
+    "Hall_CHSH_no_signalling_numerically": true,
+    "Hall_M_at_paper_configuration_matches_formula": "True",
+    "Hall_nested_sector_grid_reaches_near_formula": "True",
+    "Hall_exact_symbolic_M_TV_identity": true,
+    "Hall_exact_symbolic_F_identity": true,
+    "Finite_LP_success": true,
+    "Finite_LP_reconstruction_small": true,
+    "Erratum_metadata_recorded": true
+  },
+  "validation_passed": "10",
+  "validation_total": 12,
+  "scientific_interpretation": {
+    "Hall_replication": "Numerical reproduction of the continuous singlet correlation construction, subject to quadrature tolerances and erratum inspection.",
+    "finite_LP_comparison": "A comparison between a continuous hidden-variable model and a finite 16-strategy optimisation. Numerical equality of dependence values does not prove model equivalence.",
+    "MI_comparison": "The ASDE MI value is numerically close to a published retrocausal benchmark, but causal-structure equivalence has not been established.",
+    "physical_mechanism": "No new microscopic dynamics, spacetime causal model, or independently testable physical mechanism is derived."
+  },
+  "open_items": [
+    "Retrieve and inspect the full 2016 erratum text.",
+    "Perform higher-order and independent quadrature convergence tests.",
+    "Derive or reproduce the analytic global supremum of Hall's M.",
+    "Establish whether finite LP TV optimum and continuous Hall M are mathematically equivalent or merely numerically coincident.",
+    "Construct an exact or rigorous certificate for the finite measurement-dependent minimum-TV optimisation.",
+    "Reformulate MI optimisation under explicitly specified causal and retrocausal directed acyclic graphs.",
+    "Derive a physical dynamical mechanism, if one is viable.",
+    "Independently reproduce the original experimental likelihoods."
+  ],
+  "overall_status": "CORRECTED_NUMERICAL_REPLICATION",
+  "integration_bug_correction": {
+    "status": "corrected",
+    "bug": "Filtered outcome arrays were integrated using their own mean.",
+    "correct_formula": "4*pi/N * sum(rho_i for samples in outcome subset)",
+    "previous_joint_probability_results_valid": false,
+    "previous_CHSH_result_valid": false,
+    "correction_applied": true
+  },
+  "corrected_validation": {
+    "checks": {
+      "all_angle_densities_normalised": true,
+      "all_angle_probabilities_sum_to_one": true,
+      "all_angle_joint_probabilities_match_singlet": true,
+      "all_chsh_probabilities_nonnegative": true,
+      "all_chsh_distributions_normalised": true,
+      "CHSH_within_algebraic_bound": true,
+      "Hall_CHSH_matches_quantum": "True",
+      "Hall_CHSH_no_signalling": true,
+      "Hall_M_numerical_result_retained": true,
+      "finite_LP_result_retained": true
+    },
+    "passed": "10",
+    "total": 10,
+    "max_normalisation_error": 2.1355341163209474e-05,
+    "max_joint_probability_error": 1.5258789062611022e-05,
+    "max_probability_sum_error": 2.135534116298743e-05,
+    "max_no_signalling_error": 4.213598250091266e-06,
+    "CHSH": -2.828427124746189,
+    "quantum_CHSH": -2.8284271247461903
+  }
+}

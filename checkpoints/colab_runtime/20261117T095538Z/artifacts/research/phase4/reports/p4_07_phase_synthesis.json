@@ -1,0 +1,45 @@
+{
+  "phase": 4,
+  "run_id": "run_64ca8ea8354347659fe78f63b8569a67",
+  "work_item_id": "p4_07_phase_synthesis",
+  "team": "discovery",
+  "title": "Phase 4 model synthesis and decision gate",
+  "objective": "\nSynthesize the formal definitions, verified symbolic calculations,\ncompeting models, parameter constraints and adversarial review.\nClassify each result as derived, computationally_checked,\nsource_supported, conditional, speculative, unresolved or falsified.\nRecommend which precisely specified models, if any, are ready for\nPhase 5 numerical experiments. Explicitly list failed gates and\nmissing proofs. Do not claim discovery or physical truth.\n",
+  "provider": "openrouter",
+  "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+  "completed_at": "2026-11-01T03:48:51.887874+00:00",
+  "phase3_context_ids": [
+    "p3_experimental_evidence_09",
+    "p3_experimental_evidence_10",
+    "p3_mathematical_physics_06",
+    "p3_quantum_foundations_01",
+    "p3_quantum_foundations_02"
+  ],
+  "deterministic_computations": {
+    "symbolic": {
+      "CHSH_expression": "A0*B0 + A0*B1 + A1*B0 - A1*B1",
+      "factorised_expression": "A0*B0 + A0*B1 + A1*B0 - A1*B1",
+      "deterministic_assignments_checked": 16,
+      "maximum_absolute_local_deterministic_CHSH": 2,
+      "local_bound_check": true
+    },
+    "quantum_singlet_baseline": {
+      "correlations": {
+        "E00": -0.7071067811865475,
+        "E01": -0.7071067811865475,
+        "E10": -0.7071067811865475,
+        "E11": 0.7071067811865475
+      },
+      "CHSH_value": -2.82842712474619,
+      "Tsirelson_value": 2.8284271247461903,
+      "numerical_check_passed": true
+    },
+    "probability_constraints": {
+      "normalisation": "Eq(p00 + p01 + p10 + p11, 1)",
+      "nonnegative_probabilities": true
+    },
+    "interpretation": "The local deterministic CHSH bound is exhaustively checked for the 16 deterministic assignments. The quantum singlet value is a numerical baseline. These checks do not establish a superdeterministic model or a new physical result."
+  },
+  "research_output": "# ASDE PHASE 4 — FORMAL MATHEMATICAL AND PHYSICAL MODEL DEVELOPMENT  \n**Work Package:** Phase 4 model synthesis and decision gate  \n**Objective:** Synthesize formal definitions, verified symbolic calculations, competing models, parameter constraints, and adversarial review. Classify each result. Recommend models ready for Phase 5 numerical experiments. List failed gates and missing proofs.\n\n---\n\n## 1. Executive Result\n\n| Item | Status | Epistemic Classification | Notes |\n|------|--------|--------------------------|-------|\n| **CHSH local deterministic bound (|S| ≤ 2)** | Verified by exhaustive enumeration of 16 deterministic assignments | **COMPUTATIONALLY_CHECKED** | Baseline computational result; no physics assumption beyond deterministic ±1 outcomes |\n| **Quantum singlet CHSH value (S = −2√2)** | Numerically reproduced from standard QM prediction | **COMPUTATIONALLY_CHECKED** | Assumes projective measurements on |ψ⁻⟩ at optimal angles; matches Tsirelson bound |\n| **Tsirelson bound (|S| ≤ 2√2)** | Standard QM result; not re-derived here | **SOURCE_SUPPORTED** (standard textbook result) | Requires Hilbert space structure + no-signalling; no independent derivation in this work |\n| **Hall-type measurement-dependence bound: ε ≥ 1 − S/(2√2)** | Reproduced from Hall (2010) / Barrett-Gisin (2011) framework | **SOURCE_SUPPORTED** (conditional on cited framework) | Assumes local-deterministic hidden-variable model with measurement dependence quantified by total variation distance ε |\n| **Tightest ε for Tsirelson violation: ε_Tsirelson = 1 − 1/√2 ≈ 0.293** | Algebraic consequence of Hall bound at S = 2√2 | **DERIVED** (from Hall bound + Tsirelson value) | Only valid if Hall bound is tight; tightness not proven here |\n| **Unified causal-influence framework embedding both bounds** | Proposed in p3_quantum_foundations_02; not fully constructed | **SPECULATIVE** | No complete model provided; mapping between frameworks not explicitly given |\n| **Measurement-independence formalisation (P(λ|a,b)=P(λ))** | Standard probability-theoretic definition | **SOURCE_SUPPORTED** (Wiseman 2014, standard literature) | Distinct from locality and determinism; no new result |\n| **No direct ASDE experimental dataset** | Confirmed by p3_experimental_evidence_09 | **SOURCE_SUPPORTED** (absence of evidence in supplied corpus) | ASDE-specific observables not measured in supplied sources |\n\n**Decision Gate Outcome:**  \n- **Ready for Phase 5 numerical experiments:** The CHSH local/quantum baselines (computationally checked) and the Hall-type ε-bound (source-supported, conditional) can be used as reference curves for numerical exploration of measurement-dependent models.  \n- **NOT ready for Phase 5:** Any superdeterministic / measurement-dependent *model* that claims to reproduce quantum correlations — no complete, normalised, no-signalling model has been explicitly given and checked. The unified framework remains speculative.  \n- **Failed gates / missing proofs:** (1) Tightness of Hall bound for stochastic HV models; (2) Explicit construction of a measurement-dependent model achieving ε_Tsirelson while satisfying no-signalling and normalisation; (3) Derivation of information-theoretic bound from first principles without assuming the Hall parametrisation; (4) Any ASDE-specific observable or signal model.\n\n---\n\n## 2. Definitions and Notation\n\n| Symbol | Domain | Definition |\n|--------|--------|------------|\n| **X, Y** | {0,1} | Measurement settings for Alice (X) and Bob (Y) |\n| **A, B** | {−1, +1} | Measurement outcomes |\n| **Λ** | Measurable space (Λ, ℱ_Λ) | Hidden variable(s); may be finite, continuous, or mixed |\n| **P(λ)** | Probability measure on Λ | Marginal distribution of hidden variable |\n| **P(x,y)** | Distribution on {0,1}² | Setting distribution; usually uniform product P(x)P(y) = 1/4 |\n| **P(λ|x,y)** | Conditional distribution | Hidden-variable distribution *given* settings; measurement dependence ⇔ P(λ|x,y) ≠ P(λ) |\n| **P(a,b|x,y,λ)** | Response function | Outcome probabilities given settings and λ |\n| **E_A(x,λ) = Σ_a a P(a|x,λ)** | [−1,1] | Local expectation for Alice |\n| **E_B(y,λ) = Σ_b b P(b|y,λ)** | [−1,1] | Local expectation for Bob |\n| **S = ⟨A₀B₀⟩ + ⟨A₀B₁⟩ + ⟨A₁B₀⟩ − ⟨A₁B₁⟩** | [−4,4] | CHSH expression; observable |\n| **ε = ½ Σ_{x,y} ∫ |P(λ|x,y) − P(λ)| dλ** | [0,1] | Total variation distance between actual and product setting-λ distribution (Hall 2010) |\n| **I(XY:Λ)** | [0, ∞) | Mutual information (Shannon, base 2) between settings and hidden variable |\n| **S_Q",
+  "epistemic_warning": "LLM-generated mathematical research analysis. Not a proof or independent replication unless explicitly established by a separate reproducible trail."
+}

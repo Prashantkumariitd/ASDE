@@ -1,0 +1,82 @@
+{
+  "phase": 3,
+  "run_id": "run_64ca8ea8354347659fe78f63b8569a67",
+  "work_item_id": "p3_cmb_cosmology_04",
+  "domain": "cmb_cosmology",
+  "title": "Map possible CMB discriminators",
+  "objective": "Identify which candidate models imply quantitatively different observable spectra or statistics. Do not assume a signature exists.",
+  "provider": "groq",
+  "model": "openai/gpt-oss-120b",
+  "source_ids": [
+    "src_165cd75382f9541b1474e689",
+    "src_781584785cde166c8d7c7a37",
+    "src_08da2a3bb6aa7317a15581c4",
+    "src_06359d78212881bd8672b742",
+    "src_fce4eeb982b701d127ca627f"
+  ],
+  "literature_records": [
+    {
+      "source_id": "src_165cd75382f9541b1474e689",
+      "title": "Probing Inflation with CMB Polarization",
+      "authors": "Daniel Baumann, Mark G. Jackson, Peter J. Adshead, Alexandre Amblard, Amjad Ashoorioon, N. Bartolo, Rachel Bean, M. T. Beltrán",
+      "doi": "https://doi.org/10.1063/1.3160885",
+      "url": "https://doi.org/10.1063/1.3160885",
+      "year": 2009,
+      "source_type": "conference-paper",
+      "verification_status": "doi_crossref_verified",
+      "abstract": "We summarize the utility of precise cosmic microwave background (CMB) polarization measurements as probes of the physics of inflation. We focus on the prospects for using CMB measurements to differentiate various inflationary mechanisms. In particular, a detection of primordial B‐mode polarization would demonstrate that inflation occurred at a very high energy scale, and that the inflaton traversed a super‐Planckian distance in field space. We explain how such a detection or constraint would illuminate aspects of physics at the Planck scale. Moreover, CMB measurements can constrain the scale‐dependence and non‐Gaussianity of the primordial fluctuations and limit the possibility of a significant isocurvature contribution. Each such limit provides crucial information on the underlying inflationary dynamics. Finally, we quantify these considerations by presenting forecasts for the sensitivities of a future satellite experiment to the inflationary parameters.",
+      "openalex_id": "https://openalex.org/W2153038526"
+    },
+    {
+      "source_id": "src_781584785cde166c8d7c7a37",
+      "title": "Reionization Signatures in Quasar Absorption Spectra",
+      "authors": "S. Gallerani",
+      "doi": null,
+      "url": "http://hdl.handle.net/20.500.11767/4273",
+      "year": 2011,
+      "source_type": "dissertation",
+      "verification_status": "no_doi",
+      "abstract": "One of the most refined qualities of the human mind concerns with its natural attitude in questioning itself about the reason of everything it gets in touch with. This is a cascade process which inevitably ends up in wondering how the Universe originated and evolved into terrestrial life. In the course of ages the best approach to satisfy the human thirst of knowledge has proved to be the “scientific method”, based on the precious interplay between “tangible” (observations) and “intelligible” (theory). Cosmology is a discipline which aims, through this method, at shedding light on all the phases of the evolution of the Universe. Up to now the available technology has allowed to open and only partially come through the gates of the comprehension of the Universe...",
+      "openalex_id": "https://openalex.org/W2990378056"
+    },
+    {
+      "source_id": "src_08da2a3bb6aa7317a15581c4",
+      "title": "Exploring the early universe through the CMB sky",
+      "authors": "P. Daniel Meerburg",
+      "doi": null,
+      "url": "https://handle.uba.uva.nl/personal/pure/en/publications/exploring-the-early-universe-through-the-cmb-sky(7b58d2ed-e281-448c-8cea-bed914cced44).html",
+      "year": 2011,
+      "source_type": "other",
+      "verification_status": "no_doi",
+      "abstract": "Vlak na het ontstaan van het heelal zijn de omstandigheden extreem: hoge dichtheid, hoge temperatuur en dus enorme energie domineren het heelal. Daan Meerburg onderzocht de natuurkundige processen die in deze omstandigheden een rol hebben gespeeld. Zulke omstandigheden zijn niet na te bootsen op aarde. Daarom richtte Meerburg zich op waarnemingen uit het heelal. Hij maakte hiervoor gebruik van de kosmologische achtergrondstraling (CMB). Deze straling is het nagloeiende overblijfsel van de hete oerknal. De statistische eigenschappen van de kleine temperatuurfluctaties in de CMB geven inzicht in de omstandigheden vlak na de oerknal. Meerburg onderzocht een nieuwe hypothese voor de begincondities in het vroege heelal. Hij deed dit door de statistische eigenschappen van de temperatuurfluctuaties in de CMB te berekenen. Deze voorspelling toetste Meerburg aan data afkomstig van de WMAP-satelliet. Hij concludeert dat het model in een aantal gevallen een betere beschrijving is van de data dan meer gangbare modellen. Een belangrijke voorspelling van deze hypothese is dat het relatief grote, wellicht waarneembare, correcties op de statische 3-puntscorrelatiefunctie oplevert.",
+      "openalex_id": "https://openalex.org/W2125621656"
+    },
+    {
+      "source_id": "src_06359d78212881bd8672b742",
+      "title": "CMB Anisotropies and Theories of the Early Universe",
+      "authors": "Alejandro Gangui",
+      "doi": "https://doi.org/10.48550/arxiv.astro-ph/9512161",
+      "url": "http://arxiv.org/abs/astro-ph/9512161",
+      "year": 1995,
+      "source_type": "preprint",
+      "verification_status": "crossref_not_verified",
+      "abstract": "I present recent work aimed at showing how currently competing theories of the early universe leave their imprint on the temperature anisotropies of the CMB radiation. We consider the 3-point correlation function, as well as the inherent theoretical uncertainties associated with it, for which we derive explicit analytic formulae. We apply them in the study of non-Gaussian features that arise on large scales in the framework of both inflationary and topological defects models. For inflation, we develop a perturbative analysis for the study of spatial correlations in the inflaton in the context of the stochastic approach to inflation. We also include an analysis of a particular geometry, the so-called `collapsed' 3-point function, in the case of post recombination integrated effects, arising generically whenever the mildly non linear growth of perturbations is taken into account. We also devote a part of the thesis to the study of recently proposed analytic models of topological defects, and implement them in the analysis of both the CMB excess kurtosis (for cosmic strings) and the CMB collapsed 3-point function and skewness (for textures). Lastly, we present a study of the CMB anisotropies on the degree angular scale in the framework of the global texture scenario, and show the relevant features that arise; among these, the Doppler peaks.",
+      "openalex_id": "https://openalex.org/W1566066786"
+    },
+    {
+      "source_id": "src_fce4eeb982b701d127ca627f",
+      "title": "LiteBIRD science goals and forecasts. A case study of the origin of primordial gravitational waves using large-scale CMB polarization",
+      "authors": "P. Campeti, Eiichiro Komatsu, C. Baccigalupi, M. Ballardini, N. Bartolo, A. Carones, Josquin Errard, Fabio Finelli",
+      "doi": "https://doi.org/10.1088/1475-7516/2024/06/008",
+      "url": "https://doi.org/10.1088/1475-7516/2024/06/008",
+      "year": 2024,
+      "source_type": "article",
+      "verification_status": "doi_crossref_verified",
+      "abstract": "Abstract We study the possibility of using the LiteBIRD satellite B-mode survey to constrain models of inflation producing specific features in CMB angular power spectra. We explore a particular model example, i.e. spectator axion-SU(2) gauge field inflation. This model can source parity-violating gravitational waves from the amplification of gauge field fluctuations driven by a pseudoscalar “axionlike” field, rolling for a few e-folds during inflation. The sourced gravitational waves can exceed the vacuum contribution at reionization bump scales by about an order of magnitude and can be comparable to the vacuum contribution at recombination bump scales. We argue that a satellite mission with full sky coverage and access to the reionization bump scales is necessary to understand the origin of the primordial gravitational wave signal and distinguish among two production mechanisms: quantum vacuum fluctuations of spacetime and matter sources during inflation. We present the expected constraints on model parameters from LiteBIRD satellite simulations, which complement and expand previous studies in the literature. We find that LiteBIRD will be able to exclude with high significance standard single-field slow-roll models, such as the Starobinsky model, if the true model is the axion-SU(2) model with a feature at CMB scales. We further investigate the possibility of using the parity-violating signature of the model, such as the TB and EB angular power spectra, to disentangle it from the standard single-field slow-roll scenario. We find that most of the discriminating power of LiteBIRD will reside in BB angular power spectra rather than in TB and EB correlations.",
+      "openalex_id": "https://openalex.org/W4399366726"
+    }
+  ],
+  "completed_at": "2026-11-01T03:13:05.608280+00:00",
+  "research_report": "**A. Executive Finding**  \nA systematic mapping of the literature shows that *four* well‑defined classes of early‑Universe models predict **quantitatively distinct** signatures in the CMB that can be searched for with current or forthcoming experiments (e.g. LiteBIRD, Simons Observatory, CMB‑S4).  \n\n| Model class | Primary CMB discriminator(s) | Current status (as of the retrieved records) |\n|-------------|------------------------------|---------------------------------------------|\n| **Single‑field slow‑roll inflation** (canonical) | Tensor‑to‑scalar ratio *r* (BB spectrum), nearly scale‑invariant, parity‑even spectra; negligible primordial non‑Gaussianity (|f\\_{NL}| ≲ 1) and isocurvature | *Established* – baseline against which alternatives are compared (src_165cd75382f9541b1474e689). |\n| **Axion‑SU(2) spectator gauge‑field inflation** | **(i)** Enhanced, chiral B‑mode spectrum (large *r* at low ℓ, parity‑odd GW); **(ii)** Non‑zero TB/EB cross‑spectra; **(iii)** Possible localized feature in the BB spectrum around the re‑ionisation bump | *Source‑supported* (src_fce4eeb982b701d127ca627f). |\n| **Topological‑defect (cosmic‑string / texture) scenarios** | **(i)** Scale‑invariant “white‑noise” contribution to TT, EE, BB at high ℓ; **(ii)** Distinctive bispectrum/kurtosis (excess skewness/kurtosis) and line‑like discontinuities in maps | *Source‑supported* (src_06359d78212881bd8672b742). |\n| **Non‑standard initial‑condition / excited‑state inflation** (e.g. “new hypothesis” of Meerburg) | **(i)** Oscillatory features in the scalar power spectrum; **(ii)** Large, shape‑specific bispectrum (enhanced 3‑point function) that can dominate over the standard squeezed‑limit signal | *Source‑supported* (src_08da2a3bb6aa7317a15581c4). |\n\nNo other candidate mechanisms in the supplied corpus (e.g. re‑ionisation signatures in quasar spectra) produce *direct* CMB discriminants relevant to the task.\n\n---\n\n**B. Established Background**  \n\n1. **CMB Polarisation as an Inflation Probe** – Precise measurements of the E‑ and B‑mode angular power spectra allow inference of the tensor‑to‑scalar ratio *r* and the tensor spectral index *n\\_t* (src_165cd75382f9541b1474e689). A detection of primordial B‑modes at degree scales would imply an inflationary energy scale  \n   \\[\n   V^{1/4} \\simeq 1.06\\times10^{16}\\,{\\rm GeV}\\,\\left(\\frac{r}{0.01}\\right)^{1/4},\n   \\]\n   and a super‑Planckian field excursion \\(\\Delta\\phi \\gtrsim M_{\\rm Pl}\\) for *r* ≳ 0.01 (Lyth bound).  \n\n2. **Non‑Gaussianity** – The three‑point function (bispectrum) \\(B_{\\ell_1\\ell_2\\ell_3}\\) is a sensitive probe of interactions beyond the minimal slow‑roll Lagrangian. The “local”, “equilateral”, and “orthogonal” shapes are the standard templates; deviations indicate either multi‑field dynamics, non‑Bunch‑Davies vacua, or post‑inflationary sources (src_06359d78212881bd8672b742; src_08da2a3bb6aa7317a15581c4).  \n\n3. **Parity Violation** – In standard ΛCDM the TB and EB cross‑spectra vanish. A non‑zero TB/EB signals either cosmic birefringence or a chiral source of primordial gravitational waves (src_fce4eeb982b701d127ca627f).  \n\n4. **Topological Defects** – Cosmic strings or textures generate line‑like discontinuities and a scale‑invariant contribution to the angular power spectra, plus characteristic higher‑order moments (excess kurtosis) (src_06359d78212881bd8672b742).  \n\n---\n\n**C. Literature and source_ids**  \n\n| # | Citation (year) | Core claim(s) relevant to CMB discriminators | source_id |\n|---|-----------------|-----------------------------------------------|-----------|\n| 1 | Baumann *et al.* “Probing Inflation with CMB Polarization” (2009) | B‑mode detection ↔ high‑scale inflation; constraints on *r*, *n\\_t*, non‑Gaussianity, isocurvature | src_165cd75382f9541b1474e689 |\n| 2 | Meerburg “Exploring the early universe through the CMB sky” (2011) | New initial‑condition hypothesis → large corrections to the 3‑point function; possible observable bispectrum signatures | src_08da2a3bb6aa7317a15581c4 |\n| 3 | Gangui “CMB Anisotropies and Theories of the Early Universe” (1995) | Analytic formulas for bispectrum/kurtosis in inflation vs topological‑defect models; predictions for non‑Gaussian statistics | src_06359d78212881bd8672b742 |\n| 4 | LiteBIRD Collaboration “LiteBIRD science goals and forecasts …” (2024) | Spectator axion‑SU(2) model → chiral GW, enhanced BB, TB/EB signatures; forecasted exclusion power for standard single‑field models | src_fce4eeb982b701d127ca627f |\n| 5 | Gallerani “Reionization Signatures in Quasar Absorption Spectra” (2011) – *not directly CMB‑relevant* | – | src_781584785cde166c8d7c7a37 |\n\n---\n\n**D. Mathematical Framework and Assumptions**  \n\n1. **Power‑spectra definitions**  \n   \\[\n   \\langle a_{\\ell m}^{X} a_{\\ell' m'}^{Y*}\\rangle = \\delta_{\\ell",
+  "integrity_note": "Recovered from Neon checkpoint. LLM research synthesis; not independent scientific verification."
+}

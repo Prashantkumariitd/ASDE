@@ -1,0 +1,97 @@
+{
+  "phase": 3,
+  "run_id": "run_64ca8ea8354347659fe78f63b8569a67",
+  "work_item_id": "p3_experimental_evidence_10",
+  "domain": "experimental_evidence",
+  "title": "Design discriminating experiments",
+  "provider": "groq",
+  "model": "openai/gpt-oss-120b",
+  "source_ids": [
+    "src_85b38fce34253e9d08d855c5",
+    "src_b4aa460ac628f1f1b47922d2",
+    "src_190f63fbbbe00d4db8e3d0a2",
+    "src_8a04009de8824447070bed7a",
+    "src_eb122ceb8379b68a7e19662a"
+  ],
+  "literature_records": [
+    {
+      "source_id": "src_85b38fce34253e9d08d855c5",
+      "title": "Quantum Gravitational Imprints on Cosmology",
+      "authors": [
+        "Maxim Khlopov",
+        "Oem Trivedi"
+      ],
+      "year": 2024,
+      "doi": "https://doi.org/10.1142/14123",
+      "verification_status": "doi_crossref_verified",
+      "abstract": "Quantum Gravitational Imprints on Cosmology surveys the remarkable advancements in our understanding of the interface between quantum gravity theories and cosmology that have been achieved over the past four decades. The current cosmological model relies on inflationary theories, which incorporate baryosynthesis, dark matter, and dark energy. Supported by precise cosmological data, it necessitates physics beyond the standard models of fundamental forces, including gravity. This connection between macroscopic gravity on large scales and quantum gravity on the smallest scales is where quantum gravity's nature becomes evident. Quantum gravity effects alter our classical understanding of gravitational phenomena as described by general relativity, leading to observable deviations from the conventional cosmological model. The field of cosmoparticle physics explores the interplay between the micro and macro worlds, offering insights into the development of quantum gravity and its cosmological implications.These fascinating developments are explained at a level accessible to advanced PhD students, making the book a valuable resource for early-career researchers approaching these fields for the first time or interested in exploring them in greater depth.",
+      "openalex_id": "https://openalex.org/W4403471453"
+    },
+    {
+      "source_id": "src_b4aa460ac628f1f1b47922d2",
+      "title": "Dark matter direct-detection experiments",
+      "authors": [
+        "T. Marrodán Undagoitia",
+        "L. Rauch"
+      ],
+      "year": 2015,
+      "doi": "https://doi.org/10.1088/0954-3899/43/1/013001",
+      "verification_status": "doi_crossref_verified",
+      "abstract": "Abstract In recent decades, several detector technologies have been developed with the quest to directly detect dark matter interactions and to test one of the most important unsolved questions in modern physics. The sensitivity of these experiments has improved with a tremendous speed due to a constant development of the detectors and analysis methods, proving uniquely suited devices to solve the dark matter puzzle, as all other discovery strategies can only indirectly infer its existence. Despite the overwhelming evidence for dark matter from cosmological indications at small and large scales, clear evidence for a particle explaining these observations remains absent. This review summarises the status of direct dark matter searches, focusing on the detector technologies used to directly detect a dark matter particle producing recoil energies in the keV energy scale. The phenomenological signal expectations, main background sources, statistical treatment of data and calibration strategies are discussed.",
+      "openalex_id": "https://openalex.org/W2176584228"
+    },
+    {
+      "source_id": "src_190f63fbbbe00d4db8e3d0a2",
+      "title": "Cosmology with the Laser Interferometer Space Antenna",
+      "authors": [
+        "Pierre Auclair",
+        "David Bacon",
+        "Tessa Baker",
+        "Tiago Barreiro",
+        "N. Bartolo",
+        "Enis Belgacem",
+        "Nicola Bellomo",
+        "Ido Ben-Dayan"
+      ],
+      "year": 2023,
+      "doi": "https://doi.org/10.1007/s41114-023-00045-2",
+      "verification_status": "doi_crossref_verified",
+      "abstract": "Abstract The Laser Interferometer Space Antenna (LISA) has two scientific objectives of cosmological focus: to probe the expansion rate of the universe, and to understand stochastic gravitational-wave backgrounds and their implications for early universe and particle physics, from the MeV to the Planck scale. However, the range of potential cosmological applications of gravitational-wave observations extends well beyond these two objectives. This publication presents a summary of the state of the art in LISA cosmology, theory and methods, and identifies new opportunities to use gravitational-wave observations by LISA to probe the universe.",
+      "openalex_id": "https://openalex.org/W4280522707"
+    },
+    {
+      "source_id": "src_8a04009de8824447070bed7a",
+      "title": "The Unified Theory of Informational Spin: A Coherence-Based Framework for Gravitation, Cosmology, Quantum Systems",
+      "authors": [
+        "Henry Matuchaki"
+      ],
+      "year": 2026,
+      "doi": "https://doi.org/10.20944/preprints202502.0514.v6",
+      "verification_status": "doi_crossref_verified",
+      "abstract": "The Unified Theory of Informational Spin (TGU) proposes a phenomenological reformulation of gravitation and cosmology in which information, organized into coherent patterns termed informational spin, acts as the primary organizing substrate of physical dynamics. In this framework, gravitational phenomena emerge from gradients of informational coherence, providing an alternative description to strictly mass–energy–based formulations. The theory introduces a coherence-dependent correction to orbital dynamics, α = 1 + k · e /a , where the Matuchaki parameter k ≈ 0.0881 arises from geometric efficiency constraints associated with a three-dimensional coherent spin field. This formulation is explicitly designed to recover general relativistic predictions in weak-field and low- eccentricity regimes, while producing controlled, falsifiable deviations in high-eccentricity or high-strain systems. We demonstrate that the same coherence parameter governing orbital phase corrections also reproduces observed galactic rotation curves using baryonic matter alone, without invoking non-baryonic dark matter components. This cross-regime consistency—spanning solar-system, galactic, and cosmological scales—suggests that gravitational anomalies commonly attributed to dark matter or dark energy may instead reflect variations in informational coherence within the spacetime substrate. Rather than competing with General Relativity, TGU is formulated to be dual and convergent with it within established validity domains, while extending predictive power into regimes where coherence effects become observationally relevant. The framework yields concrete, testable predictions for orbital dynamics, galactic kinematics, and early-universe structure formation, positioning informational coherence as a unifying principle across gravitational and cosmological phenomena.",
+      "openalex_id": "https://openalex.org/W7127392323"
+    },
+    {
+      "source_id": "src_eb122ceb8379b68a7e19662a",
+      "title": "The Forward Physics Facility: Sites, experiments, and physics potential",
+      "authors": [
+        "Luis A. Anchordoqui",
+        "A. Ariga",
+        "Tomoko Ariga",
+        "Weidong Bai",
+        "Kincso Balazs",
+        "Brian Batell",
+        "J. Boyd",
+        "Joseph Bramante"
+      ],
+      "year": 2022,
+      "doi": "https://doi.org/10.1016/j.physrep.2022.04.004",
+      "verification_status": "doi_crossref_verified",
+      "abstract": "The Forward Physics Facility (FPF) is a proposal to create a cavern with the space and infrastructure to support a suite of far-forward experiments at the Large Hadron Collider during the High Luminosity era. Located along the beam collision axis and shielded from the interaction point by at least 100 m of concrete and rock, the FPF will house experiments that will detect particles outside the acceptance of the existing large LHC experiments and will observe rare and exotic processes in an extremely low-background environment. In this work, we summarize the current status of plans for the FPF, including recent progress in civil engineering in identifying promising sites for the FPF and the experiments currently envisioned to realize the FPF’s physics potential. We then review the many Standard Model and new physics topics that will be advanced by the FPF, including searches for long-lived particles, probes of dark matter and dark sectors, high-statistics studies of TeV neutrinos of all three flavors, aspects of perturbative and non-perturbative QCD, and high-energy astroparticle physics.",
+      "openalex_id": "https://openalex.org/W4280504511"
+    }
+  ],
+  "completed_at": "2026-11-01T03:20:41.918058+00:00",
+  "research_report": "**A. Executive Findings**  \n\n| # | Core conclusion | Evidence type | Epistemic status |\n|---|-----------------|---------------|------------------|\n| A1 | The **informational‑spin correction** α = 1 + k · e/a (Matuchaki 2026) predicts **phase‑advances** in high‑eccentricity two‑body orbits that are *quantitatively* distinct from General Relativity (GR) and from quantum‑gravity‑induced dispersion (Khlopov & Trivedi 2024). | Source‑supported (src_8a04009de8824447070bed7a) | **Conditional** – requires a precise value of *k* and a regime where e/a is large enough to be measurable. |\n| A2 | A stochastic **gravitational‑wave background (SGWB)** with a *coherence‑dependent* spectral tilt (∝ f^n where n differs from the standard inflationary tilt) would be a smoking‑gun for TGU‑type coherence effects. | Derived from the LISA roadmap (src_190f63fbbbe00d4db8e3d0a2) combined with the TGU hypothesis. | **Speculative** – no SGWB has yet been detected; the quantitative link is model‑dependent. |\n| A3 | **Galactic rotation curves** reproduced with baryons alone (TGU) must be distinguished from ΛCDM dark‑matter fits and from MOND‑type phenomenology by **high‑resolution 3‑D velocity fields** and **mass‑distribution priors**. | Source‑supported (src_8a04009de8824447070bed7a) vs. established dark‑matter evidence (src_b4aa460ac628f1f1b47922d2). | **Conditional** – requires data that can break the degeneracy between baryonic mass modelling and coherence corrections. |\n| A4 | **Direct‑detection null results** (current limits on keV‑scale nuclear recoils) already constrain any TGU‑induced particle that would behave like a WIMP; however, TGU does **not** predict a particle, only a field‑level effect. | Review of dark‑matter searches (src_b4aa460ac628f1f1b47922d2). | **Established** – experimental limits are real; interpretation for TGU is **unknown**. |\n| A5 | The **Forward Physics Facility (FPF)** can test for exotic long‑lived particles that might arise if the informational‑spin field couples to the Standard Model; absence of such signals would **disfavor** particle‑based extensions of TGU. | Facility description (src_eb122ceb8379b68a7e19662a). | **Conditional** – depends on model‑specific coupling assumptions (currently **speculative**). |\n\n**Overall recommendation:** A coordinated program that (i) measures orbital phase evolution of high‑eccentricity binaries with LISA, (ii) obtains ultra‑precise rotation‑curve data for low‑surface‑brightness galaxies, (iii) searches for SGWB spectral anomalies with LISA, and (iv) exploits the FPF’s low‑background environment for exotic signatures will provide the most discriminating tests of the **Unified Theory of Informational Spin (TGU)** against standard quantum‑gravity and ΛCDM alternatives.\n\n---\n\n**B. Established Background**  \n\n| Topic | Standard view (established) | Key references |\n|-------|-----------------------------|----------------|\n| ΛCDM cosmology & inflation | Dark matter (non‑baryonic) and dark energy required to fit CMB, large‑scale structure, BAO; inflation provides initial perturbations. | src_85b38fce34253e9d08d855c5 (review of quantum‑gravity imprints) |\n| Direct dark‑matter searches | No confirmed particle detection; experiments reach cross‑section limits ≲10⁻⁴⁶ cm² for WIMP‑mass ≈ 30 GeV. | src_b4aa460ac628f1f1b47922d2 |\n| Gravitational‑wave cosmology | LISA will probe SGWB from MeV–Planck scales; standard predictions give a nearly scale‑invariant (n≈0) spectrum from inflation. | src_190f63fbbbe00d4db8e3d0a2 |\n| Forward Physics Facility | Designed to study long‑lived particles, high‑energy neutrinos, and QCD in the far‑forward region of the HL‑LHC. | src_eb122ceb8379b68a7e19662a |\n| Quantum‑gravity phenomenology | Various approaches (loop, string, asymptotic safety) predict tiny corrections to dispersion relations, potentially observable in high‑energy astrophysics or cosmology. | src_85b38fce34253e9d08d855c5 |\n\n---\n\n**C. Literature Review (source‑supported statements only)**  \n\n| Source ID | Main claim(s) relevant to experimental discrimination |\n|-----------|--------------------------------------------------------|\n| **src_85b38fce34253e9d08d855c5** | Quantum‑gravity effects can leave *observable deviations* from the standard cosmological model; emphasizes need for precise cosmological data to detect such im",
+  "integrity_note": "LLM research synthesis; not independent scientific verification. Abstract retrieval is not full-text review."
+}

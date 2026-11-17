@@ -1,0 +1,13 @@
+{
+  "phase": "5.5",
+  "run_id": "run_64ca8ea8354347659fe78f63b8569a67",
+  "last_updated_utc": "2026-11-01T05:03:21.683255+00:00",
+  "phase_5_5_6": "completed_synthetic_model_comparison",
+  "phase_5_5_7": "completed_experiment_design_audit",
+  "cosmology_gate": "hall_model_blocked",
+  "reports": [
+    "research/phase5/reports/p5_5_6_statistical_model_comparison.json",
+    "research/phase5/reports/p5_5_7_discriminating_experiments.json",
+    "research/phase5/reports/p5_5_final_audit.json"
+  ]
+}

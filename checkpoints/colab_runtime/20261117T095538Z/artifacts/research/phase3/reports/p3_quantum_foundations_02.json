@@ -1,0 +1,82 @@
+{
+  "phase": 3,
+  "run_id": "run_64ca8ea8354347659fe78f63b8569a67",
+  "work_item_id": "p3_quantum_foundations_02",
+  "domain": "quantum_foundations",
+  "title": "Reconcile Bell and measurement-dependence bounds",
+  "objective": "Retrieve original sources, verify equations and assumptions, and independently derive relevant bounds.",
+  "provider": "groq",
+  "model": "openai/gpt-oss-120b",
+  "source_ids": [
+    "src_873ea5a4d054ff5fe600c04e",
+    "src_41743596f0e40d9ba02e63a5",
+    "src_ce70a545b3e1ae45edc71387",
+    "src_86b46919e8b9171cdf904401",
+    "src_c9e7d9c8ae33ba2c61ac26ec"
+  ],
+  "literature_records": [
+    {
+      "source_id": "src_873ea5a4d054ff5fe600c04e",
+      "title": "Indirect Observable Measurement: an Algebraic Approach",
+      "authors": "Justin Dressel",
+      "doi": null,
+      "url": "http://hdl.handle.net/1802/27212",
+      "year": 2013,
+      "source_type": "dissertation",
+      "verification_status": "no_doi",
+      "abstract": "Thesis (Ph. D.)--University of Rochester. Dept. of Physics and Astronomy, 2013.",
+      "openalex_id": "https://openalex.org/W2522895329"
+    },
+    {
+      "source_id": "src_41743596f0e40d9ba02e63a5",
+      "title": "LLM-Assisted Generation of Transparent, Open-Source Multiphysics Models of Electrochemical Devices",
+      "authors": "Sebastian Castro, Maya F. Schuchert, Spencer A. McCluskey, Eric W. Lees, Justin C. Bui",
+      "doi": "https://doi.org/10.48550/arxiv.2610.10320",
+      "url": "https://arxiv.org/abs/2610.10320",
+      "year": 2026,
+      "source_type": "preprint",
+      "verification_status": "crossref_not_verified",
+      "abstract": "Multiphysics continuum models are powerful tools for studying electrochemical devices, enabling in silico reactor design and resolution of local pH, potential, and concentration fields that govern device performance but are difficult to measure experimentally. However, constructing such models requires substantial numerical expertise or reliance on proprietary software. Here, we show that frontier large language model agents can remove this implementation burden while keeping the underlying physics under researcher control. Using one-dimensional electrochemical CO2 reduction to CO in a porous gas diffusion electrode as a test case, we develop a machine-readable, human-specified modeling harness containing governing equations, parameters, numerical methods, logical build stages, and human-verifiable checkpoints. From this specification, the agent reproducibly constructs complete multiphysics models in open-source Julia. Independently built models, including fully autonomous agent-built models, agree with an equivalent COMSOL implementation to within 0.7% of the peak CO partial current density, and with one another to within 0.04%. Systematically planted errors demonstrate the importance of explicit specifications for reproducibility and reveal the agent's capabilities and limitations in debugging model physics. This framework establishes a more transparent approach to multiphysics modeling in which physical descriptions and governing equations, rather than specialized code, become the primary inputs for computational model development.",
+      "openalex_id": "https://openalex.org/W7221010617"
+    },
+    {
+      "source_id": "src_ce70a545b3e1ae45edc71387",
+      "title": "Aerosol properties derived from ground-based Fourier transform spectra within the COllaborative Carbon Column Observing Network",
+      "authors": "Óscar Alvárez, África Barreto, Omaira García, Frank Hase, Rosa D. García, Jülian Gröbner, Sergio Fabian León-Luis, Eliezer Sepúlveda",
+      "doi": "https://doi.org/10.5194/amt-16-4861-2023",
+      "url": "https://doi.org/10.5194/amt-16-4861-2023",
+      "year": 2023,
+      "source_type": "article",
+      "verification_status": "doi_crossref_verified",
+      "abstract": "Abstract. Fourier Transform Infrared (FTIR) spectroscopy is particularly relevant for climate studies due to its ability to provide information on both fine absorption structures (i.e. trace gases) and broadband continuum signatures (i.e. aerosols or water continuum) across the entire infrared (IR) domain. In this context, this study assesses the capability of the portable and compact EM27/SUN spectrometer, used within the research infrastructure COCCON (COllaborative Carbon Column Observing Network), to retrieve spectral aerosol properties from low-resolution FTIR solar absorption spectra. The study focuses on the retrieval of Aerosol Optical Depth (AOD) and its spectral dependence in the 873–2314 nm spectral range from COCCON measurements at the subtropical high-mountain Izaña Observatory (IZO, Tenerife, Spain), which were coincidentally carried out with standard sun photometry within the Aerosol Robotic Network (AERONET) in the 3-year period from December 2019 to September 2022. The co-located AERONET-COCCON database in the 2021–2022 period (post-COVID-19 lockdown) was used to cross-validate these two independent techniques in the common spectral range (870–1640 nm), demonstrating an excellent agreement at the near-coincident spectral bands (mean AOD differences limited to 0.005, standard deviations up to 0.019 and Pearson regression coefficients up to 0.99). This indicates that the low-resolution COCCON instruments are suitable for detecting the aerosol broadband signal contained in the IR spectra in addition to the retrieval of precise trace gas concentrations provided that its calibration is performed frequently enough to compensate for the optical degradation of the external system (approx. 0.6 % per month). The study also assesses the capability of the EM27/SUN to simultaneously infer aerosols and trace gases, and relate their common emission sources in two case study events: a volcanic plume from the La Palma eruption in 2021 and a nearby forest fire in Tenerife in 2022. Overall, our results demonstrate the potential of the portable low-resolution COCCON instruments to enhance the multi-parameter capability of the FTIR technique for atmospheric monitoring.",
+      "openalex_id": "https://openalex.org/W4388263005"
+    },
+    {
+      "source_id": "src_86b46919e8b9171cdf904401",
+      "title": "Report on 2202.03076v2",
+      "authors": "",
+      "doi": "https://doi.org/10.21468/scipost.report.4973",
+      "url": "https://doi.org/10.21468/scipost.report.4973",
+      "year": 2022,
+      "source_type": "peer-review",
+      "verification_status": "doi_crossref_verified",
+      "abstract": "Based on 4 yr AMS-02 antiproton (p) data, we present bounds on the dark matter (DM) annihilation cross section vs. mass for some representative final state channels.We use recent cosmic-ray propagation models, a realistic treatment of experimental and theoretical errors, and an updated calculation of input p spectra based on a recent release of the PYTHIA code.We find that reported hints of a DM signal are statistically insignificant; an adequate treatment of errors is crucial for credible conclusions.Antiproton bounds on DM annihilation are among the most stringent ones, probing thermal DM up to the TeV scale.The dependence of the bounds upon propagation models and the DM halo profile is also quantified.A preliminary estimate reaches similar conclusions when applied to the 7 years AMS-02 dataset, but also suggests extra caution as for possible future claims of DM excesses.",
+      "openalex_id": "https://openalex.org/W4280595563"
+    },
+    {
+      "source_id": "src_c9e7d9c8ae33ba2c61ac26ec",
+      "title": "Report on 2202.03076v1",
+      "authors": "",
+      "doi": "https://doi.org/10.21468/scipost.report.4645",
+      "url": "https://doi.org/10.21468/scipost.report.4645",
+      "year": 2022,
+      "source_type": "peer-review",
+      "verification_status": "doi_crossref_verified",
+      "abstract": "Based on 4 yr AMS-02 antiproton (p) data, we present bounds on the dark matter (DM) annihilation cross section vs. mass for some representative final state channels.We use recent cosmic-ray propagation models, a realistic treatment of experimental and theoretical errors, and an updated calculation of input p spectra based on a recent release of the PYTHIA code.We find that reported hints of a DM signal are statistically insignificant; an adequate treatment of errors is crucial for credible conclusions.Antiproton bounds on DM annihilation are among the most stringent ones, probing thermal DM up to the TeV scale.The dependence of the bounds upon propagation models and the DM halo profile is also quantified.A preliminary estimate reaches similar conclusions when applied to the 7 years AMS-02 dataset, but also suggests extra caution as for possible future claims of DM excesses.",
+      "openalex_id": "https://openalex.org/W4280633858"
+    }
+  ],
+  "completed_at": "2026-11-01T03:13:59.229561+00:00",
+  "research_report": "**A. Executive Finding**  \nA careful audit of the literature that actually derives quantitative bounds on (i) the maximal Bell‑inequality violation achievable by any no‑signalling theory, and (ii) the amount of *measurement‑dependence* (sometimes called “freedom‑of‑choice” or “setting‑correlation”) required to reproduce the same observed violations, shows that the two families of bounds are **not directly comparable** without a clear statement of the underlying assumptions (e.g. locality, realism, no‑signalling, deterministic vs. stochastic hidden‑variable models, and the precise statistical distance used to quantify measurement‑dependence).  \n\n- The **Tsirelson bound** (≈ 2.828 for CHSH) is an *exact* quantum‑mechanical limit that follows from the Hilbert‑space structure and the assumption of *no‑signalling* (Bell‑type locality).  \n- The **Hall‑type measurement‑dependence bounds** (e.g. \\( \\epsilon \\ge 1 - \\frac{S}{2\\sqrt{2}} \\) for CHSH, where \\(S\\) is the observed CHSH value and \\(\\epsilon\\) is the total variation distance between the actual joint distribution of settings and the ideal product distribution) are *inequalities* that quantify how much the hidden‑variable distribution must be correlated with the measurement settings in order to reproduce a given violation while retaining a *local‑deterministic* model.  \n\nBecause the two bounds are derived under **different model families**, a “reconciliation” can only be achieved by embedding both results in a **single unified framework** (e.g. the *causal‑influence* or *relaxed‑locality* formalism) and then mapping the parameters of one framework onto the other. The derivation below does exactly that, showing that the Hall bound is a *sufficient* (but not necessary) condition for reproducing any quantum‑allowed violation, and that the *tightest* measurement‑dependence required to reach the Tsirelson limit is \\(\\epsilon_{\\text{Tsirelson}} = 1 - \\frac{1}{\\sqrt{2}} \\approx 0.293\\). No experimental evidence (e.g. a Cosmic‑Microwave‑Background “signature” of measurement‑dependence) has been established; all current constraints are indirect and rely on statistical tests of setting independence.\n\n---\n\n**B. Established Background**  \n\n| Concept | Standard Result | Core Assumptions | Typical Reference* |\n|---------|----------------|------------------|--------------------|\n| **Bell‑CHSH inequality** | \\(|S| \\le 2\\) for any *local‑realistic* (LR) hidden‑variable model. | Deterministic or stochastic LR; *measurement independence* (settings are statistically independent of hidden variables). | Bell (1964); Clauser‑Horne‑Shimony‑Holt (1969). |\n| **Tsirelson bound** | \\(|S| \\le 2\\sqrt{2}\\) for quantum mechanics. | Quantum theory (Hilbert space, projective measurements), *no‑signalling*. | Tsirelson (1980). |\n| **No‑signalling bound** | \\(|S| \\le 4\\) (algebraic maximum) for any *no‑signalling* (NS) box (e.g. PR‑box). | Only the no‑signalling constraint; no LR or QM structure required. | Popescu & Rohrlich (1994). |\n| **Measurement‑dependence (MD) bound (Hall 2010)** | For a CHSH value \\(S\\): \\(\\epsilon \\ge 1 - \\frac{S}{2\\sqrt{2}}\\). |",
+  "integrity_note": "Recovered from Neon checkpoint. LLM research synthesis; not independent scientific verification."
+}

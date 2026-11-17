@@ -1,0 +1,88 @@
+[
+  {
+    "name": "CHSH_2x2_binary",
+    "settings_per_party": [
+      2,
+      2
+    ],
+    "outcomes_per_party": [
+      2,
+      2
+    ],
+    "deterministic_strategy_count": 16,
+    "constraint_rows": 16,
+    "known_local_vertex_membership": {
+      "local": true,
+      "solver_status": 0,
+      "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "equality_residual": 0.0
+    },
+    "exact_rational_vertex_normalisation": true,
+    "status": "COMPLETED"
+  },
+  {
+    "name": "Three_settings_A_two_B_binary",
+    "settings_per_party": [
+      3,
+      2
+    ],
+    "outcomes_per_party": [
+      2,
+      2
+    ],
+    "deterministic_strategy_count": 32,
+    "constraint_rows": 24,
+    "known_local_vertex_membership": {
+      "local": true,
+      "solver_status": 0,
+      "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "equality_residual": 0.0
+    },
+    "exact_rational_vertex_normalisation": true,
+    "status": "COMPLETED"
+  },
+  {
+    "name": "Two_settings_three_outcomes_A",
+    "settings_per_party": [
+      2,
+      2
+    ],
+    "outcomes_per_party": [
+      3,
+      2
+    ],
+    "deterministic_strategy_count": 36,
+    "constraint_rows": 24,
+    "known_local_vertex_membership": {
+      "local": true,
+      "solver_status": 0,
+      "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "equality_residual": 0.0
+    },
+    "exact_rational_vertex_normalisation": true,
+    "status": "COMPLETED"
+  },
+  {
+    "name": "Three_party_binary_settings_binary_outcomes",
+    "settings_per_party": [
+      2,
+      2,
+      2
+    ],
+    "outcomes_per_party": [
+      2,
+      2,
+      2
+    ],
+    "deterministic_strategy_count": 64,
+    "constraint_rows": 64,
+    "known_local_vertex_membership": {
+      "local": true,
+      "solver_status": 0,
+      "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "equality_residual": 0.0
+    },
+    "exact_rational_vertex_normalisation": true,
+    "status": "COMPLETED"
+  }
+]
