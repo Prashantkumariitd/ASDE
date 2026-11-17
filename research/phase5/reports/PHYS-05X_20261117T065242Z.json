@@ -1,0 +1,94 @@
+{
+  "experiment_id": "NS-MD-PHYS-05X",
+  "parent_experiments": [
+    "NS-MD-PHYS-05W"
+  ],
+  "timestamp_utc": "20261117T065242Z",
+  "method": "Restricted finite-support KL variational certificate search",
+  "results": [
+    {
+      "experiment_id": "NS-MD-PHYS-05X",
+      "theta_deg": 16.875,
+      "latent_K": 6,
+      "model_MI": 0.16239755568194744,
+      "previous_analytic_bound": 0.03376597481960353,
+      "new_variational_bound": -7.0546841513026735,
+      "combined_lower_bound": 0.03376597481960353,
+      "feasible_upper_bound": 0.16239755568194703,
+      "optimality_gap": 0.1286315808623435,
+      "certificate": {
+        "bound": -7.0546841513026735,
+        "solver_success": true,
+        "feasible": true,
+        "min_constraint_slack": -2.6645352591003757e-15,
+        "iterations": 18,
+        "f": [
+          -4.035575979350946,
+          -4.037137873275319,
+          -5.805108615777776,
+          -5.362178301766025
+        ],
+        "g": [
+          5.453051923698338,
+          -2.0704084268275422,
+          -0.6680158333433733,
+          5.477049317741246,
+          5.284504275242568,
+          5.679804670333544
+        ]
+      },
+      "certificate_valid": true
+    },
+    {
+      "experiment_id": "NS-MD-PHYS-05X",
+      "theta_deg": 45.0,
+      "latent_K": 16,
+      "model_MI": 0.2798426316876877,
+      "previous_analytic_bound": 0.06496019408699905,
+      "new_variational_bound": -3.7167378597279903,
+      "combined_lower_bound": 0.06496019408699905,
+      "feasible_upper_bound": 0.2798426316876865,
+      "optimality_gap": 0.21488243760068748,
+      "certificate": {
+        "bound": -3.7167378597279903,
+        "solver_success": true,
+        "feasible": true,
+        "min_constraint_slack": 0.0,
+        "iterations": 20,
+        "f": [
+          -2.9123449262192174,
+          -2.8269582121311783,
+          -3.727446689154786,
+          -2.912356565053801
+        ],
+        "g": [
+          1.651171149478401,
+          0.6229081930382037,
+          0.6209319507684413,
+          0.22388157294470226,
+          0.17774797546049356,
+          1.5534575582073722,
+          -0.14156520141871493,
+          0.6660169022851359,
+          1.1090049877498935,
+          1.4905225854190285,
+          2.2965170972792746,
+          0.060492661917255525,
+          0.6229750324512693,
+          0.7182307546803951,
+          0.060545494047408305,
+          0.621201212233538
+        ]
+      },
+      "certificate_valid": true
+    }
+  ],
+  "global_common_cause_optimum_proved": false,
+  "physical_mechanism_established": false,
+  "limitations": [
+    "Restricted certificate family only.",
+    "A failed numerical search does not establish optimality of the old bound.",
+    "Bounds are evaluated for the archived finite latent distributions.",
+    "No global common-cause optimization is performed."
+  ]
+}
