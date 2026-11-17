@@ -1,0 +1,50 @@
+{
+  "logical_id": "NS-MD-04",
+  "archive_id": "PHYS-04G_20261117T061130Z",
+  "created_at_utc": "2026-11-17T06:11:32.159645+00:00",
+  "run_id": "run_64ca8ea8354347659fe78f63b8569a67",
+  "record_type": "reconstructed_research_summary",
+  "provenance": "reconstructed_from_reported_research_log",
+  "payload": {
+    "title": "Analytical candidate construction",
+    "formula": {
+      "r": "(4-S)/8",
+      "MI_bits": "2 - h2(r) - (1-r) log2(3)",
+      "binary_entropy": "h2(r)=-r log2(r)-(1-r)log2(1-r)"
+    },
+    "construction": "Choose the eight deterministic strategies with exactly one mismatch relative to PR target signs; each strategy has a global-output-flip partner. Let J denote the unique mismatch setting pair. P(J=j|X=x)=r if j=x and (1-r)/3 otherwise. The flip partner is equiprobable.",
+    "derivation": "Each correlator is c_x(1-2r), giving S=4(1-2r). J is uniform marginally, H(J)=2, and H(J|X)=h2(r)+(1-r)log2(3). Thus I(Lambda;X)=I(J;X) for this construction.",
+    "results": [
+      {
+        "S": 2.0,
+        "MI_bits": 0.0
+      },
+      {
+        "S": 2.2,
+        "MI_bits": 0.0024612329281
+      },
+      {
+        "S": 2.5,
+        "MI_bits": 0.0160057080389
+      },
+      {
+        "S": 2.828427,
+        "MI_bits": 0.0462738468534
+      },
+      {
+        "S": 3.0,
+        "MI_bits": 0.0695933686694
+      },
+      {
+        "S": 3.6,
+        "MI_bits": 0.2078886671989
+      },
+      {
+        "S": 4.0,
+        "MI_bits": 0.4150374992788
+      }
+    ],
+    "caveat": "Initially this was an attaining candidate family, not yet a global optimality proof. Candidate has zero probabilities for eight strategies; it is nonnegative, not strictly positive.",
+    "provenance": "reconstructed_from_reported_research_log"
+  }
+}
