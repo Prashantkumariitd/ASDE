@@ -1,0 +1,14 @@
+{
+  "logical_id": "NS-MD-08",
+  "archive_id": "PHYS-04G_20261117T061130Z",
+  "created_at_utc": "2026-11-17T06:11:32.159645+00:00",
+  "run_id": "run_64ca8ea8354347659fe78f63b8569a67",
+  "record_type": "reconstructed_research_summary",
+  "provenance": "reconstructed_from_reported_research_log",
+  "payload": {
+    "title": "Extension to partially entangled quantum states",
+    "objective": "Extend the measurement-dependence minimum analysis beyond the maximally entangled Tsirelson point, using partially entangled two-qubit states. Potential further extensions include nonuniform setting priors and more settings/outcomes.",
+    "status": "Research direction initiated; subsequent NS-MD-09 through NS-MD-12 contain the reported numerical work.",
+    "provenance": "reconstructed_from_reported_research_log"
+  }
+}
