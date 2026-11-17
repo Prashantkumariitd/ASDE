@@ -1,0 +1,98 @@
+{
+  "experiment_id": "NS-MD-PHYS-05",
+  "run_id": "run_64ca8ea8354347659fe78f63b8569a67",
+  "timestamp_utc": "20261117T061651Z",
+  "title": "Common-cause setting information cost: multi-K direct MI optimisation",
+  "method": "Direct I(Omega;X) SLSQP with exact table/channel constraints, multi-start and exact latent splitting",
+  "model": "P(a,b,lambda)=sum_omega P(omega)P(a|omega)P(b|omega)P(lambda|omega)",
+  "settings_distribution": "Uniform P(a,b)=1/4",
+  "target_states": [
+    16.875,
+    45.0
+  ],
+  "K_values": [
+    4,
+    6,
+    8,
+    16
+  ],
+  "historical_bounds": {
+    "16.875": {
+      "best_I_Omega_X": 1.3086595127528895,
+      "source": "PHYS-04C K=16",
+      "feasibility_error": 1.1e-09
+    },
+    "45.0": {
+      "best_I_Omega_X": 0.28398492202002595,
+      "source": "PHYS-04B K=8",
+      "feasibility_error": 7.7e-12
+    }
+  },
+  "unrestricted_lower_bound_interpretation": "Data-processing lower bound I(Omega;X) >= I(Lambda;X), not generally tight",
+  "global_optimality_proved": false,
+  "physical_spacetime_mechanism_established": false,
+  "results": [
+    {
+      "theta_deg": 16.875,
+      "K": 4,
+      "feasible": false,
+      "message": "No candidate met numerical feasibility tolerance"
+    },
+    {
+      "theta_deg": 16.875,
+      "K": 6,
+      "feasible": false,
+      "message": "No candidate met numerical feasibility tolerance"
+    },
+    {
+      "theta_deg": 16.875,
+      "K": 8,
+      "feasible": false,
+      "message": "No candidate met numerical feasibility tolerance"
+    },
+    {
+      "theta_deg": 16.875,
+      "K": 16,
+      "feasible": false,
+      "message": "No candidate met numerical feasibility tolerance"
+    },
+    {
+      "theta_deg": 45.0,
+      "K": 4,
+      "feasible": false,
+      "message": "No candidate met numerical feasibility tolerance"
+    },
+    {
+      "theta_deg": 45.0,
+      "K": 6,
+      "feasible": false,
+      "message": "No candidate met numerical feasibility tolerance"
+    },
+    {
+      "theta_deg": 45.0,
+      "K": 8,
+      "feasible": false,
+      "message": "No candidate met numerical feasibility tolerance"
+    },
+    {
+      "theta_deg": 45.0,
+      "K": 16,
+      "feasible": false,
+      "message": "No candidate met numerical feasibility tolerance"
+    }
+  ],
+  "factor_archives": {},
+  "runtime_seconds": 3.9464876651763916,
+  "software": {
+    "numpy": "2.4.6",
+    "scipy": "1.16.3",
+    "cvxpy": "1.6.7"
+  },
+  "limitations": [
+    "SLSQP is nonconvex for this factorisation; feasible results are upper bounds only.",
+    "Solver success is reported separately from constraint feasibility.",
+    "Compact PHYS-04 reports did not contain previous fitted factor tensors; only live namespace seeds can be reused.",
+    "No global lower-bound certificate for C_CC(P*) is established by this experiment.",
+    "A statistical common-cause factorisation is not a physical spacetime mechanism."
+  ]
+}
