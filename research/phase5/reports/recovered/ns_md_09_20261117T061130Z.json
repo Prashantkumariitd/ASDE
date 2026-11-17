@@ -1,0 +1,61 @@
+{
+  "logical_id": "NS-MD-09",
+  "archive_id": "PHYS-04G_20261117T061130Z",
+  "created_at_utc": "2026-11-17T06:11:32.159645+00:00",
+  "run_id": "run_64ca8ea8354347659fe78f63b8569a67",
+  "record_type": "reconstructed_research_summary",
+  "provenance": "reconstructed_from_reported_research_log",
+  "payload": {
+    "title": "Marginal-aware variational lower bound",
+    "method": "Partially entangled quantum tables; uniform setting distribution; 16 deterministic strategies. Certificate includes Alice marginal, Bob marginal and correlation features.",
+    "results": [
+      {
+        "theta_deg": 0.0,
+        "primal_MI": 1.268e-10,
+        "bound": -1.786e-09
+      },
+      {
+        "theta_deg": 5.625,
+        "primal_MI": 0.00324372239,
+        "bound": 0.00284592599
+      },
+      {
+        "theta_deg": 11.25,
+        "primal_MI": 0.0118503744,
+        "bound": 0.00972789944
+      },
+      {
+        "theta_deg": 16.875,
+        "primal_MI": 0.02262065025,
+        "bound": 0.0187754671
+      },
+      {
+        "theta_deg": 22.5,
+        "primal_MI": 0.03219570407,
+        "bound": 0.02897646633
+      },
+      {
+        "theta_deg": 28.125,
+        "primal_MI": 0.03907063662,
+        "bound": 0.03718512072
+      },
+      {
+        "theta_deg": 33.75,
+        "primal_MI": 0.04333937554,
+        "bound": 0.04243690208
+      },
+      {
+        "theta_deg": 39.375,
+        "primal_MI": 0.04558299249,
+        "bound": 0.04519361856
+      },
+      {
+        "theta_deg": 45.0,
+        "primal_MI": 0.04627384698,
+        "bound": 0.04627383311
+      }
+    ],
+    "conclusion": "The bound is tight at endpoints but weaker at intermediate angles. No closed-form global minimum was established by this experiment.",
+    "provenance": "reconstructed_from_reported_research_log"
+  }
+}
