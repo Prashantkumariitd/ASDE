@@ -1,0 +1,79 @@
+{
+  "logical_id": "NS-MD-12",
+  "archive_id": "PHYS-04G_20261117T061130Z",
+  "created_at_utc": "2026-11-17T06:11:32.159645+00:00",
+  "run_id": "run_64ca8ea8354347659fe78f63b8569a67",
+  "record_type": "reconstructed_research_summary",
+  "provenance": "reconstructed_from_reported_research_log",
+  "payload": {
+    "title": "Full convex primal-dual audit",
+    "results": [
+      {
+        "theta_deg": 0.0,
+        "clarabel_primal": 0.0,
+        "scs_primal": 0.0,
+        "scs_dual": 0.0,
+        "restricted_bound": 0.0
+      },
+      {
+        "theta_deg": 5.625,
+        "clarabel_primal": 0.003243722316,
+        "scs_primal": 0.003243711884,
+        "scs_dual": 0.003243710092,
+        "restricted_bound": 0.003022008165
+      },
+      {
+        "theta_deg": 11.25,
+        "clarabel_primal": 0.011850374376,
+        "scs_primal": 0.011850374305,
+        "scs_dual": 0.011850374294,
+        "restricted_bound": 0.010150527476
+      },
+      {
+        "theta_deg": 16.875,
+        "clarabel_primal": 0.022620650243,
+        "scs_primal": 0.022620650354,
+        "scs_dual": 0.02262065047,
+        "restricted_bound": 0.019360990282
+      },
+      {
+        "theta_deg": 22.5,
+        "clarabel_primal": 0.0321957041,
+        "scs_primal": 0.032195704062,
+        "scs_dual": 0.032195704022,
+        "restricted_bound": 0.02971938478
+      },
+      {
+        "theta_deg": 28.125,
+        "clarabel_primal": 0.039070636662,
+        "scs_primal": 0.039070636753,
+        "scs_dual": 0.039070636621,
+        "restricted_bound": 0.03794451599
+      },
+      {
+        "theta_deg": 33.75,
+        "clarabel_primal": 0.043339375577,
+        "scs_primal": 0.04333937545,
+        "scs_dual": 0.043339375467,
+        "restricted_bound": 0.043065698819
+      },
+      {
+        "theta_deg": 39.375,
+        "clarabel_primal": 0.045582992605,
+        "scs_primal": 0.045582992489,
+        "scs_dual": 0.045582992488,
+        "restricted_bound": 0.045563993425
+      },
+      {
+        "theta_deg": 45.0,
+        "clarabel_primal": 0.046273846982,
+        "scs_primal": 0.046273846855,
+        "scs_dual": 0.046273846854,
+        "restricted_bound": 0.046273846852
+      }
+    ],
+    "conclusion": "Full primal and full dual agree to numerical precision across the nine tested states. The restricted NS-MD-11 certificate is materially weaker at intermediate angles. This is a numerical convex primal-dual result, not a closed-form analytical formula.",
+    "solver_note": "Tiny negative primal-dual gaps at selected angles and tiny negative objectives at theta=0 are numerical tolerance artifacts.",
+    "provenance": "reconstructed_from_reported_research_log"
+  }
+}
