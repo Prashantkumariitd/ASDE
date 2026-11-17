@@ -1,0 +1,76 @@
+{
+  "logical_id": "NS-MD-PHYS-03",
+  "archive_id": "PHYS-04G_20261117T061130Z",
+  "created_at_utc": "2026-11-17T06:11:32.159645+00:00",
+  "run_id": "run_64ca8ea8354347659fe78f63b8569a67",
+  "record_type": "reconstructed_research_summary",
+  "provenance": "reconstructed_from_reported_research_log",
+  "payload": {
+    "title": "Direct information minimization under finite common-cause factorization",
+    "method": "Directly minimize I(Lambda;X) under common-cause factorization and exact quantum-table reconstruction; K=2,4,8,16 with warm starts and latent splitting; SLSQP.",
+    "acceptance": "Feasibility tolerance 2e-6; reported table/equality residual acceptance threshold 5e-5. Optimizer status and feasibility must be treated separately.",
+    "theta_16_875": [
+      {
+        "K": 2,
+        "MI_bits": 0.08821939485,
+        "table_error": 1.51e-08,
+        "max_equality_residual": 3.68e-09,
+        "optimizer_success": false
+      },
+      {
+        "K": 4,
+        "MI_bits": 0.0524253215,
+        "table_error": 4.45e-10,
+        "max_equality_residual": 1.11e-10,
+        "optimizer_success": false
+      },
+      {
+        "K": 8,
+        "MI_bits": 0.05242532155,
+        "table_error": 1.67e-16,
+        "max_equality_residual": 2.78e-17,
+        "optimizer_success": true
+      },
+      {
+        "K": 16,
+        "MI_bits": 0.05242532155,
+        "table_error": 1.11e-16,
+        "max_equality_residual": 5.55e-17,
+        "optimizer_success": true
+      }
+    ],
+    "theta_45": [
+      {
+        "K": 2,
+        "MI_bits": 0.20771090151,
+        "table_error": 2.23e-06,
+        "max_equality_residual": 5.57e-07,
+        "optimizer_success": false
+      },
+      {
+        "K": 4,
+        "MI_bits": 0.20771090151,
+        "table_error": 2.23e-06,
+        "max_equality_residual": 5.57e-07,
+        "optimizer_success": false
+      },
+      {
+        "K": 8,
+        "MI_bits": 0.04627375846,
+        "table_error": 4.9e-07,
+        "max_equality_residual": 1.26e-07,
+        "optimizer_success": false
+      },
+      {
+        "K": 16,
+        "MI_bits": 0.04627385819,
+        "table_error": 3.89e-16,
+        "max_equality_residual": 1.39e-16,
+        "optimizer_success": true
+      }
+    ],
+    "comparison": "At theta=16.875, best fitted value remains above unrestricted convex minimum 0.02262065 bits. At theta=45, K16 is approximately 1.13e-8 bits above unrestricted minimum 0.04627384698. K8's slightly lower value is not accepted as a genuine improvement because its residuals are larger.",
+    "interpretation": "Evidence of feasible finite common-cause representation, but no global minimum proof for the nonconvex factorized problem and no physical mechanism.",
+    "provenance": "reconstructed_from_reported_research_log"
+  }
+}
