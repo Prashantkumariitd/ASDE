@@ -1,4 +1,3 @@
-
 import os
 import time
 import threading
@@ -47,6 +46,7 @@ def capacity_snapshot():
         "global_model_call_limit": Settings.max_concurrent_calls,
         "groq_call_limit": Settings.groq_max_concurrent_calls,
         "openrouter_call_limit": Settings.openrouter_max_concurrent_calls,
+        "cloudflare_call_limit": Settings.cloudflare_max_concurrent_calls,
         "max_active_agents": Settings.max_active_agents,
     }
 
@@ -86,6 +86,9 @@ def build_allocation_plan(
         "openrouter_model_call_slots": min(
             Settings.openrouter_max_concurrent_calls, global_slots
         ),
+        "cloudflare_model_call_slots": min(
+            Settings.cloudflare_max_concurrent_calls, global_slots
+        ),
         "limits": snapshot,
         "execution_started": False,
     }
@@ -95,11 +98,9 @@ class InferenceGate:
     """
     Process-local concurrency controller.
 
-    Every request must acquire BOTH the global slot and its provider slot.
-    This enforces the global ceiling across Groq and OpenRouter combined.
-
+    Every request acquires both a global slot and a provider slot.
     For multiple independent runtimes, a distributed database-backed
-    limiter will be required; Python semaphores alone are not distributed.
+    limiter is required; Python semaphores alone are not distributed.
     """
 
     def __init__(self):
@@ -113,6 +114,10 @@ class InferenceGate:
             "openrouter": min(
                 self.global_limit,
                 max(1, Settings.openrouter_max_concurrent_calls),
+            ),
+            "cloudflare": min(
+                self.global_limit,
+                max(1, Settings.cloudflare_max_concurrent_calls),
             ),
         }
 
@@ -161,14 +166,12 @@ class InferenceGate:
                 if provider_acquired:
                     break
 
-                # Do not hold a global slot while waiting for provider capacity.
                 self._global.release()
                 global_acquired = False
 
             with self._lock:
                 self._active_global += 1
                 self._active_provider[provider] += 1
-
                 self._max_global_seen = max(
                     self._max_global_seen, self._active_global
                 )
@@ -184,7 +187,6 @@ class InferenceGate:
                 with self._lock:
                     self._active_global -= 1
                     self._active_provider[provider] -= 1
-
                 self._providers[provider].release()
 
             if global_acquired:
@@ -202,5 +204,4 @@ class InferenceGate:
             }
 
 
-# One shared gate per Colab Python process.
 INFERENCE_GATE = InferenceGate()
