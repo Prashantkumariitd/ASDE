@@ -1,0 +1,225 @@
+{
+  "audit_id": "PHYS-04D-20261117T060354Z",
+  "run_id": "run_64ca8ea8354347659fe78f63b8569a67",
+  "timestamp_utc": "20261117T060354Z",
+  "repository": "Prashantkumariitd/ASDE",
+  "branch": "main",
+  "github_report_files": [
+    "research/phase5/reports/PHYS-04B_20261117T060208Z.json",
+    "research/phase5/reports/PHYS-04C_20261117T060208Z.json",
+    "research/phase5/reports/nist_raw_event_audit.json",
+    "research/phase5/reports/p5_1_chsh_mi_vs_md.json",
+    "research/phase5/reports/p5_2_mathematical_audit.json",
+    "research/phase5/reports/p5_3_comprehensive_robustness.json",
+    "research/phase5/reports/p5_3_robustness_representation.json",
+    "research/phase5/reports/p5_4_5_5_decision_gate.json",
+    "research/phase5/reports/p5_4_5_mathematical_certification.json",
+    "research/phase5/reports/p5_4_exact_bell_and_mechanism_audit.json",
+    "research/phase5/reports/p5_4_hall_continuous_replication.json",
+    "research/phase5/reports/p5_4_physical_mechanism_gate.json",
+    "research/phase5/reports/p5_5_6_statistical_model_comparison.json",
+    "research/phase5/reports/p5_5_7_discriminating_experiments.json",
+    "research/phase5/reports/p5_5_dataset_discovery.json",
+    "research/phase5/reports/p5_5_experimental_evidence_gate.json",
+    "research/phase5/reports/p5_5_experimental_review.json",
+    "research/phase5/reports/p5_5_final_audit.json",
+    "research/phase5/reports/p5_6_cosmology_gate.json",
+    "research/phase5/reports/p5_6_hall_cosmology_gate.json",
+    "research/phase5/reports/p5_7_independent_verification.json",
+    "research/phase5/reports/phase5_3_to_5_7_combined.json"
+  ],
+  "neon_experiment_ids": [
+    "NS-MD-PHYS-04B",
+    "NS-MD-PHYS-04C",
+    "p5_3_comprehensive_robustness_v1"
+  ],
+  "neon_recent_records": [
+    {
+      "record_id": "run_64ca8ea8354347659fe78f63b8569a67_NS-MD-PHYS-04C_20261117T060208Z_summary",
+      "experiment_id": "NS-MD-PHYS-04C",
+      "component": "summary",
+      "status": "completed"
+    },
+    {
+      "record_id": "run_64ca8ea8354347659fe78f63b8569a67_NS-MD-PHYS-04B_20261117T060208Z_summary",
+      "experiment_id": "NS-MD-PHYS-04B",
+      "component": "summary",
+      "status": "completed"
+    },
+    {
+      "record_id": "run_64ca8ea8354347659fe78f63b8569a67_p5_3_comprehensive_robustness_v1_computations",
+      "experiment_id": "p5_3_comprehensive_robustness_v1",
+      "component": "computations",
+      "status": "completed"
+    },
+    {
+      "record_id": "run_64ca8ea8354347659fe78f63b8569a67_p5_3_comprehensive_robustness_v1_main",
+      "experiment_id": "p5_3_comprehensive_robustness_v1",
+      "component": "main",
+      "status": "completed_with_limitations"
+    }
+  ],
+  "experiment_audit": {
+    "NS-MD-01": {
+      "github_found": false,
+      "github_matches": [],
+      "neon_found": false,
+      "neon_matches": [],
+      "fully_verified": false
+    },
+    "NS-MD-02": {
+      "github_found": false,
+      "github_matches": [],
+      "neon_found": false,
+      "neon_matches": [],
+      "fully_verified": false
+    },
+    "NS-MD-03": {
+      "github_found": false,
+      "github_matches": [],
+      "neon_found": false,
+      "neon_matches": [],
+      "fully_verified": false
+    },
+    "NS-MD-04": {
+      "github_found": false,
+      "github_matches": [],
+      "neon_found": false,
+      "neon_matches": [],
+      "fully_verified": false
+    },
+    "NS-MD-05": {
+      "github_found": false,
+      "github_matches": [],
+      "neon_found": false,
+      "neon_matches": [],
+      "fully_verified": false
+    },
+    "NS-MD-06": {
+      "github_found": false,
+      "github_matches": [],
+      "neon_found": false,
+      "neon_matches": [],
+      "fully_verified": false
+    },
+    "NS-MD-07": {
+      "github_found": false,
+      "github_matches": [],
+      "neon_found": false,
+      "neon_matches": [],
+      "fully_verified": false
+    },
+    "NS-MD-08": {
+      "github_found": false,
+      "github_matches": [],
+      "neon_found": false,
+      "neon_matches": [],
+      "fully_verified": false
+    },
+    "NS-MD-09": {
+      "github_found": false,
+      "github_matches": [],
+      "neon_found": false,
+      "neon_matches": [],
+      "fully_verified": false
+    },
+    "NS-MD-10": {
+      "github_found": false,
+      "github_matches": [],
+      "neon_found": false,
+      "neon_matches": [],
+      "fully_verified": false
+    },
+    "NS-MD-11": {
+      "github_found": false,
+      "github_matches": [],
+      "neon_found": false,
+      "neon_matches": [],
+      "fully_verified": false
+    },
+    "NS-MD-12": {
+      "github_found": false,
+      "github_matches": [],
+      "neon_found": false,
+      "neon_matches": [],
+      "fully_verified": false
+    },
+    "NS-MD-PHYS-01": {
+      "github_found": false,
+      "github_matches": [],
+      "neon_found": false,
+      "neon_matches": [],
+      "fully_verified": false
+    },
+    "NS-MD-PHYS-02": {
+      "github_found": false,
+      "github_matches": [],
+      "neon_found": false,
+      "neon_matches": [],
+      "fully_verified": false
+    },
+    "NS-MD-PHYS-03": {
+      "github_found": false,
+      "github_matches": [],
+      "neon_found": false,
+      "neon_matches": [],
+      "fully_verified": false
+    },
+    "NS-MD-PHYS-04": {
+      "github_found": false,
+      "github_matches": [],
+      "neon_found": true,
+      "neon_matches": [
+        "NS-MD-PHYS-04B",
+        "NS-MD-PHYS-04C"
+      ],
+      "fully_verified": false
+    },
+    "NS-MD-PHYS-04B": {
+      "github_found": false,
+      "github_matches": [],
+      "neon_found": true,
+      "neon_matches": [
+        "NS-MD-PHYS-04B"
+      ],
+      "fully_verified": false
+    },
+    "NS-MD-PHYS-04C": {
+      "github_found": false,
+      "github_matches": [],
+      "neon_found": true,
+      "neon_matches": [
+        "NS-MD-PHYS-04C"
+      ],
+      "fully_verified": false
+    }
+  },
+  "summary": {
+    "expected_experiments": 18,
+    "fully_verified": [],
+    "github_only": [],
+    "neon_only": [
+      "NS-MD-PHYS-04",
+      "NS-MD-PHYS-04B",
+      "NS-MD-PHYS-04C"
+    ],
+    "missing_from_both": [
+      "NS-MD-01",
+      "NS-MD-02",
+      "NS-MD-03",
+      "NS-MD-04",
+      "NS-MD-05",
+      "NS-MD-06",
+      "NS-MD-07",
+      "NS-MD-08",
+      "NS-MD-09",
+      "NS-MD-10",
+      "NS-MD-11",
+      "NS-MD-12",
+      "NS-MD-PHYS-01",
+      "NS-MD-PHYS-02",
+      "NS-MD-PHYS-03"
+    ],
+    "fully_verified_count": 0
+  }
+}
