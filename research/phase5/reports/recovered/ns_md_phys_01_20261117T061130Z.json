@@ -1,0 +1,51 @@
+{
+  "logical_id": "NS-MD-PHYS-01",
+  "archive_id": "PHYS-04G_20261117T061130Z",
+  "created_at_utc": "2026-11-17T06:11:32.159645+00:00",
+  "run_id": "run_64ca8ea8354347659fe78f63b8569a67",
+  "record_type": "reconstructed_research_summary",
+  "provenance": "reconstructed_from_reported_research_log",
+  "payload": {
+    "title": "Initial finite latent common-cause fits",
+    "factorization": "P(a,b,lambda)=sum_omega P(omega)P(a|omega)P(b|omega)P(lambda|omega), with 16 deterministic local response strategies.",
+    "fits": [
+      {
+        "theta_deg": 16.875,
+        "K": 2,
+        "MI_bits": 0.23806768
+      },
+      {
+        "theta_deg": 16.875,
+        "K": 4,
+        "MI_bits": 0.11413115
+      },
+      {
+        "theta_deg": 16.875,
+        "K": 8,
+        "MI_bits": 0.06438369
+      },
+      {
+        "theta_deg": 45.0,
+        "K": 2,
+        "MI_bits": 0.1912848
+      },
+      {
+        "theta_deg": 45.0,
+        "K": 4,
+        "MI_bits": 0.25467536
+      },
+      {
+        "theta_deg": 45.0,
+        "K": 8,
+        "MI_bits": 0.22188855
+      }
+    ],
+    "comparison_unrestricted_MI": {
+      "theta_16_875": 0.02262065,
+      "theta_45": 0.04627385
+    },
+    "interpretation": "Approximate finite statistical common-cause realizations were found. These fitted costs are feasible realization costs, not global minima. Only three restarts were used.",
+    "open_physics_requirements": "Identify physical Omega, dynamics, spacetime consistency, source/setting-device couplings and independent testable predictions.",
+    "provenance": "reconstructed_from_reported_research_log"
+  }
+}
