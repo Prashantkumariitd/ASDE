@@ -1,0 +1,5 @@
+# Install only when needed
+camb
+healpy
+pymc
+arviz

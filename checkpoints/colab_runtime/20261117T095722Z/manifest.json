@@ -1,0 +1,355 @@
+{
+  "checkpoint_id": "20261117T095722Z",
+  "created_utc": "2026-11-17T09:57:22.496248+00:00",
+  "repository": "/content/ASDE",
+  "branch": "main",
+  "state_file": "checkpoints/colab_runtime/20261117T095722Z/research_state.json",
+  "state_sha256": "23263bb64eda7adc9e8e95ca8db30413e6d15857c77128d967df7b8e5dbe1be0",
+  "variables_captured": 357,
+  "artifact_count": 57,
+  "artifact_bytes": 664587,
+  "artifact_manifest": [
+    {
+      "path": "research/phase3/reports/p3_cmb_cosmology_03.json",
+      "checkpoint_copy": "artifacts/research/phase3/reports/p3_cmb_cosmology_03.json",
+      "size_bytes": 16365,
+      "sha256": "338279a08c1845f055bf6f1615bdf3b1731c19905a34395c28bf9cdf2e33129e"
+    },
+    {
+      "path": "research/phase3/reports/p3_cmb_cosmology_04.json",
+      "checkpoint_copy": "artifacts/research/phase3/reports/p3_cmb_cosmology_04.json",
+      "size_bytes": 14517,
+      "sha256": "1451f6a011ef21e2d0238a56fb983a05986bea98065c77efcff92abff94edf73"
+    },
+    {
+      "path": "research/phase3/reports/p3_early_universe_05.json",
+      "checkpoint_copy": "artifacts/research/phase3/reports/p3_early_universe_05.json",
+      "size_bytes": 19271,
+      "sha256": "5eb86fbd4649558b27ae7521bd21a75cd5b0cedd26be48d1ad2a1941a607cb6b"
+    },
+    {
+      "path": "research/phase3/reports/p3_experimental_evidence_09.json",
+      "checkpoint_copy": "artifacts/research/phase3/reports/p3_experimental_evidence_09.json",
+      "size_bytes": 18217,
+      "sha256": "5dd5dd3299a0a3852e3688d03be713b37c241f33f4ae1c2f5d399987aff55f47"
+    },
+    {
+      "path": "research/phase3/reports/p3_experimental_evidence_10.json",
+      "checkpoint_copy": "artifacts/research/phase3/reports/p3_experimental_evidence_10.json",
+      "size_bytes": 13580,
+      "sha256": "b8c33aa9ecac78ce502d0c9a4c0b4d236a9a8b55abda64813da582c9bc0216bc"
+    },
+    {
+      "path": "research/phase3/reports/p3_mathematical_physics_06.json",
+      "checkpoint_copy": "artifacts/research/phase3/reports/p3_mathematical_physics_06.json",
+      "size_bytes": 15216,
+      "sha256": "c33b8d12e0f9870cd41974c6be1e23059a8d55dd227711fd93514f63ff96a8f8"
+    },
+    {
+      "path": "research/phase3/reports/p3_qft_thermalisation_07.json",
+      "checkpoint_copy": "artifacts/research/phase3/reports/p3_qft_thermalisation_07.json",
+      "size_bytes": 15438,
+      "sha256": "bca6cabb97401584c319321a43ae4265ad1f0184eeb000b241b6caa784fdc065"
+    },
+    {
+      "path": "research/phase3/reports/p3_quantum_foundations_01.json",
+      "checkpoint_copy": "artifacts/research/phase3/reports/p3_quantum_foundations_01.json",
+      "size_bytes": 13783,
+      "sha256": "9946fc109ab73ba1a6b3219bcf81725c69141ac0ef4dbd71ac4af50f5febe6fd"
+    },
+    {
+      "path": "research/phase3/reports/p3_quantum_foundations_02.json",
+      "checkpoint_copy": "artifacts/research/phase3/reports/p3_quantum_foundations_02.json",
+      "size_bytes": 12250,
+      "sha256": "40f30c788d17b3a9d51b2abfd923d53b44760b26c3f63c1bb372fdfb05c7cc97"
+    },
+    {
+      "path": "research/phase3/reports/p3_scientific_computing_08.json",
+      "checkpoint_copy": "artifacts/research/phase3/reports/p3_scientific_computing_08.json",
+      "size_bytes": 6650,
+      "sha256": "0ac62ef3b55a61a2246786ab8ab291a68fde5c106713db28ff81598309fd3ace"
+    },
+    {
+      "path": "research/phase4/reports/p4_01_formal_foundations.json",
+      "checkpoint_copy": "artifacts/research/phase4/reports/p4_01_formal_foundations.json",
+      "size_bytes": 7715,
+      "sha256": "f7a6752e2af5daf873b1e92c978496afd76bb9d407d4fcc673eff25ae2a6ccff"
+    },
+    {
+      "path": "research/phase4/reports/p4_02_chsh_baseline.json",
+      "checkpoint_copy": "artifacts/research/phase4/reports/p4_02_chsh_baseline.json",
+      "size_bytes": 6043,
+      "sha256": "10b73306f062be3169ce773d502f7b1a0f93780ad52218ac968a49a12875445e"
+    },
+    {
+      "path": "research/phase4/reports/p4_03_measurement_dependence.json",
+      "checkpoint_copy": "artifacts/research/phase4/reports/p4_03_measurement_dependence.json",
+      "size_bytes": 5963,
+      "sha256": "eb9024eba4204449602c0e5220da59f4fba4a0ab6602258abd83b2bc3d0cfb04"
+    },
+    {
+      "path": "research/phase4/reports/p4_04_competing_models.json",
+      "checkpoint_copy": "artifacts/research/phase4/reports/p4_04_competing_models.json",
+      "size_bytes": 6721,
+      "sha256": "d31101e4ccce7e46318a027d112277f24ee00065871d26d2061cd9feedef153f"
+    },
+    {
+      "path": "research/phase4/reports/p4_05_parameter_identification.json",
+      "checkpoint_copy": "artifacts/research/phase4/reports/p4_05_parameter_identification.json",
+      "size_bytes": 7402,
+      "sha256": "070f7b65cad21bde9bbf68f9536dd62eaaf6dcae6caefe152d00e4f63939246b"
+    },
+    {
+      "path": "research/phase4/reports/p4_06_adversarial_review.json",
+      "checkpoint_copy": "artifacts/research/phase4/reports/p4_06_adversarial_review.json",
+      "size_bytes": 8717,
+      "sha256": "69e84d032a531a51ca648e449d9d58f2ddd8df648fe496b69cd6f78b15cb36a5"
+    },
+    {
+      "path": "research/phase4/reports/p4_07_phase_synthesis.json",
+      "checkpoint_copy": "artifacts/research/phase4/reports/p4_07_phase_synthesis.json",
+      "size_bytes": 6938,
+      "sha256": "5000a9f3e51b368cf2e7e720b7f419aefa06481d346445dcf85ad061378c7bf0"
+    },
+    {
+      "path": "research/phase5/reports/nist_raw_event_audit.json",
+      "checkpoint_copy": "artifacts/research/phase5/reports/nist_raw_event_audit.json",
+      "size_bytes": 56784,
+      "sha256": "cd10a60b081216f78b6164e88c834bf5e2110cc29476e0b9705b1448ea5d0e1c"
+    },
+    {
+      "path": "research/phase5/reports/p5_1_chsh_mi_vs_md.json",
+      "checkpoint_copy": "artifacts/research/phase5/reports/p5_1_chsh_mi_vs_md.json",
+      "size_bytes": 5648,
+      "sha256": "ac5e23ed6b770e02f98052d030c6b42b8310a2c65f506e8abefea2c4a732f697"
+    },
+    {
+      "path": "research/phase5/reports/p5_2_mathematical_audit.json",
+      "checkpoint_copy": "artifacts/research/phase5/reports/p5_2_mathematical_audit.json",
+      "size_bytes": 12478,
+      "sha256": "1025fa2829f94eedd41b25542bb0fba038b67dff7560167ec89f144b5e2b8462"
+    },
+    {
+      "path": "research/phase5/reports/p5_3_comprehensive_robustness.json",
+      "checkpoint_copy": "artifacts/research/phase5/reports/p5_3_comprehensive_robustness.json",
+      "size_bytes": 23091,
+      "sha256": "03dec705cf177ac9313d938891cfcee0c02a40462d2551ddf5857895a15a3c48"
+    },
+    {
+      "path": "research/phase5/reports/p5_3_robustness_representation.json",
+      "checkpoint_copy": "artifacts/research/phase5/reports/p5_3_robustness_representation.json",
+      "size_bytes": 6278,
+      "sha256": "cb149097378852e71ff4321aae0f0e3e19e2ba7e04a98678547394acb4870987"
+    },
+    {
+      "path": "research/phase5/reports/p5_4_5_5_decision_gate.json",
+      "checkpoint_copy": "artifacts/research/phase5/reports/p5_4_5_5_decision_gate.json",
+      "size_bytes": 1095,
+      "sha256": "c0628f8a65ac3862f32f32d1fc7bb1af84330c8bfd673379bb37a021c2bfe499"
+    },
+    {
+      "path": "research/phase5/reports/p5_4_5_mathematical_certification.json",
+      "checkpoint_copy": "artifacts/research/phase5/reports/p5_4_5_mathematical_certification.json",
+      "size_bytes": 10599,
+      "sha256": "54b5e0db71939c3a0d5dba64fef6e1b742f6bfc19c82b6e7fde8daa9dc7db3ec"
+    },
+    {
+      "path": "research/phase5/reports/p5_4_exact_bell_and_mechanism_audit.json",
+      "checkpoint_copy": "artifacts/research/phase5/reports/p5_4_exact_bell_and_mechanism_audit.json",
+      "size_bytes": 13294,
+      "sha256": "e30b6366d5a82cb5b329818f8dceac2bf6398ede565a847b3affb930fe7a17d0"
+    },
+    {
+      "path": "research/phase5/reports/p5_4_hall_continuous_replication.json",
+      "checkpoint_copy": "artifacts/research/phase5/reports/p5_4_hall_continuous_replication.json",
+      "size_bytes": 19451,
+      "sha256": "7aed6519b54502c592d4abeac8aadc53becc5cde6d4dd093b814e889abac016d"
+    },
+    {
+      "path": "research/phase5/reports/p5_4_physical_mechanism_gate.json",
+      "checkpoint_copy": "artifacts/research/phase5/reports/p5_4_physical_mechanism_gate.json",
+      "size_bytes": 1498,
+      "sha256": "d4a1fc0b851fe9c29010196a1171c3160670253a663d7fb61d8b202a9267a1b0"
+    },
+    {
+      "path": "research/phase5/reports/p5_5_6_statistical_model_comparison.json",
+      "checkpoint_copy": "artifacts/research/phase5/reports/p5_5_6_statistical_model_comparison.json",
+      "size_bytes": 1985,
+      "sha256": "bc1f197fabdf7706212f2155788167f0a5f31ebac1a7d4909ed93ca54f719780"
+    },
+    {
+      "path": "research/phase5/reports/p5_5_7_discriminating_experiments.json",
+      "checkpoint_copy": "artifacts/research/phase5/reports/p5_5_7_discriminating_experiments.json",
+      "size_bytes": 4450,
+      "sha256": "8757d8f4a40a8309e4828a9111fbc6dbf18463ac5da38d3d27662eab09edaa0d"
+    },
+    {
+      "path": "research/phase5/reports/p5_5_dataset_discovery.json",
+      "checkpoint_copy": "artifacts/research/phase5/reports/p5_5_dataset_discovery.json",
+      "size_bytes": 192652,
+      "sha256": "d1b0b636e6a89092a485d4b7b173b01737b7db5b1eeb01f7a3bc76d405f12805"
+    },
+    {
+      "path": "research/phase5/reports/p5_5_experimental_evidence_gate.json",
+      "checkpoint_copy": "artifacts/research/phase5/reports/p5_5_experimental_evidence_gate.json",
+      "size_bytes": 1313,
+      "sha256": "ac201857a381fd6933ef6b2a1df136a6a982af47bc2ec3ce94b7620a61d4b63b"
+    },
+    {
+      "path": "research/phase5/reports/p5_5_experimental_review.json",
+      "checkpoint_copy": "artifacts/research/phase5/reports/p5_5_experimental_review.json",
+      "size_bytes": 916,
+      "sha256": "e7c151a546ecea8e5512a7043e7c76650f14ad7dd1a3b61a48a6f42ab76638b5"
+    },
+    {
+      "path": "research/phase5/reports/p5_5_final_audit.json",
+      "checkpoint_copy": "artifacts/research/phase5/reports/p5_5_final_audit.json",
+      "size_bytes": 2420,
+      "sha256": "cf25fa32cebbf90f7e047e5abed50c2bada9c6b60488f66e3a7b0d7b7f99b7b9"
+    },
+    {
+      "path": "research/phase5/reports/p5_6_cosmology_gate.json",
+      "checkpoint_copy": "artifacts/research/phase5/reports/p5_6_cosmology_gate.json",
+      "size_bytes": 1239,
+      "sha256": "9f6a49067a93532182d5bb10a68f6811d72fe900b14e04260cacfbf926bddd74"
+    },
+    {
+      "path": "research/phase5/reports/p5_6_hall_cosmology_gate.json",
+      "checkpoint_copy": "artifacts/research/phase5/reports/p5_6_hall_cosmology_gate.json",
+      "size_bytes": 1772,
+      "sha256": "725b8973ef0b8d6d19aae62fb753ddec0f82e10a21d3f85392580a4aeaff33e5"
+    },
+    {
+      "path": "research/phase5/reports/p5_7_independent_verification.json",
+      "checkpoint_copy": "artifacts/research/phase5/reports/p5_7_independent_verification.json",
+      "size_bytes": 2689,
+      "sha256": "4bbe296c050c3801b14998799069aec89bcd8a48a53969923fb4358167cc33b0"
+    },
+    {
+      "path": "research/phase5/reports/phase5_3_to_5_7_combined.json",
+      "checkpoint_copy": "artifacts/research/phase5/reports/phase5_3_to_5_7_combined.json",
+      "size_bytes": 15273,
+      "sha256": "eea619958eb66bfb405118259a9b81e4e52167d198873adc4a7c40ee96f80e89"
+    },
+    {
+      "path": "research/ASDE_SUPERDETERMINISM_STATUS_AUDIT_2026-11-02.md",
+      "checkpoint_copy": "artifacts/research/ASDE_SUPERDETERMINISM_STATUS_AUDIT_2026-11-02.md",
+      "size_bytes": 11765,
+      "sha256": "18693180c89b97c7918f3a19f2b5eaf793de4abf1cf39636b373b851502c1a46"
+    },
+    {
+      "path": "research/phase4/phase4_manifest.json",
+      "checkpoint_copy": "artifacts/research/phase4/phase4_manifest.json",
+      "size_bytes": 2083,
+      "sha256": "b5471e31f8b34d5ae8dcce086bd7d5be2fafcff6c6f97e71cfae66d069b9c270"
+    },
+    {
+      "path": "research/phase4/ROADMAP.md",
+      "checkpoint_copy": "artifacts/research/phase4/ROADMAP.md",
+      "size_bytes": 1018,
+      "sha256": "1de44880ffe984f22f22fa1a2888adde09135f9ccb38ec308eaa2a4299efcdc9"
+    },
+    {
+      "path": "research/phase5/phase5_manifest.json",
+      "checkpoint_copy": "artifacts/research/phase5/phase5_manifest.json",
+      "size_bytes": 497,
+      "sha256": "90999cee65e34b8f0d56e353033110c2eb091cede21c88b1ad64167f1da32481"
+    },
+    {
+      "path": "research/phase3/requirements-cosmology-optional.txt",
+      "checkpoint_copy": "artifacts/research/phase3/requirements-cosmology-optional.txt",
+      "size_bytes": 50,
+      "sha256": "22f303911bffb032a06cd4a650006364c151a2c30d96d8c543b672f15e72ab28"
+    },
+    {
+      "path": "research/phase3/phase3_manifest.json",
+      "checkpoint_copy": "artifacts/research/phase3/phase3_manifest.json",
+      "size_bytes": 662,
+      "sha256": "248ece3ecd3a12421858d893d3592cd7f18df3b7473f5e64d9c3b8ec594a6bee"
+    },
+    {
+      "path": "research/phase3/PHASE3_INTEGRITY_AUDIT.json",
+      "checkpoint_copy": "artifacts/research/phase3/PHASE3_INTEGRITY_AUDIT.json",
+      "size_bytes": 4895,
+      "sha256": "6955aeff82e4d628af4d00a186d45c6959b3f624c7b4b45287eb3d5fd385899f"
+    },
+    {
+      "path": "research/phase3/requirements-core.txt",
+      "checkpoint_copy": "artifacts/research/phase3/requirements-core.txt",
+      "size_bytes": 57,
+      "sha256": "a0a66b4aa218d489e53ea0ccda825bafffdb4fefa0b07c6c2a506c1efbf1cb69"
+    },
+    {
+      "path": "research/phase3/ROADMAP.md",
+      "checkpoint_copy": "artifacts/research/phase3/ROADMAP.md",
+      "size_bytes": 421,
+      "sha256": "5dac5fd2dd1aa790d765e3183a972aa834e2be4360c182611de56ead1bbfff7c"
+    },
+    {
+      "path": "research/phase5/computations/p5_4_general_bell_scenario_tests.json",
+      "checkpoint_copy": "artifacts/research/phase5/computations/p5_4_general_bell_scenario_tests.json",
+      "size_bytes": 2052,
+      "sha256": "76b1988c1184689b2a90b2897c363676f13c11b219087453a2db60104ab5c06e"
+    },
+    {
+      "path": "research/phase5/computations/p5_4_hall_sphere_integration.json",
+      "checkpoint_copy": "artifacts/research/phase5/computations/p5_4_hall_sphere_integration.json",
+      "size_bytes": 11611,
+      "sha256": "895919d3caed2c7b921267994b20250cbf60fc410a504aa65a96f9556c22f16e"
+    },
+    {
+      "path": "research/phase5/computations/p5_2_angle_sensitivity.json",
+      "checkpoint_copy": "artifacts/research/phase5/computations/p5_2_angle_sensitivity.json",
+      "size_bytes": 5174,
+      "sha256": "c05e0b6d1e0c8792f096d547fa9f6c5e597807fdaddd1839178d86f577b52bb7"
+    },
+    {
+      "path": "research/phase5/computations/p5_3_angle_sensitivity.json",
+      "checkpoint_copy": "artifacts/research/phase5/computations/p5_3_angle_sensitivity.json",
+      "size_bytes": 3568,
+      "sha256": "96c47eb2826c6f93ac51182e24d71529c2ba4e97e97710bb0656f1b11f1a7433"
+    },
+    {
+      "path": "research/phase5/computations/p5_4_MI_causal_class_comparison.json",
+      "checkpoint_copy": "artifacts/research/phase5/computations/p5_4_MI_causal_class_comparison.json",
+      "size_bytes": 532,
+      "sha256": "2b7bcbb01bbddbbf1482a40ba92676ce48e0b6d3ad0c9235183ad605e93e128d"
+    },
+    {
+      "path": "research/phase5/computations/p5_4_exact_farkas_certificate.json",
+      "checkpoint_copy": "artifacts/research/phase5/computations/p5_4_exact_farkas_certificate.json",
+      "size_bytes": 824,
+      "sha256": "fbe744edd3bbe3524ff31206415d33e664af10d570d58cd6a4e15d3587a1d042"
+    },
+    {
+      "path": "research/phase5/computations/p5_4_hall_measurement_independence.json",
+      "checkpoint_copy": "artifacts/research/phase5/computations/p5_4_hall_measurement_independence.json",
+      "size_bytes": 535,
+      "sha256": "32ca39d453d68a741b343a02b3be69305bca020543d53bb968ee9167d2314731"
+    },
+    {
+      "path": "research/phase5/computations/p5_3_robustness_computations.json",
+      "checkpoint_copy": "artifacts/research/phase5/computations/p5_3_robustness_computations.json",
+      "size_bytes": 14300,
+      "sha256": "60ea664f0e79a4b359c6492bd7459be2ae4b7c60841b79b54778a13bf7583439"
+    },
+    {
+      "path": "research/phase5/research/p5_4_mechanism_candidate_register.json",
+      "checkpoint_copy": "artifacts/research/phase5/research/p5_4_mechanism_candidate_register.json",
+      "size_bytes": 7746,
+      "sha256": "b711b060e2f4789e73ebc5212f9d4955e8077a421b021b89fa73478965d3d870"
+    },
+    {
+      "path": "research/phase5/data/dataset_source_manifest.json",
+      "checkpoint_copy": "artifacts/research/phase5/data/dataset_source_manifest.json",
+      "size_bytes": 24498,
+      "sha256": "5df288de9c73e91eb62286194efdb4b8bd2b4b1cd8eff672034e55448ed25997"
+    },
+    {
+      "path": "research/phase4/computations/chsh_baseline.json",
+      "checkpoint_copy": "artifacts/research/phase4/computations/chsh_baseline.json",
+      "size_bytes": 2588,
+      "sha256": "9cfecf5428fd239be5bfefc7f01473ac1f29af601858f7dd740cae4fcd53f85f"
+    }
+  ]
+}

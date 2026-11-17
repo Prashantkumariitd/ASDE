@@ -1,0 +1,628 @@
+{
+  "run_id": "run_64ca8ea8354347659fe78f63b8569a67",
+  "phase_id": "p5_4_5_p5_5_integrated_v1",
+  "sources": {
+    "nist_bell": {
+      "source_id": "nist_bell_2015",
+      "name": "NIST Bell Test Research Software and Data",
+      "landing_page": "https://www.nist.gov/pml/applied-physics-division/bell-test-research-software-and-data",
+      "data_page": "https://www.nist.gov/pml/applied-physics-division/bell-test-research-software-and-data/repository-bell-test-research",
+      "description": "Public Bell-test data, processed files, raw data, analysis software and supporting calculations.",
+      "license_note": "NIST page permits copying and distribution subject to retaining its notice and acknowledgement; verify source terms.",
+      "discovery_status": "REGISTERED",
+      "metadata": {}
+    },
+    "hensen_2015": {
+      "source_id": "hensen_2015_tudelft",
+      "name": "Loophole-free Bell-inequality violation using electron spins separated by 1.3 kilometres",
+      "doi": "10.4121/UUID:6E19E9B2-4A2D-40B5-8DD3-A660BF3C0A31",
+      "landing_page": "https://research.tudelft.nl/en/datasets/loophole-free-bell-inequality-violation-using-electron-spins-sepa/",
+      "description": "Dataset underlying Hensen et al., Nature 526 (2015).",
+      "license_note": "Check dataset-specific terms before redistribution.",
+      "discovery_status": "FILE_LINKS_DISCOVERED",
+      "metadata": {
+        "datacite": {
+          "doi": "10.4121/uuid:6e19e9b2-4a2d-40b5-8dd3-a660bf3c0a31",
+          "titles": [
+            {
+              "title": "Loophole-free Bell-inequality violation using electron spins separated by 1.3 kilometres"
+            }
+          ],
+          "creators": [
+            {
+              "name": "Hensen, Bas",
+              "givenName": "Bas",
+              "familyName": "Hensen",
+              "affiliation": [],
+              "nameIdentifiers": []
+            },
+            {
+              "name": "Bernien, H.",
+              "givenName": "H.",
+              "familyName": "Bernien",
+              "affiliation": [],
+              "nameIdentifiers": []
+            },
+            {
+              "name": "Dr\u00e9au, A.E.",
+              "givenName": "A.E.",
+              "familyName": "Dr\u00e9au",
+              "affiliation": [],
+              "nameIdentifiers": []
+            },
+            {
+              "name": "Reiserer, A.A. (Andreas)",
+              "nameType": "Personal",
+              "givenName": "A.A. (Andreas)",
+              "familyName": "Reiserer",
+              "nameIdentifiers": [
+                {
+                  "nameIdentifier": "0000-0001-9595-7363",
+                  "nameIdentifierScheme": "https://orcid.org/"
+                }
+              ],
+              "affiliation": []
+            },
+            {
+              "name": "Kalb, N. (Norbert)",
+              "nameType": "Personal",
+              "givenName": "N. (Norbert)",
+              "familyName": "Kalb",
+              "nameIdentifiers": [
+                {
+                  "nameIdentifier": "0000-0001-5080-0450",
+                  "nameIdentifierScheme": "https://orcid.org/"
+                }
+              ],
+              "affiliation": []
+            },
+            {
+              "name": "Blok, M.S.",
+              "givenName": "M.S.",
+              "familyName": "Blok",
+              "affiliation": [],
+              "nameIdentifiers": []
+            },
+            {
+              "name": "Ruitenberg, J.",
+              "givenName": "J.",
+              "familyName": "Ruitenberg",
+              "affiliation": [],
+              "nameIdentifiers": []
+            },
+            {
+              "name": "Vermeulen, R.F.L.",
+              "givenName": "R.F.L.",
+              "familyName": "Vermeulen",
+              "affiliation": [],
+              "nameIdentifiers": []
+            },
+            {
+              "name": "Schouten, R.N.",
+              "givenName": "R.N.",
+              "familyName": "Schouten",
+              "affiliation": [],
+              "nameIdentifiers": []
+            },
+            {
+              "name": "Abell\u00e1n, C.",
+              "nameType": "Personal",
+              "givenName": "C.",
+              "familyName": "Abell\u00e1n",
+              "nameIdentifiers": [
+                {
+                  "nameIdentifier": "0000-0003-1122-6622",
+                  "nameIdentifierScheme": "https://orcid.org/"
+                }
+              ],
+              "affiliation": []
+            },
+            {
+              "name": "Amaya, W.",
+              "nameType": "Personal",
+              "givenName": "W.",
+              "familyName": "Amaya",
+              "nameIdentifiers": [
+                {
+                  "nameIdentifier": "0000-0002-6930-8914",
+                  "nameIdentifierScheme": "https://orcid.org/"
+                }
+              ],
+              "affiliation": []
+            },
+            {
+              "name": "Pruneri, V.",
+              "givenName": "V.",
+              "familyName": "Pruneri",
+              "affiliation": [],
+              "nameIdentifiers": []
+            },
+            {
+              "name": "Mitchell, M.W.",
+              "nameType": "Personal",
+              "givenName": "M.W.",
+              "familyName": "Mitchell",
+              "nameIdentifiers": [
+                {
+                  "nameIdentifier": "0000-0001-8949-9407",
+                  "nameIdentifierScheme": "https://orcid.org/"
+                }
+              ],
+              "affiliation": []
+            },
+            {
+              "name": "Markham, M. (Matthew)",
+              "givenName": "M. (Matthew)",
+              "familyName": "Markham",
+              "affiliation": [],
+              "nameIdentifiers": []
+            },
+            {
+              "name": "Twitchen, D.J. (Daniel)",
+              "givenName": "D.J. (Daniel)",
+              "familyName": "Twitchen",
+              "affiliation": [],
+              "nameIdentifiers": []
+            },
+            {
+              "name": "Elkouss, David",
+              "nameType": "Personal",
+              "givenName": "David",
+              "familyName": "Elkouss",
+              "nameIdentifiers": [
+                {
+                  "nameIdentifier": "0000-0003-2023-2768",
+                  "nameIdentifierScheme": "https://orcid.org/"
+                }
+              ],
+              "affiliation": []
+            },
+            {
+              "name": "Wehner, S.",
+              "givenName": "S.",
+              "familyName": "Wehner",
+              "affiliation": [],
+              "nameIdentifiers": []
+            },
+            {
+              "name": "Taminiau, T.H.",
+              "givenName": "T.H.",
+              "familyName": "Taminiau",
+              "affiliation": [],
+              "nameIdentifiers": []
+            },
+            {
+              "name": "Hanson, R. (Ronald)",
+              "nameType": "Personal",
+              "givenName": "R. (Ronald)",
+              "familyName": "Hanson",
+              "nameIdentifiers": [
+                {
+                  "nameIdentifier": "0000-0001-8938-2137",
+                  "nameIdentifierScheme": "https://orcid.org/"
+                }
+              ],
+              "affiliation": []
+            }
+          ],
+          "publisher": "Delft University of Technology",
+          "publicationYear": 2015,
+          "types": {
+            "ris": "DATA",
+            "bibtex": "misc",
+            "citeproc": "dataset",
+            "schemaOrg": "Dataset",
+            "resourceType": "Dataset",
+            "resourceTypeGeneral": "Dataset"
+          },
+          "url": "https://data.4tu.nl/articles/_/12703235/1",
+          "rightsList": [
+            {
+              "rights": "4TU General Terms of Use",
+              "rightsUri": "https://doi.org/10.4121/resource:terms_of_use"
+            }
+          ],
+          "relatedIdentifiers": [
+            {
+              "relationType": "References",
+              "relatedIdentifier": "http://arxiv.org/abs/1508.05949",
+              "relatedIdentifierType": "URL"
+            },
+            {
+              "relationType": "References",
+              "relatedIdentifier": "http://www.nature.com/nature/journal/v526/n7575/extref/nature15759-s1.pdf",
+              "relatedIdentifierType": "URL"
+            },
+            {
+              "relationType": "References",
+              "relatedIdentifier": "https://doi.org/10.1038/nature15759",
+              "relatedIdentifierType": "URL"
+            },
+            {
+              "relationType": "References",
+              "relatedIdentifier": "https://doi.org/10.4121/uuid:53644d31-d862-4f9f-9ad2-0b571874b829",
+              "relatedIdentifierType": "URL"
+            }
+          ],
+          "dates": [
+            {
+              "date": "2015-10-26",
+              "dateType": "Issued"
+            }
+          ],
+          "descriptions": [
+            {
+              "description": "Dataset underlying the article \"Loophole-free Bell-inequality violation using electron spins separated by 1.3 kilometres\", published online in Nature (2015), doi:10.1038/nature15759 [Notes: Present address H. Bernien: Department of Physics, Harvard University, Cambridge, Massachusetts 02138, USA; Correspondence R. Hanson to: R.Hanson@tudelft.nl]",
+              "descriptionType": "Abstract"
+            }
+          ]
+        },
+        "figshare_api_attempt": [
+          {
+            "url": "https://api.figshare.com/v2/articles?resource_doi=10.4121%2FUUID%3A6E19E9B2-4A2D-40B5-8DD3-A660BF3C0A31",
+            "status_code": 200,
+            "body": []
+          }
+        ],
+        "landing_page": {
+          "url": "https://research.tudelft.nl/en/datasets/loophole-free-bell-inequality-violation-using-electron-spins-sepa/",
+          "retrieved": true,
+          "links": [
+            {
+              "label": "Skip to main navigation",
+              "url": "https://research.tudelft.nl/en/datasets/loophole-free-bell-inequality-violation-using-electron-spins-sepa/#main-navigation"
+            },
+            {
+              "label": "Skip to search",
+              "url": "https://research.tudelft.nl/en/datasets/loophole-free-bell-inequality-violation-using-electron-spins-sepa/#main-search"
+            },
+            {
+              "label": "Skip to main content",
+              "url": "https://research.tudelft.nl/en/datasets/loophole-free-bell-inequality-violation-using-electron-spins-sepa/#main-content"
+            },
+            {
+              "label": "Datasets",
+              "url": "https://research.tudelft.nl/en/datasets/"
+            },
+            {
+              "label": "Overview",
+              "url": "https://research.tudelft.nl/en/datasets/loophole-free-bell-inequality-violation-using-electron-spins-sepa/"
+            },
+            {
+              "label": "Datasets (1)",
+              "url": "https://research.tudelft.nl/en/datasets/loophole-free-bell-inequality-violation-using-electron-spins-sepa/datasets/"
+            },
+            {
+              "label": "Research output (1)",
+              "url": "https://research.tudelft.nl/en/datasets/loophole-free-bell-inequality-violation-using-electron-spins-sepa/publications/"
+            },
+            {
+              "label": "10.4121/UUID:6E19E9B2-4A2D-40B5-8DD3-A660BF3C0A31",
+              "url": "https://doi.org/10.4121/UUID:6E19E9B2-4A2D-40B5-8DD3-A660BF3C0A31"
+            },
+            {
+              "label": "Loophole-free Bell test using electron spins in diamond: second experiment and additional analysis",
+              "url": "https://research.tudelft.nl/en/datasets/loophole-free-bell-test-using-electron-spins-in-diamond-second-ex/"
+            },
+            {
+              "label": "10.4121/UUID:53644D31-D862-4F9F-9AD2-0B571874B829",
+              "url": "https://doi.org/10.4121/UUID:53644D31-D862-4F9F-9AD2-0B571874B829"
+            },
+            {
+              "label": "1",
+              "url": "https://research.tudelft.nl/en/datasets/loophole-free-bell-inequality-violation-using-electron-spins-sepa/publications/?type=%2Fdk%2Fatira%2Fpure%2Fresearchoutput%2Fresearchoutputtypes%2Fcontributiontojournal%2Farticle"
+            },
+            {
+              "label": "10.4121/UUID:6E19E9B2-4A2D-40B5-8DD3-A660BF3C0A31",
+              "url": "https://doi.org/10.4121/UUID:6E19E9B2-4A2D-40B5-8DD3-A660BF3C0A31"
+            },
+            {
+              "label": "",
+              "url": "https://research.tudelft.nl/en/datasets/loophole-free-bell-inequality-violation-using-electron-spins-sepa/"
+            }
+          ],
+          "status_code": 200,
+          "title": "Loophole-free Bell-inequality violation using electron spins separated by 1.3 kilometres\n      -  TU Delft Research Portal"
+        }
+      }
+    },
+    "hensen_second": {
+      "source_id": "hensen_2016_second_dataset",
+      "name": "Loophole-free Bell test using electron spins in diamond: second experiment and additional analysis",
+      "doi": "10.4121/UUID:53644D31-D862-4F9F-9AD2-0B571874B829",
+      "landing_page": "https://research.tudelft.nl/en/datasets/loophole-free-bell-test-using-electron-spins-in-diamond-second-ex/",
+      "description": "Second experiment and additional analysis dataset.",
+      "license_note": "Check dataset-specific terms before redistribution.",
+      "discovery_status": "FILE_LINKS_DISCOVERED",
+      "metadata": {
+        "datacite": {
+          "doi": "10.4121/uuid:53644d31-d862-4f9f-9ad2-0b571874b829",
+          "titles": [
+            {
+              "title": "Loophole-free Bell test using electron spins in diamond: second experiment and additional analysis"
+            }
+          ],
+          "creators": [
+            {
+              "name": "Hensen, Bas",
+              "givenName": "Bas",
+              "familyName": "Hensen",
+              "affiliation": [],
+              "nameIdentifiers": []
+            },
+            {
+              "name": "Kalb, N. (Norbert)",
+              "nameType": "Personal",
+              "givenName": "N. (Norbert)",
+              "familyName": "Kalb",
+              "nameIdentifiers": [
+                {
+                  "nameIdentifier": "0000-0001-5080-0450",
+                  "nameIdentifierScheme": "https://orcid.org/"
+                }
+              ],
+              "affiliation": []
+            },
+            {
+              "name": "Blok, M.S.",
+              "givenName": "M.S.",
+              "familyName": "Blok",
+              "affiliation": [],
+              "nameIdentifiers": []
+            },
+            {
+              "name": "Dr\u00e9au, A.E.",
+              "givenName": "A.E.",
+              "familyName": "Dr\u00e9au",
+              "affiliation": [],
+              "nameIdentifiers": []
+            },
+            {
+              "name": "Reiserer, A.A. (Andreas)",
+              "nameType": "Personal",
+              "givenName": "A.A. (Andreas)",
+              "familyName": "Reiserer",
+              "nameIdentifiers": [
+                {
+                  "nameIdentifier": "0000-0001-9595-7363",
+                  "nameIdentifierScheme": "https://orcid.org/"
+                }
+              ],
+              "affiliation": []
+            },
+            {
+              "name": "Vermeulen, R.F.L.",
+              "givenName": "R.F.L.",
+              "familyName": "Vermeulen",
+              "affiliation": [],
+              "nameIdentifiers": []
+            },
+            {
+              "name": "Schouten, R.N.",
+              "givenName": "R.N.",
+              "familyName": "Schouten",
+              "affiliation": [],
+              "nameIdentifiers": []
+            },
+            {
+              "name": "Markham, M. (Matthew)",
+              "givenName": "M. (Matthew)",
+              "familyName": "Markham",
+              "affiliation": [],
+              "nameIdentifiers": []
+            },
+            {
+              "name": "Twitchen, D.J. (Daniel)",
+              "givenName": "D.J. (Daniel)",
+              "familyName": "Twitchen",
+              "affiliation": [],
+              "nameIdentifiers": []
+            },
+            {
+              "name": "Goodenough, K.",
+              "givenName": "K.",
+              "familyName": "Goodenough",
+              "affiliation": [],
+              "nameIdentifiers": []
+            },
+            {
+              "name": "Elkouss, David",
+              "nameType": "Personal",
+              "givenName": "David",
+              "familyName": "Elkouss",
+              "nameIdentifiers": [
+                {
+                  "nameIdentifier": "0000-0003-2023-2768",
+                  "nameIdentifierScheme": "https://orcid.org/"
+                }
+              ],
+              "affiliation": []
+            },
+            {
+              "name": "Wehner, S.",
+              "givenName": "S.",
+              "familyName": "Wehner",
+              "affiliation": [],
+              "nameIdentifiers": []
+            },
+            {
+              "name": "Taminiau, T.H.",
+              "givenName": "T.H.",
+              "familyName": "Taminiau",
+              "affiliation": [],
+              "nameIdentifiers": []
+            },
+            {
+              "name": "Hanson, R. (Ronald)",
+              "nameType": "Personal",
+              "givenName": "R. (Ronald)",
+              "familyName": "Hanson",
+              "nameIdentifiers": [
+                {
+                  "nameIdentifier": "0000-0001-8938-2137",
+                  "nameIdentifierScheme": "https://orcid.org/"
+                }
+              ],
+              "affiliation": []
+            }
+          ],
+          "publisher": "TU Delft",
+          "publicationYear": 2016,
+          "types": {
+            "ris": "DATA",
+            "bibtex": "misc",
+            "citeproc": "dataset",
+            "schemaOrg": "Dataset",
+            "resourceType": "Dataset",
+            "resourceTypeGeneral": "Dataset"
+          },
+          "url": "https://data.4tu.nl/articles/_/12694403/1",
+          "rightsList": [
+            {
+              "rights": "4TU General Terms of Use",
+              "rightsUri": "https://doi.org/10.4121/resource:terms_of_use"
+            }
+          ],
+          "relatedIdentifiers": [
+            {
+              "relationType": "References",
+              "relatedIdentifier": "https://doi.org/10.4121/uuid:6e19e9b2-4a2d-40b5-8dd3-a660bf3c0a31",
+              "relatedIdentifierType": "URL"
+            },
+            {
+              "relationType": "References",
+              "relatedIdentifier": "http://www.arxiv.org/abs/1603.05705",
+              "relatedIdentifierType": "URL"
+            }
+          ],
+          "dates": [
+            {
+              "date": "2016-04-08",
+              "dateType": "Issued"
+            }
+          ],
+          "descriptions": [
+            {
+              "description": "This is the dataset that belongs to the experiment described in the article \"Loophole-free Bell test using electron spins in diamond: second experiment and additional analysis\", online preprint at arXiv:1603.05705 [Correspondence R. Hanson to: R.Hanson@tudelft.nl]",
+              "descriptionType": "Abstract"
+            }
+          ]
+        },
+        "figshare_api_attempt": [
+          {
+            "url": "https://api.figshare.com/v2/articles?resource_doi=10.4121%2FUUID%3A53644D31-D862-4F9F-9AD2-0B571874B829",
+            "status_code": 200,
+            "body": []
+          }
+        ],
+        "landing_page": {
+          "url": "https://research.tudelft.nl/en/datasets/loophole-free-bell-test-using-electron-spins-in-diamond-second-ex/",
+          "retrieved": true,
+          "links": [
+            {
+              "label": "Skip to main navigation",
+              "url": "https://research.tudelft.nl/en/datasets/loophole-free-bell-test-using-electron-spins-in-diamond-second-ex/#main-navigation"
+            },
+            {
+              "label": "Skip to search",
+              "url": "https://research.tudelft.nl/en/datasets/loophole-free-bell-test-using-electron-spins-in-diamond-second-ex/#main-search"
+            },
+            {
+              "label": "Skip to main content",
+              "url": "https://research.tudelft.nl/en/datasets/loophole-free-bell-test-using-electron-spins-in-diamond-second-ex/#main-content"
+            },
+            {
+              "label": "Datasets",
+              "url": "https://research.tudelft.nl/en/datasets/"
+            },
+            {
+              "label": "Overview",
+              "url": "https://research.tudelft.nl/en/datasets/loophole-free-bell-test-using-electron-spins-in-diamond-second-ex/"
+            },
+            {
+              "label": "Datasets (1)",
+              "url": "https://research.tudelft.nl/en/datasets/loophole-free-bell-test-using-electron-spins-in-diamond-second-ex/datasets/"
+            },
+            {
+              "label": "10.4121/UUID:53644D31-D862-4F9F-9AD2-0B571874B829",
+              "url": "https://doi.org/10.4121/UUID:53644D31-D862-4F9F-9AD2-0B571874B829"
+            },
+            {
+              "label": "Loophole-free Bell-inequality violation using electron spins separated by 1.3 kilometres",
+              "url": "https://research.tudelft.nl/en/datasets/loophole-free-bell-inequality-violation-using-electron-spins-sepa/"
+            },
+            {
+              "label": "10.4121/UUID:6E19E9B2-4A2D-40B5-8DD3-A660BF3C0A31",
+              "url": "https://doi.org/10.4121/UUID:6E19E9B2-4A2D-40B5-8DD3-A660BF3C0A31"
+            },
+            {
+              "label": "10.4121/UUID:53644D31-D862-4F9F-9AD2-0B571874B829",
+              "url": "https://doi.org/10.4121/UUID:53644D31-D862-4F9F-9AD2-0B571874B829"
+            },
+            {
+              "label": "",
+              "url": "https://research.tudelft.nl/en/datasets/loophole-free-bell-test-using-electron-spins-in-diamond-second-ex/"
+            }
+          ],
+          "status_code": 200,
+          "title": "Loophole-free Bell test using electron spins in diamond: second experiment and additional analysis\n      -  TU Delft Research Portal"
+        }
+      }
+    }
+  },
+  "downloads": [
+    {
+      "source_id": "nist_bell_2015",
+      "filename": "02_54_ALL.xlsx",
+      "url": "https://s3.amazonaws.com/nist-belltestdata/belldata/Peter's%20Data%20Calculations/First%203%20Runs/02_54_ALL.xlsx",
+      "status": "DOWNLOADED",
+      "local_path": "/content/asde_phase545_55/downloads/02_54_ALL.xlsx",
+      "bytes": 6356173,
+      "sha256": "0db5b62e712bdf5f2e86abd102ffd61ab96acc4330f318d6289a4fc15fe2ff4b",
+      "metadata": {
+        "nist_page": "calculations",
+        "label": "02_54_ALL.xlsx",
+        "content_type": "application/vnd.ms-excel",
+        "advertised_size": 6356173
+      },
+      "file_id": "71b1ec0762f1ad418644dc62e9ff657b"
+    },
+    {
+      "source_id": "nist_bell_2015",
+      "filename": "02-54.xlsx",
+      "url": "https://s3.amazonaws.com/nist-belltestdata/belldata/Peter's%20Data%20Calculations/Diagnostic%20Statistics/02-54.xlsx",
+      "status": "DOWNLOADED",
+      "local_path": "/content/asde_phase545_55/downloads/02-54.xlsx",
+      "bytes": 19431,
+      "sha256": "8817e5d95d0a1745d1c7ad50541c8761431fc161a182b17f12277c29eea58d25",
+      "metadata": {
+        "nist_page": "calculations",
+        "label": "02-54.xlsx",
+        "content_type": "application/vnd.ms-excel",
+        "advertised_size": 19431
+      },
+      "file_id": "7a9feadb4d98166431c2ee74c7812a58"
+    },
+    {
+      "source_id": "nist_bell_2015",
+      "filename": "The_Rate_Estimates_File.xlsx",
+      "url": "https://s3.amazonaws.com/nist-belltestdata/belldata/Peter's%20Data%20Calculations/The%20Rate%20Estimates%20File.xlsx",
+      "status": "DOWNLOADED",
+      "local_path": "/content/asde_phase545_55/downloads/The_Rate_Estimates_File.xlsx",
+      "bytes": 12099,
+      "sha256": "c7c5cbc815b0456eaa42198df42b1f5d7c76a04d7881e20417cfe7db78304f8f",
+      "metadata": {
+        "nist_page": "calculations",
+        "label": "The Rate Estimates File.xlsx",
+        "content_type": "application/vnd.ms-excel",
+        "advertised_size": 12099
+      },
+      "file_id": "d05782142adece084b2ab35ee9f2311d"
+    }
+  ],
+  "checksums": {
+    "71b1ec0762f1ad418644dc62e9ff657b": "0db5b62e712bdf5f2e86abd102ffd61ab96acc4330f318d6289a4fc15fe2ff4b",
+    "7a9feadb4d98166431c2ee74c7812a58": "8817e5d95d0a1745d1c7ad50541c8761431fc161a182b17f12277c29eea58d25",
+    "d05782142adece084b2ab35ee9f2311d": "c7c5cbc815b0456eaa42198df42b1f5d7c76a04d7881e20417cfe7db78304f8f"
+  }
+}

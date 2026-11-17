@@ -1,0 +1,8 @@
+{
+  "ASDE_reported_MI_bits": 0.046273846924,
+  "published_retrocausal_approx_bits": 0.046,
+  "published_causal_approx_bits": 0.08,
+  "absolute_difference_from_retrocausal_approx": 0.0002738469240000027,
+  "absolute_difference_from_causal_approx": 0.033726153076,
+  "conclusion": "Numerical proximity to the published retrocausal benchmark is not sufficient to establish equivalence. The ASDE optimisation must be reformulated under the exact causal constraints and setting prior used in the reference before claiming replication."
+}

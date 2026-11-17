@@ -1,0 +1,93 @@
+{
+  "phase": 3,
+  "run_id": "run_64ca8ea8354347659fe78f63b8569a67",
+  "work_item_id": "p3_qft_thermalisation_07",
+  "domain": "qft_thermalisation",
+  "title": "Review thermalisation and decoherence mechanisms",
+  "provider": "openrouter",
+  "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+  "source_ids": [
+    "src_c8d23e90d299a414fc716749",
+    "src_a5589411c8eb68a2899317d7",
+    "src_1acf89978c9ffa528d7fb4a3",
+    "src_6155e631028097b3872bec27",
+    "src_854085ba8d4755fa9eb1c3cc"
+  ],
+  "literature_records": [
+    {
+      "source_id": "src_c8d23e90d299a414fc716749",
+      "title": "On the transition from quantum decoherence to thermal dynamics in natural conditions",
+      "authors": [
+        "J. H. Brownell"
+      ],
+      "year": 2024,
+      "doi": "https://doi.org/10.48550/arxiv.2409.12986",
+      "verification_status": "crossref_not_verified",
+      "abstract": "A single mechanism, endemic to the standard model of physics, is proposed to explain wavefunction collapse, classical motion, dissipation, equilibration, and the transition from pure quantum mechanics through open system decoherence to the natural regime. Spontaneous events in the neighborhood of a particle disrupts correlation such that large many-particle states do not persist and each particle collapses to a stable mode of motion established by its neighbors. These events are the source of thermal fluctuation and drive diffusion. Consequently, evolution is not deterministic, unitary or classically conservative; diffusion toward a steady state occurs incessantly in every system of particles, though slowed under unnatural experimental conditions that suppress these events. Mean properties of a system evolve as particles jump between single-particle modes, producing observed transport laws and equilibrium properties without additional postulate or empirical factors. These modes are localized in dense material, yielding classical characteristics. Boltzmann's equal probability postulate is valid only when comparing results of nonrelativistic observers.",
+      "openalex_id": "https://openalex.org/W4403714369"
+    },
+    {
+      "source_id": "src_a5589411c8eb68a2899317d7",
+      "title": "Modelling quantum measurement dynamics: from decoherence to redundancy with site-hopping indistinguishable particles",
+      "authors": [
+        "Katja Schneeweiss",
+        "Tom Rivlin",
+        "Maximilian P. E. Lock",
+        "Marcus Huber",
+        "Iva Březinová"
+      ],
+      "year": 2026,
+      "doi": "https://doi.org/10.48550/arxiv.2608.11319",
+      "verification_status": "crossref_not_verified",
+      "abstract": "In recent years, new theoretical insights into decoherence and quantum measurements have emerged through the study of many-body dynamics in isolated quantum systems. It is now understood that the parameters and energy scales in system-environment interactions decisively affect how readily information spreads from a quantum system into its surroundings during a decoherence event. A popular choice for studying these effects is the framework of quantum Darwinism (QD), but so far few works have applied this to realistic many-body models. Inspired by experimentally-accessible setups, in this work we introduce a simple, flexible, numerically exact many-body model of a system broadcasting information into an environment: a 1D lattice of sites with hopping particles. We show that different choices of parameters lead to the recovery of known scenarios featuring different decoherence and QD effects, such as equilibration, revivals of coherence, and redundancy. In constructing this model we resolve the crucial issue of indistinguishability: we explain how to calculate the entropy of a fraction of the environment when said environment is composed of indistinguishable fermions or bosons (or lattice sites containing them). We then show that particle statistics can make a notable difference to the QD properties of the setup, with fermionic environments sometimes achieving redundancy much more readily than bosonic or site-based ones. Our work opens the door to much closer alignment between theoretical models and experimental tests of the dynamics of quantum measurements and the quantum-to-classical transition.",
+      "openalex_id": "https://openalex.org/W7202390950"
+    },
+    {
+      "source_id": "src_1acf89978c9ffa528d7fb4a3",
+      "title": "The role of quantum information in thermodynamics—a topical review",
+      "authors": [
+        "John Goold",
+        "Marcus Huber",
+        "Arnau Riera",
+        "Lídia del Rio",
+        "Paul Skrzypczyk"
+      ],
+      "year": 2016,
+      "doi": "https://doi.org/10.1088/1751-8113/49/14/143001",
+      "verification_status": "doi_crossref_verified",
+      "abstract": "Abstract This topical review article gives an overview of the interplay between quantum information theory and thermodynamics of quantum systems. We focus on several trending topics including the foundations of statistical mechanics, resource theories, entanglement in thermodynamic settings, fluctuation theorems and thermal machines. This is not a comprehensive review of the diverse field of quantum thermodynamics; rather, it is a convenient entry point for the thermo-curious information theorist. Furthermore this review should facilitate the unification and understanding of different interdisciplinary approaches emerging in research groups around the world.",
+      "openalex_id": "https://openalex.org/W3098165131"
+    },
+    {
+      "source_id": "src_6155e631028097b3872bec27",
+      "title": "Quantum trajectories and open many-body quantum systems",
+      "authors": [
+        "Andrew J. Daley"
+      ],
+      "year": 2014,
+      "doi": "https://doi.org/10.1080/00018732.2014.933502",
+      "verification_status": "doi_crossref_verified",
+      "abstract": "The study of open quantum systems – microscopic systems exhibiting quantum coherence that are coupled to their environment – has become increasingly important in the past years, as the ability to control quantum coherence on a single particle level has been developed in a wide variety of physical systems. In quantum optics, the study of open systems goes well beyond understanding the breakdown of quantum coherence. There, the coupling to the environment is sufficiently well understood that it can be manipulated to drive the system into desired quantum states, or to project the system onto known states via feedback in quantum measurements. Many mathematical frameworks have been developed to describe such systems, which for atomic, molecular, and optical (AMO) systems generally provide a very accurate description of the open quantum system on a microscopic level. In recent years, AMO systems including cold atomic and molecular gases and trapped ions have been applied heavily to the study of many-body physics, and it has become important to extend previous understanding of open system dynamics in single- and few-body systems to this many-body context. A key formalism that has already proven very useful in this context is the quantum trajectories technique. This method was developed in quantum optics as a numerical tool for studying dynamics in open quantum systems, and falls within a broader framework of continuous measurement theory as a way to understand the dynamics of large classes of open quantum systems. In this article, we review the progress that has been made in studying open many-body systems in the AMO context, focussing on the application of ideas from quantum optics, and on the implementation and applications of quantum trajectories methods in these systems. Control over dissipative processes promises many further tools to prepare interesting and important states in strongly interacting systems, including the realisation of parameter regimes in quantum simulators that are inaccessible via current techniques.",
+      "openalex_id": "https://openalex.org/W1972316072"
+    },
+    {
+      "source_id": "src_854085ba8d4755fa9eb1c3cc",
+      "title": "Time-dependence of the holographic spectral function: diverse routes to thermalisation",
+      "authors": [
+        "Souvik Banerjee",
+        "Takaaki Ishii",
+        "Lata Kh Joshi",
+        "Ayan Mukhopadhyay",
+        "P. Ramadevi"
+      ],
+      "year": 2016,
+      "doi": "https://doi.org/10.1007/jhep08(2016)048",
+      "verification_status": "doi_crossref_verified",
+      "abstract": "We develop a new method for computing the holographic retarded propagator in generic (non-)equilibrium states using the state/geometry map. We check that our method reproduces the thermal spectral function given by the Son-Starinets prescription. The time-dependence of the spectral function of a relevant scalar operator is studied in a class of non-equilibrium states. The latter are represented by AdS-Vaidya geometries with an arbitrary parameter characterising the timescale for the dual state to transit from an initial thermal equilibrium to another due to a homogeneous quench. For long quench duration, the spectral function indeed follows the thermal form at the instantaneous effective temperature adiabatically, although with a slight initial time delay and a bit premature thermalisation. At shorter quench durations, several new non-adiabatic features appear: (i) time-dependence of the spectral function is seen much before than that in the effective temperature (advanced time-dependence), (ii) a big transfer of spectral weight to frequencies greater than the initial temperature occurs at an intermediate time (kink formation) and (iii) new peaks with decreasing amplitudes but in greater numbers appear even after the effective temperature has stabilised (persistent oscillations). We find four broad routes to thermalisation for lower values of spatial momenta. At higher values of spatial momenta, kink formations and persistent oscillations are suppressed, and thermalisation time decreases. The general thermalisation pattern is globally top-down, but a closer look reveals complexities.",
+      "openalex_id": "https://openalex.org/W2307221590"
+    }
+  ],
+  "completed_at": "2026-11-01T03:22:50.784272+00:00",
+  "research_report": "# Thermalisation and Decoherence Mechanisms: Theoretical Review\n\n## A. Executive Findings\n\n1. **No unified mechanism established**: The retrieved literature presents multiple distinct frameworks for thermalisation and decoherence—Brownell's spontaneous correlation-disruption events (src_c8d23e90d299a414fc716749), lattice hopping models for quantum Darwinism (src_a5589411c8eb68a2899317d7), quantum trajectories in AMO systems (src_6155e631028097b3872bec27), and holographic thermalisation routes (src_854085ba8d4755fa9eb1c3cc)—without consensus on a single fundamental mechanism.\n\n2. **Standard statistical mechanics not derived from proposed mechanisms**: Brownell's claim that \"Boltzmann's equal probability postulate is valid only when comparing results of nonrelativistic observers\" and that transport laws emerge \"without additional postulate or empirical factors\" is **speculative** and unsupported by the other sources. Established statistical mechanics (src_1acf89978c9ffa528d7fb4a3) remains based on ensemble postulates, typicality arguments, and eigenstate thermalisation hypothesis (ETH), not on spontaneous collapse events.\n\n3. **Decoherence mechanisms are model-dependent**: The Schneeweiss et al. model (src_a5589411c8eb68a2899317d7) demonstrates that decoherence and quantum Darwinism effects depend critically on particle statistics (fermionic vs bosonic), interaction parameters, and system-environment partitioning—contradicting any claim of a universal single mechanism.\n\n4. **Holographic thermalisation shows multiple routes**: Banerjee et al. (src_854085ba8d4755fa9eb1c3cc) identify four broad thermalisation routes in AdS-Vaidya geometries, with momentum-dependent suppression of non-adiabatic features—indicating thermalisation is not a single universal process even in holographic duals.\n\n5. **Quantum trajectories provide established numerical framework**: Daley (src_6155e631028097b3872bec27) reviews quantum trajectories as a **well-established** method for open many-body quantum systems in AMO physics, with experimental validation in cold atoms and trapped ions.\n\n---\n\n## B. Established Background\n\n### B.1 Quantum Statistical Mechanics Foundations (src_1acf89978c9ffa528d7fb4a3)\n- **Eigenstate Thermalisation Hypothesis (ETH)**: Individual energy eigenstates of chaotic many-body systems yield thermal expectation values for local observables.\n- **Typicality**: Most pure states in a microcanonical energy shell yield identical reduced density matrices for small subsystems.\n- **Resource theories**: Thermodynamics formulated as resource theory with free operations (thermal operations, Gibbs-preserving maps).\n- **Fluctuation theorems**: Jarzynski equality, Crooks relation, and quantum generalisations (Tasaki-Crooks) hold for quantum systems.\n- **Quantum thermal machines**: Autonomous and measurement-based engines analysed via quantum information tools.\n\n### B.2 Open Quantum Systems Theory (src_6155e631028097b3872bec27)\n- **Lindblad master equation**: Markovian dynamics: ∂ρ/∂t = -i[H,ρ] + Σₖ γₖ(LₖρLₖ† - ½{Lₖ†Lₖ,ρ})\n- **Quantum trajectories**: Unravelling of master equation into stochastic pure-state evolution (quantum jump or diffusive trajectories).\n- **Continuous measurement theory**: Trajectories correspond to measurement records; feedback enables state preparation.\n- **AMO experimental platforms**: Cold atoms, trapped ions, cavity QED provide controllable system-environment couplings.\n\n### B.3 Quantum Darwinism Framework (src_a5589411c8eb68a2899317d7)\n- **Redundancy**: Information about system pointer states proliferates into environment fragments.\n- **Indistinguishability challenge**: Entropy of environment fractions requires careful treatment for identical particles.\n- **Parameter dependence**: Decoherence timescales and redundancy depend on interaction strength, statistics, and dimensionality.\n\n---\n\n## C. Literature Review with Source IDs\n\n| Source | Domain | Key Contribution | Verification Status |\n|--------|--------|------------------|---------------------|\n| src_1acf89978c9ffa528d7fb4a3 | Quantum thermodynamics review | Comprehensive overview of quantum information/thermodynamics interface; ETH, resource theories, fluctuation theorems | doi_crossref_verified |\n| src_6155e631028097b3872bec27 | Open quantum systems / AMO | Quantum trajectories for many-body systems; experimental implementations in cold atoms/ions | doi_crossref_verified |\n| src_854085ba8d4755fa9eb1c3cc | Holographic thermalisation | Spectral function dynamics in AdS-Vaidya; four thermalisation routes; momentum dependence | doi_crossref_verified |\n| src_a5589411c8eb68a2899317d7 | Quantum Darwinism / many-body decoherence | 1D lattice hopping model; indistinguishability resolution; fermionic vs bosonic environment differences | crossref_not_verified (arXiv 2026) |\n| src_c8d23e90d299a414fc716749 | Speculative collapse/thermalisation mechanism | Single \"spontaneous event\" mechanism for collapse, dissipation, equilibration; challenges Boltzmann postulate | crossref_not_verified (arXiv 2024)",
+  "integrity_note": "LLM research synthesis; not independent scientific verification. Abstract retrieval is not full-text review."
+}

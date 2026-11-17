@@ -1,0 +1,55 @@
+{
+  "5_5_6": "COMPLETED_SYNTHETIC_MODEL_COMPARISON",
+  "5_5_7": "COMPLETED_EXPERIMENT_DESIGN_AUDIT",
+  "all_checks_passed": false,
+  "checks": {
+    "all_local_vertices_obey_chsh_bound": true,
+    "best_fit_optimizer_success": false,
+    "best_fit_weights_nonnegative": true,
+    "best_fit_weights_normalised": true,
+    "exactly_16_local_strategies": true,
+    "five_experiment_designs_registered": true,
+    "hall_cosmology_gate_blocked": true,
+    "likelihood_ratio_nonnegative": true,
+    "local_likelihood_not_above_saturated": true,
+    "no_empirical_claim_from_synthetic_data": true,
+    "no_unjustified_phase_5_6_authorisation": true,
+    "quantum_chsh_reaches_tsirelson": true,
+    "synthetic_counts_total_correct": true
+  },
+  "cosmology_gate": {
+    "hall_branciard_causal_retrocausal_models": {
+      "bell_information_cost_derived": true,
+      "decision": "BLOCKED",
+      "primordial_perturbation_dynamics_derived": false
+    },
+    "hall_measurement_dependent_model": {
+      "decision": "BLOCKED",
+      "derived_primordial_power_spectrum": false,
+      "dynamical_primordial_field_equations": false,
+      "mechanism_to_primordial_perturbation_map": false,
+      "quantitative_cmb_prediction": false
+    },
+    "phase_5_6_authorised_for_hall_model": false,
+    "reason": "No derived dynamical connection between the current Hall-type measurement-dependent mechanism and primordial perturbations.",
+    "valentini_pilot_wave_nonequilibrium": {
+      "decision": "SEPARATE_COMPARATOR_ONLY",
+      "independent_replication_by_asde": false,
+      "published_cosmological_prediction_programme": true,
+      "same_mechanism_as_hall_local_md": false
+    }
+  },
+  "hensen_event_level_reanalysis": "BLOCKED_DATA_SOURCE_UNREACHABLE",
+  "important_limitations": [
+    "Synthetic data only; no experimental data fitted.",
+    "Likelihood ratio is descriptive; no calibrated p-value.",
+    "Published information-cost values are scenario-specific.",
+    "Hall-type model has no derived primordial perturbation mechanism.",
+    "Valentini pilot-wave cosmology is a separate theoretical programme."
+  ],
+  "nist_event_level_reanalysis": "NOT_COMPLETED_IN_THIS_CELL",
+  "phase": "5.5_FINAL",
+  "phase_5_5_completion": "THEORETICAL_AND_DESIGN_AUDIT_COMPLETE; EMPIRICAL_MODEL_SELECTION_PENDING_EVENT_LEVEL_DATA",
+  "run_id": "run_64ca8ea8354347659fe78f63b8569a67",
+  "timestamp_utc": "2026-11-01T05:01:44.512696+00:00"
+}

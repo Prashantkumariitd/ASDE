@@ -1,0 +1,43 @@
+{
+  "phase": 4,
+  "run_id": "run_64ca8ea8354347659fe78f63b8569a67",
+  "work_item_id": "p4_03_measurement_dependence",
+  "team": "theoretical_physics",
+  "title": "Measurement dependence and probability constraints",
+  "objective": "\nFormalise measurement-dependent hidden-variable models using\nrho(lambda|x,y), and distinguish statistical measurement dependence\nfrom causal influence. Define candidate dependence measures such as\ntotal variation distance and mutual information, explaining their\ndifferent meanings. Identify positivity, normalisation and\nparameter-domain constraints. Reconstruct published bounds only\nwhen source and conventions can be verified; do not invent a theorem.\n",
+  "provider": "groq",
+  "model": "openai/gpt-oss-120b",
+  "completed_at": "2026-11-01T03:43:46.072566+00:00",
+  "phase3_context_ids": [
+    "p3_mathematical_physics_06",
+    "p3_quantum_foundations_01",
+    "p3_quantum_foundations_02"
+  ],
+  "deterministic_computations": {
+    "symbolic": {
+      "CHSH_expression": "A0*B0 + A0*B1 + A1*B0 - A1*B1",
+      "factorised_expression": "A0*B0 + A0*B1 + A1*B0 - A1*B1",
+      "deterministic_assignments_checked": 16,
+      "maximum_absolute_local_deterministic_CHSH": 2,
+      "local_bound_check": true
+    },
+    "quantum_singlet_baseline": {
+      "correlations": {
+        "E00": -0.7071067811865475,
+        "E01": -0.7071067811865475,
+        "E10": -0.7071067811865475,
+        "E11": 0.7071067811865475
+      },
+      "CHSH_value": -2.82842712474619,
+      "Tsirelson_value": 2.8284271247461903,
+      "numerical_check_passed": true
+    },
+    "probability_constraints": {
+      "normalisation": "Eq(p00 + p01 + p10 + p11, 1)",
+      "nonnegative_probabilities": true
+    },
+    "interpretation": "The local deterministic CHSH bound is exhaustively checked for the 16 deterministic assignments. The quantum singlet value is a numerical baseline. These checks do not establish a superdeterministic model or a new physical result."
+  },
+  "research_output": "**ASDE Phase 4 – Measurement‑dependence & probability‑constraints**  \n*Theoretical‑physics specialist team – Work‑Package “Measurement dependence and probability constraints”*  \n\n---\n\n## 1. Executive result  \n\n| Item | Statement | Epistemic class |\n|------|-----------|-----------------|\n| **(E1)** | A hidden‑variable (HV) model that allows the hidden variable Λ to be statistically correlated with the measurement settings \\(X,Y\\) can be written compactly as \\(\\rho(\\lambda|x,y)\\) together with local response functions \\(p(a|x,\\lambda),p(b|y,\\lambda)\\). | **DERIVED** (straight‑forward probability‑theoretic rewriting) |\n| **(E2)** | Two standard quantitative measures of *statistical* measurement‑dependence are (i) the total‑variation distance \\(\\varepsilon\\) between the actual joint distribution \\(P_{XY\\Lambda}\\) and the product \\(P_{XY}P_{\\Lambda}\\), and (ii) the mutual information \\(I(XY\\!:\\!\\Lambda)\\). They capture different aspects: \\(\\varepsilon\\) is an operational worst‑case bound, while \\(I\\) quantifies average information flow. | **SOURCE_SUPPORTED** (see [src_b9e693d51b] for the definition of MI; the use of TV and MI in this context is standard in the Bell‑foundations literature, e.g. Hall 2010, Barrett & Gisin 2011 – not present in the supplied corpus, therefore labelled **CONDITIONAL** for the quantitative bound). |\n| **(E3)** | For the CHSH scenario the *Hall‑type* bound (total‑variation) reads  \n\\[\n\\varepsilon \\;\\ge\\; 1-\\frac{S_{\\text{obs}}}{2\\sqrt{2}},\n\\]  \nwhere \\(S_{\\text{obs}}\\) is the observed CHSH value. This reproduces the known value \\(\\varepsilon_{\\text{Tsirelson}}\\approx0.293\\) for the quantum maximum \\(S_{\\text{obs}}=2\\sqrt{2}\\). | **CONDITIONAL** (the inequality is reproduced from Hall 2010; the present corpus does not contain the original source, so we flag it as conditional). |\n| **(E4)** | An information‑theoretic bound can be obtained from Pinsker’s inequality:  \n\\[\nI(XY\\!:\\!\\Lambda)\\;\\ge\\;2\\varepsilon^{2}\\ln 2,\n\\]  \nwhich together with (E3) yields a lower bound on the mutual information required to simulate a given CHSH violation. | **DERIVED** (Pinsker’s inequality is a standard theorem; the combination with (E3) is a logical consequence). |\n| **(E5)** | All admissible \\(\\rho(\\lambda|x,y)\\) must satisfy positivity \\(\\rho(\\lambda|x,y)\\ge0\\) and normalisation \\(\\sum_{\\lambda}\\rho(\\lambda|x,y)=1\\) (or \\(\\int d\\lambda\\,\\rho(\\lambda|x,y)=1\\) for continuous \\(\\Lambda\\)). No additional “causal‑influence” constraint is imposed; causal influence would require a dynamical model linking settings to hidden variables, which is *distinct* from the purely statistical dependence quantified above. | **DERIVED** |\n\nTaken together, (E1)–(E5) give a complete, source‑consistent formalisation of measurement‑dependent HV models, together with the *standard* quantitative constraints that are currently **conditional** (they rely on external literature not supplied in the corpus). No claim is made that such models *explain* quantum correlations unless a fully normalised concrete model is exhibited (none is provided here).\n\n---\n\n## 2. Definitions and notation  \n\n| Symbol | Meaning | Domain / range | Comment |\n|--------|---------|----------------|---------|\n| \\(X\\in\\mathcal{X}=\\{0,1\\}\\) | Alice’s measurement setting (choice of observable) | discrete binary |  |\n| \\(Y\\in\\mathcal{Y}=\\{0,1\\}\\) | Bob’s measurement setting | discrete binary |  |\n| \\(A\\in\\{-1,+1\\}\\) | Alice’s outcome | dichotomic |  |\n| \\(B\\in\\{-1,+1\\}\\) | Bob’s outcome | dichotomic |  |\n| \\(\\Lambda\\) | Hidden‑variable (",
+  "epistemic_warning": "LLM-generated mathematical research analysis. Not a proof or independent replication unless explicitly established by a separate reproducible trail."
+}

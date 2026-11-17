@@ -1,0 +1,36 @@
+{
+  "phase": "5.6",
+  "run_id": "run_64ca8ea8354347659fe78f63b8569a67",
+  "timestamp_utc": "2026-11-01T05:08:43.421585+00:00",
+  "hall_cosmology_gate": {
+    "phase": "5.6",
+    "model": "Hall local deterministic measurement-dependent model",
+    "status": "NOT_COMPLETED_AS_COSMOLOGICAL_DERIVATION",
+    "required_derivations": {
+      "cosmological_dynamical_variables": false,
+      "background_evolution_equations": false,
+      "coupling_to_primordial_perturbations": false,
+      "gauge_consistent_perturbation_equations": false,
+      "primordial_power_spectrum": false,
+      "cmb_transfer_functions": false,
+      "quantitative_observational_prediction": false
+    },
+    "decision": "NO_GO_WITH_CURRENT_MECHANISM",
+    "reason": "The Hall model specifies setting-conditioned hidden-variable distributions and local response functions for Bell correlations. It does not specify a cosmological dynamical field, gravitational coupling, inflationary background or primordial perturbation law. There is no justified derivation of a primordial spectrum from the existing model.",
+    "phase_5_6_subtasks": {
+      "5.6.1": "Not derivable from current Hall model",
+      "5.6.2": "No cosmological background or perturbation dynamics",
+      "5.6.3": "No derived primordial power spectrum",
+      "5.6.4": "No derived CMB transfer functions",
+      "5.6.5": "No model-specific likelihood prediction",
+      "5.6.6": "No justified cosmological simulation to run"
+    },
+    "reopening_conditions": [
+      "Explicit covariant dynamical model",
+      "Defined coupling to cosmological degrees of freedom",
+      "Derivable background and perturbation equations",
+      "Non-arbitrary initial conditions",
+      "Quantitative spectrum differing from Lambda-CDM"
+    ]
+  }
+}

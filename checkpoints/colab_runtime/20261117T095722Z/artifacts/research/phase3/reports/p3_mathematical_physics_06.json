@@ -1,0 +1,82 @@
+{
+  "phase": 3,
+  "run_id": "run_64ca8ea8354347659fe78f63b8569a67",
+  "work_item_id": "p3_mathematical_physics_06",
+  "domain": "mathematical_physics",
+  "title": "Audit existing mathematical claims",
+  "objective": "Re-derive reported measurement-dependence and information-theoretic bounds, tracking conventions and assumptions.",
+  "provider": "groq",
+  "model": "openai/gpt-oss-120b",
+  "source_ids": [
+    "src_0912a5a11ae21265a27bb51a",
+    "src_7a77d5f00f043ca667491f4b",
+    "src_9efd57ad59871c663626bc40",
+    "src_22b36a838b47e6b83c297104",
+    "src_709a77602260676a50779611"
+  ],
+  "literature_records": [
+    {
+      "source_id": "src_0912a5a11ae21265a27bb51a",
+      "title": "Mathematical Theory of Capital",
+      "authors": "Samir Asaf",
+      "doi": "https://doi.org/10.2139/ssrn.7559682",
+      "url": "https://doi.org/10.2139/ssrn.7559682",
+      "year": 2026,
+      "source_type": "preprint",
+      "verification_status": "doi_crossref_verified",
+      "abstract": "",
+      "openalex_id": "https://openalex.org/W7220423752"
+    },
+    {
+      "source_id": "src_7a77d5f00f043ca667491f4b",
+      "title": "Mathematical sciences for trustworthy AI corpora",
+      "authors": "Xiuping Chen, Jin Liu, Jiajing Sun, Qi Zhang, Xing Yan, Fei Long",
+      "doi": "https://doi.org/10.4310/dat.260923131244",
+      "url": "https://doi.org/10.4310/dat.260923131244",
+      "year": 2026,
+      "source_type": "article",
+      "verification_status": "doi_crossref_verified",
+      "abstract": "The performance and societal impact of modern artificial intelligence (AI) systems are strongly shaped by the large-scale corpora on which they are trained. This dependence has raised growing concerns about privacy leakage, data bias, quality degradation, limited traceability, and vulnerability to manipulation. The mathematical sciences provide important foundations and tools for constructing and evaluating trustworthy AI corpora. We develop a unified framework in which corpus trustworthiness is formalized along five dimensions, namely representativeness, consistency, fairness, privacy, and robustness. These dimensions identify complementary categories of potential failure rather than commensurable corpus attributes. The framework therefore does not collapse them into a universal trustworthiness score; instead, it links level-specific evidence to application-specific criteria within a constrained multi-objective decision process. Building on this formulation, we synthesize how methods from probability and statistics, optimization, causal inference, and game-theoretic analysis support the quantification, control, and auditing of each dimension. To operationalize the framework, we organize the literature across the corpus lifecycle of Collection, Cleaning, Augmentation, and Auditing, while distinguishing corpus-level evidence, process- or mechanism-level guarantees, model-mediated diagnostics, and, where deployment lies within scope, system-level outcomes. We further identify key open challenges, including jointly managing multiple trustworthiness dimensions, scaling mathematically grounded guarantees, and developing comparable evaluation protocols and benchmarks. Overall, this synthesis clarifies how mathematical formalization can support verifiable corpus trustworthiness, while emerging AI corpus problems motivate new questions in the mathematical sciences.",
+      "openalex_id": "https://openalex.org/W7220844894"
+    },
+    {
+      "source_id": "src_9efd57ad59871c663626bc40",
+      "title": "Mathematical Finance of Alternative Assets",
+      "authors": "Samir Asaf",
+      "doi": "https://doi.org/10.2139/ssrn.7555819",
+      "url": "https://doi.org/10.2139/ssrn.7555819",
+      "year": 2026,
+      "source_type": "preprint",
+      "verification_status": "doi_crossref_verified",
+      "abstract": "",
+      "openalex_id": "https://openalex.org/W7220714248"
+    },
+    {
+      "source_id": "src_22b36a838b47e6b83c297104",
+      "title": "A theoretical exploration of the adoption of GRI (gobal reporting initiatives) : guidelines in corporate sustainability reports",
+      "authors": "Shiming Deng",
+      "doi": "https://doi.org/10.25959/23232878",
+      "url": "https://eprints.utas.edu.au/19902/1/whole_DengShang-Mou2010_thesis.pdf",
+      "year": 2010,
+      "source_type": "dissertation",
+      "verification_status": "crossref_not_verified",
+      "abstract": "With the trend towards sustainability, society is increasingly calling for organisations to demonstrate their corporate social responsibility (CSR). In response, more and more Australian companies are engaged in CSR reporting. The literature shows differences in the quantity and quality of CSR reporting and also includes ongoing debate as to why companies engage in voluntary corporate social and environmental disclosure (CSED). This thesis aims to use the context of the adoption of Global Reporting Initiatives Sustainability Reporting Guidelines (GRI Guidelines) by Australian mining and banking companies to explore why and how CSED differs in organisations within and between industries. The literature in relation to why companies make CSED contains many ideas but it lacks a coherent theoretical framework. This study views these explanations as possible rationales, on which a model based on the notion of institutional logic is adopted to explore legitimacy management in CSED from a micro-level aspect. In order to understand the rationality behind CSED decisions, a comparative case study approach is utilised, using the banking and mining industries, to explore how these rationales exist and interact in the decision-processes leading to CSED. At the operational level, this study re-examines the relationships about the perceptions of managers of social and environmental pressures, the motivation for CSED, disclosure strategies and outcomes of CSED. Interview and archive data are collected and analysed to facilitate an understanding of the phenomena as well as providing corroborating evidence from different sources. Results indicate that motivations for CSED generally stem from legitimacy risk management. This is consistent with the results of much of the extant literature, which asserts that CSR reporting is a response to pressures exerted by various stakeholders. However, how to respond to the need for legitimacy management can be different. The CSED variations between and within sectors provide evidence that institutional and strategic approaches are used in the decision making of CSED. This study, in contributing to and extending the body of CSED and voluntary disclosure research, provides an understanding of the why and how of CSED from a multi- theoretical perspective and uses the adoption (or not) of the GRI Guidelines as the main vehicles on which the investigation is based.",
+      "openalex_id": "https://openalex.org/W147957712"
+    },
+    {
+      "source_id": "src_709a77602260676a50779611",
+      "title": "Graffiti3 : Compact Theory Libraries for Automated Mathematical Discovery",
+      "authors": "Randy Davila",
+      "doi": "https://doi.org/10.21203/rs.3.rs-8493329/v1",
+      "url": "https://doi.org/10.21203/rs.3.rs-8493329/v1",
+      "year": 2026,
+      "source_type": "preprint",
+      "verification_status": "doi_crossref_verified",
+      "abstract": "Abstract We study automated conjecturing: the computer-assisted generation of human-readable symbolic statements intended for expert inspection and subsequent proof or refutation. We formalize conjecture generation as theory selection over a finite, evolving evidence base represented by a streaming invariant table, whose rows (objects) and columns (invariants, predicates, and derived features) expand as new constructions and counterexamples are discovered. We present Graffiti3 , a domain-agnostic engine that converts such tables into a compact theory library: a budgeted, nonredundant set of snapshot-true bounds, implications, and structural annotations drawn from a controlled grammar. Candidate statements are produced by optimization and then filtered and ranked by explicit simplicity criteria together with dominance-style redundancy elimination, yielding a small library designed for iterative questioning, counterexample search, and downstream deductive work. To support such reasoning, Graffiti3 augments conjectures with short sufficient conditions that explain equality and near-equality regimes, exhaustively verifies each output in the current snapshot, and treats conjectures as provisional until they survive targeted counterexample search or are proved. We also describe a hybrid workflow in which a large language model proposes derived features and narrative summaries while Graffiti3 provides deterministic validation and theory selection. In integer arithmetic, we prove two conjectures produced by this workflow, yielding characterizations of squarefree integers. We demonstrate the methodology on finite groups, knot theory, and a Calabi–Yau hypersurface census, and we revisit graph-theoretic conjectures from the predecessor system TxGraffiti, recalling open problems and reporting new ones.",
+      "openalex_id": "https://openalex.org/W7118481578"
+    }
+  ],
+  "completed_at": "2026-11-01T03:13:23.648411+00:00",
+  "research_report": "**A. Executive Finding**  \nThe supplied literature corpus contains **no** peer‑reviewed or pre‑print material that discusses *measurement‑dependence* or *information‑theoretic bounds* in the context of mathematical physics. Consequently, any quantitative claim about such bounds cannot be verified, re‑derived, or contradicted from the provided sources. All derivations below are therefore **conditional** on standard physics conventions and **not** source‑supported.  \n\n---\n\n## B. Established Background  *(general scientific knowledge – not drawn from the supplied records)*  \n\n| Concept | Standard Definition / Formula | Typical Assumptions |\n|---------|------------------------------|---------------------|\n| **Measurement‑dependence (MD)** | In a hidden‑variable (HV) model the joint probability of outcomes \\(a,b\\) given settings \\(x,y\\) may depend on the hidden variable \\(\\lambda\\) **and** on the measurement settings:  \\[ P(a,b|x,y,\\lambda)=P(a|x,\\lambda)\\,P(b|y,\\lambda)\\,f(x,y,\\lambda) \\] where \\(f\\neq 1\\) quantifies MD. | • Classical probability theory.<br>• No‑signalling at the level of observable marginals.<br>• Finite‑dimensional \\(\\lambda\\). |\n| **Information‑theoretic bound (ITB)** | For a bipartite Bell scenario the *mutual information* between settings and hidden variables obeys a bound of the form  \\[ I(XY:\\Lambda) \\leq \\log_2\\!\\bigl(1+\\frac{C}{S_{\\text{max}}-S_{\\text{obs}}}\\bigr) \\] where \\(S_{\\text{obs}}\\) is the observed Bell parameter, \\(S_{\\text{max}}\\) the algebraic maximum, and \\(C\\) a constant that depends on the chosen inequality (e.g., CHSH). | • Shannon entropy, base‑2.<br>• Perfect detection efficiency.<br>• IID trials. |\n| **Typical Bell inequality (CHSH)** | \\[ S = \\langle A_0 B_0\\rangle + \\langle A_0 B_1\\rangle + \\langle A_1 B_0\\rangle - \\langle A_1 B_1\\rangle \\le 2 \\] (local realistic bound). Quantum maximum \\(S_{\\text{QM}}=2\\sqrt{2}\\). | • Dichotomic outcomes \\(\\pm1\\).<br>• Two measurement settings per party. |\n| **Measurement‑dependence quantified by *measurement‑setting entropy*** | \\[ H_{\\text{MD}} = H(XY) - H(XY|\\Lambda) = I(XY:\\Lambda) \\]  (mutual information). | Same as above. |\n\nThese definitions are **widely accepted** in the quantum‑foundations literature (e.g., works by Hall, Barrett & Gisin, Brans). They provide the *framework* within which any claim about “measurement‑dependence” or “information‑theoretic bounds” must be expressed.\n\n---\n\n## C. Literature and source_ids  \n\n| source_id | Relevance to MD / ITB | Reason for exclusion |\n|-----------|-----------------------|----------------------|\n| src_0912a5a11ae21265a27bb51a | Economics / capital theory | No physics content |\n| src_7a77d5f00f043ca667491f4b | Trustworthy AI corpora | No physics content |\n| src_9efd57ad59871c663626bc40 | Finance of alternative assets | No physics content |\n| src_22b36a838b47e6b83c297104 | CSR reporting | No physics content |\n| src_709a77602260676a50779611 | Automated conjecturing (graph theory, knot theory) | No physics content |\n\n*Result*: **Zero** source‑supported references for the target domain.\n\n---\n\n## D. Mathematical Framework and Assumptions  \n\nBelow is a **self‑contained derivation** of a generic information‑theoretic bound on measurement‑dependence for the CHSH scenario. All steps are explicitly labelled; any deviation from the standard framework is highlighted as a **conditional** assumption.\n\n### 1. Notation  \n\n| Symbol | Meaning |\n|--------|---------|\n| \\(X,Y\\in\\{0,1\\}\\) | Measurement settings for Alice and Bob |\n| \\(A,B\\in\\{-1,+1\\}\\) | Outcomes |\n| \\(\\Lambda\\) | Hidden variable (finite or continuous) |\n| \\(P(x,y,\\lambda)\\) | Joint distribution of settings and hidden variable |\n| \\(P(a,b|x,y,\\lambda)\\) | Conditional response function (deterministic or stochastic) |\n| \\(S\\) | CHSH expression (observable) |\n| \\(I\\) | Mutual information \\(I(XY:\\Lambda)\\) |\n\n### 2. Core assumptions  \n\n1. **No‑signalling at the observable level**:  \n   \\(\\sum_b P(a,b|x,y)=P(a|x)\\) independent of \\(y\\) (and similarly for Bob).  \n2. **Local realism with measurement‑dependence**:  \n   \\[ P(a,b|x,y)=\\int d\\lambda\\,P(\\lambda|x,y)\\,P(a|x,\\lambda)P(b|y,\\lambda). \\]  \n   The only departure from Bell‑locality is the possible dependence of \\(P(\\lambda|x,y)\\) on the settings.  \n3. **Finite‑alphabet for \\(\\Lambda\\)** (or a discretisation that makes \\(H(\\Lambda)\\) finite).  \n4. **IID trials**: each run of the experiment is statistically independent.  \n\n### 3. Derivation of an ITB  \n\nWe follow the approach of Hall (2010) and Barrett‑Gisin (2011) but keep the algebra explicit.\n\n1. **Express the observed CHSH value** in terms of the hidden‑variable model:  \n\n   \\[\n   S = \\sum_{x,y} (-1)^{xy}\\,\\int d\\lambda\\,P(\\lambda|x,y)\\,E_A(x,\\lambda)E_B(y,\\lambda),\n   \\]\n   where \\(E_A(x,\\lambda)=\\sum_a a\\,P(a|x,\\lambda)\\) and similarly for \\(E_B\\).\n\n2. **Bound the integrand** using \\(|E_A|\\le 1\\), \\(|E_B|\\le 1\\):  \n\n   \\[\n   |S| \\le \\sum_{x,y} \\int d\\lambda\\,P(\\lambda|x,y) = 4.\n   \\]\n\n   The algebraic maximum is 4; the local realistic bound is 2.\n\n3. **Introduce the *measurement‑dependence factor***  \n\n   Define \\(\\alpha(\\lambda)=\\max_{x,y} \\frac{P(\\lambda|x,y)}{P(\\lambda)}\\).  \n   By construction \\(\\alpha(\\lambda)\\ge 1\\) and \\(\\int d\\lambda\\,P(\\lambda)\\,\\alpha(\\lambda)=\\sum_{x,y}P(x,y)\\,\\alpha(\\lambda)\\) (since \\(P(x,y)=1/4\\) for uniformly random settings).\n\n4. **Relate \\(\\alpha\\) to mutual information**  \n\n   Using the definition of mutual information,\n   \\[\n   I(XY:\\Lambda)=\\int",
+  "integrity_note": "Recovered from Neon checkpoint. LLM research synthesis; not independent scientific verification."
+}
