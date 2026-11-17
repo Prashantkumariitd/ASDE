@@ -1,0 +1,34 @@
+{
+  "asde_bootstrap_version": "0.1.0",
+  "checked_at_utc": "2026-11-01T00:35:53.696051+00:00",
+  "runtime": {
+    "python": "3.13.18",
+    "platform": "Linux-6.6.159+-x86_64-with-glibc2.39",
+    "cpu_count": 2,
+    "ram_total_gb": 12.67,
+    "ram_available_gb": 11.49,
+    "gpu": "No GPU detected",
+    "checked_at_utc": "2026-11-01T00:35:18.847649+00:00"
+  },
+  "database": {
+    "connected": true,
+    "schema_version": "0.1.0",
+    "read_after_write": true
+  },
+  "providers": {
+    "groq": {
+      "key_configured": true,
+      "model_list_reachable": true,
+      "model_count": 11
+    },
+    "gemini": {
+      "key_configured": true,
+      "model_list_reachable": true,
+      "model_count": 50
+    }
+  },
+  "notes": [
+    "No API keys or database credentials are stored in this report.",
+    "Model listing does not establish free inference entitlement or benchmark qualification."
+  ]
+}
