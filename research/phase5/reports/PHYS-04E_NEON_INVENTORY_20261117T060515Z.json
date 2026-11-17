@@ -1,0 +1,3498 @@
+{
+  "audit_id": "PHYS-04E-20261117T060515Z",
+  "run_id": "run_64ca8ea8354347659fe78f63b8569a67",
+  "created_at_utc": "20261117T060515Z",
+  "database": "Neon PostgreSQL",
+  "schema": "public",
+  "tables": [
+    {
+      "table_name": "asde_agent_outputs",
+      "estimated_rows": -1,
+      "exact_rows": 18,
+      "columns": [
+        {
+          "name": "output_id",
+          "type": "text"
+        },
+        {
+          "name": "run_id",
+          "type": "text"
+        },
+        {
+          "name": "task_id",
+          "type": "text"
+        },
+        {
+          "name": "agent_id",
+          "type": "text"
+        },
+        {
+          "name": "team_id",
+          "type": "text"
+        },
+        {
+          "name": "role",
+          "type": "text"
+        },
+        {
+          "name": "provider",
+          "type": "text"
+        },
+        {
+          "name": "model_id",
+          "type": "text"
+        },
+        {
+          "name": "status",
+          "type": "text"
+        },
+        {
+          "name": "response_text",
+          "type": "text"
+        },
+        {
+          "name": "error_text",
+          "type": "text"
+        },
+        {
+          "name": "created_at",
+          "type": "timestamp with time zone"
+        }
+      ]
+    },
+    {
+      "table_name": "asde_agent_team_memberships",
+      "estimated_rows": 130,
+      "exact_rows": 184,
+      "columns": [
+        {
+          "name": "agent_id",
+          "type": "text"
+        },
+        {
+          "name": "team_id",
+          "type": "text"
+        },
+        {
+          "name": "role",
+          "type": "text"
+        },
+        {
+          "name": "allocation",
+          "type": "numeric"
+        },
+        {
+          "name": "created_at",
+          "type": "timestamp with time zone"
+        }
+      ]
+    },
+    {
+      "table_name": "asde_agents",
+      "estimated_rows": 130,
+      "exact_rows": 184,
+      "columns": [
+        {
+          "name": "agent_id",
+          "type": "text"
+        },
+        {
+          "name": "run_id",
+          "type": "text"
+        },
+        {
+          "name": "role",
+          "type": "text"
+        },
+        {
+          "name": "provider",
+          "type": "text"
+        },
+        {
+          "name": "model_id",
+          "type": "text"
+        },
+        {
+          "name": "status",
+          "type": "text"
+        },
+        {
+          "name": "created_at",
+          "type": "timestamp with time zone"
+        },
+        {
+          "name": "metadata",
+          "type": "jsonb"
+        }
+      ]
+    },
+    {
+      "table_name": "asde_artifacts",
+      "estimated_rows": -1,
+      "exact_rows": 11,
+      "columns": [
+        {
+          "name": "artifact_id",
+          "type": "text"
+        },
+        {
+          "name": "run_id",
+          "type": "text"
+        },
+        {
+          "name": "artifact_type",
+          "type": "text"
+        },
+        {
+          "name": "uri",
+          "type": "text"
+        },
+        {
+          "name": "sha256",
+          "type": "text"
+        },
+        {
+          "name": "created_at",
+          "type": "timestamp with time zone"
+        },
+        {
+          "name": "metadata",
+          "type": "jsonb"
+        }
+      ]
+    },
+    {
+      "table_name": "asde_checkpoints",
+      "estimated_rows": -1,
+      "exact_rows": 2,
+      "columns": [
+        {
+          "name": "checkpoint_id",
+          "type": "text"
+        },
+        {
+          "name": "run_id",
+          "type": "text"
+        },
+        {
+          "name": "task_id",
+          "type": "text"
+        },
+        {
+          "name": "attempt_id",
+          "type": "text"
+        },
+        {
+          "name": "checkpoint_type",
+          "type": "text"
+        },
+        {
+          "name": "state",
+          "type": "jsonb"
+        },
+        {
+          "name": "sha256",
+          "type": "text"
+        },
+        {
+          "name": "created_at",
+          "type": "timestamp with time zone"
+        },
+        {
+          "name": "metadata",
+          "type": "jsonb"
+        }
+      ]
+    },
+    {
+      "table_name": "asde_claims",
+      "estimated_rows": -1,
+      "exact_rows": 6,
+      "columns": [
+        {
+          "name": "claim_id",
+          "type": "text"
+        },
+        {
+          "name": "hypothesis_id",
+          "type": "text"
+        },
+        {
+          "name": "statement",
+          "type": "text"
+        },
+        {
+          "name": "claim_type",
+          "type": "text"
+        },
+        {
+          "name": "epistemic_status",
+          "type": "text"
+        },
+        {
+          "name": "assumptions",
+          "type": "jsonb"
+        },
+        {
+          "name": "evidence_refs",
+          "type": "jsonb"
+        },
+        {
+          "name": "counterevidence_refs",
+          "type": "jsonb"
+        },
+        {
+          "name": "confidence",
+          "type": "numeric"
+        },
+        {
+          "name": "created_at",
+          "type": "timestamp with time zone"
+        }
+      ]
+    },
+    {
+      "table_name": "asde_domain_research_outputs",
+      "estimated_rows": -1,
+      "exact_rows": 10,
+      "columns": [
+        {
+          "name": "output_id",
+          "type": "text"
+        },
+        {
+          "name": "run_id",
+          "type": "text"
+        },
+        {
+          "name": "work_item_id",
+          "type": "text"
+        },
+        {
+          "name": "domain_id",
+          "type": "text"
+        },
+        {
+          "name": "provider",
+          "type": "text"
+        },
+        {
+          "name": "model_id",
+          "type": "text"
+        },
+        {
+          "name": "status",
+          "type": "text"
+        },
+        {
+          "name": "source_ids",
+          "type": "jsonb"
+        },
+        {
+          "name": "response_text",
+          "type": "text"
+        },
+        {
+          "name": "error_text",
+          "type": "text"
+        },
+        {
+          "name": "created_at",
+          "type": "timestamp with time zone"
+        },
+        {
+          "name": "updated_at",
+          "type": "timestamp with time zone"
+        }
+      ]
+    },
+    {
+      "table_name": "asde_domain_workstreams",
+      "estimated_rows": -1,
+      "exact_rows": 7,
+      "columns": [
+        {
+          "name": "domain_id",
+          "type": "text"
+        },
+        {
+          "name": "domain_name",
+          "type": "text"
+        },
+        {
+          "name": "scope",
+          "type": "text"
+        },
+        {
+          "name": "research_questions",
+          "type": "jsonb"
+        },
+        {
+          "name": "priority",
+          "type": "integer"
+        },
+        {
+          "name": "status",
+          "type": "text"
+        },
+        {
+          "name": "created_at",
+          "type": "timestamp with time zone"
+        },
+        {
+          "name": "updated_at",
+          "type": "timestamp with time zone"
+        }
+      ]
+    },
+    {
+      "table_name": "asde_events",
+      "estimated_rows": 51,
+      "exact_rows": 56,
+      "columns": [
+        {
+          "name": "event_id",
+          "type": "bigint"
+        },
+        {
+          "name": "run_id",
+          "type": "text"
+        },
+        {
+          "name": "event_type",
+          "type": "text"
+        },
+        {
+          "name": "payload",
+          "type": "jsonb"
+        },
+        {
+          "name": "created_at",
+          "type": "timestamp with time zone"
+        }
+      ]
+    },
+    {
+      "table_name": "asde_execution_attempts",
+      "estimated_rows": 152,
+      "exact_rows": 177,
+      "columns": [
+        {
+          "name": "attempt_id",
+          "type": "text"
+        },
+        {
+          "name": "task_id",
+          "type": "text"
+        },
+        {
+          "name": "run_id",
+          "type": "text"
+        },
+        {
+          "name": "agent_id",
+          "type": "text"
+        },
+        {
+          "name": "worker_id",
+          "type": "text"
+        },
+        {
+          "name": "attempt_number",
+          "type": "integer"
+        },
+        {
+          "name": "status",
+          "type": "text"
+        },
+        {
+          "name": "provider",
+          "type": "text"
+        },
+        {
+          "name": "model_id",
+          "type": "text"
+        },
+        {
+          "name": "started_at",
+          "type": "timestamp with time zone"
+        },
+        {
+          "name": "completed_at",
+          "type": "timestamp with time zone"
+        },
+        {
+          "name": "error_code",
+          "type": "text"
+        },
+        {
+          "name": "metadata",
+          "type": "jsonb"
+        }
+      ]
+    },
+    {
+      "table_name": "asde_experiments",
+      "estimated_rows": -1,
+      "exact_rows": 0,
+      "columns": [
+        {
+          "name": "experiment_id",
+          "type": "text"
+        },
+        {
+          "name": "task_id",
+          "type": "text"
+        },
+        {
+          "name": "title",
+          "type": "text"
+        },
+        {
+          "name": "method",
+          "type": "text"
+        },
+        {
+          "name": "parameters",
+          "type": "jsonb"
+        },
+        {
+          "name": "code_ref",
+          "type": "text"
+        },
+        {
+          "name": "data_ref",
+          "type": "text"
+        },
+        {
+          "name": "result_ref",
+          "type": "text"
+        },
+        {
+          "name": "status",
+          "type": "text"
+        },
+        {
+          "name": "reproducibility",
+          "type": "jsonb"
+        },
+        {
+          "name": "created_at",
+          "type": "timestamp with time zone"
+        }
+      ]
+    },
+    {
+      "table_name": "asde_hypotheses",
+      "estimated_rows": -1,
+      "exact_rows": 1,
+      "columns": [
+        {
+          "name": "hypothesis_id",
+          "type": "text"
+        },
+        {
+          "name": "run_id",
+          "type": "text"
+        },
+        {
+          "name": "parent_hypothesis_id",
+          "type": "text"
+        },
+        {
+          "name": "title",
+          "type": "text"
+        },
+        {
+          "name": "statement",
+          "type": "text"
+        },
+        {
+          "name": "status",
+          "type": "text"
+        },
+        {
+          "name": "verification_status",
+          "type": "text"
+        },
+        {
+          "name": "evidence",
+          "type": "jsonb"
+        },
+        {
+          "name": "created_at",
+          "type": "timestamp with time zone"
+        },
+        {
+          "name": "metadata",
+          "type": "jsonb"
+        }
+      ]
+    },
+    {
+      "table_name": "asde_knowledge_sources",
+      "estimated_rows": 49,
+      "exact_rows": 49,
+      "columns": [
+        {
+          "name": "source_id",
+          "type": "text"
+        },
+        {
+          "name": "domain_id",
+          "type": "text"
+        },
+        {
+          "name": "title",
+          "type": "text"
+        },
+        {
+          "name": "authors",
+          "type": "text"
+        },
+        {
+          "name": "doi",
+          "type": "text"
+        },
+        {
+          "name": "url",
+          "type": "text"
+        },
+        {
+          "name": "publication_year",
+          "type": "integer"
+        },
+        {
+          "name": "source_type",
+          "type": "text"
+        },
+        {
+          "name": "verification_status",
+          "type": "text"
+        },
+        {
+          "name": "retrieved_at",
+          "type": "timestamp with time zone"
+        },
+        {
+          "name": "metadata",
+          "type": "jsonb"
+        }
+      ]
+    },
+    {
+      "table_name": "asde_messages",
+      "estimated_rows": 220,
+      "exact_rows": 229,
+      "columns": [
+        {
+          "name": "message_id",
+          "type": "text"
+        },
+        {
+          "name": "run_id",
+          "type": "text"
+        },
+        {
+          "name": "sender_agent_id",
+          "type": "text"
+        },
+        {
+          "name": "recipient_agent_id",
+          "type": "text"
+        },
+        {
+          "name": "topic",
+          "type": "text"
+        },
+        {
+          "name": "payload",
+          "type": "jsonb"
+        },
+        {
+          "name": "created_at",
+          "type": "timestamp with time zone"
+        },
+        {
+          "name": "task_id",
+          "type": "text"
+        },
+        {
+          "name": "thread_id",
+          "type": "text"
+        },
+        {
+          "name": "round_number",
+          "type": "integer"
+        },
+        {
+          "name": "reply_to_message_id",
+          "type": "text"
+        },
+        {
+          "name": "message_type",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "table_name": "asde_model_registry",
+      "estimated_rows": -1,
+      "exact_rows": 1,
+      "columns": [
+        {
+          "name": "provider",
+          "type": "text"
+        },
+        {
+          "name": "model_id",
+          "type": "text"
+        },
+        {
+          "name": "capability_tags",
+          "type": "jsonb"
+        },
+        {
+          "name": "availability",
+          "type": "text"
+        },
+        {
+          "name": "quota_notes",
+          "type": "text"
+        },
+        {
+          "name": "benchmark",
+          "type": "jsonb"
+        },
+        {
+          "name": "updated_at",
+          "type": "timestamp with time zone"
+        }
+      ]
+    },
+    {
+      "table_name": "asde_nist_raw_event_audits",
+      "estimated_rows": -1,
+      "exact_rows": 1,
+      "columns": [
+        {
+          "name": "id",
+          "type": "bigint"
+        },
+        {
+          "name": "run_id",
+          "type": "text"
+        },
+        {
+          "name": "created_at",
+          "type": "timestamp with time zone"
+        },
+        {
+          "name": "report",
+          "type": "jsonb"
+        }
+      ]
+    },
+    {
+      "table_name": "asde_phase3_work_items",
+      "estimated_rows": 10,
+      "exact_rows": 10,
+      "columns": [
+        {
+          "name": "work_item_id",
+          "type": "text"
+        },
+        {
+          "name": "domain_id",
+          "type": "text"
+        },
+        {
+          "name": "title",
+          "type": "text"
+        },
+        {
+          "name": "objective",
+          "type": "text"
+        },
+        {
+          "name": "task_type",
+          "type": "text"
+        },
+        {
+          "name": "required_capabilities",
+          "type": "jsonb"
+        },
+        {
+          "name": "status",
+          "type": "text"
+        },
+        {
+          "name": "priority",
+          "type": "integer"
+        },
+        {
+          "name": "result_refs",
+          "type": "jsonb"
+        },
+        {
+          "name": "created_at",
+          "type": "timestamp with time zone"
+        },
+        {
+          "name": "updated_at",
+          "type": "timestamp with time zone"
+        }
+      ]
+    },
+    {
+      "table_name": "asde_phase4_derivations",
+      "estimated_rows": -1,
+      "exact_rows": 1,
+      "columns": [
+        {
+          "name": "derivation_id",
+          "type": "text"
+        },
+        {
+          "name": "run_id",
+          "type": "text"
+        },
+        {
+          "name": "derivation_name",
+          "type": "text"
+        },
+        {
+          "name": "method",
+          "type": "text"
+        },
+        {
+          "name": "assumptions",
+          "type": "jsonb"
+        },
+        {
+          "name": "symbolic_steps",
+          "type": "jsonb"
+        },
+        {
+          "name": "computational_checks",
+          "type": "jsonb"
+        },
+        {
+          "name": "epistemic_status",
+          "type": "text"
+        },
+        {
+          "name": "created_at",
+          "type": "timestamp with time zone"
+        }
+      ]
+    },
+    {
+      "table_name": "asde_phase4_models",
+      "estimated_rows": -1,
+      "exact_rows": 3,
+      "columns": [
+        {
+          "name": "model_id",
+          "type": "text"
+        },
+        {
+          "name": "run_id",
+          "type": "text"
+        },
+        {
+          "name": "model_name",
+          "type": "text"
+        },
+        {
+          "name": "model_class",
+          "type": "text"
+        },
+        {
+          "name": "definitions",
+          "type": "jsonb"
+        },
+        {
+          "name": "assumptions",
+          "type": "jsonb"
+        },
+        {
+          "name": "status",
+          "type": "text"
+        },
+        {
+          "name": "created_at",
+          "type": "timestamp with time zone"
+        },
+        {
+          "name": "updated_at",
+          "type": "timestamp with time zone"
+        }
+      ]
+    },
+    {
+      "table_name": "asde_phase4_outputs",
+      "estimated_rows": -1,
+      "exact_rows": 7,
+      "columns": [
+        {
+          "name": "output_id",
+          "type": "text"
+        },
+        {
+          "name": "run_id",
+          "type": "text"
+        },
+        {
+          "name": "work_item_id",
+          "type": "text"
+        },
+        {
+          "name": "status",
+          "type": "text"
+        },
+        {
+          "name": "provider",
+          "type": "text"
+        },
+        {
+          "name": "model_id",
+          "type": "text"
+        },
+        {
+          "name": "response_text",
+          "type": "text"
+        },
+        {
+          "name": "computation_json",
+          "type": "jsonb"
+        },
+        {
+          "name": "error_text",
+          "type": "text"
+        },
+        {
+          "name": "created_at",
+          "type": "timestamp with time zone"
+        },
+        {
+          "name": "updated_at",
+          "type": "timestamp with time zone"
+        }
+      ]
+    },
+    {
+      "table_name": "asde_phase4_work_items",
+      "estimated_rows": -1,
+      "exact_rows": 7,
+      "columns": [
+        {
+          "name": "work_item_id",
+          "type": "text"
+        },
+        {
+          "name": "run_id",
+          "type": "text"
+        },
+        {
+          "name": "team_id",
+          "type": "text"
+        },
+        {
+          "name": "title",
+          "type": "text"
+        },
+        {
+          "name": "objective",
+          "type": "text"
+        },
+        {
+          "name": "task_type",
+          "type": "text"
+        },
+        {
+          "name": "status",
+          "type": "text"
+        },
+        {
+          "name": "priority",
+          "type": "integer"
+        },
+        {
+          "name": "created_at",
+          "type": "timestamp with time zone"
+        },
+        {
+          "name": "updated_at",
+          "type": "timestamp with time zone"
+        }
+      ]
+    },
+    {
+      "table_name": "asde_phase53_results",
+      "estimated_rows": -1,
+      "exact_rows": 5,
+      "columns": [
+        {
+          "name": "record_id",
+          "type": "text"
+        },
+        {
+          "name": "run_id",
+          "type": "text"
+        },
+        {
+          "name": "experiment_id",
+          "type": "text"
+        },
+        {
+          "name": "component",
+          "type": "text"
+        },
+        {
+          "name": "status",
+          "type": "text"
+        },
+        {
+          "name": "result",
+          "type": "jsonb"
+        },
+        {
+          "name": "created_at",
+          "type": "timestamp with time zone"
+        },
+        {
+          "name": "updated_at",
+          "type": "timestamp with time zone"
+        }
+      ]
+    },
+    {
+      "table_name": "asde_phase545_55_records",
+      "estimated_rows": -1,
+      "exact_rows": 4,
+      "columns": [
+        {
+          "name": "record_id",
+          "type": "text"
+        },
+        {
+          "name": "run_id",
+          "type": "text"
+        },
+        {
+          "name": "phase_id",
+          "type": "text"
+        },
+        {
+          "name": "component",
+          "type": "text"
+        },
+        {
+          "name": "status",
+          "type": "text"
+        },
+        {
+          "name": "result",
+          "type": "jsonb"
+        },
+        {
+          "name": "created_at",
+          "type": "timestamp with time zone"
+        },
+        {
+          "name": "updated_at",
+          "type": "timestamp with time zone"
+        }
+      ]
+    },
+    {
+      "table_name": "asde_phase54_hall_replication",
+      "estimated_rows": -1,
+      "exact_rows": 6,
+      "columns": [
+        {
+          "name": "record_id",
+          "type": "text"
+        },
+        {
+          "name": "run_id",
+          "type": "text"
+        },
+        {
+          "name": "experiment_id",
+          "type": "text"
+        },
+        {
+          "name": "component",
+          "type": "text"
+        },
+        {
+          "name": "status",
+          "type": "text"
+        },
+        {
+          "name": "result",
+          "type": "jsonb"
+        },
+        {
+          "name": "created_at",
+          "type": "timestamp with time zone"
+        },
+        {
+          "name": "updated_at",
+          "type": "timestamp with time zone"
+        }
+      ]
+    },
+    {
+      "table_name": "asde_phase54_research",
+      "estimated_rows": -1,
+      "exact_rows": 4,
+      "columns": [
+        {
+          "name": "record_id",
+          "type": "text"
+        },
+        {
+          "name": "run_id",
+          "type": "text"
+        },
+        {
+          "name": "experiment_id",
+          "type": "text"
+        },
+        {
+          "name": "component",
+          "type": "text"
+        },
+        {
+          "name": "status",
+          "type": "text"
+        },
+        {
+          "name": "result",
+          "type": "jsonb"
+        },
+        {
+          "name": "created_at",
+          "type": "timestamp with time zone"
+        },
+        {
+          "name": "updated_at",
+          "type": "timestamp with time zone"
+        }
+      ]
+    },
+    {
+      "table_name": "asde_phase556_model_comparisons",
+      "estimated_rows": -1,
+      "exact_rows": 1,
+      "columns": [
+        {
+          "name": "id",
+          "type": "bigint"
+        },
+        {
+          "name": "run_id",
+          "type": "text"
+        },
+        {
+          "name": "created_at",
+          "type": "timestamp with time zone"
+        },
+        {
+          "name": "report",
+          "type": "jsonb"
+        }
+      ]
+    },
+    {
+      "table_name": "asde_phase557_experiment_designs",
+      "estimated_rows": -1,
+      "exact_rows": 1,
+      "columns": [
+        {
+          "name": "id",
+          "type": "bigint"
+        },
+        {
+          "name": "run_id",
+          "type": "text"
+        },
+        {
+          "name": "created_at",
+          "type": "timestamp with time zone"
+        },
+        {
+          "name": "report",
+          "type": "jsonb"
+        }
+      ]
+    },
+    {
+      "table_name": "asde_phase55_analysis_results",
+      "estimated_rows": -1,
+      "exact_rows": 0,
+      "columns": [
+        {
+          "name": "analysis_id",
+          "type": "text"
+        },
+        {
+          "name": "source_id",
+          "type": "text"
+        },
+        {
+          "name": "dataset_file_id",
+          "type": "text"
+        },
+        {
+          "name": "analysis_type",
+          "type": "text"
+        },
+        {
+          "name": "status",
+          "type": "text"
+        },
+        {
+          "name": "result",
+          "type": "jsonb"
+        },
+        {
+          "name": "created_at",
+          "type": "timestamp with time zone"
+        }
+      ]
+    },
+    {
+      "table_name": "asde_phase55_dataset_files",
+      "estimated_rows": -1,
+      "exact_rows": 3,
+      "columns": [
+        {
+          "name": "file_id",
+          "type": "text"
+        },
+        {
+          "name": "source_id",
+          "type": "text"
+        },
+        {
+          "name": "filename",
+          "type": "text"
+        },
+        {
+          "name": "source_url",
+          "type": "text"
+        },
+        {
+          "name": "local_path",
+          "type": "text"
+        },
+        {
+          "name": "file_size",
+          "type": "bigint"
+        },
+        {
+          "name": "sha256",
+          "type": "text"
+        },
+        {
+          "name": "media_type",
+          "type": "text"
+        },
+        {
+          "name": "download_status",
+          "type": "text"
+        },
+        {
+          "name": "metadata",
+          "type": "jsonb"
+        },
+        {
+          "name": "created_at",
+          "type": "timestamp with time zone"
+        }
+      ]
+    },
+    {
+      "table_name": "asde_phase55_final_audit",
+      "estimated_rows": -1,
+      "exact_rows": 1,
+      "columns": [
+        {
+          "name": "id",
+          "type": "bigint"
+        },
+        {
+          "name": "run_id",
+          "type": "text"
+        },
+        {
+          "name": "created_at",
+          "type": "timestamp with time zone"
+        },
+        {
+          "name": "report",
+          "type": "jsonb"
+        }
+      ]
+    },
+    {
+      "table_name": "asde_phase56_hall_cosmology_gate",
+      "estimated_rows": -1,
+      "exact_rows": 1,
+      "columns": [
+        {
+          "name": "id",
+          "type": "bigint"
+        },
+        {
+          "name": "run_id",
+          "type": "text"
+        },
+        {
+          "name": "created_at",
+          "type": "timestamp with time zone"
+        },
+        {
+          "name": "report",
+          "type": "jsonb"
+        }
+      ]
+    },
+    {
+      "table_name": "asde_phase5_audits",
+      "estimated_rows": -1,
+      "exact_rows": 1,
+      "columns": [
+        {
+          "name": "experiment_id",
+          "type": "text"
+        },
+        {
+          "name": "run_id",
+          "type": "text"
+        },
+        {
+          "name": "status",
+          "type": "text"
+        },
+        {
+          "name": "result_json",
+          "type": "jsonb"
+        },
+        {
+          "name": "environment_json",
+          "type": "jsonb"
+        },
+        {
+          "name": "code_hash",
+          "type": "text"
+        },
+        {
+          "name": "created_at",
+          "type": "timestamp with time zone"
+        },
+        {
+          "name": "updated_at",
+          "type": "timestamp with time zone"
+        }
+      ]
+    },
+    {
+      "table_name": "asde_phase5_checks",
+      "estimated_rows": -1,
+      "exact_rows": 26,
+      "columns": [
+        {
+          "name": "check_id",
+          "type": "text"
+        },
+        {
+          "name": "run_id",
+          "type": "text"
+        },
+        {
+          "name": "experiment_id",
+          "type": "text"
+        },
+        {
+          "name": "check_name",
+          "type": "text"
+        },
+        {
+          "name": "passed",
+          "type": "boolean"
+        },
+        {
+          "name": "details",
+          "type": "jsonb"
+        },
+        {
+          "name": "created_at",
+          "type": "timestamp with time zone"
+        },
+        {
+          "name": "details_json",
+          "type": "jsonb"
+        }
+      ]
+    },
+    {
+      "table_name": "asde_phase5_combined_runs",
+      "estimated_rows": -1,
+      "exact_rows": 6,
+      "columns": [
+        {
+          "name": "record_id",
+          "type": "text"
+        },
+        {
+          "name": "run_id",
+          "type": "text"
+        },
+        {
+          "name": "phase",
+          "type": "text"
+        },
+        {
+          "name": "experiment_id",
+          "type": "text"
+        },
+        {
+          "name": "status",
+          "type": "text"
+        },
+        {
+          "name": "results",
+          "type": "jsonb"
+        },
+        {
+          "name": "created_at",
+          "type": "timestamp with time zone"
+        },
+        {
+          "name": "updated_at",
+          "type": "timestamp with time zone"
+        }
+      ]
+    },
+    {
+      "table_name": "asde_phase5_experiments",
+      "estimated_rows": -1,
+      "exact_rows": 2,
+      "columns": [
+        {
+          "name": "experiment_id",
+          "type": "text"
+        },
+        {
+          "name": "run_id",
+          "type": "text"
+        },
+        {
+          "name": "phase",
+          "type": "text"
+        },
+        {
+          "name": "title",
+          "type": "text"
+        },
+        {
+          "name": "status",
+          "type": "text"
+        },
+        {
+          "name": "result_json",
+          "type": "jsonb"
+        },
+        {
+          "name": "code_hash",
+          "type": "text"
+        },
+        {
+          "name": "environment_json",
+          "type": "jsonb"
+        },
+        {
+          "name": "created_at",
+          "type": "timestamp with time zone"
+        },
+        {
+          "name": "updated_at",
+          "type": "timestamp with time zone"
+        }
+      ]
+    },
+    {
+      "table_name": "asde_projects",
+      "estimated_rows": -1,
+      "exact_rows": 3,
+      "columns": [
+        {
+          "name": "project_id",
+          "type": "text"
+        },
+        {
+          "name": "name",
+          "type": "text"
+        },
+        {
+          "name": "description",
+          "type": "text"
+        },
+        {
+          "name": "created_at",
+          "type": "timestamp with time zone"
+        },
+        {
+          "name": "metadata",
+          "type": "jsonb"
+        }
+      ]
+    },
+    {
+      "table_name": "asde_provider_attempts",
+      "estimated_rows": -1,
+      "exact_rows": 9,
+      "columns": [
+        {
+          "name": "attempt_id",
+          "type": "bigint"
+        },
+        {
+          "name": "run_id",
+          "type": "text"
+        },
+        {
+          "name": "output_id",
+          "type": "text"
+        },
+        {
+          "name": "original_provider",
+          "type": "text"
+        },
+        {
+          "name": "original_model_id",
+          "type": "text"
+        },
+        {
+          "name": "actual_provider",
+          "type": "text"
+        },
+        {
+          "name": "actual_model_id",
+          "type": "text"
+        },
+        {
+          "name": "attempt_status",
+          "type": "text"
+        },
+        {
+          "name": "error_text",
+          "type": "text"
+        },
+        {
+          "name": "created_at",
+          "type": "timestamp with time zone"
+        }
+      ]
+    },
+    {
+      "table_name": "asde_repository_registry",
+      "estimated_rows": -1,
+      "exact_rows": 1,
+      "columns": [
+        {
+          "name": "repository_id",
+          "type": "bigint"
+        },
+        {
+          "name": "full_name",
+          "type": "text"
+        },
+        {
+          "name": "purpose",
+          "type": "text"
+        },
+        {
+          "name": "research_project",
+          "type": "text"
+        },
+        {
+          "name": "privacy",
+          "type": "text"
+        },
+        {
+          "name": "created_by",
+          "type": "text"
+        },
+        {
+          "name": "metadata",
+          "type": "jsonb"
+        },
+        {
+          "name": "created_at",
+          "type": "timestamp with time zone"
+        }
+      ]
+    },
+    {
+      "table_name": "asde_research_stage_outputs",
+      "estimated_rows": -1,
+      "exact_rows": 8,
+      "columns": [
+        {
+          "name": "stage_output_id",
+          "type": "bigint"
+        },
+        {
+          "name": "run_id",
+          "type": "text"
+        },
+        {
+          "name": "stage_key",
+          "type": "text"
+        },
+        {
+          "name": "team_id",
+          "type": "text"
+        },
+        {
+          "name": "provider",
+          "type": "text"
+        },
+        {
+          "name": "model_id",
+          "type": "text"
+        },
+        {
+          "name": "input_output_ids",
+          "type": "jsonb"
+        },
+        {
+          "name": "status",
+          "type": "text"
+        },
+        {
+          "name": "response_text",
+          "type": "text"
+        },
+        {
+          "name": "error_text",
+          "type": "text"
+        },
+        {
+          "name": "created_at",
+          "type": "timestamp with time zone"
+        },
+        {
+          "name": "updated_at",
+          "type": "timestamp with time zone"
+        }
+      ]
+    },
+    {
+      "table_name": "asde_resource_usage",
+      "estimated_rows": 175,
+      "exact_rows": 185,
+      "columns": [
+        {
+          "name": "usage_id",
+          "type": "text"
+        },
+        {
+          "name": "run_id",
+          "type": "text"
+        },
+        {
+          "name": "task_id",
+          "type": "text"
+        },
+        {
+          "name": "attempt_id",
+          "type": "text"
+        },
+        {
+          "name": "agent_id",
+          "type": "text"
+        },
+        {
+          "name": "provider",
+          "type": "text"
+        },
+        {
+          "name": "model_id",
+          "type": "text"
+        },
+        {
+          "name": "input_tokens",
+          "type": "bigint"
+        },
+        {
+          "name": "output_tokens",
+          "type": "bigint"
+        },
+        {
+          "name": "latency_ms",
+          "type": "bigint"
+        },
+        {
+          "name": "request_status",
+          "type": "text"
+        },
+        {
+          "name": "created_at",
+          "type": "timestamp with time zone"
+        },
+        {
+          "name": "metadata",
+          "type": "jsonb"
+        }
+      ]
+    },
+    {
+      "table_name": "asde_runs",
+      "estimated_rows": -1,
+      "exact_rows": 12,
+      "columns": [
+        {
+          "name": "run_id",
+          "type": "text"
+        },
+        {
+          "name": "project_id",
+          "type": "text"
+        },
+        {
+          "name": "mission",
+          "type": "text"
+        },
+        {
+          "name": "status",
+          "type": "text"
+        },
+        {
+          "name": "created_at",
+          "type": "timestamp with time zone"
+        },
+        {
+          "name": "updated_at",
+          "type": "timestamp with time zone"
+        },
+        {
+          "name": "metadata",
+          "type": "jsonb"
+        }
+      ]
+    },
+    {
+      "table_name": "asde_schema_version",
+      "estimated_rows": -1,
+      "exact_rows": 1,
+      "columns": [
+        {
+          "name": "version",
+          "type": "text"
+        },
+        {
+          "name": "applied_at",
+          "type": "timestamp with time zone"
+        }
+      ]
+    },
+    {
+      "table_name": "asde_scientific_runs",
+      "estimated_rows": -1,
+      "exact_rows": 0,
+      "columns": [
+        {
+          "name": "experiment_id",
+          "type": "text"
+        },
+        {
+          "name": "run_id",
+          "type": "text"
+        },
+        {
+          "name": "domain_id",
+          "type": "text"
+        },
+        {
+          "name": "hypothesis",
+          "type": "text"
+        },
+        {
+          "name": "method",
+          "type": "text"
+        },
+        {
+          "name": "parameters",
+          "type": "jsonb"
+        },
+        {
+          "name": "code_artifact_ref",
+          "type": "text"
+        },
+        {
+          "name": "result_artifact_ref",
+          "type": "text"
+        },
+        {
+          "name": "environment",
+          "type": "jsonb"
+        },
+        {
+          "name": "status",
+          "type": "text"
+        },
+        {
+          "name": "uncertainty",
+          "type": "jsonb"
+        },
+        {
+          "name": "created_at",
+          "type": "timestamp with time zone"
+        },
+        {
+          "name": "updated_at",
+          "type": "timestamp with time zone"
+        }
+      ]
+    },
+    {
+      "table_name": "asde_task_dependencies",
+      "estimated_rows": -1,
+      "exact_rows": 15,
+      "columns": [
+        {
+          "name": "run_id",
+          "type": "text"
+        },
+        {
+          "name": "task_id",
+          "type": "text"
+        },
+        {
+          "name": "depends_on_task_id",
+          "type": "text"
+        },
+        {
+          "name": "dependency_type",
+          "type": "text"
+        },
+        {
+          "name": "created_at",
+          "type": "timestamp with time zone"
+        }
+      ]
+    },
+    {
+      "table_name": "asde_tasks",
+      "estimated_rows": 152,
+      "exact_rows": 157,
+      "columns": [
+        {
+          "name": "task_id",
+          "type": "text"
+        },
+        {
+          "name": "parent_task_id",
+          "type": "text"
+        },
+        {
+          "name": "team_id",
+          "type": "text"
+        },
+        {
+          "name": "title",
+          "type": "text"
+        },
+        {
+          "name": "description",
+          "type": "text"
+        },
+        {
+          "name": "task_type",
+          "type": "text"
+        },
+        {
+          "name": "status",
+          "type": "text"
+        },
+        {
+          "name": "priority",
+          "type": "integer"
+        },
+        {
+          "name": "input_refs",
+          "type": "jsonb"
+        },
+        {
+          "name": "output_refs",
+          "type": "jsonb"
+        },
+        {
+          "name": "created_at",
+          "type": "timestamp with time zone"
+        },
+        {
+          "name": "updated_at",
+          "type": "timestamp with time zone"
+        },
+        {
+          "name": "run_id",
+          "type": "text"
+        },
+        {
+          "name": "assigned_agent_id",
+          "type": "text"
+        },
+        {
+          "name": "attempt_count",
+          "type": "integer"
+        },
+        {
+          "name": "started_at",
+          "type": "timestamp with time zone"
+        },
+        {
+          "name": "completed_at",
+          "type": "timestamp with time zone"
+        },
+        {
+          "name": "worker_id",
+          "type": "text"
+        },
+        {
+          "name": "lease_expires_at",
+          "type": "timestamp with time zone"
+        },
+        {
+          "name": "heartbeat_at",
+          "type": "timestamp with time zone"
+        },
+        {
+          "name": "max_attempts",
+          "type": "integer"
+        },
+        {
+          "name": "next_retry_at",
+          "type": "timestamp with time zone"
+        },
+        {
+          "name": "last_error",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "table_name": "asde_teams",
+      "estimated_rows": -1,
+      "exact_rows": 13,
+      "columns": [
+        {
+          "name": "team_id",
+          "type": "text"
+        },
+        {
+          "name": "name",
+          "type": "text"
+        },
+        {
+          "name": "domain",
+          "type": "text"
+        },
+        {
+          "name": "mandate",
+          "type": "text"
+        },
+        {
+          "name": "status",
+          "type": "text"
+        },
+        {
+          "name": "config",
+          "type": "jsonb"
+        },
+        {
+          "name": "created_at",
+          "type": "timestamp with time zone"
+        },
+        {
+          "name": "updated_at",
+          "type": "timestamp with time zone"
+        }
+      ]
+    },
+    {
+      "table_name": "asde_valentini_branch_registry",
+      "estimated_rows": -1,
+      "exact_rows": 1,
+      "columns": [
+        {
+          "name": "id",
+          "type": "bigint"
+        },
+        {
+          "name": "run_id",
+          "type": "text"
+        },
+        {
+          "name": "branch_name",
+          "type": "text"
+        },
+        {
+          "name": "created_at",
+          "type": "timestamp with time zone"
+        },
+        {
+          "name": "report",
+          "type": "jsonb"
+        }
+      ]
+    },
+    {
+      "table_name": "asde_verifications",
+      "estimated_rows": -1,
+      "exact_rows": 0,
+      "columns": [
+        {
+          "name": "verification_id",
+          "type": "text"
+        },
+        {
+          "name": "claim_id",
+          "type": "text"
+        },
+        {
+          "name": "verifier_agent_id",
+          "type": "text"
+        },
+        {
+          "name": "method",
+          "type": "text"
+        },
+        {
+          "name": "outcome",
+          "type": "text"
+        },
+        {
+          "name": "details",
+          "type": "jsonb"
+        },
+        {
+          "name": "created_at",
+          "type": "timestamp with time zone"
+        }
+      ]
+    },
+    {
+      "table_name": "asde_worker_registry",
+      "estimated_rows": 48,
+      "exact_rows": 49,
+      "columns": [
+        {
+          "name": "worker_id",
+          "type": "text"
+        },
+        {
+          "name": "runtime_id",
+          "type": "text"
+        },
+        {
+          "name": "status",
+          "type": "text"
+        },
+        {
+          "name": "max_concurrency",
+          "type": "integer"
+        },
+        {
+          "name": "active_tasks",
+          "type": "integer"
+        },
+        {
+          "name": "heartbeat_at",
+          "type": "timestamp with time zone"
+        },
+        {
+          "name": "started_at",
+          "type": "timestamp with time zone"
+        },
+        {
+          "name": "stopped_at",
+          "type": "timestamp with time zone"
+        },
+        {
+          "name": "metadata",
+          "type": "jsonb"
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "research_tables": [
+    {
+      "table_name": "asde_agent_outputs",
+      "estimated_rows": -1,
+      "exact_rows": 18,
+      "columns": [
+        {
+          "name": "output_id",
+          "type": "text"
+        },
+        {
+          "name": "run_id",
+          "type": "text"
+        },
+        {
+          "name": "task_id",
+          "type": "text"
+        },
+        {
+          "name": "agent_id",
+          "type": "text"
+        },
+        {
+          "name": "team_id",
+          "type": "text"
+        },
+        {
+          "name": "role",
+          "type": "text"
+        },
+        {
+          "name": "provider",
+          "type": "text"
+        },
+        {
+          "name": "model_id",
+          "type": "text"
+        },
+        {
+          "name": "status",
+          "type": "text"
+        },
+        {
+          "name": "response_text",
+          "type": "text"
+        },
+        {
+          "name": "error_text",
+          "type": "text"
+        },
+        {
+          "name": "created_at",
+          "type": "timestamp with time zone"
+        }
+      ]
+    },
+    {
+      "table_name": "asde_artifacts",
+      "estimated_rows": -1,
+      "exact_rows": 11,
+      "columns": [
+        {
+          "name": "artifact_id",
+          "type": "text"
+        },
+        {
+          "name": "run_id",
+          "type": "text"
+        },
+        {
+          "name": "artifact_type",
+          "type": "text"
+        },
+        {
+          "name": "uri",
+          "type": "text"
+        },
+        {
+          "name": "sha256",
+          "type": "text"
+        },
+        {
+          "name": "created_at",
+          "type": "timestamp with time zone"
+        },
+        {
+          "name": "metadata",
+          "type": "jsonb"
+        }
+      ]
+    },
+    {
+      "table_name": "asde_claims",
+      "estimated_rows": -1,
+      "exact_rows": 6,
+      "columns": [
+        {
+          "name": "claim_id",
+          "type": "text"
+        },
+        {
+          "name": "hypothesis_id",
+          "type": "text"
+        },
+        {
+          "name": "statement",
+          "type": "text"
+        },
+        {
+          "name": "claim_type",
+          "type": "text"
+        },
+        {
+          "name": "epistemic_status",
+          "type": "text"
+        },
+        {
+          "name": "assumptions",
+          "type": "jsonb"
+        },
+        {
+          "name": "evidence_refs",
+          "type": "jsonb"
+        },
+        {
+          "name": "counterevidence_refs",
+          "type": "jsonb"
+        },
+        {
+          "name": "confidence",
+          "type": "numeric"
+        },
+        {
+          "name": "created_at",
+          "type": "timestamp with time zone"
+        }
+      ]
+    },
+    {
+      "table_name": "asde_domain_research_outputs",
+      "estimated_rows": -1,
+      "exact_rows": 10,
+      "columns": [
+        {
+          "name": "output_id",
+          "type": "text"
+        },
+        {
+          "name": "run_id",
+          "type": "text"
+        },
+        {
+          "name": "work_item_id",
+          "type": "text"
+        },
+        {
+          "name": "domain_id",
+          "type": "text"
+        },
+        {
+          "name": "provider",
+          "type": "text"
+        },
+        {
+          "name": "model_id",
+          "type": "text"
+        },
+        {
+          "name": "status",
+          "type": "text"
+        },
+        {
+          "name": "source_ids",
+          "type": "jsonb"
+        },
+        {
+          "name": "response_text",
+          "type": "text"
+        },
+        {
+          "name": "error_text",
+          "type": "text"
+        },
+        {
+          "name": "created_at",
+          "type": "timestamp with time zone"
+        },
+        {
+          "name": "updated_at",
+          "type": "timestamp with time zone"
+        }
+      ]
+    },
+    {
+      "table_name": "asde_events",
+      "estimated_rows": 51,
+      "exact_rows": 56,
+      "columns": [
+        {
+          "name": "event_id",
+          "type": "bigint"
+        },
+        {
+          "name": "run_id",
+          "type": "text"
+        },
+        {
+          "name": "event_type",
+          "type": "text"
+        },
+        {
+          "name": "payload",
+          "type": "jsonb"
+        },
+        {
+          "name": "created_at",
+          "type": "timestamp with time zone"
+        }
+      ]
+    },
+    {
+      "table_name": "asde_experiments",
+      "estimated_rows": -1,
+      "exact_rows": 0,
+      "columns": [
+        {
+          "name": "experiment_id",
+          "type": "text"
+        },
+        {
+          "name": "task_id",
+          "type": "text"
+        },
+        {
+          "name": "title",
+          "type": "text"
+        },
+        {
+          "name": "method",
+          "type": "text"
+        },
+        {
+          "name": "parameters",
+          "type": "jsonb"
+        },
+        {
+          "name": "code_ref",
+          "type": "text"
+        },
+        {
+          "name": "data_ref",
+          "type": "text"
+        },
+        {
+          "name": "result_ref",
+          "type": "text"
+        },
+        {
+          "name": "status",
+          "type": "text"
+        },
+        {
+          "name": "reproducibility",
+          "type": "jsonb"
+        },
+        {
+          "name": "created_at",
+          "type": "timestamp with time zone"
+        }
+      ]
+    },
+    {
+      "table_name": "asde_messages",
+      "estimated_rows": 220,
+      "exact_rows": 229,
+      "columns": [
+        {
+          "name": "message_id",
+          "type": "text"
+        },
+        {
+          "name": "run_id",
+          "type": "text"
+        },
+        {
+          "name": "sender_agent_id",
+          "type": "text"
+        },
+        {
+          "name": "recipient_agent_id",
+          "type": "text"
+        },
+        {
+          "name": "topic",
+          "type": "text"
+        },
+        {
+          "name": "payload",
+          "type": "jsonb"
+        },
+        {
+          "name": "created_at",
+          "type": "timestamp with time zone"
+        },
+        {
+          "name": "task_id",
+          "type": "text"
+        },
+        {
+          "name": "thread_id",
+          "type": "text"
+        },
+        {
+          "name": "round_number",
+          "type": "integer"
+        },
+        {
+          "name": "reply_to_message_id",
+          "type": "text"
+        },
+        {
+          "name": "message_type",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "table_name": "asde_model_registry",
+      "estimated_rows": -1,
+      "exact_rows": 1,
+      "columns": [
+        {
+          "name": "provider",
+          "type": "text"
+        },
+        {
+          "name": "model_id",
+          "type": "text"
+        },
+        {
+          "name": "capability_tags",
+          "type": "jsonb"
+        },
+        {
+          "name": "availability",
+          "type": "text"
+        },
+        {
+          "name": "quota_notes",
+          "type": "text"
+        },
+        {
+          "name": "benchmark",
+          "type": "jsonb"
+        },
+        {
+          "name": "updated_at",
+          "type": "timestamp with time zone"
+        }
+      ]
+    },
+    {
+      "table_name": "asde_nist_raw_event_audits",
+      "estimated_rows": -1,
+      "exact_rows": 1,
+      "columns": [
+        {
+          "name": "id",
+          "type": "bigint"
+        },
+        {
+          "name": "run_id",
+          "type": "text"
+        },
+        {
+          "name": "created_at",
+          "type": "timestamp with time zone"
+        },
+        {
+          "name": "report",
+          "type": "jsonb"
+        }
+      ]
+    },
+    {
+      "table_name": "asde_phase3_work_items",
+      "estimated_rows": 10,
+      "exact_rows": 10,
+      "columns": [
+        {
+          "name": "work_item_id",
+          "type": "text"
+        },
+        {
+          "name": "domain_id",
+          "type": "text"
+        },
+        {
+          "name": "title",
+          "type": "text"
+        },
+        {
+          "name": "objective",
+          "type": "text"
+        },
+        {
+          "name": "task_type",
+          "type": "text"
+        },
+        {
+          "name": "required_capabilities",
+          "type": "jsonb"
+        },
+        {
+          "name": "status",
+          "type": "text"
+        },
+        {
+          "name": "priority",
+          "type": "integer"
+        },
+        {
+          "name": "result_refs",
+          "type": "jsonb"
+        },
+        {
+          "name": "created_at",
+          "type": "timestamp with time zone"
+        },
+        {
+          "name": "updated_at",
+          "type": "timestamp with time zone"
+        }
+      ]
+    },
+    {
+      "table_name": "asde_phase4_derivations",
+      "estimated_rows": -1,
+      "exact_rows": 1,
+      "columns": [
+        {
+          "name": "derivation_id",
+          "type": "text"
+        },
+        {
+          "name": "run_id",
+          "type": "text"
+        },
+        {
+          "name": "derivation_name",
+          "type": "text"
+        },
+        {
+          "name": "method",
+          "type": "text"
+        },
+        {
+          "name": "assumptions",
+          "type": "jsonb"
+        },
+        {
+          "name": "symbolic_steps",
+          "type": "jsonb"
+        },
+        {
+          "name": "computational_checks",
+          "type": "jsonb"
+        },
+        {
+          "name": "epistemic_status",
+          "type": "text"
+        },
+        {
+          "name": "created_at",
+          "type": "timestamp with time zone"
+        }
+      ]
+    },
+    {
+      "table_name": "asde_phase4_models",
+      "estimated_rows": -1,
+      "exact_rows": 3,
+      "columns": [
+        {
+          "name": "model_id",
+          "type": "text"
+        },
+        {
+          "name": "run_id",
+          "type": "text"
+        },
+        {
+          "name": "model_name",
+          "type": "text"
+        },
+        {
+          "name": "model_class",
+          "type": "text"
+        },
+        {
+          "name": "definitions",
+          "type": "jsonb"
+        },
+        {
+          "name": "assumptions",
+          "type": "jsonb"
+        },
+        {
+          "name": "status",
+          "type": "text"
+        },
+        {
+          "name": "created_at",
+          "type": "timestamp with time zone"
+        },
+        {
+          "name": "updated_at",
+          "type": "timestamp with time zone"
+        }
+      ]
+    },
+    {
+      "table_name": "asde_phase4_outputs",
+      "estimated_rows": -1,
+      "exact_rows": 7,
+      "columns": [
+        {
+          "name": "output_id",
+          "type": "text"
+        },
+        {
+          "name": "run_id",
+          "type": "text"
+        },
+        {
+          "name": "work_item_id",
+          "type": "text"
+        },
+        {
+          "name": "status",
+          "type": "text"
+        },
+        {
+          "name": "provider",
+          "type": "text"
+        },
+        {
+          "name": "model_id",
+          "type": "text"
+        },
+        {
+          "name": "response_text",
+          "type": "text"
+        },
+        {
+          "name": "computation_json",
+          "type": "jsonb"
+        },
+        {
+          "name": "error_text",
+          "type": "text"
+        },
+        {
+          "name": "created_at",
+          "type": "timestamp with time zone"
+        },
+        {
+          "name": "updated_at",
+          "type": "timestamp with time zone"
+        }
+      ]
+    },
+    {
+      "table_name": "asde_phase4_work_items",
+      "estimated_rows": -1,
+      "exact_rows": 7,
+      "columns": [
+        {
+          "name": "work_item_id",
+          "type": "text"
+        },
+        {
+          "name": "run_id",
+          "type": "text"
+        },
+        {
+          "name": "team_id",
+          "type": "text"
+        },
+        {
+          "name": "title",
+          "type": "text"
+        },
+        {
+          "name": "objective",
+          "type": "text"
+        },
+        {
+          "name": "task_type",
+          "type": "text"
+        },
+        {
+          "name": "status",
+          "type": "text"
+        },
+        {
+          "name": "priority",
+          "type": "integer"
+        },
+        {
+          "name": "created_at",
+          "type": "timestamp with time zone"
+        },
+        {
+          "name": "updated_at",
+          "type": "timestamp with time zone"
+        }
+      ]
+    },
+    {
+      "table_name": "asde_phase53_results",
+      "estimated_rows": -1,
+      "exact_rows": 5,
+      "columns": [
+        {
+          "name": "record_id",
+          "type": "text"
+        },
+        {
+          "name": "run_id",
+          "type": "text"
+        },
+        {
+          "name": "experiment_id",
+          "type": "text"
+        },
+        {
+          "name": "component",
+          "type": "text"
+        },
+        {
+          "name": "status",
+          "type": "text"
+        },
+        {
+          "name": "result",
+          "type": "jsonb"
+        },
+        {
+          "name": "created_at",
+          "type": "timestamp with time zone"
+        },
+        {
+          "name": "updated_at",
+          "type": "timestamp with time zone"
+        }
+      ]
+    },
+    {
+      "table_name": "asde_phase545_55_records",
+      "estimated_rows": -1,
+      "exact_rows": 4,
+      "columns": [
+        {
+          "name": "record_id",
+          "type": "text"
+        },
+        {
+          "name": "run_id",
+          "type": "text"
+        },
+        {
+          "name": "phase_id",
+          "type": "text"
+        },
+        {
+          "name": "component",
+          "type": "text"
+        },
+        {
+          "name": "status",
+          "type": "text"
+        },
+        {
+          "name": "result",
+          "type": "jsonb"
+        },
+        {
+          "name": "created_at",
+          "type": "timestamp with time zone"
+        },
+        {
+          "name": "updated_at",
+          "type": "timestamp with time zone"
+        }
+      ]
+    },
+    {
+      "table_name": "asde_phase54_hall_replication",
+      "estimated_rows": -1,
+      "exact_rows": 6,
+      "columns": [
+        {
+          "name": "record_id",
+          "type": "text"
+        },
+        {
+          "name": "run_id",
+          "type": "text"
+        },
+        {
+          "name": "experiment_id",
+          "type": "text"
+        },
+        {
+          "name": "component",
+          "type": "text"
+        },
+        {
+          "name": "status",
+          "type": "text"
+        },
+        {
+          "name": "result",
+          "type": "jsonb"
+        },
+        {
+          "name": "created_at",
+          "type": "timestamp with time zone"
+        },
+        {
+          "name": "updated_at",
+          "type": "timestamp with time zone"
+        }
+      ]
+    },
+    {
+      "table_name": "asde_phase54_research",
+      "estimated_rows": -1,
+      "exact_rows": 4,
+      "columns": [
+        {
+          "name": "record_id",
+          "type": "text"
+        },
+        {
+          "name": "run_id",
+          "type": "text"
+        },
+        {
+          "name": "experiment_id",
+          "type": "text"
+        },
+        {
+          "name": "component",
+          "type": "text"
+        },
+        {
+          "name": "status",
+          "type": "text"
+        },
+        {
+          "name": "result",
+          "type": "jsonb"
+        },
+        {
+          "name": "created_at",
+          "type": "timestamp with time zone"
+        },
+        {
+          "name": "updated_at",
+          "type": "timestamp with time zone"
+        }
+      ]
+    },
+    {
+      "table_name": "asde_phase556_model_comparisons",
+      "estimated_rows": -1,
+      "exact_rows": 1,
+      "columns": [
+        {
+          "name": "id",
+          "type": "bigint"
+        },
+        {
+          "name": "run_id",
+          "type": "text"
+        },
+        {
+          "name": "created_at",
+          "type": "timestamp with time zone"
+        },
+        {
+          "name": "report",
+          "type": "jsonb"
+        }
+      ]
+    },
+    {
+      "table_name": "asde_phase557_experiment_designs",
+      "estimated_rows": -1,
+      "exact_rows": 1,
+      "columns": [
+        {
+          "name": "id",
+          "type": "bigint"
+        },
+        {
+          "name": "run_id",
+          "type": "text"
+        },
+        {
+          "name": "created_at",
+          "type": "timestamp with time zone"
+        },
+        {
+          "name": "report",
+          "type": "jsonb"
+        }
+      ]
+    },
+    {
+      "table_name": "asde_phase55_analysis_results",
+      "estimated_rows": -1,
+      "exact_rows": 0,
+      "columns": [
+        {
+          "name": "analysis_id",
+          "type": "text"
+        },
+        {
+          "name": "source_id",
+          "type": "text"
+        },
+        {
+          "name": "dataset_file_id",
+          "type": "text"
+        },
+        {
+          "name": "analysis_type",
+          "type": "text"
+        },
+        {
+          "name": "status",
+          "type": "text"
+        },
+        {
+          "name": "result",
+          "type": "jsonb"
+        },
+        {
+          "name": "created_at",
+          "type": "timestamp with time zone"
+        }
+      ]
+    },
+    {
+      "table_name": "asde_phase55_dataset_files",
+      "estimated_rows": -1,
+      "exact_rows": 3,
+      "columns": [
+        {
+          "name": "file_id",
+          "type": "text"
+        },
+        {
+          "name": "source_id",
+          "type": "text"
+        },
+        {
+          "name": "filename",
+          "type": "text"
+        },
+        {
+          "name": "source_url",
+          "type": "text"
+        },
+        {
+          "name": "local_path",
+          "type": "text"
+        },
+        {
+          "name": "file_size",
+          "type": "bigint"
+        },
+        {
+          "name": "sha256",
+          "type": "text"
+        },
+        {
+          "name": "media_type",
+          "type": "text"
+        },
+        {
+          "name": "download_status",
+          "type": "text"
+        },
+        {
+          "name": "metadata",
+          "type": "jsonb"
+        },
+        {
+          "name": "created_at",
+          "type": "timestamp with time zone"
+        }
+      ]
+    },
+    {
+      "table_name": "asde_phase55_final_audit",
+      "estimated_rows": -1,
+      "exact_rows": 1,
+      "columns": [
+        {
+          "name": "id",
+          "type": "bigint"
+        },
+        {
+          "name": "run_id",
+          "type": "text"
+        },
+        {
+          "name": "created_at",
+          "type": "timestamp with time zone"
+        },
+        {
+          "name": "report",
+          "type": "jsonb"
+        }
+      ]
+    },
+    {
+      "table_name": "asde_phase56_hall_cosmology_gate",
+      "estimated_rows": -1,
+      "exact_rows": 1,
+      "columns": [
+        {
+          "name": "id",
+          "type": "bigint"
+        },
+        {
+          "name": "run_id",
+          "type": "text"
+        },
+        {
+          "name": "created_at",
+          "type": "timestamp with time zone"
+        },
+        {
+          "name": "report",
+          "type": "jsonb"
+        }
+      ]
+    },
+    {
+      "table_name": "asde_phase5_audits",
+      "estimated_rows": -1,
+      "exact_rows": 1,
+      "columns": [
+        {
+          "name": "experiment_id",
+          "type": "text"
+        },
+        {
+          "name": "run_id",
+          "type": "text"
+        },
+        {
+          "name": "status",
+          "type": "text"
+        },
+        {
+          "name": "result_json",
+          "type": "jsonb"
+        },
+        {
+          "name": "environment_json",
+          "type": "jsonb"
+        },
+        {
+          "name": "code_hash",
+          "type": "text"
+        },
+        {
+          "name": "created_at",
+          "type": "timestamp with time zone"
+        },
+        {
+          "name": "updated_at",
+          "type": "timestamp with time zone"
+        }
+      ]
+    },
+    {
+      "table_name": "asde_phase5_checks",
+      "estimated_rows": -1,
+      "exact_rows": 26,
+      "columns": [
+        {
+          "name": "check_id",
+          "type": "text"
+        },
+        {
+          "name": "run_id",
+          "type": "text"
+        },
+        {
+          "name": "experiment_id",
+          "type": "text"
+        },
+        {
+          "name": "check_name",
+          "type": "text"
+        },
+        {
+          "name": "passed",
+          "type": "boolean"
+        },
+        {
+          "name": "details",
+          "type": "jsonb"
+        },
+        {
+          "name": "created_at",
+          "type": "timestamp with time zone"
+        },
+        {
+          "name": "details_json",
+          "type": "jsonb"
+        }
+      ]
+    },
+    {
+      "table_name": "asde_phase5_combined_runs",
+      "estimated_rows": -1,
+      "exact_rows": 6,
+      "columns": [
+        {
+          "name": "record_id",
+          "type": "text"
+        },
+        {
+          "name": "run_id",
+          "type": "text"
+        },
+        {
+          "name": "phase",
+          "type": "text"
+        },
+        {
+          "name": "experiment_id",
+          "type": "text"
+        },
+        {
+          "name": "status",
+          "type": "text"
+        },
+        {
+          "name": "results",
+          "type": "jsonb"
+        },
+        {
+          "name": "created_at",
+          "type": "timestamp with time zone"
+        },
+        {
+          "name": "updated_at",
+          "type": "timestamp with time zone"
+        }
+      ]
+    },
+    {
+      "table_name": "asde_phase5_experiments",
+      "estimated_rows": -1,
+      "exact_rows": 2,
+      "columns": [
+        {
+          "name": "experiment_id",
+          "type": "text"
+        },
+        {
+          "name": "run_id",
+          "type": "text"
+        },
+        {
+          "name": "phase",
+          "type": "text"
+        },
+        {
+          "name": "title",
+          "type": "text"
+        },
+        {
+          "name": "status",
+          "type": "text"
+        },
+        {
+          "name": "result_json",
+          "type": "jsonb"
+        },
+        {
+          "name": "code_hash",
+          "type": "text"
+        },
+        {
+          "name": "environment_json",
+          "type": "jsonb"
+        },
+        {
+          "name": "created_at",
+          "type": "timestamp with time zone"
+        },
+        {
+          "name": "updated_at",
+          "type": "timestamp with time zone"
+        }
+      ]
+    },
+    {
+      "table_name": "asde_research_stage_outputs",
+      "estimated_rows": -1,
+      "exact_rows": 8,
+      "columns": [
+        {
+          "name": "stage_output_id",
+          "type": "bigint"
+        },
+        {
+          "name": "run_id",
+          "type": "text"
+        },
+        {
+          "name": "stage_key",
+          "type": "text"
+        },
+        {
+          "name": "team_id",
+          "type": "text"
+        },
+        {
+          "name": "provider",
+          "type": "text"
+        },
+        {
+          "name": "model_id",
+          "type": "text"
+        },
+        {
+          "name": "input_output_ids",
+          "type": "jsonb"
+        },
+        {
+          "name": "status",
+          "type": "text"
+        },
+        {
+          "name": "response_text",
+          "type": "text"
+        },
+        {
+          "name": "error_text",
+          "type": "text"
+        },
+        {
+          "name": "created_at",
+          "type": "timestamp with time zone"
+        },
+        {
+          "name": "updated_at",
+          "type": "timestamp with time zone"
+        }
+      ]
+    },
+    {
+      "table_name": "asde_runs",
+      "estimated_rows": -1,
+      "exact_rows": 12,
+      "columns": [
+        {
+          "name": "run_id",
+          "type": "text"
+        },
+        {
+          "name": "project_id",
+          "type": "text"
+        },
+        {
+          "name": "mission",
+          "type": "text"
+        },
+        {
+          "name": "status",
+          "type": "text"
+        },
+        {
+          "name": "created_at",
+          "type": "timestamp with time zone"
+        },
+        {
+          "name": "updated_at",
+          "type": "timestamp with time zone"
+        },
+        {
+          "name": "metadata",
+          "type": "jsonb"
+        }
+      ]
+    },
+    {
+      "table_name": "asde_scientific_runs",
+      "estimated_rows": -1,
+      "exact_rows": 0,
+      "columns": [
+        {
+          "name": "experiment_id",
+          "type": "text"
+        },
+        {
+          "name": "run_id",
+          "type": "text"
+        },
+        {
+          "name": "domain_id",
+          "type": "text"
+        },
+        {
+          "name": "hypothesis",
+          "type": "text"
+        },
+        {
+          "name": "method",
+          "type": "text"
+        },
+        {
+          "name": "parameters",
+          "type": "jsonb"
+        },
+        {
+          "name": "code_artifact_ref",
+          "type": "text"
+        },
+        {
+          "name": "result_artifact_ref",
+          "type": "text"
+        },
+        {
+          "name": "environment",
+          "type": "jsonb"
+        },
+        {
+          "name": "status",
+          "type": "text"
+        },
+        {
+          "name": "uncertainty",
+          "type": "jsonb"
+        },
+        {
+          "name": "created_at",
+          "type": "timestamp with time zone"
+        },
+        {
+          "name": "updated_at",
+          "type": "timestamp with time zone"
+        }
+      ]
+    },
+    {
+      "table_name": "asde_task_dependencies",
+      "estimated_rows": -1,
+      "exact_rows": 15,
+      "columns": [
+        {
+          "name": "run_id",
+          "type": "text"
+        },
+        {
+          "name": "task_id",
+          "type": "text"
+        },
+        {
+          "name": "depends_on_task_id",
+          "type": "text"
+        },
+        {
+          "name": "dependency_type",
+          "type": "text"
+        },
+        {
+          "name": "created_at",
+          "type": "timestamp with time zone"
+        }
+      ]
+    },
+    {
+      "table_name": "asde_tasks",
+      "estimated_rows": 152,
+      "exact_rows": 157,
+      "columns": [
+        {
+          "name": "task_id",
+          "type": "text"
+        },
+        {
+          "name": "parent_task_id",
+          "type": "text"
+        },
+        {
+          "name": "team_id",
+          "type": "text"
+        },
+        {
+          "name": "title",
+          "type": "text"
+        },
+        {
+          "name": "description",
+          "type": "text"
+        },
+        {
+          "name": "task_type",
+          "type": "text"
+        },
+        {
+          "name": "status",
+          "type": "text"
+        },
+        {
+          "name": "priority",
+          "type": "integer"
+        },
+        {
+          "name": "input_refs",
+          "type": "jsonb"
+        },
+        {
+          "name": "output_refs",
+          "type": "jsonb"
+        },
+        {
+          "name": "created_at",
+          "type": "timestamp with time zone"
+        },
+        {
+          "name": "updated_at",
+          "type": "timestamp with time zone"
+        },
+        {
+          "name": "run_id",
+          "type": "text"
+        },
+        {
+          "name": "assigned_agent_id",
+          "type": "text"
+        },
+        {
+          "name": "attempt_count",
+          "type": "integer"
+        },
+        {
+          "name": "started_at",
+          "type": "timestamp with time zone"
+        },
+        {
+          "name": "completed_at",
+          "type": "timestamp with time zone"
+        },
+        {
+          "name": "worker_id",
+          "type": "text"
+        },
+        {
+          "name": "lease_expires_at",
+          "type": "timestamp with time zone"
+        },
+        {
+          "name": "heartbeat_at",
+          "type": "timestamp with time zone"
+        },
+        {
+          "name": "max_attempts",
+          "type": "integer"
+        },
+        {
+          "name": "next_retry_at",
+          "type": "timestamp with time zone"
+        },
+        {
+          "name": "last_error",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "table_name": "asde_valentini_branch_registry",
+      "estimated_rows": -1,
+      "exact_rows": 1,
+      "columns": [
+        {
+          "name": "id",
+          "type": "bigint"
+        },
+        {
+          "name": "run_id",
+          "type": "text"
+        },
+        {
+          "name": "branch_name",
+          "type": "text"
+        },
+        {
+          "name": "created_at",
+          "type": "timestamp with time zone"
+        },
+        {
+          "name": "report",
+          "type": "jsonb"
+        }
+      ]
+    },
+    {
+      "table_name": "asde_verifications",
+      "estimated_rows": -1,
+      "exact_rows": 0,
+      "columns": [
+        {
+          "name": "verification_id",
+          "type": "text"
+        },
+        {
+          "name": "claim_id",
+          "type": "text"
+        },
+        {
+          "name": "verifier_agent_id",
+          "type": "text"
+        },
+        {
+          "name": "method",
+          "type": "text"
+        },
+        {
+          "name": "outcome",
+          "type": "text"
+        },
+        {
+          "name": "details",
+          "type": "jsonb"
+        },
+        {
+          "name": "created_at",
+          "type": "timestamp with time zone"
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "public_table_count": 49,
+    "research_table_count": 35,
+    "asde_tables_with_exact_counts": 49,
+    "tables_with_errors": 0
+  }
+}
