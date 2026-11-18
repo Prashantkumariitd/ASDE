@@ -1,4 +1,3 @@
-
 import os
 
 
@@ -17,6 +16,15 @@ class Settings:
     # Approved inference providers
     groq_api_key = os.environ.get("GROQ_API_KEY", "")
     openrouter_api_key = os.environ.get("OPENROUTER_API_KEY", "")
+    cloudflare_api_token = os.environ.get("CLOUDFLARE_API_TOKEN", "")
+    cloudflare_account_id = os.environ.get("CLOUDFLARE_ACCOUNT_ID", "")
+    cloudflare_model = os.environ.get(
+        "ASDE_CLOUDFLARE_MODEL",
+        "@cf/meta/llama-3.1-8b-instruct-fp8-fast",
+    )
+    cloudflare_max_output_tokens = _int_env(
+        "ASDE_CLOUDFLARE_MAX_OUTPUT_TOKENS", 1200, 128, 4096
+    )
 
     # GitHub integration
     github_token = os.environ.get("GITHUB_TOKEN", "")
@@ -48,6 +56,9 @@ class Settings:
     )
     openrouter_max_concurrent_calls = _int_env(
         "ASDE_OPENROUTER_MAX_CONCURRENT_CALLS", 1, 1, 32
+    )
+    cloudflare_max_concurrent_calls = _int_env(
+        "ASDE_CLOUDFLARE_MAX_CONCURRENT_CALLS", 1, 1, 8
     )
 
     # Run and discussion limits

@@ -1,4 +1,3 @@
-
 import json
 import time
 import uuid
@@ -11,15 +10,20 @@ from ...core.resource_manager import INFERENCE_GATE
 
 GROQ_MODEL = "openai/gpt-oss-120b"
 OPENROUTER_MODEL = "nvidia/nemotron-3-ultra-550b-a55b:free"
+CLOUDFLARE_MODEL = Settings.cloudflare_model
 
+# Explicit provider order. The actual provider/model is returned and logged
+# for every task; fallback is never hidden from the research provenance.
 PREFERRED = {
     "reasoning": [
         ("groq", GROQ_MODEL),
         ("openrouter", OPENROUTER_MODEL),
+        ("cloudflare", CLOUDFLARE_MODEL),
     ],
     "fast_reasoning": [
         ("groq", GROQ_MODEL),
         ("openrouter", OPENROUTER_MODEL),
+        ("cloudflare", CLOUDFLARE_MODEL),
     ],
 }
 
@@ -37,7 +41,7 @@ def _record_usage(
         metadata = {
             "fallback_used": bool(fallback_used),
             "error_category": error_category,
-            "logging_version": 1,
+            "logging_version": 2,
         }
 
         with db() as conn:
@@ -100,6 +104,21 @@ def _post_chat_completion(
             "X-Title": "ASDE Scientific Discovery Engine",
         }
 
+    elif provider == "cloudflare":
+        api_key = Settings.cloudflare_api_token
+        account_id = Settings.cloudflare_account_id
+        if not api_key or not account_id:
+            raise RuntimeError("Cloudflare Workers AI credentials are not configured")
+
+        endpoint = (
+            "https://api.cloudflare.com/client/v4/accounts/"
+            f"{account_id}/ai/v1/chat/completions"
+        )
+        headers = {
+            "Authorization": f"Bearer {api_key}",
+            "Content-Type": "application/json",
+        }
+
     else:
         raise ValueError("Provider not approved")
 
@@ -110,15 +129,21 @@ def _post_chat_completion(
     error_category = None
 
     try:
+        payload = {
+            "model": model,
+            "messages": [{"role": "user", "content": prompt}],
+            "temperature": 0.2,
+        }
+        # Keep the Cloudflare free-tier fallback bounded. Daily usage is
+        # governed by Neurons, not a fixed request/day allowance.
+        if provider == "cloudflare":
+            payload["max_tokens"] = Settings.cloudflare_max_output_tokens
+
         with INFERENCE_GATE.slot(provider, timeout=150):
             response = requests.post(
                 endpoint,
                 headers=headers,
-                json={
-                    "model": model,
-                    "messages": [{"role": "user", "content": prompt}],
-                    "temperature": 0.2,
-                },
+                json=payload,
                 timeout=TIMEOUT,
             )
 
@@ -175,44 +200,33 @@ def call_exact(provider, model, prompt, *, context=None):
 
 def call_routed(task, prompt, *, context=None):
     """
-    Groq primary -> OpenRouter fallback.
-    Each actual provider attempt is logged independently when context is supplied.
+    Groq primary -> OpenRouter fallback -> Cloudflare Workers AI fallback.
+    Every actual provider attempt is independently logged when context exists.
     """
     if task not in PREFERRED:
         raise ValueError(f"Unknown routing task: {task}")
 
-    primary_provider, primary_model = PREFERRED[task][0]
-    fallback_provider, fallback_model = PREFERRED[task][1]
-
-    try:
-        content = _post_chat_completion(
-            primary_provider, primary_model, prompt,
-            context=context, fallback_used=False
-        )
-
-        return {
-            "content": content,
-            "provider": primary_provider,
-            "model": primary_model,
-            "fallback_used": False,
-        }
-
-    except Exception:
+    failures = []
+    for index, (provider, model) in enumerate(PREFERRED[task]):
         try:
             content = _post_chat_completion(
-                fallback_provider, fallback_model, prompt,
-                context=context, fallback_used=True
+                provider,
+                model,
+                prompt,
+                context=context,
+                fallback_used=(index > 0),
             )
-
             return {
                 "content": content,
-                "provider": fallback_provider,
-                "model": fallback_model,
-                "fallback_used": True,
+                "provider": provider,
+                "model": model,
+                "fallback_used": (index > 0),
             }
+        except Exception as exc:
+            # Do not persist raw exception text; it may contain sensitive URLs.
+            failures.append(f"{provider}:{type(exc).__name__}")
 
-        except Exception:
-            raise RuntimeError(
-                "Both approved inference providers failed. "
-                "Pause the task and checkpoint before retrying."
-            ) from None
+    raise RuntimeError(
+        "All configured inference providers failed "
+        f"({', '.join(failures)}). Pause and checkpoint before retrying."
+    )
